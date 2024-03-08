@@ -10,6 +10,14 @@
       "StackName": "amplify-tiffanyleacomnextjs-prod-163300",
       "StackId": "arn:aws:cloudformation:us-west-2:011206842424:stack/amplify-tiffanyleacomnextjs-prod-163300/6bd3e5c0-dce3-11ee-9666-0216845b8285",
       "AmplifyAppId": "dsiz9knoougq7"
+    },
+    "categories": {
+      "auth": {
+        "tiffanyleacomnextjs379f8764": {}
+      },
+      "api": {
+        "tiffanyleacomnextjs": {}
+      }
     }
   }
 }
