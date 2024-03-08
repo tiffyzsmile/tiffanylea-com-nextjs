@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ConfigureAmplifyClientSide from "../components/ConfigureAmplifyClientSide";
+import Header from "../components/Header";
 import "@aws-amplify/ui-react/styles.css";
-import "./globals.css";
+import "./globals.scss";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +24,9 @@ const RootLayout = ({
       <body className={inter.className}>
         <ConfigureAmplifyClientSide />
         <div className="page">
+          <Header />
           <section className="setWidth">{children}</section>
+          <Footer />
         </div>
       </body>
     </html>
