@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "tiffanyleacomnextjs379f8764": {}
+        "tiffanyleacomnextjs379f8764": {},
+        "userPoolGroups": {}
       },
       "api": {
         "tiffanyleacomnextjs": {}
