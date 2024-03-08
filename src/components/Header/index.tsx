@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import Link from "next/link";
 
 type Props = {
-  isAdmin: boolean;
+  isAdmin?: boolean;
 };
 
 const Header = ({ isAdmin }: Props) => {
