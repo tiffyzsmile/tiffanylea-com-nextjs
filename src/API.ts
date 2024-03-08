@@ -2,16 +2,34 @@
 /* eslint-disable */
 //  This file was automatically generated and should not be edited.
 
-export type CreateBlogInput = {
+export type CreateProjectInput = {
   id?: string | null,
   name: string,
+  date?: string | null,
+  description?: string | null,
+  features?: Array< string | null > | null,
+  url?: string | null,
+  images?: Array< string | null > | null,
+  display?: boolean | null,
+  logo?: string | null,
+  internal?: string | null,
+  projectEmployerId?: string | null,
+  projectClientId: string,
 };
 
-export type ModelBlogConditionInput = {
+export type ModelProjectConditionInput = {
   name?: ModelStringInput | null,
-  and?: Array< ModelBlogConditionInput | null > | null,
-  or?: Array< ModelBlogConditionInput | null > | null,
-  not?: ModelBlogConditionInput | null,
+  date?: ModelStringInput | null,
+  description?: ModelStringInput | null,
+  features?: ModelStringInput | null,
+  url?: ModelStringInput | null,
+  images?: ModelStringInput | null,
+  display?: ModelBooleanInput | null,
+  logo?: ModelStringInput | null,
+  internal?: ModelStringInput | null,
+  and?: Array< ModelProjectConditionInput | null > | null,
+  or?: Array< ModelProjectConditionInput | null > | null,
+  not?: ModelProjectConditionInput | null,
 };
 
 export type ModelStringInput = {
@@ -54,69 +72,248 @@ export type ModelSizeInput = {
   between?: Array< number | null > | null,
 };
 
-export type Blog = {
-  __typename: "Blog",
+export type ModelBooleanInput = {
+  ne?: boolean | null,
+  eq?: boolean | null,
+  attributeExists?: boolean | null,
+  attributeType?: ModelAttributeTypes | null,
+};
+
+export type Project = {
+  __typename: "Project",
   id: string,
   name: string,
-  posts?: ModelPostConnection | null,
+  date?: string | null,
+  description?: string | null,
+  features?: Array< string | null > | null,
+  url?: string | null,
+  images?: Array< string | null > | null,
+  display?: boolean | null,
+  logo?: string | null,
+  internal?: string | null,
   createdAt: string,
   updatedAt: string,
+  employer?: Employer | null,
+  client: Client,
+  tags?: ModelTaggedProjectConnection | null,
 };
 
-export type ModelPostConnection = {
-  __typename: "ModelPostConnection",
-  items:  Array<Post | null >,
+export type Employer = {
+  __typename: "Employer",
+  id: string,
+  name: string,
+  startdate?: string | null,
+  enddate?: string | null,
+  url?: string | null,
+  logo?: string | null,
+  createdAt: string,
+  updatedAt: string,
+  projects?: ModelProjectConnection | null,
+};
+
+export type ModelProjectConnection = {
+  __typename: "ModelProjectConnection",
+  items:  Array<Project | null >,
   nextToken?: string | null,
 };
 
-export type Post = {
-  __typename: "Post",
+export type Client = {
+  __typename: "Client",
   id: string,
-  title: string,
-  blog?: Blog | null,
-  comments?: ModelCommentConnection | null,
+  name: string,
+  description?: string | null,
+  logo?: string | null,
+  url?: string | null,
+  feedback?: string | null,
+  display?: boolean | null,
   createdAt: string,
   updatedAt: string,
-  blogPostsId?: string | null,
+  projects?: Project | null,
 };
 
-export type ModelCommentConnection = {
-  __typename: "ModelCommentConnection",
-  items:  Array<Comment | null >,
+export type ModelTaggedProjectConnection = {
+  __typename: "ModelTaggedProjectConnection",
+  items:  Array<TaggedProject | null >,
   nextToken?: string | null,
 };
 
-export type Comment = {
-  __typename: "Comment",
+export type TaggedProject = {
+  __typename: "TaggedProject",
   id: string,
-  post?: Post | null,
-  content: string,
   createdAt: string,
   updatedAt: string,
-  postCommentsId?: string | null,
+  project: Project,
+  tag: Tag,
 };
 
-export type UpdateBlogInput = {
+export type Tag = {
+  __typename: "Tag",
   id: string,
   name?: string | null,
+  category?: string | null,
+  display?: boolean | null,
+  logo?: string | null,
+  createdAt: string,
+  updatedAt: string,
+  projects?: ModelTaggedProjectConnection | null,
 };
 
-export type DeleteBlogInput = {
+export type UpdateProjectInput = {
+  id: string,
+  name?: string | null,
+  date?: string | null,
+  description?: string | null,
+  features?: Array< string | null > | null,
+  url?: string | null,
+  images?: Array< string | null > | null,
+  display?: boolean | null,
+  logo?: string | null,
+  internal?: string | null,
+  projectEmployerId?: string | null,
+  projectClientId?: string | null,
+};
+
+export type DeleteProjectInput = {
   id: string,
 };
 
-export type CreatePostInput = {
+export type CreateEmployerInput = {
   id?: string | null,
-  title: string,
-  blogPostsId?: string | null,
+  name: string,
+  startdate?: string | null,
+  enddate?: string | null,
+  url?: string | null,
+  logo?: string | null,
 };
 
-export type ModelPostConditionInput = {
-  title?: ModelStringInput | null,
-  and?: Array< ModelPostConditionInput | null > | null,
-  or?: Array< ModelPostConditionInput | null > | null,
-  not?: ModelPostConditionInput | null,
-  blogPostsId?: ModelIDInput | null,
+export type ModelEmployerConditionInput = {
+  name?: ModelStringInput | null,
+  startdate?: ModelStringInput | null,
+  enddate?: ModelStringInput | null,
+  url?: ModelStringInput | null,
+  logo?: ModelStringInput | null,
+  and?: Array< ModelEmployerConditionInput | null > | null,
+  or?: Array< ModelEmployerConditionInput | null > | null,
+  not?: ModelEmployerConditionInput | null,
+};
+
+export type UpdateEmployerInput = {
+  id: string,
+  name?: string | null,
+  startdate?: string | null,
+  enddate?: string | null,
+  url?: string | null,
+  logo?: string | null,
+};
+
+export type DeleteEmployerInput = {
+  id: string,
+};
+
+export type CreateClientInput = {
+  id?: string | null,
+  name: string,
+  description?: string | null,
+  logo?: string | null,
+  url?: string | null,
+  feedback?: string | null,
+  display?: boolean | null,
+  clientProjectsId?: string | null,
+};
+
+export type ModelClientConditionInput = {
+  name?: ModelStringInput | null,
+  description?: ModelStringInput | null,
+  logo?: ModelStringInput | null,
+  url?: ModelStringInput | null,
+  feedback?: ModelStringInput | null,
+  display?: ModelBooleanInput | null,
+  and?: Array< ModelClientConditionInput | null > | null,
+  or?: Array< ModelClientConditionInput | null > | null,
+  not?: ModelClientConditionInput | null,
+};
+
+export type UpdateClientInput = {
+  id: string,
+  name?: string | null,
+  description?: string | null,
+  logo?: string | null,
+  url?: string | null,
+  feedback?: string | null,
+  display?: boolean | null,
+  clientProjectsId?: string | null,
+};
+
+export type DeleteClientInput = {
+  id: string,
+};
+
+export type CreateTagInput = {
+  id?: string | null,
+  name?: string | null,
+  category?: string | null,
+  display?: boolean | null,
+  logo?: string | null,
+};
+
+export type ModelTagConditionInput = {
+  name?: ModelStringInput | null,
+  category?: ModelStringInput | null,
+  display?: ModelBooleanInput | null,
+  logo?: ModelStringInput | null,
+  and?: Array< ModelTagConditionInput | null > | null,
+  or?: Array< ModelTagConditionInput | null > | null,
+  not?: ModelTagConditionInput | null,
+};
+
+export type UpdateTagInput = {
+  id: string,
+  name?: string | null,
+  category?: string | null,
+  display?: boolean | null,
+  logo?: string | null,
+};
+
+export type DeleteTagInput = {
+  id: string,
+};
+
+export type CreateTaggedProjectInput = {
+  id?: string | null,
+  taggedProjectTagId: string,
+  taggedProjectProjectId: string,
+};
+
+export type ModelTaggedProjectConditionInput = {
+  and?: Array< ModelTaggedProjectConditionInput | null > | null,
+  or?: Array< ModelTaggedProjectConditionInput | null > | null,
+  not?: ModelTaggedProjectConditionInput | null,
+};
+
+export type UpdateTaggedProjectInput = {
+  id: string,
+  taggedProjectTagId?: string | null,
+  taggedProjectProjectId?: string | null,
+};
+
+export type DeleteTaggedProjectInput = {
+  id: string,
+};
+
+export type ModelProjectFilterInput = {
+  id?: ModelIDInput | null,
+  name?: ModelStringInput | null,
+  date?: ModelStringInput | null,
+  description?: ModelStringInput | null,
+  features?: ModelStringInput | null,
+  url?: ModelStringInput | null,
+  images?: ModelStringInput | null,
+  display?: ModelBooleanInput | null,
+  logo?: ModelStringInput | null,
+  internal?: ModelStringInput | null,
+  and?: Array< ModelProjectFilterInput | null > | null,
+  or?: Array< ModelProjectFilterInput | null > | null,
+  not?: ModelProjectFilterInput | null,
 };
 
 export type ModelIDInput = {
@@ -135,364 +332,644 @@ export type ModelIDInput = {
   size?: ModelSizeInput | null,
 };
 
-export type UpdatePostInput = {
-  id: string,
-  title?: string | null,
-  blogPostsId?: string | null,
-};
-
-export type DeletePostInput = {
-  id: string,
-};
-
-export type CreateCommentInput = {
-  id?: string | null,
-  content: string,
-  postCommentsId?: string | null,
-};
-
-export type ModelCommentConditionInput = {
-  content?: ModelStringInput | null,
-  and?: Array< ModelCommentConditionInput | null > | null,
-  or?: Array< ModelCommentConditionInput | null > | null,
-  not?: ModelCommentConditionInput | null,
-  postCommentsId?: ModelIDInput | null,
-};
-
-export type UpdateCommentInput = {
-  id: string,
-  content?: string | null,
-  postCommentsId?: string | null,
-};
-
-export type DeleteCommentInput = {
-  id: string,
-};
-
-export type ModelBlogFilterInput = {
+export type ModelEmployerFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
-  and?: Array< ModelBlogFilterInput | null > | null,
-  or?: Array< ModelBlogFilterInput | null > | null,
-  not?: ModelBlogFilterInput | null,
+  startdate?: ModelStringInput | null,
+  enddate?: ModelStringInput | null,
+  url?: ModelStringInput | null,
+  logo?: ModelStringInput | null,
+  and?: Array< ModelEmployerFilterInput | null > | null,
+  or?: Array< ModelEmployerFilterInput | null > | null,
+  not?: ModelEmployerFilterInput | null,
 };
 
-export type ModelBlogConnection = {
-  __typename: "ModelBlogConnection",
-  items:  Array<Blog | null >,
+export type ModelEmployerConnection = {
+  __typename: "ModelEmployerConnection",
+  items:  Array<Employer | null >,
   nextToken?: string | null,
 };
 
-export type ModelPostFilterInput = {
+export type ModelClientFilterInput = {
   id?: ModelIDInput | null,
-  title?: ModelStringInput | null,
-  and?: Array< ModelPostFilterInput | null > | null,
-  or?: Array< ModelPostFilterInput | null > | null,
-  not?: ModelPostFilterInput | null,
-  blogPostsId?: ModelIDInput | null,
+  name?: ModelStringInput | null,
+  description?: ModelStringInput | null,
+  logo?: ModelStringInput | null,
+  url?: ModelStringInput | null,
+  feedback?: ModelStringInput | null,
+  display?: ModelBooleanInput | null,
+  and?: Array< ModelClientFilterInput | null > | null,
+  or?: Array< ModelClientFilterInput | null > | null,
+  not?: ModelClientFilterInput | null,
 };
 
-export type ModelCommentFilterInput = {
+export type ModelClientConnection = {
+  __typename: "ModelClientConnection",
+  items:  Array<Client | null >,
+  nextToken?: string | null,
+};
+
+export type ModelTagFilterInput = {
   id?: ModelIDInput | null,
-  content?: ModelStringInput | null,
-  and?: Array< ModelCommentFilterInput | null > | null,
-  or?: Array< ModelCommentFilterInput | null > | null,
-  not?: ModelCommentFilterInput | null,
-  postCommentsId?: ModelIDInput | null,
+  name?: ModelStringInput | null,
+  category?: ModelStringInput | null,
+  display?: ModelBooleanInput | null,
+  logo?: ModelStringInput | null,
+  and?: Array< ModelTagFilterInput | null > | null,
+  or?: Array< ModelTagFilterInput | null > | null,
+  not?: ModelTagFilterInput | null,
 };
 
-export type ModelSubscriptionBlogFilterInput = {
-  id?: ModelSubscriptionIDInput | null,
-  name?: ModelSubscriptionStringInput | null,
-  and?: Array< ModelSubscriptionBlogFilterInput | null > | null,
-  or?: Array< ModelSubscriptionBlogFilterInput | null > | null,
+export type ModelTagConnection = {
+  __typename: "ModelTagConnection",
+  items:  Array<Tag | null >,
+  nextToken?: string | null,
 };
 
-export type ModelSubscriptionIDInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
-  in?: Array< string | null > | null,
-  notIn?: Array< string | null > | null,
+export type ModelTaggedProjectFilterInput = {
+  id?: ModelIDInput | null,
+  and?: Array< ModelTaggedProjectFilterInput | null > | null,
+  or?: Array< ModelTaggedProjectFilterInput | null > | null,
+  not?: ModelTaggedProjectFilterInput | null,
 };
 
-export type ModelSubscriptionStringInput = {
-  ne?: string | null,
-  eq?: string | null,
-  le?: string | null,
-  lt?: string | null,
-  ge?: string | null,
-  gt?: string | null,
-  contains?: string | null,
-  notContains?: string | null,
-  between?: Array< string | null > | null,
-  beginsWith?: string | null,
-  in?: Array< string | null > | null,
-  notIn?: Array< string | null > | null,
+export type CreateProjectMutationVariables = {
+  input: CreateProjectInput,
+  condition?: ModelProjectConditionInput | null,
 };
 
-export type ModelSubscriptionPostFilterInput = {
-  id?: ModelSubscriptionIDInput | null,
-  title?: ModelSubscriptionStringInput | null,
-  and?: Array< ModelSubscriptionPostFilterInput | null > | null,
-  or?: Array< ModelSubscriptionPostFilterInput | null > | null,
-};
-
-export type ModelSubscriptionCommentFilterInput = {
-  id?: ModelSubscriptionIDInput | null,
-  content?: ModelSubscriptionStringInput | null,
-  and?: Array< ModelSubscriptionCommentFilterInput | null > | null,
-  or?: Array< ModelSubscriptionCommentFilterInput | null > | null,
-};
-
-export type CreateBlogMutationVariables = {
-  input: CreateBlogInput,
-  condition?: ModelBlogConditionInput | null,
-};
-
-export type CreateBlogMutation = {
-  createBlog?:  {
-    __typename: "Blog",
+export type CreateProjectMutation = {
+  createProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      nextToken?: string | null,
-    } | null,
+    date?: string | null,
+    description?: string | null,
+    features?: Array< string | null > | null,
+    url?: string | null,
+    images?: Array< string | null > | null,
+    display?: boolean | null,
+    logo?: string | null,
+    internal?: string | null,
     createdAt: string,
     updatedAt: string,
+    employer?:  {
+      __typename: "Employer",
+      id: string,
+      name: string,
+      startdate?: string | null,
+      enddate?: string | null,
+      url?: string | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    client:  {
+      __typename: "Client",
+      id: string,
+      name: string,
+      description?: string | null,
+      logo?: string | null,
+      url?: string | null,
+      feedback?: string | null,
+      display?: boolean | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tags?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
   } | null,
 };
 
-export type UpdateBlogMutationVariables = {
-  input: UpdateBlogInput,
-  condition?: ModelBlogConditionInput | null,
+export type UpdateProjectMutationVariables = {
+  input: UpdateProjectInput,
+  condition?: ModelProjectConditionInput | null,
 };
 
-export type UpdateBlogMutation = {
-  updateBlog?:  {
-    __typename: "Blog",
+export type UpdateProjectMutation = {
+  updateProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      nextToken?: string | null,
-    } | null,
+    date?: string | null,
+    description?: string | null,
+    features?: Array< string | null > | null,
+    url?: string | null,
+    images?: Array< string | null > | null,
+    display?: boolean | null,
+    logo?: string | null,
+    internal?: string | null,
     createdAt: string,
     updatedAt: string,
+    employer?:  {
+      __typename: "Employer",
+      id: string,
+      name: string,
+      startdate?: string | null,
+      enddate?: string | null,
+      url?: string | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    client:  {
+      __typename: "Client",
+      id: string,
+      name: string,
+      description?: string | null,
+      logo?: string | null,
+      url?: string | null,
+      feedback?: string | null,
+      display?: boolean | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tags?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
   } | null,
 };
 
-export type DeleteBlogMutationVariables = {
-  input: DeleteBlogInput,
-  condition?: ModelBlogConditionInput | null,
+export type DeleteProjectMutationVariables = {
+  input: DeleteProjectInput,
+  condition?: ModelProjectConditionInput | null,
 };
 
-export type DeleteBlogMutation = {
-  deleteBlog?:  {
-    __typename: "Blog",
+export type DeleteProjectMutation = {
+  deleteProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      nextToken?: string | null,
-    } | null,
+    date?: string | null,
+    description?: string | null,
+    features?: Array< string | null > | null,
+    url?: string | null,
+    images?: Array< string | null > | null,
+    display?: boolean | null,
+    logo?: string | null,
+    internal?: string | null,
     createdAt: string,
     updatedAt: string,
-  } | null,
-};
-
-export type CreatePostMutationVariables = {
-  input: CreatePostInput,
-  condition?: ModelPostConditionInput | null,
-};
-
-export type CreatePostMutation = {
-  createPost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
+    employer?:  {
+      __typename: "Employer",
       id: string,
       name: string,
+      startdate?: string | null,
+      enddate?: string | null,
+      url?: string | null,
+      logo?: string | null,
       createdAt: string,
       updatedAt: string,
     } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
-  } | null,
-};
-
-export type UpdatePostMutationVariables = {
-  input: UpdatePostInput,
-  condition?: ModelPostConditionInput | null,
-};
-
-export type UpdatePostMutation = {
-  updatePost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
+    client:  {
+      __typename: "Client",
       id: string,
       name: string,
+      description?: string | null,
+      logo?: string | null,
+      url?: string | null,
+      feedback?: string | null,
+      display?: boolean | null,
       createdAt: string,
       updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
+    },
+    tags?:  {
+      __typename: "ModelTaggedProjectConnection",
       nextToken?: string | null,
     } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
   } | null,
 };
 
-export type DeletePostMutationVariables = {
-  input: DeletePostInput,
-  condition?: ModelPostConditionInput | null,
+export type CreateEmployerMutationVariables = {
+  input: CreateEmployerInput,
+  condition?: ModelEmployerConditionInput | null,
 };
 
-export type DeletePostMutation = {
-  deletePost?:  {
-    __typename: "Post",
+export type CreateEmployerMutation = {
+  createEmployer?:  {
+    __typename: "Employer",
     id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
+    name: string,
+    startdate?: string | null,
+    enddate?: string | null,
+    url?: string | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type UpdateEmployerMutationVariables = {
+  input: UpdateEmployerInput,
+  condition?: ModelEmployerConditionInput | null,
+};
+
+export type UpdateEmployerMutation = {
+  updateEmployer?:  {
+    __typename: "Employer",
+    id: string,
+    name: string,
+    startdate?: string | null,
+    enddate?: string | null,
+    url?: string | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type DeleteEmployerMutationVariables = {
+  input: DeleteEmployerInput,
+  condition?: ModelEmployerConditionInput | null,
+};
+
+export type DeleteEmployerMutation = {
+  deleteEmployer?:  {
+    __typename: "Employer",
+    id: string,
+    name: string,
+    startdate?: string | null,
+    enddate?: string | null,
+    url?: string | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type CreateClientMutationVariables = {
+  input: CreateClientInput,
+  condition?: ModelClientConditionInput | null,
+};
+
+export type CreateClientMutation = {
+  createClient?:  {
+    __typename: "Client",
+    id: string,
+    name: string,
+    description?: string | null,
+    logo?: string | null,
+    url?: string | null,
+    feedback?: string | null,
+    display?: boolean | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "Project",
       id: string,
       name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
       createdAt: string,
       updatedAt: string,
     } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
+  } | null,
+};
+
+export type UpdateClientMutationVariables = {
+  input: UpdateClientInput,
+  condition?: ModelClientConditionInput | null,
+};
+
+export type UpdateClientMutation = {
+  updateClient?:  {
+    __typename: "Client",
+    id: string,
+    name: string,
+    description?: string | null,
+    logo?: string | null,
+    url?: string | null,
+    feedback?: string | null,
+    display?: boolean | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+  } | null,
+};
+
+export type DeleteClientMutationVariables = {
+  input: DeleteClientInput,
+  condition?: ModelClientConditionInput | null,
+};
+
+export type DeleteClientMutation = {
+  deleteClient?:  {
+    __typename: "Client",
+    id: string,
+    name: string,
+    description?: string | null,
+    logo?: string | null,
+    url?: string | null,
+    feedback?: string | null,
+    display?: boolean | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+  } | null,
+};
+
+export type CreateTagMutationVariables = {
+  input: CreateTagInput,
+  condition?: ModelTagConditionInput | null,
+};
+
+export type CreateTagMutation = {
+  createTag?:  {
+    __typename: "Tag",
+    id: string,
+    name?: string | null,
+    category?: string | null,
+    display?: boolean | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelTaggedProjectConnection",
       nextToken?: string | null,
     } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
   } | null,
 };
 
-export type CreateCommentMutationVariables = {
-  input: CreateCommentInput,
-  condition?: ModelCommentConditionInput | null,
+export type UpdateTagMutationVariables = {
+  input: UpdateTagInput,
+  condition?: ModelTagConditionInput | null,
 };
 
-export type CreateCommentMutation = {
-  createComment?:  {
-    __typename: "Comment",
+export type UpdateTagMutation = {
+  updateTag?:  {
+    __typename: "Tag",
     id: string,
-    post?:  {
-      __typename: "Post",
+    name?: string | null,
+    category?: string | null,
+    display?: boolean | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type DeleteTagMutationVariables = {
+  input: DeleteTagInput,
+  condition?: ModelTagConditionInput | null,
+};
+
+export type DeleteTagMutation = {
+  deleteTag?:  {
+    __typename: "Tag",
+    id: string,
+    name?: string | null,
+    category?: string | null,
+    display?: boolean | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type CreateTaggedProjectMutationVariables = {
+  input: CreateTaggedProjectInput,
+  condition?: ModelTaggedProjectConditionInput | null,
+};
+
+export type CreateTaggedProjectMutation = {
+  createTaggedProject?:  {
+    __typename: "TaggedProject",
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+    project:  {
+      __typename: "Project",
       id: string,
-      title: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
       createdAt: string,
       updatedAt: string,
-      blogPostsId?: string | null,
-    } | null,
-    content: string,
-    createdAt: string,
-    updatedAt: string,
-    postCommentsId?: string | null,
-  } | null,
-};
-
-export type UpdateCommentMutationVariables = {
-  input: UpdateCommentInput,
-  condition?: ModelCommentConditionInput | null,
-};
-
-export type UpdateCommentMutation = {
-  updateComment?:  {
-    __typename: "Comment",
-    id: string,
-    post?:  {
-      __typename: "Post",
+    },
+    tag:  {
+      __typename: "Tag",
       id: string,
-      title: string,
+      name?: string | null,
+      category?: string | null,
+      display?: boolean | null,
+      logo?: string | null,
       createdAt: string,
       updatedAt: string,
-      blogPostsId?: string | null,
-    } | null,
-    content: string,
-    createdAt: string,
-    updatedAt: string,
-    postCommentsId?: string | null,
+    },
   } | null,
 };
 
-export type DeleteCommentMutationVariables = {
-  input: DeleteCommentInput,
-  condition?: ModelCommentConditionInput | null,
+export type UpdateTaggedProjectMutationVariables = {
+  input: UpdateTaggedProjectInput,
+  condition?: ModelTaggedProjectConditionInput | null,
 };
 
-export type DeleteCommentMutation = {
-  deleteComment?:  {
-    __typename: "Comment",
+export type UpdateTaggedProjectMutation = {
+  updateTaggedProject?:  {
+    __typename: "TaggedProject",
     id: string,
-    post?:  {
-      __typename: "Post",
+    createdAt: string,
+    updatedAt: string,
+    project:  {
+      __typename: "Project",
       id: string,
-      title: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
       createdAt: string,
       updatedAt: string,
-      blogPostsId?: string | null,
-    } | null,
-    content: string,
-    createdAt: string,
-    updatedAt: string,
-    postCommentsId?: string | null,
+    },
+    tag:  {
+      __typename: "Tag",
+      id: string,
+      name?: string | null,
+      category?: string | null,
+      display?: boolean | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
   } | null,
 };
 
-export type GetBlogQueryVariables = {
+export type DeleteTaggedProjectMutationVariables = {
+  input: DeleteTaggedProjectInput,
+  condition?: ModelTaggedProjectConditionInput | null,
+};
+
+export type DeleteTaggedProjectMutation = {
+  deleteTaggedProject?:  {
+    __typename: "TaggedProject",
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+    project:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tag:  {
+      __typename: "Tag",
+      id: string,
+      name?: string | null,
+      category?: string | null,
+      display?: boolean | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+  } | null,
+};
+
+export type GetProjectQueryVariables = {
   id: string,
 };
 
-export type GetBlogQuery = {
-  getBlog?:  {
-    __typename: "Blog",
+export type GetProjectQuery = {
+  getProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      nextToken?: string | null,
-    } | null,
+    date?: string | null,
+    description?: string | null,
+    features?: Array< string | null > | null,
+    url?: string | null,
+    images?: Array< string | null > | null,
+    display?: boolean | null,
+    logo?: string | null,
+    internal?: string | null,
     createdAt: string,
     updatedAt: string,
+    employer?:  {
+      __typename: "Employer",
+      id: string,
+      name: string,
+      startdate?: string | null,
+      enddate?: string | null,
+      url?: string | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    client:  {
+      __typename: "Client",
+      id: string,
+      name: string,
+      description?: string | null,
+      logo?: string | null,
+      url?: string | null,
+      feedback?: string | null,
+      display?: boolean | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tags?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
   } | null,
 };
 
-export type ListBlogsQueryVariables = {
-  filter?: ModelBlogFilterInput | null,
+export type ListProjectsQueryVariables = {
+  filter?: ModelProjectFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type ListBlogsQuery = {
-  listBlogs?:  {
-    __typename: "ModelBlogConnection",
+export type ListProjectsQuery = {
+  listProjects?:  {
+    __typename: "ModelProjectConnection",
     items:  Array< {
-      __typename: "Blog",
+      __typename: "Project",
       id: string,
       name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
       createdAt: string,
       updatedAt: string,
     } | null >,
@@ -500,294 +977,685 @@ export type ListBlogsQuery = {
   } | null,
 };
 
-export type GetPostQueryVariables = {
+export type GetEmployerQueryVariables = {
   id: string,
 };
 
-export type GetPostQuery = {
-  getPost?:  {
-    __typename: "Post",
+export type GetEmployerQuery = {
+  getEmployer?:  {
+    __typename: "Employer",
     id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
-      id: string,
-      name: string,
-      createdAt: string,
-      updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      nextToken?: string | null,
-    } | null,
+    name: string,
+    startdate?: string | null,
+    enddate?: string | null,
+    url?: string | null,
+    logo?: string | null,
     createdAt: string,
     updatedAt: string,
-    blogPostsId?: string | null,
+    projects?:  {
+      __typename: "ModelProjectConnection",
+      nextToken?: string | null,
+    } | null,
   } | null,
 };
 
-export type ListPostsQueryVariables = {
-  filter?: ModelPostFilterInput | null,
+export type ListEmployersQueryVariables = {
+  filter?: ModelEmployerFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type ListPostsQuery = {
-  listPosts?:  {
-    __typename: "ModelPostConnection",
+export type ListEmployersQuery = {
+  listEmployers?:  {
+    __typename: "ModelEmployerConnection",
     items:  Array< {
-      __typename: "Post",
+      __typename: "Employer",
       id: string,
-      title: string,
+      name: string,
+      startdate?: string | null,
+      enddate?: string | null,
+      url?: string | null,
+      logo?: string | null,
       createdAt: string,
       updatedAt: string,
-      blogPostsId?: string | null,
     } | null >,
     nextToken?: string | null,
   } | null,
 };
 
-export type GetCommentQueryVariables = {
+export type GetClientQueryVariables = {
   id: string,
 };
 
-export type GetCommentQuery = {
-  getComment?:  {
-    __typename: "Comment",
+export type GetClientQuery = {
+  getClient?:  {
+    __typename: "Client",
     id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      createdAt: string,
-      updatedAt: string,
-      blogPostsId?: string | null,
-    } | null,
-    content: string,
+    name: string,
+    description?: string | null,
+    logo?: string | null,
+    url?: string | null,
+    feedback?: string | null,
+    display?: boolean | null,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
+    projects?:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
   } | null,
 };
 
-export type ListCommentsQueryVariables = {
-  filter?: ModelCommentFilterInput | null,
+export type ListClientsQueryVariables = {
+  filter?: ModelClientFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type ListCommentsQuery = {
-  listComments?:  {
-    __typename: "ModelCommentConnection",
+export type ListClientsQuery = {
+  listClients?:  {
+    __typename: "ModelClientConnection",
     items:  Array< {
-      __typename: "Comment",
+      __typename: "Client",
       id: string,
-      content: string,
+      name: string,
+      description?: string | null,
+      logo?: string | null,
+      url?: string | null,
+      feedback?: string | null,
+      display?: boolean | null,
       createdAt: string,
       updatedAt: string,
-      postCommentsId?: string | null,
     } | null >,
     nextToken?: string | null,
   } | null,
 };
 
-export type OnCreateBlogSubscriptionVariables = {
-  filter?: ModelSubscriptionBlogFilterInput | null,
+export type GetTagQueryVariables = {
+  id: string,
 };
 
-export type OnCreateBlogSubscription = {
-  onCreateBlog?:  {
-    __typename: "Blog",
+export type GetTagQuery = {
+  getTag?:  {
+    __typename: "Tag",
     id: string,
-    name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      nextToken?: string | null,
-    } | null,
+    name?: string | null,
+    category?: string | null,
+    display?: boolean | null,
+    logo?: string | null,
     createdAt: string,
     updatedAt: string,
+    projects?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
   } | null,
 };
 
-export type OnUpdateBlogSubscriptionVariables = {
-  filter?: ModelSubscriptionBlogFilterInput | null,
+export type ListTagsQueryVariables = {
+  filter?: ModelTagFilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
 };
 
-export type OnUpdateBlogSubscription = {
-  onUpdateBlog?:  {
-    __typename: "Blog",
-    id: string,
-    name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
+export type ListTagsQuery = {
+  listTags?:  {
+    __typename: "ModelTagConnection",
+    items:  Array< {
+      __typename: "Tag",
+      id: string,
+      name?: string | null,
+      category?: string | null,
+      display?: boolean | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null >,
+    nextToken?: string | null,
   } | null,
 };
 
-export type OnDeleteBlogSubscriptionVariables = {
-  filter?: ModelSubscriptionBlogFilterInput | null,
+export type GetTaggedProjectQueryVariables = {
+  id: string,
 };
 
-export type OnDeleteBlogSubscription = {
-  onDeleteBlog?:  {
-    __typename: "Blog",
+export type GetTaggedProjectQuery = {
+  getTaggedProject?:  {
+    __typename: "TaggedProject",
     id: string,
-    name: string,
-    posts?:  {
-      __typename: "ModelPostConnection",
-      nextToken?: string | null,
-    } | null,
     createdAt: string,
     updatedAt: string,
-  } | null,
-};
-
-export type OnCreatePostSubscriptionVariables = {
-  filter?: ModelSubscriptionPostFilterInput | null,
-};
-
-export type OnCreatePostSubscription = {
-  onCreatePost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
+    project:  {
+      __typename: "Project",
       id: string,
       name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
       createdAt: string,
       updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
+    },
+    tag:  {
+      __typename: "Tag",
+      id: string,
+      name?: string | null,
+      category?: string | null,
+      display?: boolean | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
   } | null,
 };
 
-export type OnUpdatePostSubscriptionVariables = {
-  filter?: ModelSubscriptionPostFilterInput | null,
+export type ListTaggedProjectsQueryVariables = {
+  filter?: ModelTaggedProjectFilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
 };
 
-export type OnUpdatePostSubscription = {
-  onUpdatePost?:  {
-    __typename: "Post",
+export type ListTaggedProjectsQuery = {
+  listTaggedProjects?:  {
+    __typename: "ModelTaggedProjectConnection",
+    items:  Array< {
+      __typename: "TaggedProject",
+      id: string,
+      createdAt: string,
+      updatedAt: string,
+    } | null >,
+    nextToken?: string | null,
+  } | null,
+};
+
+export type OnCreateProjectSubscriptionVariables = {
+};
+
+export type OnCreateProjectSubscription = {
+  onCreateProject?:  {
+    __typename: "Project",
     id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
+    name: string,
+    date?: string | null,
+    description?: string | null,
+    features?: Array< string | null > | null,
+    url?: string | null,
+    images?: Array< string | null > | null,
+    display?: boolean | null,
+    logo?: string | null,
+    internal?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    employer?:  {
+      __typename: "Employer",
       id: string,
       name: string,
+      startdate?: string | null,
+      enddate?: string | null,
+      url?: string | null,
+      logo?: string | null,
       createdAt: string,
       updatedAt: string,
     } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
-      nextToken?: string | null,
-    } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
-  } | null,
-};
-
-export type OnDeletePostSubscriptionVariables = {
-  filter?: ModelSubscriptionPostFilterInput | null,
-};
-
-export type OnDeletePostSubscription = {
-  onDeletePost?:  {
-    __typename: "Post",
-    id: string,
-    title: string,
-    blog?:  {
-      __typename: "Blog",
+    client:  {
+      __typename: "Client",
       id: string,
       name: string,
+      description?: string | null,
+      logo?: string | null,
+      url?: string | null,
+      feedback?: string | null,
+      display?: boolean | null,
       createdAt: string,
       updatedAt: string,
-    } | null,
-    comments?:  {
-      __typename: "ModelCommentConnection",
+    },
+    tags?:  {
+      __typename: "ModelTaggedProjectConnection",
       nextToken?: string | null,
     } | null,
-    createdAt: string,
-    updatedAt: string,
-    blogPostsId?: string | null,
   } | null,
 };
 
-export type OnCreateCommentSubscriptionVariables = {
-  filter?: ModelSubscriptionCommentFilterInput | null,
+export type OnUpdateProjectSubscriptionVariables = {
 };
 
-export type OnCreateCommentSubscription = {
-  onCreateComment?:  {
-    __typename: "Comment",
+export type OnUpdateProjectSubscription = {
+  onUpdateProject?:  {
+    __typename: "Project",
     id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      createdAt: string,
-      updatedAt: string,
-      blogPostsId?: string | null,
-    } | null,
-    content: string,
+    name: string,
+    date?: string | null,
+    description?: string | null,
+    features?: Array< string | null > | null,
+    url?: string | null,
+    images?: Array< string | null > | null,
+    display?: boolean | null,
+    logo?: string | null,
+    internal?: string | null,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
+    employer?:  {
+      __typename: "Employer",
+      id: string,
+      name: string,
+      startdate?: string | null,
+      enddate?: string | null,
+      url?: string | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    client:  {
+      __typename: "Client",
+      id: string,
+      name: string,
+      description?: string | null,
+      logo?: string | null,
+      url?: string | null,
+      feedback?: string | null,
+      display?: boolean | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tags?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
   } | null,
 };
 
-export type OnUpdateCommentSubscriptionVariables = {
-  filter?: ModelSubscriptionCommentFilterInput | null,
+export type OnDeleteProjectSubscriptionVariables = {
 };
 
-export type OnUpdateCommentSubscription = {
-  onUpdateComment?:  {
-    __typename: "Comment",
+export type OnDeleteProjectSubscription = {
+  onDeleteProject?:  {
+    __typename: "Project",
     id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      createdAt: string,
-      updatedAt: string,
-      blogPostsId?: string | null,
-    } | null,
-    content: string,
+    name: string,
+    date?: string | null,
+    description?: string | null,
+    features?: Array< string | null > | null,
+    url?: string | null,
+    images?: Array< string | null > | null,
+    display?: boolean | null,
+    logo?: string | null,
+    internal?: string | null,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
+    employer?:  {
+      __typename: "Employer",
+      id: string,
+      name: string,
+      startdate?: string | null,
+      enddate?: string | null,
+      url?: string | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+    client:  {
+      __typename: "Client",
+      id: string,
+      name: string,
+      description?: string | null,
+      logo?: string | null,
+      url?: string | null,
+      feedback?: string | null,
+      display?: boolean | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tags?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
   } | null,
 };
 
-export type OnDeleteCommentSubscriptionVariables = {
-  filter?: ModelSubscriptionCommentFilterInput | null,
+export type OnCreateEmployerSubscriptionVariables = {
 };
 
-export type OnDeleteCommentSubscription = {
-  onDeleteComment?:  {
-    __typename: "Comment",
+export type OnCreateEmployerSubscription = {
+  onCreateEmployer?:  {
+    __typename: "Employer",
     id: string,
-    post?:  {
-      __typename: "Post",
-      id: string,
-      title: string,
-      createdAt: string,
-      updatedAt: string,
-      blogPostsId?: string | null,
-    } | null,
-    content: string,
+    name: string,
+    startdate?: string | null,
+    enddate?: string | null,
+    url?: string | null,
+    logo?: string | null,
     createdAt: string,
     updatedAt: string,
-    postCommentsId?: string | null,
+    projects?:  {
+      __typename: "ModelProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type OnUpdateEmployerSubscriptionVariables = {
+};
+
+export type OnUpdateEmployerSubscription = {
+  onUpdateEmployer?:  {
+    __typename: "Employer",
+    id: string,
+    name: string,
+    startdate?: string | null,
+    enddate?: string | null,
+    url?: string | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type OnDeleteEmployerSubscriptionVariables = {
+};
+
+export type OnDeleteEmployerSubscription = {
+  onDeleteEmployer?:  {
+    __typename: "Employer",
+    id: string,
+    name: string,
+    startdate?: string | null,
+    enddate?: string | null,
+    url?: string | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type OnCreateClientSubscriptionVariables = {
+};
+
+export type OnCreateClientSubscription = {
+  onCreateClient?:  {
+    __typename: "Client",
+    id: string,
+    name: string,
+    description?: string | null,
+    logo?: string | null,
+    url?: string | null,
+    feedback?: string | null,
+    display?: boolean | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+  } | null,
+};
+
+export type OnUpdateClientSubscriptionVariables = {
+};
+
+export type OnUpdateClientSubscription = {
+  onUpdateClient?:  {
+    __typename: "Client",
+    id: string,
+    name: string,
+    description?: string | null,
+    logo?: string | null,
+    url?: string | null,
+    feedback?: string | null,
+    display?: boolean | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+  } | null,
+};
+
+export type OnDeleteClientSubscriptionVariables = {
+};
+
+export type OnDeleteClientSubscription = {
+  onDeleteClient?:  {
+    __typename: "Client",
+    id: string,
+    name: string,
+    description?: string | null,
+    logo?: string | null,
+    url?: string | null,
+    feedback?: string | null,
+    display?: boolean | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    } | null,
+  } | null,
+};
+
+export type OnCreateTagSubscriptionVariables = {
+};
+
+export type OnCreateTagSubscription = {
+  onCreateTag?:  {
+    __typename: "Tag",
+    id: string,
+    name?: string | null,
+    category?: string | null,
+    display?: boolean | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type OnUpdateTagSubscriptionVariables = {
+};
+
+export type OnUpdateTagSubscription = {
+  onUpdateTag?:  {
+    __typename: "Tag",
+    id: string,
+    name?: string | null,
+    category?: string | null,
+    display?: boolean | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type OnDeleteTagSubscriptionVariables = {
+};
+
+export type OnDeleteTagSubscription = {
+  onDeleteTag?:  {
+    __typename: "Tag",
+    id: string,
+    name?: string | null,
+    category?: string | null,
+    display?: boolean | null,
+    logo?: string | null,
+    createdAt: string,
+    updatedAt: string,
+    projects?:  {
+      __typename: "ModelTaggedProjectConnection",
+      nextToken?: string | null,
+    } | null,
+  } | null,
+};
+
+export type OnCreateTaggedProjectSubscriptionVariables = {
+};
+
+export type OnCreateTaggedProjectSubscription = {
+  onCreateTaggedProject?:  {
+    __typename: "TaggedProject",
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+    project:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tag:  {
+      __typename: "Tag",
+      id: string,
+      name?: string | null,
+      category?: string | null,
+      display?: boolean | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+  } | null,
+};
+
+export type OnUpdateTaggedProjectSubscriptionVariables = {
+};
+
+export type OnUpdateTaggedProjectSubscription = {
+  onUpdateTaggedProject?:  {
+    __typename: "TaggedProject",
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+    project:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tag:  {
+      __typename: "Tag",
+      id: string,
+      name?: string | null,
+      category?: string | null,
+      display?: boolean | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+  } | null,
+};
+
+export type OnDeleteTaggedProjectSubscriptionVariables = {
+};
+
+export type OnDeleteTaggedProjectSubscription = {
+  onDeleteTaggedProject?:  {
+    __typename: "TaggedProject",
+    id: string,
+    createdAt: string,
+    updatedAt: string,
+    project:  {
+      __typename: "Project",
+      id: string,
+      name: string,
+      date?: string | null,
+      description?: string | null,
+      features?: Array< string | null > | null,
+      url?: string | null,
+      images?: Array< string | null > | null,
+      display?: boolean | null,
+      logo?: string | null,
+      internal?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
+    tag:  {
+      __typename: "Tag",
+      id: string,
+      name?: string | null,
+      category?: string | null,
+      display?: boolean | null,
+      logo?: string | null,
+      createdAt: string,
+      updatedAt: string,
+    },
   } | null,
 };

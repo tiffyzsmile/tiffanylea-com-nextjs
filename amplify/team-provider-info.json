@@ -24,6 +24,15 @@
       },
       "storage": {
         "tiffanyleacomcontent": {}
+      },
+      "analytics": {
+        "tiffanyleacom": {}
+      },
+      "api": {
+        "tiffanyleacom": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
       }
     }
   }

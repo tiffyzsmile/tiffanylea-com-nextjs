@@ -7,18 +7,32 @@
   },
   "api": {
     "tiffanyleacom": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "tiffanyleacom0b033fd5"
+        }
+      ],
       "output": {
         "authConfig": {
           "additionalAuthenticationProviders": [
             {
-              "authenticationType": "AWS_IAM"
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authtiffanyleacom0b033fd5"
+              }
             }
           ],
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authtiffanyleacom0b033fd5"
-            }
+            "apiKeyConfig": {
+              "apiKeyExpirationDate": "2025-03-08T21:25:54.136Z",
+              "apiKeyExpirationDays": 365,
+              "description": "nextjs"
+            },
+            "authenticationType": "API_KEY"
           }
         }
       },
