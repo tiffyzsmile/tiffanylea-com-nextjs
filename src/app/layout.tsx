@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import ConfigureAmplifyClientSide from "../components/ConfigureAmplifyClientSide";
 import Header from "../components/Header";
 import "@aws-amplify/ui-react/styles.css";
+import styles from "./layout.module.scss";
 import "./globals.scss";
 import Footer from "@/components/Footer";
 
@@ -23,9 +24,9 @@ const RootLayout = ({
     <html lang="en">
       <body className={inter.className}>
         <ConfigureAmplifyClientSide />
-        <div className="page">
+        <div className={styles.page}>
           <Header />
-          <section className="setWidth">{children}</section>
+          <section className={styles.content}>{children}</section>
           <Footer />
         </div>
       </body>
