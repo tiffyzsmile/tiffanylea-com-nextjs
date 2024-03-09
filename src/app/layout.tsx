@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
 import ConfigureAmplifyClientSide from "../components/ConfigureAmplifyClientSide";
 import Header from "../components/Header";
 import "@aws-amplify/ui-react/styles.css";
@@ -7,7 +7,7 @@ import styles from "./layout.module.scss";
 import "./globals.scss";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Tiffany Lea May",

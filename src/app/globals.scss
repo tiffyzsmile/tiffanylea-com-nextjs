@@ -118,8 +118,14 @@ section {
   display: block;
 }
 body {
+  color: #666666;
   line-height: 1;
   background-color: #ffffff;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   * {
     background-color: transparent;
   }
@@ -144,10 +150,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  line-height: 1;
-  background-color: #ffffff;
-}
 ol,
 ul {
   list-style: none;
@@ -166,11 +168,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-body {
-  /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
-  font-family: "Lato", sans-serif;
-  color: #666666;
 }
 h1 {
   font-size: 1.4375em;
