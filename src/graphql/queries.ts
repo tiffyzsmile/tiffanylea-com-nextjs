@@ -41,7 +41,6 @@ export const getProject = /* GraphQL */ `query GetProject($id: ID!) {
       url
       feedback
       display
-      ignoreme
       createdAt
       updatedAt
       __typename
@@ -141,7 +140,6 @@ export const getClient = /* GraphQL */ `query GetClient($id: ID!) {
     url
     feedback
     display
-    ignoreme
     createdAt
     updatedAt
     projects {
@@ -177,7 +175,6 @@ export const listClients = /* GraphQL */ `query ListClients(
       url
       feedback
       display
-      ignoreme
       createdAt
       updatedAt
       __typename
