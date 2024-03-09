@@ -44,6 +44,7 @@ export const createProject = /* GraphQL */ `mutation CreateProject(
       url
       feedback
       display
+      ignoreme
       createdAt
       updatedAt
       __typename
@@ -95,6 +96,7 @@ export const updateProject = /* GraphQL */ `mutation UpdateProject(
       url
       feedback
       display
+      ignoreme
       createdAt
       updatedAt
       __typename
@@ -146,6 +148,7 @@ export const deleteProject = /* GraphQL */ `mutation DeleteProject(
       url
       feedback
       display
+      ignoreme
       createdAt
       updatedAt
       __typename
@@ -245,6 +248,7 @@ export const createClient = /* GraphQL */ `mutation CreateClient(
     url
     feedback
     display
+    ignoreme
     createdAt
     updatedAt
     projects {
@@ -281,6 +285,7 @@ export const updateClient = /* GraphQL */ `mutation UpdateClient(
     url
     feedback
     display
+    ignoreme
     createdAt
     updatedAt
     projects {
@@ -317,6 +322,7 @@ export const deleteClient = /* GraphQL */ `mutation DeleteClient(
     url
     feedback
     display
+    ignoreme
     createdAt
     updatedAt
     projects {

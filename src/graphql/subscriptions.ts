@@ -41,6 +41,7 @@ export const onCreateProject = /* GraphQL */ `subscription OnCreateProject {
       url
       feedback
       display
+      ignoreme
       createdAt
       updatedAt
       __typename
@@ -89,6 +90,7 @@ export const onUpdateProject = /* GraphQL */ `subscription OnUpdateProject {
       url
       feedback
       display
+      ignoreme
       createdAt
       updatedAt
       __typename
@@ -137,6 +139,7 @@ export const onDeleteProject = /* GraphQL */ `subscription OnDeleteProject {
       url
       feedback
       display
+      ignoreme
       createdAt
       updatedAt
       __typename
@@ -224,6 +227,7 @@ export const onCreateClient = /* GraphQL */ `subscription OnCreateClient {
     url
     feedback
     display
+    ignoreme
     createdAt
     updatedAt
     projects {
@@ -257,6 +261,7 @@ export const onUpdateClient = /* GraphQL */ `subscription OnUpdateClient {
     url
     feedback
     display
+    ignoreme
     createdAt
     updatedAt
     projects {
@@ -290,6 +295,7 @@ export const onDeleteClient = /* GraphQL */ `subscription OnDeleteClient {
     url
     feedback
     display
+    ignoreme
     createdAt
     updatedAt
     projects {

@@ -2,7 +2,7 @@ type Project
 @model
 @auth(
     rules: [
-        { allow: public, operations: [read] }
+        { allow: public, provider: iam, operations: [read] }
         { allow: groups, groups: ["admin"] }
     ]
 ) {
@@ -25,7 +25,7 @@ type Employer
 @model
 @auth(
     rules: [
-        { allow: public, operations: [read] }
+        { allow: public, provider: iam, operations: [read] }
         { allow: groups, groups: ["admin"] }
     ]
 ) {
@@ -42,7 +42,7 @@ type Client
 @model
 @auth(
     rules: [
-        { allow: public, operations: [read] }
+        { allow: public, provider: iam, operations: [read] }
         { allow: groups, groups: ["admin"] }
     ]
 ) {
@@ -54,13 +54,14 @@ type Client
     feedback: String
     display: Boolean
     projects: Project @connection(name: "ClientProjects")
+    ignoreme: String
 }
 
 type Tag
 @model
 @auth(
     rules: [
-        { allow: public, operations: [read] }
+        { allow: public, provider: iam, operations: [read] }
         { allow: groups, groups: ["admin"] }
     ]
 ) {
@@ -76,7 +77,7 @@ type TaggedProject
 @model
 @auth(
     rules: [
-        { allow: public, operations: [read] }
+        { allow: public, provider: iam, operations: [read] }
         { allow: groups, groups: ["admin"] }
     ]
 ) {
