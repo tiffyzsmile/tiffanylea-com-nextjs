@@ -365,5 +365,3 @@ Outputs:
       Fn::GetAtt:
         - UserPoolClientInputs
         - appSecret
-Description: >-
-  {"createdOn":"Linux","createdBy":"AmplifyAdmin","createdWith":"12.10.1-rc.73b08dc424db2fb.0","stackType":"auth-Cognito","metadata":{}}

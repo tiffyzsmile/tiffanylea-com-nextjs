@@ -1,4 +1,32 @@
 {
+  "master": {
+    "awscloudformation": {
+      "AuthRoleName": "tiffanylea-com-master-20191210135709-authRole",
+      "UnauthRoleArn": "arn:aws:iam::011206842424:role/tiffanylea-com-master-20191210135709-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::011206842424:role/tiffanylea-com-master-20191210135709-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "tiffanylea-com-master-20191210135709-deployment",
+      "UnauthRoleName": "tiffanylea-com-master-20191210135709-unauthRole",
+      "StackName": "tiffanylea-com-master-20191210135709",
+      "StackId": "arn:aws:cloudformation:us-west-2:011206842424:stack/tiffanylea-com-master-20191210135709/0391fee0-1b98-11ea-8b1e-02ca0801967a",
+      "AmplifyAppId": "d37k5n4ssz46yc"
+    },
+    "categories": {
+      "auth": {
+        "tiffanyleacom0b033fd5": {},
+        "userPoolGroups": {}
+      },
+      "function": {
+        "S3Trigger52e00513": {
+          "deploymentBucketName": "tiffanylea-com-master-20191210135709-deployment",
+          "s3Key": "amplify-builds/S3Trigger52e00513-305a7a677a417a6b6a62-build.zip"
+        }
+      },
+      "storage": {
+        "tiffanyleacomcontent": {}
+      }
+    }
+  },
   "prod": {
     "awscloudformation": {
       "AuthRoleName": "amplify-tiffanyleacom-prod-190447-authRole",

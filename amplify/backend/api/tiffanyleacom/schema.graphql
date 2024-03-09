@@ -1,11 +1,11 @@
 type Project
-  @model
-  @auth(
-    rules: [
-      { allow: public, operations: [read] }
-      { allow: groups, groups: ["admin"] }
-    ]
-  ) {
+@model
+@auth(
+  rules: [
+    { allow: public, provider: iam, operations: [read] }
+    { allow: groups, groups: ["admin"] }
+  ]
+) {
   id: ID!
   name: String!
   date: AWSDate
@@ -22,13 +22,13 @@ type Project
 }
 
 type Employer
-  @model
-  @auth(
-    rules: [
-      { allow: public, operations: [read] }
-      { allow: groups, groups: ["admin"] }
-    ]
-  ) {
+@model
+@auth(
+  rules: [
+    { allow: public, provider: iam, operations: [read] }
+    { allow: groups, groups: ["admin"] }
+  ]
+) {
   id: ID!
   name: String!
   startdate: AWSDate
@@ -39,13 +39,13 @@ type Employer
 }
 
 type Client
-  @model
-  @auth(
-    rules: [
-      { allow: public, operations: [read] }
-      { allow: groups, groups: ["admin"] }
-    ]
-  ) {
+@model
+@auth(
+  rules: [
+    { allow: public, provider: iam, operations: [read] }
+    { allow: groups, groups: ["admin"] }
+  ]
+) {
   id: ID!
   name: String!
   description: String
@@ -57,13 +57,13 @@ type Client
 }
 
 type Tag
-  @model
-  @auth(
-    rules: [
-      { allow: public, operations: [read] }
-      { allow: groups, groups: ["admin"] }
-    ]
-  ) {
+@model
+@auth(
+  rules: [
+    { allow: public, provider: iam, operations: [read] }
+    { allow: groups, groups: ["admin"] }
+  ]
+) {
   id: ID!
   name: String
   category: String
@@ -73,13 +73,13 @@ type Tag
 }
 
 type TaggedProject
-  @model
-  @auth(
-    rules: [
-      { allow: public, operations: [read] }
-      { allow: groups, groups: ["admin"] }
-    ]
-  ) {
+@model
+@auth(
+  rules: [
+    { allow: public, provider: iam, operations: [read] }
+    { allow: groups, groups: ["admin"] }
+  ]
+) {
   id: ID!
   tag: Tag! @connection(name: "ProjectsWithTag")
   project: Project! @connection(name: "TagsForProject")

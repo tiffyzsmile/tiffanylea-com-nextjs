@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "{\"createdOn\":\"Linux\",\"createdBy\":\"AmplifyAdmin\",\"createdWith\":\"12.10.1-rc.73b08dc424db2fb.0\",\"stackType\":\"storage-S3\",\"metadata\":{}}",
+  "Description": "S3 resource stack creation using Amplify CLI",
   "Parameters": {
     "bucketName": {
       "Type": "String"
@@ -83,22 +83,27 @@
     "triggerFunction": {
       "Type": "String"
     },
+
     "authtiffanyleacom0b033fd5UserPoolId": {
       "Type": "String",
       "Default": "authtiffanyleacom0b033fd5UserPoolId"
     },
+
     "authuserPoolGroupsadminGroupRole": {
       "Type": "String",
       "Default": "authuserPoolGroupsadminGroupRole"
     },
+
     "functionS3Trigger52e00513Name": {
       "Type": "String",
       "Default": "functionS3Trigger52e00513Name"
     },
+
     "functionS3Trigger52e00513Arn": {
       "Type": "String",
       "Default": "functionS3Trigger52e00513Arn"
     },
+
     "functionS3Trigger52e00513LambdaExecutionRole": {
       "Type": "String",
       "Default": "functionS3Trigger52e00513LambdaExecutionRole"
@@ -117,9 +122,7 @@
       "Fn::Not": [
         {
           "Fn::Equals": [
-            {
-              "Ref": "s3PermissionsAuthenticatedPublic"
-            },
+            { "Ref": "s3PermissionsAuthenticatedPublic" },
             "DISALLOW"
           ]
         }
@@ -129,9 +132,7 @@
       "Fn::Not": [
         {
           "Fn::Equals": [
-            {
-              "Ref": "s3PermissionsAuthenticatedProtected"
-            },
+            { "Ref": "s3PermissionsAuthenticatedProtected" },
             "DISALLOW"
           ]
         }
@@ -141,9 +142,7 @@
       "Fn::Not": [
         {
           "Fn::Equals": [
-            {
-              "Ref": "s3PermissionsAuthenticatedPrivate"
-            },
+            { "Ref": "s3PermissionsAuthenticatedPrivate" },
             "DISALLOW"
           ]
         }
@@ -153,9 +152,7 @@
       "Fn::Not": [
         {
           "Fn::Equals": [
-            {
-              "Ref": "s3PermissionsAuthenticatedUploads"
-            },
+            { "Ref": "s3PermissionsAuthenticatedUploads" },
             "DISALLOW"
           ]
         }
@@ -164,48 +161,28 @@
     "CreateGuestPublic": {
       "Fn::Not": [
         {
-          "Fn::Equals": [
-            {
-              "Ref": "s3PermissionsGuestPublic"
-            },
-            "DISALLOW"
-          ]
+          "Fn::Equals": [{ "Ref": "s3PermissionsGuestPublic" }, "DISALLOW"]
         }
       ]
     },
     "CreateGuestUploads": {
       "Fn::Not": [
         {
-          "Fn::Equals": [
-            {
-              "Ref": "s3PermissionsGuestUploads"
-            },
-            "DISALLOW"
-          ]
+          "Fn::Equals": [{ "Ref": "s3PermissionsGuestUploads" }, "DISALLOW"]
         }
       ]
     },
     "AuthReadAndList": {
       "Fn::Not": [
         {
-          "Fn::Equals": [
-            {
-              "Ref": "AuthenticatedAllowList"
-            },
-            "DISALLOW"
-          ]
+          "Fn::Equals": [{ "Ref": "AuthenticatedAllowList" }, "DISALLOW"]
         }
       ]
     },
     "GuestReadAndList": {
       "Fn::Not": [
         {
-          "Fn::Equals": [
-            {
-              "Ref": "GuestAllowList"
-            },
-            "DISALLOW"
-          ]
+          "Fn::Equals": [{ "Ref": "GuestAllowList" }, "DISALLOW"]
         }
       ]
     }
@@ -213,9 +190,9 @@
   "Resources": {
     "S3Bucket": {
       "Type": "AWS::S3::Bucket",
-      "DependsOn": [
-        "TriggerPermissions"
-      ],
+
+      "DependsOn": ["TriggerPermissions"],
+
       "DeletionPolicy": "Retain",
       "Properties": {
         "BucketName": {
@@ -253,6 +230,7 @@
             }
           ]
         },
+
         "NotificationConfiguration": {
           "LambdaConfigurations": [
             {
@@ -269,22 +247,13 @@
             }
           ]
         },
+
         "CorsConfiguration": {
           "CorsRules": [
             {
-              "AllowedHeaders": [
-                "*"
-              ],
-              "AllowedMethods": [
-                "GET",
-                "HEAD",
-                "PUT",
-                "POST",
-                "DELETE"
-              ],
-              "AllowedOrigins": [
-                "*"
-              ],
+              "AllowedHeaders": ["*"],
+              "AllowedMethods": ["GET", "HEAD", "PUT", "POST", "DELETE"],
+              "AllowedOrigins": ["*"],
               "ExposedHeaders": [
                 "x-amz-server-side-encryption",
                 "x-amz-request-id",
@@ -298,6 +267,7 @@
         }
       }
     },
+
     "adminGroupPolicy": {
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -345,6 +315,7 @@
         }
       }
     },
+
     "TriggerPermissions": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
@@ -402,9 +373,7 @@
       }
     },
     "S3TriggerBucketPolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Type": "AWS::IAM::Policy",
       "Properties": {
         "PolicyName": "amplify-lambda-execution-policy",
@@ -443,10 +412,9 @@
         }
       }
     },
+
     "S3AuthPublicPolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Condition": "CreateAuthPublic",
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -491,9 +459,7 @@
       }
     },
     "S3AuthProtectedPolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Condition": "CreateAuthProtected",
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -538,9 +504,7 @@
       }
     },
     "S3AuthPrivatePolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Condition": "CreateAuthPrivate",
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -585,9 +549,7 @@
       }
     },
     "S3AuthUploadPolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Condition": "CreateAuthUploads",
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -632,9 +594,7 @@
       }
     },
     "S3AuthReadPolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Condition": "AuthReadAndList",
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -651,9 +611,7 @@
           "Statement": [
             {
               "Effect": "Allow",
-              "Action": [
-                "s3:GetObject"
-              ],
+              "Action": ["s3:GetObject"],
               "Resource": [
                 {
                   "Fn::Join": [
@@ -671,9 +629,7 @@
             },
             {
               "Effect": "Allow",
-              "Action": [
-                "s3:ListBucket"
-              ],
+              "Action": ["s3:ListBucket"],
               "Resource": [
                 {
                   "Fn::Join": [
@@ -705,9 +661,7 @@
       }
     },
     "S3GuestPublicPolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Condition": "CreateGuestPublic",
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -752,9 +706,7 @@
       }
     },
     "S3GuestUploadPolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Condition": "CreateGuestUploads",
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -799,9 +751,7 @@
       }
     },
     "S3GuestReadPolicy": {
-      "DependsOn": [
-        "S3Bucket"
-      ],
+      "DependsOn": ["S3Bucket"],
       "Condition": "GuestReadAndList",
       "Type": "AWS::IAM::Policy",
       "Properties": {
@@ -818,9 +768,7 @@
           "Statement": [
             {
               "Effect": "Allow",
-              "Action": [
-                "s3:GetObject"
-              ],
+              "Action": ["s3:GetObject"],
               "Resource": [
                 {
                   "Fn::Join": [
@@ -838,9 +786,7 @@
             },
             {
               "Effect": "Allow",
-              "Action": [
-                "s3:ListBucket"
-              ],
+              "Action": ["s3:ListBucket"],
               "Resource": [
                 {
                   "Fn::Join": [

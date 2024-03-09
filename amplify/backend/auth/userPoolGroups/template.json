@@ -44,10 +44,7 @@
         "GroupName": "admin",
         "Precedence": 1,
         "RoleArn": {
-          "Fn::GetAtt": [
-            "adminGroupRole",
-            "Arn"
-          ]
+          "Fn::GetAtt": ["adminGroupRole", "Arn"]
         },
         "UserPoolId": {
           "Ref": "authtiffanyleacom0b033fd5UserPoolId"
@@ -120,13 +117,9 @@
             {
               "Effect": "Allow",
               "Principal": {
-                "Service": [
-                  "lambda.amazonaws.com"
-                ]
+                "Service": ["lambda.amazonaws.com"]
               },
-              "Action": [
-                "sts:AssumeRole"
-              ]
+              "Action": ["sts:AssumeRole"]
             }
           ]
         },
@@ -172,9 +165,7 @@
               "Statement": [
                 {
                   "Effect": "Allow",
-                  "Action": [
-                    "iam:PassRole"
-                  ],
+                  "Action": ["iam:PassRole"],
                   "Resource": "*"
                 }
               ]
@@ -185,9 +176,7 @@
     },
     "RoleMapFunction": {
       "Type": "AWS::Lambda::Function",
-      "DependsOn": [
-        "LambdaExecutionRole"
-      ],
+      "DependsOn": ["LambdaExecutionRole"],
       "Properties": {
         "Code": {
           "ZipFile": {
@@ -239,10 +228,7 @@
         "Runtime": "nodejs16.x",
         "Timeout": "300",
         "Role": {
-          "Fn::GetAtt": [
-            "LambdaExecutionRole",
-            "Arn"
-          ]
+          "Fn::GetAtt": ["LambdaExecutionRole", "Arn"]
         }
       }
     },
@@ -250,10 +236,7 @@
       "Type": "Custom::LambdaCallout",
       "Properties": {
         "ServiceToken": {
-          "Fn::GetAtt": [
-            "RoleMapFunction",
-            "Arn"
-          ]
+          "Fn::GetAtt": ["RoleMapFunction", "Arn"]
         },
         "AuthRoleArn": {
           "Ref": "AuthRoleArn"
@@ -280,20 +263,14 @@
           "Ref": "env"
         }
       },
-      "DependsOn": [
-        "RoleMapFunction"
-      ]
+      "DependsOn": ["RoleMapFunction"]
     }
   },
   "Outputs": {
     "adminGroupRole": {
       "Value": {
-        "Fn::GetAtt": [
-          "adminGroupRole",
-          "Arn"
-        ]
+        "Fn::GetAtt": ["adminGroupRole", "Arn"]
       }
     }
-  },
-  "Description": "{\"createdOn\":\"Linux\",\"createdBy\":\"AmplifyAdmin\",\"createdWith\":\"12.10.1-rc.73b08dc424db2fb.0\",\"stackType\":\"auth-Cognito-UserPool-Groups\",\"metadata\":{}}"
+  }
 }

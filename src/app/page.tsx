@@ -12,9 +12,9 @@ Amplify.configure(awsconfig, { ssr: true });
 const client = generateClient();
 
 const HomePage = async () => {
-  const { data, errors } = await client.graphql({
-    query: query.listProjects,
-  });
+  // const { data, errors } = await client.graphql({
+  //   query: query.listProjects,
+  // });
 
   return (
     <section className={styles.homepage}>
@@ -46,14 +46,14 @@ const HomePage = async () => {
       </ul>
       <hr />
       <ul>
-        {data.listProjects.items.map((project) => {
-          return (
-            <li key={project.id}>
-              <div>Name: {project.name}</div>
-              <span>Description: {project.description}</span>
-            </li>
-          );
-        })}
+        {/*{data.listProjects.items.map((project) => {*/}
+        {/*  return (*/}
+        {/*    <li key={project.id}>*/}
+        {/*      <div>Name: {project.name}</div>*/}
+        {/*      <span>Description: {project.description}</span>*/}
+        {/*    </li>*/}
+        {/*  );*/}
+        {/*})}*/}
       </ul>
     </section>
   );

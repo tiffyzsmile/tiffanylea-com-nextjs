@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "{\"createdOn\":\"Linux\",\"createdBy\":\"AmplifyAdmin\",\"createdWith\":\"12.10.1-rc.73b08dc424db2fb.0\",\"stackType\":\"analytics-Pinpoint\",\"metadata\":{}}",
+  "Description": "Pinpoint resource stack creation using Amplify CLI",
   "Parameters": {
     "appName": {
       "Type": "String"
