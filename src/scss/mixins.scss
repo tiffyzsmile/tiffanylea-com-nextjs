@@ -1,0 +1,22 @@
+@mixin gradient-bg {
+  background: #f9f9f9;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjlmOWY5Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjRmNGY0Ii8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNMCAwaDF2MUgweiIvPjwvc3ZnPg==);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #f9f9f9),
+    color-stop(100%, #f4f4f4)
+  );
+  background: -webkit-linear-gradient(180deg, #f9f9f9 0, #f4f4f4);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f9f9f9),
+    to(#f4f4f4)
+  );
+  background: -webkit-linear-gradient(top, #f9f9f9, #f4f4f4);
+  background: linear-gradient(180deg, #f9f9f9 0, #f4f4f4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#f4f4f4",GradientType=0);
+}
