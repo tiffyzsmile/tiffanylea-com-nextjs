@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "lint:dev": "eslint --fix .",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

@@ -1,7 +1,8 @@
 import React from "react";
+import Resume from "@/components/Resume";
 
 const ResumePage = () => {
-  return <p>Resume Page</p>;
+  return <Resume />;
 };
 
 export default ResumePage;

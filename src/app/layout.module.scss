@@ -10,15 +10,13 @@
 
 .content {
   flex: 1;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  width: 96%;
+  padding: 0 20px 50px 20px;
 }
 
 @media screen and (min-width: 1050px) {
   .content {
     width: 100%;
-    max-width: 1050px;
-    margin: 0 auto; /* width: 97.916666666666666666666666666667%; 940px / 960px */
+    max-width: 1020px;
+    margin: 0 auto;
   }
 }
