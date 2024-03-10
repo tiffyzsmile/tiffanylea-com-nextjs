@@ -10,6 +10,7 @@ const ReviewsPage = () => {
       {reviews.map((review) => {
         return (
           <Review
+            key={review.name}
             name={review.name}
             imageSrc={review.imageSrc}
             title={review.title}
