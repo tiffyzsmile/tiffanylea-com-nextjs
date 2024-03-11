@@ -7,10 +7,11 @@ const HomePage = async () => {
     <section className={styles.homepage}>
       <H1>Hi, my name is Tiffany May, I am a web developer.</H1>
       <Image
-        src="/images/cartoonImageHome.gif"
+        src="/images/cartoonImageHello.png"
         alt="Tiffany as a Cartoon"
-        width={309}
+        width={359}
         height={359}
+        loading={"eager"}
       />
       <p>
         I have a passion for what I do and am looking for a challenging
