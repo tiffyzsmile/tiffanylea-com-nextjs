@@ -1,9 +1,13 @@
 .portfolio > ul {
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(48%, auto));
   grid-gap: 15px;
   grid-auto-flow: dense;
+
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(175px, auto));
+  }
   & > li {
     list-style: none outside none;
     border: 1px solid #cdcdcd;
@@ -11,6 +15,10 @@
     width: 100%;
     box-shadow: 1px 1px 1px 1px rgba(100, 100, 100, 0.5);
     margin: auto;
+
+    @media screen and (min-width: 600px) {
+      max-width: 200px;
+    }
     &.current {
       border-bottom: 5px solid #8da9b9;
       &::after {
@@ -41,8 +49,11 @@
       align-items: center;
       img {
         padding: 10%;
-        max-width: 80%;
-        height: auto;
+        @media screen and (min-width: 1050px) {
+          padding: 10px;
+        }
+        //max-width: 80%;
+        //height: auto;
       }
     }
   }
