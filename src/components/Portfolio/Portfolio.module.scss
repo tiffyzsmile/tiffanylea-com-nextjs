@@ -38,7 +38,7 @@
     }
     &.fullRow {
       grid-column: 1 / -1;
-      grid-row-end: span;
+      max-width: 100%;
     }
     & > a {
       width: 100%;
