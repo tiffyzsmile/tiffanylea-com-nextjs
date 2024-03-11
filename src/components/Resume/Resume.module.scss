@@ -1,8 +1,5 @@
 .resume {
-  padding-top: 30px;
-  padding-bottom: 50px;
   line-height: 1.5;
-  max-width: 980px;
 
   section {
     padding-top: 20px;
@@ -24,6 +21,7 @@
     }
   }
   .intro {
+    padding-top: 0;
     ul {
       padding: 0;
       li {

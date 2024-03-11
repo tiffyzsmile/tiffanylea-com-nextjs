@@ -19,23 +19,14 @@ const Header = ({ isAdmin }: Props) => {
         <div className={styles.topNav}>
           <ul className={styles.nav}>
             <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
               <Link href="/resume">Resume</Link>
             </li>
             <li>
               <Link href="/portfolio">Portfolio</Link>
             </li>
-            {/* <li> */}
-            {/*  <Link to="/skills">Skills</Link> */}
-            {/* </li> */}
             <li>
               <Link href="/reviews">Reviews</Link>
             </li>
-            {/* <li> */}
-            {/*  <Link to="/contact">Contact</Link> */}
-            {/* </li> */}
           </ul>
         </div>
         {isAdmin && (

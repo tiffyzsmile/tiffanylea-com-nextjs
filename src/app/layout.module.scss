@@ -11,6 +11,9 @@
 .content {
   flex: 1;
   padding: 0 20px 50px 20px;
+  > section:first-of-type {
+    padding-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1050px) {

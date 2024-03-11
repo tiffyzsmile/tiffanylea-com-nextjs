@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Resume = () => {
   return (
-    <div className={styles.resume}>
+    <section className={styles.resume}>
       <section className={styles.intro}>
         <a
           target="_blank"
@@ -80,7 +80,7 @@ const Resume = () => {
         </H3>
         <H3>Adobe MAX, The Creativity Conference (2019)</H3>
       </section>
-    </div>
+    </section>
   );
 };
 
