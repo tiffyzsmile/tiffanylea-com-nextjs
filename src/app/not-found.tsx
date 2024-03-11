@@ -1,14 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NotFound = () => {
   return (
-    <div className="center">
+    <section className="center">
       <h1>Page Not Found</h1>
-      <img src="/images/oops.gif" className="App-logo" alt="logo" />
+      <Image src="/images/oops.gif" alt="Whoops" width={398} height={398} />
       <p>
         Maybe go back to the <Link href="/">home page</Link> and start over?
       </p>
-    </div>
+    </section>
   );
 };
 

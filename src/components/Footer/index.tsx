@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -12,7 +13,12 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={styles.socialIcon}
           >
-            <img alt="GitHub" src="/images/logos/github__logo-icon.svg" />
+            <Image
+              alt="GitHub"
+              src="/images/logos/github__logo-icon.svg"
+              width={30}
+              height={30}
+            />
           </a>
           <a
             href="http://www.linkedin.com/in/tiffanymay"
@@ -20,23 +26,12 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={styles.socialIcon}
           >
-            <img alt="Linked In" src="/images/logos/linked-in__logo-icon.svg" />
-          </a>
-          <a
-            href="http://twitter.com/tiffyzsmile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialIcon}
-          >
-            <img alt="Twitter" src="/images/logos/twitter__logo-icon.svg" />
-          </a>
-          <a
-            href="https://www.facebook.com/tiffanymay"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialIcon}
-          >
-            <img alt="Facebook" src="/images/logos/facebook__logo-icon.svg" />
+            <Image
+              alt="Linked In"
+              src="/images/logos/linked-in__logo-icon.svg"
+              width={30}
+              height={30}
+            />
           </a>
         </div>
         <p className={styles.copyright}>

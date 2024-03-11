@@ -1,11 +1,17 @@
 import styles from "./page.module.css";
 import { H1 } from "@/components/Typography";
+import Image from "next/image";
 
 const HomePage = async () => {
   return (
     <section className={styles.homepage}>
       <H1>Hi, my name is Tiffany May, I am a web developer.</H1>
-      <img src="/images/cartoonImageHome.gif" alt="Tiffany as a Cartoon" />
+      <Image
+        src="/images/cartoonImageHome.gif"
+        alt="Tiffany as a Cartoon"
+        width={309}
+        height={359}
+      />
       <p>
         I have a passion for what I do and am looking for a challenging
         environment to continue learning and growing from.&nbsp;
