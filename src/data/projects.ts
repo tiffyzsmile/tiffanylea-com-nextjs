@@ -6,17 +6,22 @@ type TagsType = {
   name: string;
   tags: TagType[];
 };
+export type TagsByCategoryType = {
+  [key: string]: TagsType;
+};
+
 type FeatureType = {
   heading: string;
   items: string[];
 };
+
 type ImageType = {
   original: string;
   originalAlt: string;
   thumbnail: string;
 };
 
-type ProjectType = {
+export type ProjectType = {
   id: string;
   name: string;
   date: string;
@@ -37,9 +42,7 @@ type ProjectType = {
   };
   tags: string[];
   categories: string[];
-  tagsByCategory: {
-    [key: string]: TagsType;
-  };
+  tagsByCategory: TagsByCategoryType;
   displayName: string;
 };
 

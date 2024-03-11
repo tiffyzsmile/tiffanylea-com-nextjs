@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ReactImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/scss/image-gallery.scss";
+import "./ImageGallery.scss";
 
 type Image = {
   thumbnail: string;

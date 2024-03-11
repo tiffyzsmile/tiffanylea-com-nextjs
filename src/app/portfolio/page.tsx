@@ -19,7 +19,6 @@ const PortfolioPage = async () => {
 
   return (
     <div>
-      <h1>Portfolio Page</h1>
       <Portfolio />
       <ul>
         {data.listProjects.items.map((project) => {

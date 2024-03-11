@@ -21,7 +21,6 @@ const PortfolioPage = ({ params }: Props) => {
 
   return (
     <div>
-      <h1>Portfolio Page</h1>
       <Portfolio selectedProjectId={params.projectId} />
     </div>
   );

@@ -7,6 +7,7 @@
 
   @media screen and (min-width: 600px) {
     grid-template-columns: repeat(auto-fit, minmax(175px, auto));
+    justify-content: start;
   }
   & > li {
     list-style: none outside none;
@@ -104,38 +105,5 @@
   overflow: hidden;
   & > img {
     align-self: center;
-  }
-
-  @media screen and (min-width: 650px) {
-    //min-height: 400px;
-    //display: flex;
-  }
-
-  .image-gallery-fullscreen-button {
-    top: 0;
-    bottom: unset;
-    &:before {
-      background-color: #3333334d;
-    }
-  }
-  // move nav down since we are cutting off image at 450px height
-  .image-gallery-left-nav,
-  .image-gallery-right-nav {
-    padding: 0 5px;
-    top: 150px;
-    transform: unset;
-  }
-
-  // when in full screen mode move it all back
-  .image-gallery.fullscreen-modal {
-    .image-gallery-left-nav,
-    .image-gallery-right-nav {
-      padding: 0 5px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .image-gallery-slide img {
-      max-height: 100vh;
-    }
   }
 }

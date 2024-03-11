@@ -1,5 +1,7 @@
 .portfolioFilter {
   padding: 15px;
+
+  @include gradient-bg;
   ul {
     list-style-type: none;
     padding: 0;
