@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className="setWidth">
+      <div className={styles.content}>
         <div>
           <a
             href="https://github.com/tiffyzsmile"

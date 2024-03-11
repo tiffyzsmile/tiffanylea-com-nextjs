@@ -19,16 +19,18 @@
 
     @media screen and (min-width: 600px) {
       max-width: 200px;
+      padding: 10px;
+      max-height: 200px;
     }
     &.current {
-      border-bottom: 5px solid #8da9b9;
+      border-bottom: 5px solid #29a0b1;
       &::after {
         content: "";
         position: relative;
         z-index: 1;
         width: 0;
         height: 0;
-        border-top: 25px solid #8da9b9;
+        border-top: 25px solid #29a0b1;
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
         // Centers arrow
