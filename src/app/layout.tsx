@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import ConfigureAmplifyClientSide from "../components/ConfigureAmplifyClientSide";
 import Header from "../components/Header";
-import "@aws-amplify/ui-react/styles.css";
 import styles from "./layout.module.scss";
 import "./globals.scss";
 import Footer from "@/components/Footer";
