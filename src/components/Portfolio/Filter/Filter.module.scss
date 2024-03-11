@@ -1,0 +1,38 @@
+.portfolioFilter {
+  padding: 15px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @media screen and (min-width: 460px) {
+      grid-template-columns: 33% 33% 33%;
+    }
+    @media screen and (min-width: 560px) {
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    @media screen and (min-width: 680px) {
+      grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .active {
+      font-weight: bold;
+    }
+
+    li {
+      padding: 0;
+      a {
+        border-radius: 2px;
+        color: #aaaaaa;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 0.7em;
+        &:hover,
+        &.current {
+          background-color: #dddddd;
+          color: #888888;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import * as query from "@/graphql/queries";
 import { generateClient } from "aws-amplify/api";
+import Portfolio from "@/components/Portfolio";
 
 // TODO: figure out why this is
 // not sure why I have to duplicate this code here to work
@@ -12,13 +13,14 @@ Amplify.configure(awsconfig, { ssr: true });
 const client = generateClient();
 
 const PortfolioPage = async () => {
-  const { data, errors } = await client.graphql({
+  const { data } = await client.graphql({
     query: query.listProjects,
   });
 
   return (
     <div>
       <h1>Portfolio Page</h1>
+      <Portfolio />
       <ul>
         {data.listProjects.items.map((project) => {
           return (
