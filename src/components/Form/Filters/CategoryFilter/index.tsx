@@ -24,24 +24,24 @@ const CategoryFilter = ({ onCategoryChange }: Props) => {
         console.log("onSubmit");
       }} // Can't be empty
       render={({ handleSubmit, values }) => {
-        useEffect(() => {
-          // check to be sure it is different
-          // so it doesn't run on initial render
-          console.log("values.category", values.category);
-          onCategoryChange(values.category);
-        }, [values.category]);
         return (
           <form onSubmit={handleSubmit}>
             <label htmlFor="category">
               Category
-              <Field
-                id="category"
-                name="category"
-                component="select"
-                type="select"
-              >
-                <option value={null} />
-                {options}
+              <Field name="category">
+                {(props) => (
+                  <select
+                    name={props.input.name}
+                    value={props.input.value}
+                    onChange={(e) => {
+                      onCategoryChange(e.target.value);
+                      props.input.onChange(e);
+                    }}
+                  >
+                    <option value={null} />
+                    {options}
+                  </select>
+                )}
               </Field>
             </label>
           </form>
