@@ -1,7 +1,8 @@
 import React from "react";
+import AdminEmployers from "@/components/Admin/Employers";
 
 const AdminEmployersPage = () => {
-  return <p>Admin Employers Page</p>;
+  return <AdminEmployers />;
 };
 
 export default AdminEmployersPage;

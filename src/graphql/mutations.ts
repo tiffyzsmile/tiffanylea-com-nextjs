@@ -34,6 +34,52 @@ export const createProject = /* GraphQL */ `mutation CreateProject(
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     client {
@@ -46,9 +92,138 @@ export const createProject = /* GraphQL */ `mutation CreateProject(
       display
       createdAt
       updatedAt
+      projects {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     tags {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -85,6 +260,52 @@ export const updateProject = /* GraphQL */ `mutation UpdateProject(
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     client {
@@ -97,9 +318,138 @@ export const updateProject = /* GraphQL */ `mutation UpdateProject(
       display
       createdAt
       updatedAt
+      projects {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     tags {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -136,6 +486,52 @@ export const deleteProject = /* GraphQL */ `mutation DeleteProject(
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     client {
@@ -148,9 +544,138 @@ export const deleteProject = /* GraphQL */ `mutation DeleteProject(
       display
       createdAt
       updatedAt
+      projects {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     tags {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -175,6 +700,73 @@ export const createEmployer = /* GraphQL */ `mutation CreateEmployer(
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -199,6 +791,73 @@ export const updateEmployer = /* GraphQL */ `mutation UpdateEmployer(
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -223,6 +882,73 @@ export const deleteEmployer = /* GraphQL */ `mutation DeleteEmployer(
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -260,6 +986,125 @@ export const createClient = /* GraphQL */ `mutation CreateClient(
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -296,6 +1141,125 @@ export const updateClient = /* GraphQL */ `mutation UpdateClient(
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -332,6 +1296,125 @@ export const deleteClient = /* GraphQL */ `mutation DeleteClient(
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -354,6 +1437,68 @@ export const createTag = /* GraphQL */ `mutation CreateTag(
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -377,6 +1522,68 @@ export const updateTag = /* GraphQL */ `mutation UpdateTag(
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -400,6 +1607,68 @@ export const deleteTag = /* GraphQL */ `mutation DeleteTag(
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -431,6 +1700,125 @@ export const createTaggedProject = /* GraphQL */ `mutation CreateTaggedProject(
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     tag {
@@ -441,6 +1829,41 @@ export const createTaggedProject = /* GraphQL */ `mutation CreateTaggedProject(
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -471,6 +1894,125 @@ export const updateTaggedProject = /* GraphQL */ `mutation UpdateTaggedProject(
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     tag {
@@ -481,6 +2023,41 @@ export const updateTaggedProject = /* GraphQL */ `mutation UpdateTaggedProject(
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -511,6 +2088,125 @@ export const deleteTaggedProject = /* GraphQL */ `mutation DeleteTaggedProject(
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     tag {
@@ -521,6 +2217,41 @@ export const deleteTaggedProject = /* GraphQL */ `mutation DeleteTaggedProject(
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename

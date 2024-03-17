@@ -29,27 +29,6 @@ const Header = ({ isAdmin }: Props) => {
             </li>
           </ul>
         </div>
-        {isAdmin && (
-          <div className={styles.adminNav}>
-            <ul className={styles.nav}>
-              <li>
-                <Link href="/admin/projects">Projects</Link>
-              </li>
-              <li>
-                <Link href="/admin/employers">Employers</Link>
-              </li>
-              <li>
-                <Link href="/admin/clients">Clients</Link>
-              </li>
-              <li>
-                <Link href="/admin/tags">Tags</Link>
-              </li>
-              <li>
-                <Link href="/admin/taggedprojects">Tagged Projects</Link>
-              </li>
-            </ul>
-          </div>
-        )}
       </nav>
     </header>
   );

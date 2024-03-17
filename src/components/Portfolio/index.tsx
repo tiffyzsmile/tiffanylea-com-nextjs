@@ -4,7 +4,7 @@ import Filter from "./Filter";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { H1 } from "../Typography";
-import projects from "../../data/projects";
+import projects from "@/data/projects";
 import PortfolioItem from "./PortfolioItem";
 import styles from "./Portfolio.module.scss";
 import Image from "next/image";

@@ -1,7 +1,8 @@
 import React from "react";
+import AdminTags from "@/components/Admin/Tags";
 
 const AdminTagsPage = () => {
-  return <p>Admin Tags Page</p>;
+  return <AdminTags />;
 };
 
 export default AdminTagsPage;

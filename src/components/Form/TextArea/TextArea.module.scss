@@ -1,0 +1,19 @@
+.textarea {
+  width: 100%;
+  max-width: 439px;
+  background: #efefef;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #dedede;
+  padding: 10px;
+  margin-top: 3px;
+  font-size: 0.9em;
+  color: #3a3a3a;
+  clear: both;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  &:focus {
+    border: 1px solid #97d6eb;
+  }
+}

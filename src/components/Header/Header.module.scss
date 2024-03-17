@@ -88,23 +88,3 @@
     }
   }
 }
-
-.adminNav {
-  background-color: #29a0b1;
-  .nav {
-    list-style: none;
-    max-width: 980px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-    grid-gap: 15px;
-    padding: 0;
-    li {
-      a {
-        padding: 5px;
-        display: block;
-        color: #fff;
-      }
-    }
-  }
-}

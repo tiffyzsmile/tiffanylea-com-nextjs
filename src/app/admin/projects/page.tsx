@@ -1,7 +1,8 @@
 import React from "react";
+import AdminProjects from "@/components/Admin/Projects";
 
-const AdminProjectsPage = () => {
-  return <p>AdminProjectsPage</p>;
+const AdminProjectsPage = async () => {
+  return <AdminProjects />;
 };
 
 export default AdminProjectsPage;

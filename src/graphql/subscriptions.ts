@@ -31,6 +31,52 @@ export const onCreateProject = /* GraphQL */ `subscription OnCreateProject {
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     client {
@@ -43,9 +89,138 @@ export const onCreateProject = /* GraphQL */ `subscription OnCreateProject {
       display
       createdAt
       updatedAt
+      projects {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     tags {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -79,6 +254,52 @@ export const onUpdateProject = /* GraphQL */ `subscription OnUpdateProject {
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     client {
@@ -91,9 +312,138 @@ export const onUpdateProject = /* GraphQL */ `subscription OnUpdateProject {
       display
       createdAt
       updatedAt
+      projects {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     tags {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -127,6 +477,52 @@ export const onDeleteProject = /* GraphQL */ `subscription OnDeleteProject {
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     client {
@@ -139,9 +535,138 @@ export const onDeleteProject = /* GraphQL */ `subscription OnDeleteProject {
       display
       createdAt
       updatedAt
+      projects {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     tags {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -163,6 +688,73 @@ export const onCreateEmployer = /* GraphQL */ `subscription OnCreateEmployer {
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -184,6 +776,73 @@ export const onUpdateEmployer = /* GraphQL */ `subscription OnUpdateEmployer {
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -205,6 +864,73 @@ export const onDeleteEmployer = /* GraphQL */ `subscription OnDeleteEmployer {
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -239,6 +965,125 @@ export const onCreateClient = /* GraphQL */ `subscription OnCreateClient {
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -272,6 +1117,125 @@ export const onUpdateClient = /* GraphQL */ `subscription OnUpdateClient {
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -305,6 +1269,125 @@ export const onDeleteClient = /* GraphQL */ `subscription OnDeleteClient {
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -324,6 +1407,68 @@ export const onCreateTag = /* GraphQL */ `subscription OnCreateTag {
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -344,6 +1489,68 @@ export const onUpdateTag = /* GraphQL */ `subscription OnUpdateTag {
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -364,6 +1571,68 @@ export const onDeleteTag = /* GraphQL */ `subscription OnDeleteTag {
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -392,6 +1661,125 @@ export const onCreateTaggedProject = /* GraphQL */ `subscription OnCreateTaggedP
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     tag {
@@ -402,6 +1790,41 @@ export const onCreateTaggedProject = /* GraphQL */ `subscription OnCreateTaggedP
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -429,6 +1852,125 @@ export const onUpdateTaggedProject = /* GraphQL */ `subscription OnUpdateTaggedP
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     tag {
@@ -439,6 +1981,41 @@ export const onUpdateTaggedProject = /* GraphQL */ `subscription OnUpdateTaggedP
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -466,6 +2043,125 @@ export const onDeleteTaggedProject = /* GraphQL */ `subscription OnDeleteTaggedP
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     tag {
@@ -476,6 +2172,41 @@ export const onDeleteTaggedProject = /* GraphQL */ `subscription OnDeleteTaggedP
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename

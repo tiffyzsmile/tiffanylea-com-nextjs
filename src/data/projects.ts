@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-type TagType = { id: string; name: string; display: boolean };
-type TagsType = {
+export type TagType = { id: string; name: string; display: boolean };
+export type TagsType = {
   id: string;
   name: string;
   tags: TagType[];
@@ -10,12 +10,12 @@ export type TagsByCategoryType = {
   [key: string]: TagsType;
 };
 
-type FeatureType = {
+export type FeatureType = {
   heading: string;
   items: string[];
 };
 
-type ImageType = {
+export type ImageType = {
   original: string;
   originalAlt: string;
   thumbnail: string;

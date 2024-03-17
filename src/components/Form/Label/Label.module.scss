@@ -1,0 +1,15 @@
+.label {
+  display: block;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  max-width: 460px;
+  &.error {
+    p.error {
+      color: #b40606;
+    }
+    input,
+    textarea {
+      border: 1px solid #b40606;
+    }
+  }
+}

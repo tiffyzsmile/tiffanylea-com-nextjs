@@ -1,7 +1,8 @@
 import React from "react";
+import AdminClients from "@/components/Admin/Clients";
 
 const AdminClientsPage = () => {
-  return <p>Admin Clients Page</p>;
+  return <AdminClients />;
 };
 
 export default AdminClientsPage;

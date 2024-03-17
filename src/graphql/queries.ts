@@ -31,6 +31,52 @@ export const getProject = /* GraphQL */ `query GetProject($id: ID!) {
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     client {
@@ -43,9 +89,138 @@ export const getProject = /* GraphQL */ `query GetProject($id: ID!) {
       display
       createdAt
       updatedAt
+      projects {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     tags {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -75,6 +250,125 @@ export const listProjects = /* GraphQL */ `query ListProjects(
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     nextToken
@@ -96,6 +390,73 @@ export const getEmployer = /* GraphQL */ `query GetEmployer($id: ID!) {
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -121,6 +482,52 @@ export const listEmployers = /* GraphQL */ `query ListEmployers(
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     nextToken
@@ -155,6 +562,125 @@ export const getClient = /* GraphQL */ `query GetClient($id: ID!) {
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -177,6 +703,73 @@ export const listClients = /* GraphQL */ `query ListClients(
       display
       createdAt
       updatedAt
+      projects {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     nextToken
@@ -197,6 +790,68 @@ export const getTag = /* GraphQL */ `query GetTag($id: ID!) {
     createdAt
     updatedAt
     projects {
+      items {
+        id
+        createdAt
+        updatedAt
+        project {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        tag {
+          id
+          name
+          category
+          display
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
       nextToken
       __typename
     }
@@ -214,6 +869,41 @@ export const listTags = /* GraphQL */ `query ListTags($filter: ModelTagFilterInp
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     nextToken
@@ -239,6 +929,125 @@ export const getTaggedProject = /* GraphQL */ `query GetTaggedProject($id: ID!) 
       internal
       createdAt
       updatedAt
+      employer {
+        id
+        name
+        startdate
+        enddate
+        url
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      client {
+        id
+        name
+        description
+        logo
+        url
+        feedback
+        display
+        createdAt
+        updatedAt
+        projects {
+          id
+          name
+          date
+          description
+          features
+          url
+          images
+          display
+          logo
+          internal
+          createdAt
+          updatedAt
+          employer {
+            id
+            name
+            startdate
+            enddate
+            url
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          client {
+            id
+            name
+            description
+            logo
+            url
+            feedback
+            display
+            createdAt
+            updatedAt
+            __typename
+          }
+          tags {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      tags {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     tag {
@@ -249,6 +1058,41 @@ export const getTaggedProject = /* GraphQL */ `query GetTaggedProject($id: ID!) 
       logo
       createdAt
       updatedAt
+      projects {
+        items {
+          id
+          createdAt
+          updatedAt
+          project {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          tag {
+            id
+            name
+            category
+            display
+            logo
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        nextToken
+        __typename
+      }
       __typename
     }
     __typename
@@ -268,6 +1112,93 @@ export const listTaggedProjects = /* GraphQL */ `query ListTaggedProjects(
       id
       createdAt
       updatedAt
+      project {
+        id
+        name
+        date
+        description
+        features
+        url
+        images
+        display
+        logo
+        internal
+        createdAt
+        updatedAt
+        employer {
+          id
+          name
+          startdate
+          enddate
+          url
+          logo
+          createdAt
+          updatedAt
+          projects {
+            nextToken
+            __typename
+          }
+          __typename
+        }
+        client {
+          id
+          name
+          description
+          logo
+          url
+          feedback
+          display
+          createdAt
+          updatedAt
+          projects {
+            id
+            name
+            date
+            description
+            features
+            url
+            images
+            display
+            logo
+            internal
+            createdAt
+            updatedAt
+            __typename
+          }
+          __typename
+        }
+        tags {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
+      tag {
+        id
+        name
+        category
+        display
+        logo
+        createdAt
+        updatedAt
+        projects {
+          items {
+            id
+            createdAt
+            updatedAt
+            __typename
+          }
+          nextToken
+          __typename
+        }
+        __typename
+      }
       __typename
     }
     nextToken

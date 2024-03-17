@@ -1,7 +1,8 @@
 import React from "react";
+import AdminTaggedProjects from "@/components/Admin/TaggedProjects";
 
 const AdminTaggedProjectsPage = () => {
-  return <p>Admin Tagged Projects Page</p>;
+  return <AdminTaggedProjects />;
 };
 
 export default AdminTaggedProjectsPage;
