@@ -6,7 +6,7 @@ import AddFieldButton from "./AddFieldButton";
 
 type Props = {
   name: string;
-  label: string;
+  label?: string;
 };
 
 const FeaturesField = ({ label = "Features:", name = "features" }: Props) => {
@@ -29,7 +29,7 @@ const FeaturesField = ({ label = "Features:", name = "features" }: Props) => {
               <div>
                 <AddFieldButton
                   name="addNewFeatureSet"
-                  push={fields.push}
+                  push={() => fields.push({})}
                   linkText="Add New Set"
                 />
                 {featuresContent}

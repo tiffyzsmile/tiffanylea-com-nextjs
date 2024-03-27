@@ -2,10 +2,10 @@ import React from "react";
 import { Field } from "react-final-form";
 
 type Props = {
-  label: string;
-  name: string;
-  placeholder: string;
-  rows: string;
+  label?: string;
+  name?: string;
+  placeholder?: string;
+  rows?: string;
 };
 
 const InternalField = ({

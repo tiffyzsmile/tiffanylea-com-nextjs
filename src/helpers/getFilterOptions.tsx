@@ -11,7 +11,7 @@ const getFilterOptions = ({
     // output the appropriate match pattern obj for each
     const matchStatements = [];
     fieldsToFilter.forEach((f) => {
-      const match = {};
+      const match: { [key: string]: { contains: string } } = {};
       match[f] = { contains: `${search}` };
       matchStatements.push(match);
     });

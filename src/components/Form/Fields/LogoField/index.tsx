@@ -1,31 +1,31 @@
 import React from "react";
 import { Field } from "react-final-form";
 import S3FileUpload from "@/components/Form/Fields/S3FileUpload";
+import Label from "@/components/Form/Label";
 
 type Props = {
-  label: string;
-  name: string;
   folder: string;
 };
 
-const LogoField = ({
-  label = "Logo:",
-  name = "logo",
-  folder = "logos/",
-}: Props) => {
+const LogoField = ({ folder = "logos/" }: Props) => {
+  const name = "logo";
   return (
-    <div>
-      <label htmlFor={name}>
-        {label}
-        <Field
-          id={name}
-          name={name}
-          render={({ input }) => {
-            return <S3FileUpload {...input} filePath={folder} alt={label} />;
-          }}
-        />
-      </label>
-    </div>
+    <Label name={name} label="Logo:">
+      <Field<string>
+        id={name}
+        name={name}
+        render={({ input }) => {
+          return (
+            <S3FileUpload
+              {...input}
+              filePath={folder}
+              alt="Logo"
+              multiple={false}
+            />
+          );
+        }}
+      />
+    </Label>
   );
 };
 

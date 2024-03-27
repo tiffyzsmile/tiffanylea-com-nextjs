@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Field } from "react-final-form";
 import { getProjects } from "@/utils/getProjects";
+import { Project } from "@/API";
 
 type Props = {
   label: string;
   name: string;
-  multiple: boolean;
+  multiple?: boolean;
 };
 
 const ProjectField = ({ name, label = "Projects", multiple }: Props) => {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
     getProjects().then(({ projects }) => {
@@ -19,12 +20,15 @@ const ProjectField = ({ name, label = "Projects", multiple }: Props) => {
 
   // may want to remove this completely and make it an autocomplete field
   const projectsOptionList = (projects || [])
-    // Sort list alphabetically by name
-    .sort((a, b) => (a.name < b.name ? -1 : Number(a.name > b.name)))
-    .map((e) => {
+    .sort((a, b) => {
+      const dateA = a.date ? parseInt(a.date.replace(/-/g, ""), 10) : 0;
+      const dateB = b.date ? parseInt(b.date.replace(/-/g, ""), 10) : 0;
+      return dateB - dateA;
+    })
+    .map((project) => {
       return (
-        <option key={e.id} value={e.id}>
-          {e.name}
+        <option key={project.id} value={project.id}>
+          {project.name}
         </option>
       );
     });

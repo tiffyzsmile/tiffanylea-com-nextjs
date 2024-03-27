@@ -36,7 +36,7 @@ const Portfolio = ({ selectedProjectId }: Props) => {
   });
 
   const portfolioItems = visibleProjects.map((item) => {
-    const projectDetail = [];
+    const projectDetail: React.ReactNode[] = [];
     let isCurrent = false;
     if (selectedProjectId === item.id) {
       isCurrent = true;

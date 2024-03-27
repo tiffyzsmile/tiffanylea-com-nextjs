@@ -2,11 +2,17 @@
 import React, { useEffect, useState } from "react";
 import { Field } from "react-final-form";
 import useEmployers from "@/hooks/useEmployers";
+import { Employer } from "@/API";
 
 type Props = {};
 
+type EmployerLocal = Omit<
+  Employer,
+  "__typename" | "createdAt" | "updatedAt" | "projects"
+>;
+
 const EmployerField = ({}: Props) => {
-  const [employers, setEmployers] = useState([]);
+  const [employers, setEmployers] = useState<EmployerLocal[]>([]);
   const { getEmployers } = useEmployers();
 
   useEffect(() => {
@@ -18,7 +24,11 @@ const EmployerField = ({}: Props) => {
   // may want to remove this completely and make it an autocomplete field
   const employersOptionList = employers
     // Sort list alphabetically by name
-    .sort((a, b) => (a.name < b.name ? -1 : Number(a.name > b.name)))
+    .sort((a, b) => {
+      const aName = a.name ? a.name : "a";
+      const bName = b.name ? b.name : "b";
+      return aName < bName ? -1 : Number(aName > bName);
+    })
     .map((e) => {
       return (
         <option key={e.id} value={e.id}>

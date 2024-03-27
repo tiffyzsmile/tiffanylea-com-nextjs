@@ -1,18 +1,10 @@
-import { useMutation, useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
-import { getClient as getClientQuery, listClients } from "@/graphql/queries";
-import {
-  createClient as createClientMutation,
-  updateClient as updateClientMutation,
-  deleteClient as deleteClientMutation,
-} from "@/graphql/mutations";
-import getFilterOptions from "@/helpers/getFilterOptions";
 import * as query from "@/graphql/queries";
+import * as mutations from "@/graphql/mutations";
 import { Amplify } from "aws-amplify";
 import awsconfig from "@/aws-exports";
 import { generateClient } from "aws-amplify/api";
-import * as mutations from "@/graphql/mutations";
-import { UpdateEmployerInput } from "@/API";
+import { Client, UpdateClientMutation } from "@/API";
+import { WithListsFixed } from "@/utils/awsTypeHelpers";
 
 const getFormattedInput = ({
   id,
@@ -79,15 +71,25 @@ const useClients = () => {
       .then(() => onSuccess(clientId));
   };
 
-  const updateClient = ({ clientData, onSuccess }) => {
-    const formattedClient = getFormattedInput(clientData);
+  const updateClient = ({
+    clientData,
+    onSuccess,
+  }: {
+    clientData: Client;
+    onSuccess?: (
+      onSuccessData: Exclude<
+        WithListsFixed<UpdateClientMutation["updateClient"]>,
+        undefined | null
+      >,
+    ) => void;
+  }) => {
     client
       .graphql({
         query: mutations.updateClient,
-        variables: { input: formattedClient },
+        variables: { input: clientData },
         authMode: "userPool",
       })
-      .then(({ data: { updateClient } }) => onSuccess(updateClient));
+      .then(({ data: { updateClient } }) => onSuccess?.(updateClient));
   };
 
   return {

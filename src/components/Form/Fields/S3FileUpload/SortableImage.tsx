@@ -1,13 +1,12 @@
 import React from "react";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import Image from "./Image";
 import styles from "@/components/Form/Fields/S3FileUpload/S3FileUpload.module.scss";
 import Button from "@/components/Button";
 
 type Props = {
   imageSrc: string;
-  alt: string;
+  alt?: string;
   onDeleteItem: (imageSrc) => void;
 };
 

@@ -19,29 +19,29 @@ const styles = {
 };
 
 type Props = {
-  className: string;
-  styleAs: string;
+  className?: string;
+  styleAs?: string;
   onClick: (event) => void;
-  disabled: boolean;
+  disabled?: boolean;
   children: React.ReactNode;
+  type?: "button" | "submit" | "reset";
 };
 
 const Button = ({
   className = "",
   styleAs = "button",
-  onClick = null,
+  onClick,
   disabled = false,
   children,
-  ...attributes
+  type = "button",
 }: Props) => {
   return (
     <button
       style={styles[styleAs]}
       onClick={(e) => onClick(e)}
       className={className}
-      type="button"
+      type={type}
       disabled={disabled}
-      {...attributes}
     >
       {children}
     </button>

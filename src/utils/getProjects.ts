@@ -1,34 +1,25 @@
 import * as query from "@/graphql/queries";
-import {
-  formatDateForAWS,
-  formatDateFromAWS,
-  formatJsonFromAws,
-} from "@/helpers/forms";
+import { formatJsonFromAws } from "@/helpers/forms";
 import { generateClient } from "aws-amplify/api";
 import * as mutations from "@/graphql/mutations";
 
 import { Amplify } from "aws-amplify";
 import awsconfig from "@/aws-exports";
-import { Project } from "@/API";
+import { UpdateProjectInput } from "@/API";
 
 // when we do serverside rendering for public website
 // Amplify.configure(awsconfig, { ssr: true }); // also set     authMode: "iam",
 Amplify.configure(awsconfig);
 const client = generateClient();
 
-const getProject = async (projectId): Promise<{ project: Project }> => {
+const getProject = async (projectId) => {
   const { data } = await client.graphql({
     query: query.getProject,
     variables: { id: projectId },
     authMode: "userPool",
   });
 
-  const project = data ? data.getProject : data;
-
-  // Need to convert aws format 'yyyy-mm-dd' back to date object for react-datepicker
-  if (project && project.date) {
-    project.date = formatDateFromAWS(project.date);
-  }
+  const project = data ? data.getProject : null;
 
   // Need to parse awsjson
   if (project && project.features) {
@@ -51,8 +42,8 @@ const getProjects = async () => {
   if (projects) {
     // Sort projects by date
     projects.sort((a, b) => {
-      const dateA = parseInt(a.date.replace(/-/g, ""), 10);
-      const dateB = parseInt(b.date.replace(/-/g, ""), 10);
+      const dateA = a.date ? parseInt(a.date.replace(/-/g, ""), 10) : 0;
+      const dateB = b.date ? parseInt(b.date.replace(/-/g, ""), 10) : 0;
       return dateB - dateA;
     });
   }
@@ -84,7 +75,7 @@ const deleteProject = (projectId, onComplete) => {
 };
 
 const updateProject = async (project) => {
-  const formattedProject = formatProjectInput(project);
+  const formattedProject: UpdateProjectInput = formatProjectInput(project);
   const { data } = await client.graphql({
     query: mutations.updateProject,
     variables: { input: formattedProject },
@@ -110,33 +101,31 @@ const formatProjectsJson = (projects = []) => {
   });
 };
 
-const formatProjectInput = ({
-  id,
-  name,
-  date,
-  description,
-  internal,
-  features,
-  display,
-  url,
-  logo,
-  images,
-  employer,
-  client,
-}) => {
+const formatProjectInput = (args) => {
+  const {
+    id,
+    description,
+    internal,
+    features,
+    employer,
+    client,
+    // omit these fields
+    tags,
+    createdAt,
+    updatedAt,
+    __typename,
+    ...approvedInputArgs
+  } = args;
   const formattedInput: {
-    id: string;
-    projectEmployerId: string;
-    projectClientId: string;
-    description: string;
-    internal: string;
-    date: string;
-    features: [];
+    id?: string;
+    projectEmployerId?: string;
+    projectClientId?: string;
+    description?: string;
+    internal?: string;
+    features?: [];
   } = {};
 
-  if (id) {
-    formattedInput.id = id;
-  }
+  formattedInput.id = !id ? null : id;
 
   // not sure how to clear the values out
   if (employer && employer.id) {
@@ -153,10 +142,6 @@ const formatProjectInput = ({
   // if no internal passed null to clear internal else pass internal
   formattedInput.internal = !internal ? null : internal;
 
-  if (date) {
-    formattedInput.date = formatDateForAWS(date);
-  }
-
   if (features) {
     formattedInput.features = features.map((feature) =>
       JSON.stringify(feature),
@@ -164,12 +149,7 @@ const formatProjectInput = ({
   }
 
   return {
-    name,
-    features,
-    display,
-    url,
-    logo,
-    images,
+    ...approvedInputArgs,
     ...formattedInput,
   };
 };

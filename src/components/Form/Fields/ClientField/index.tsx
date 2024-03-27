@@ -1,21 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { Field } from "react-final-form";
 import useClients from "@/hooks/useClients";
+import { Client } from "@/API";
+
+type ClientLocal = Omit<
+  Client,
+  "__typename" | "createdAt" | "updatedAt" | "projects"
+>;
 
 const ClientField = () => {
-  const [clients, setClients] = useState([]);
+  const [clients, setClients] = useState<ClientLocal[]>([]);
   const { getClients } = useClients();
 
   useEffect(() => {
     getClients().then(({ clients }) => {
-      setClients(clients);
+      setClients(clients as ClientLocal[]);
     });
   }, []);
 
   // may want to remove this completely and make it an autocomplete field
   const clientsOptionList = (clients || [])
     // Sort list alphabetically by name
-    .sort((a, b) => (a.name < b.name ? -1 : Number(a.name > b.name)))
+    .sort((a, b) => {
+      const aName = a.name ? a.name : "a";
+      const bName = b.name ? b.name : "b";
+      return aName < bName ? -1 : Number(aName > bName);
+    })
     .map((e) => {
       return (
         <option key={e.id} value={e.id}>

@@ -4,18 +4,21 @@ import Link from "next/link";
 import { SearchFilter } from "@/components/Form/Filters";
 import ProjectRow from "@/components/Admin/Projects/ProjectRow";
 import { getProjects } from "@/utils/getProjects";
+import { Project } from "@/API";
 
 type Props = {};
 
 const AdminProjects = ({}: Props) => {
-  const [projects, setProjects] = useState([]);
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
   const [searchValue, setSearchValue] = useState<string | null>(null);
 
   useEffect(() => {
     getProjects().then(({ projects }) => {
-      setProjects(projects);
-      setFilteredProjects(projects);
+      if (projects) {
+        setProjects(projects);
+        setFilteredProjects(projects);
+      }
     });
   }, []);
 
@@ -23,10 +26,10 @@ const AdminProjects = ({}: Props) => {
     if (searchValue) {
       const newProjects = projects.filter((project) => {
         return (
-          project.name.indexOf(searchValue) > 0 ||
-          project.description?.indexOf(searchValue) > 0 ||
-          project.id.indexOf(searchValue) > 0 ||
-          JSON.stringify(project.features).indexOf(searchValue) > 0
+          project.name.indexOf(searchValue) >= 0 ||
+          project.description?.indexOf(searchValue) >= 0 ||
+          project.id.indexOf(searchValue) >= 0 ||
+          JSON.stringify(project.features).indexOf(searchValue) >= 0
         );
       });
       setFilteredProjects(newProjects);

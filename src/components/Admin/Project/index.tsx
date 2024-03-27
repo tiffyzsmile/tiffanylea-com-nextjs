@@ -42,20 +42,16 @@ type Props = {
 
 const AdminProject = ({ projectId }: Props) => {
   const router = useRouter();
-  const [project, setProject] = useState<Project | {}>({
-    id: "",
-    name: "",
-    tags: [],
-  });
+  const [project, setProject] = useState<Project | null>(null);
 
   useEffect(() => {
     getProject(projectId).then(({ project }) => {
-      setProject(project);
+      setProject(project as Project);
     });
   }, []);
 
   const onSubmit = (formValues) => {
-    if (projectId) {
+    if (projectId !== "add") {
       updateProject(formValues);
     } else {
       addProject(formValues, (onCompleteData) => {
@@ -99,7 +95,7 @@ const AdminProject = ({ projectId }: Props) => {
                     <LogoField folder={`projects/${values.id}`} />
                     <EmployerField />
                     <ClientField />
-                    <DateField />
+                    <DateField name="date" label="*Date:" />
                     <UrlField />
                     <InternalField />
                     <DescriptionField />
@@ -140,7 +136,7 @@ const AdminProject = ({ projectId }: Props) => {
           <section>
             <TaggedProjectTagsField
               projectId={projectId}
-              selected={project.tags.items || []}
+              selected={project?.tags?.items || []}
             />
           </section>
         )}

@@ -5,9 +5,9 @@ import { TagType } from "@/data/projects";
 
 type Props = {
   name: string;
-  label: string;
-  category: string;
-  multiple: boolean;
+  label?: string;
+  category?: string;
+  multiple?: boolean;
 };
 
 const TagField = ({

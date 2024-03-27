@@ -1,13 +1,6 @@
 import React from "react";
 import Button from "@/components/Button";
-
-const styles = {
-  arrayFieldAddButton: {
-    marginBottom: "25px",
-    cursor: "pointer",
-    marginLeft: "15px",
-  },
-};
+import styles from "./FeaturesField.module.scss";
 
 type Props = {
   name: string;
@@ -18,8 +11,7 @@ const AddFieldButton = ({ name, push, linkText = "add new" }: Props) => {
   return (
     <div key={name}>
       <Button
-        type="button"
-        style={styles.arrayFieldAddButton}
+        className={styles.addButton}
         onClick={() => {
           push();
         }}

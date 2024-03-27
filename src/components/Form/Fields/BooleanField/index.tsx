@@ -11,7 +11,7 @@ const BooleanField = ({ label, name }: Props) => {
   return (
     <div>
       <Label label={label} name={name}>
-        <Field
+        <Field<boolean>
           name={name}
           id={name}
           component="input"

@@ -38,7 +38,7 @@ const CategoryFilter = ({ onCategoryChange }: Props) => {
                       props.input.onChange(e);
                     }}
                   >
-                    <option value={null} />
+                    <option value={undefined} />
                     {options}
                   </select>
                 )}

@@ -1,4 +1,12 @@
-const filterTagsByCategory = ({ tags = [], category }) => {
+import { Tag } from "@/API";
+
+const filterTagsByCategory = ({
+  tags = [],
+  category,
+}: {
+  tags: Tag[];
+  category: string;
+}) => {
   if (!category) {
     return tags;
   }
@@ -9,7 +17,11 @@ const filterTagsByCategory = ({ tags = [], category }) => {
     return tag;
   });
   // Sort list alphabetically by name
-  filteredTags.sort((a, b) => (a.name < b.name ? -1 : Number(a.name > b.name)));
+  filteredTags.sort((a, b) => {
+    const aName = a.name ? a.name : "a";
+    const bName = b.name ? b.name : "b";
+    return aName < bName ? -1 : Number(aName > bName);
+  });
   return filteredTags;
 };
 

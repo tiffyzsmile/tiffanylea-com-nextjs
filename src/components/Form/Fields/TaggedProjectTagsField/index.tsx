@@ -4,25 +4,26 @@ import useTaggedProjects from "@/hooks/useTaggedProjects";
 import Button from "@/components/Button";
 import { TagField } from "@/components/Form/Fields";
 import { TagType } from "@/data/projects";
+import { TaggedProject } from "@/API";
 
 type Props = {
   projectId: string;
-  selected: TagType[] | [];
+  selected: TaggedProject[] | [];
 };
 
 const TaggedProjectTagsField = ({ projectId, selected = [] }: Props) => {
-  const [projectTags, setProjectTags] = useState(selected);
+  const [projectTags, setProjectTags] = useState<TaggedProject[]>(selected);
   const { addTaggedProject, deleteTaggedProject } = useTaggedProjects();
 
   const onSubmit = ({ tags }) => {
     tags.forEach((tagId) => {
-      const onComplete = (newProjectTag) => {
+      const onSuccess = (newProjectTag) => {
         // add new tags to display
         setProjectTags((currentTags) => {
           return [...currentTags, newProjectTag];
         });
       };
-      addTaggedProject({ projectId, tagId }, onComplete);
+      addTaggedProject({ taggedProject: { projectId, tagId }, onSuccess });
     });
   };
 
@@ -41,7 +42,10 @@ const TaggedProjectTagsField = ({ projectId, selected = [] }: Props) => {
       <Button
         key={tag.id}
         onClick={() =>
-          deleteTaggedProject(tag.id, onDeleteTaggedProjectSuccess)
+          deleteTaggedProject({
+            taggedProjectId: tag.id,
+            onSuccess: onDeleteTaggedProjectSuccess,
+          })
         }
       >
         {tag.tag.name}&nbsp;&nbsp;&nbsp;X

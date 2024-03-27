@@ -10,9 +10,9 @@ import styles from "./S3FileUpload.module.scss";
 type ValueType = string | string[];
 
 type Props = {
-  fieldId: string;
+  fieldId?: string;
   filePath: string;
-  contentType: string;
+  contentType?: string;
   value: ValueType;
   onChange: (ValueType) => void;
   alt: string;
@@ -28,8 +28,8 @@ const S3FileUpload = ({
   alt = "",
   multiple = false,
 }: Props) => {
-  const [images, setImages] = useState([]);
-  const [image, setImage] = useState(null);
+  const [images, setImages] = useState<string[]>([]);
+  const [image, setImage] = useState<string | null>(null);
   const deleteItemHandler = (imageUrl) => {
     const imageKey = imageUrl.split("public/")[1];
 
@@ -53,7 +53,7 @@ const S3FileUpload = ({
     if (multiple) {
       setImages([...value] || []);
     } else {
-      setImage(value);
+      setImage(value as string);
     }
   }, []);
 
@@ -67,7 +67,7 @@ const S3FileUpload = ({
     }
   }, [images, image]);
 
-  const onInputChange = (e) => {
+  const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const filesArray = Array.from(e.target.files);
     filesArray.forEach(async (file) => {
       const result = await uploadData({

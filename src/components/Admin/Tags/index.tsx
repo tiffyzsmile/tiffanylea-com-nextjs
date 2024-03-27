@@ -4,16 +4,17 @@ import useTags from "@/hooks/useTags";
 import Link from "next/link";
 import TagsTable from "./TagsTable";
 import { filterTagsByCategory } from "@/helpers/tags";
+import { Tag } from "@/API";
 
 const AdminTags = () => {
-  const [tags, setTags] = useState([]);
-  const [filteredTags, setFilteredTags] = useState([]);
+  const [tags, setTags] = useState<Tag[]>([]);
+  const [filteredTags, setFilteredTags] = useState<Tag[]>([]);
   const [currentCategory, setCurrentCategory] = useState<string>(null);
   const { getTags, deleteTag } = useTags();
 
   useEffect(() => {
     getTags().then(({ tags }) => {
-      setTags(tags);
+      setTags(tags as Tag[]);
     });
   }, []);
 

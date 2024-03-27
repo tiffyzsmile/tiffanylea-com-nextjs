@@ -4,7 +4,7 @@ import styles from "./S3FileUpload.module.scss";
 
 type Props = {
   imageSrc: string;
-  alt: string;
+  alt?: string;
   onDeleteItem: (imageSrc) => void;
 };
 

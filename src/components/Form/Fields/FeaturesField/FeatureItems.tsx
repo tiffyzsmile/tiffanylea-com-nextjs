@@ -23,7 +23,7 @@ const FeatureItems = ({ name }: Props) => {
             {itemFields}
             <AddFieldButton
               name={`addNewFeatureItem${name}`}
-              push={fields.push}
+              push={() => fields.push("")}
               linkText="Add New Item"
             />
           </div>

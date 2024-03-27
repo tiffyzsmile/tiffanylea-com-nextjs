@@ -5,7 +5,7 @@ type Props = {
   label: string;
   name: string;
   children: React.ReactNode;
-  hasError: boolean;
+  hasError?: boolean;
 };
 
 const Label = ({ label, name, children, hasError }: Props) => {

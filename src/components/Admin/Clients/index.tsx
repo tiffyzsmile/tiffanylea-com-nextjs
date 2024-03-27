@@ -3,46 +3,56 @@ import React, { useEffect, useState } from "react";
 import useClients from "@/hooks/useClients";
 import Link from "next/link";
 import { SearchFilter } from "@/components/Form/Filters";
+import { Client, Project } from "@/API";
+import ProjectRow from "@/components/Admin/Projects/ProjectRow";
+import ClientRow from "@/components/Admin/Clients/ClientRow";
+
+type ClientLocal = Omit<
+  Client,
+  "__typename" | "createdAt" | "updatedAt" | "projects"
+>;
 
 const AdminClients = () => {
-  const [clients, setClients] = useState([]);
+  const [clients, setClients] = useState<ClientLocal[]>([]);
+  const [filteredClients, setFilteredClients] =
+    useState<ClientLocal[]>(clients);
+  const [searchValue, setSearchValue] = useState<string | null>(null);
+
   const { getClients } = useClients();
 
   useEffect(() => {
     getClients().then(({ clients }) => {
-      setClients(clients);
+      setClients(clients as ClientLocal[]);
+      setFilteredClients(clients as ClientLocal[]);
     });
   }, []);
 
-  const clientsContent = (clients) =>
-    clients.map((n) => {
-      return (
-        <tr key={n.id}>
-          <td>
-            <Link href={`/admin/clients/${n.id}`}>{n.name}</Link>
-          </td>
-          <td>
-            {n.logo && (
-              <img
-                style={{ maxWidth: "100px", maxHeight: "100px" }}
-                src={n.logo}
-                alt={`Logo of ${n.name}`}
-              />
-            )}
-          </td>
-          <td className="center">
-            <Link href={`/admin/clients/${n.id}`}>Edit</Link>
-          </td>
-        </tr>
-      );
-    });
+  useEffect(() => {
+    if (searchValue) {
+      const newClients = clients.filter((client) => {
+        return (
+          client.name.indexOf(searchValue) >= 0 ||
+          client.description?.indexOf(searchValue) >= 0 ||
+          client.id.indexOf(searchValue) >= 0
+        );
+      });
+      setFilteredClients(newClients);
+    } else {
+      setFilteredClients(clients);
+    }
+  }, [searchValue]);
+
   return (
     <div>
       <h1>Clients ({clients.length})</h1>
       <div style={{ float: "right" }}>
         <Link href={`/admin/clients/add`}>Add Client</Link>
       </div>
-      <SearchFilter />
+      <SearchFilter
+        onChange={(newValue) => {
+          setSearchValue(newValue);
+        }}
+      />
       {clients && (
         <table>
           <thead>
@@ -52,7 +62,11 @@ const AdminClients = () => {
               <th>Actions</th>
             </tr>
           </thead>
-          <tbody>{clientsContent(clients)}</tbody>
+          <tbody>
+            {filteredClients.map((client) => {
+              return <ClientRow key={client.id} client={client as Client} />;
+            })}
+          </tbody>
         </table>
       )}
     </div>

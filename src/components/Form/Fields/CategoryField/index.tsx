@@ -25,7 +25,6 @@ const CategoryField = ({ onCategoryChange = (newCategory) => {} }: Props) => {
           return (
             <select
               id="category"
-              name="category"
               {...input}
               onChange={(e) => {
                 input.onChange(e.target.value);

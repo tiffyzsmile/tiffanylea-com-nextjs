@@ -1,25 +1,17 @@
 "use client";
 import * as query from "@/graphql/queries";
 import * as mutations from "@/graphql/mutations";
-import { formatDateForAWS, formatDateFromAWS } from "@/helpers/forms";
 import { Amplify } from "aws-amplify";
 import awsconfig from "@/aws-exports";
 import { generateClient } from "aws-amplify/api";
-import { Employer, UpdateEmployerInput } from "@/API";
+import { Employer, UpdateEmployerMutation } from "@/API";
+import { WithListsFixed } from "@/utils/awsTypeHelpers";
 
 const getFormattedInput = (employer) => {
   // omit these fields and everything left is good
   const { createdAt, projects, updatedAt, __typename, ...employerInputFields } =
     employer;
   const formattedInput = { ...employerInputFields };
-
-  if (employer.startdate) {
-    formattedInput["startdate"] = formatDateForAWS(employer.startdate);
-  }
-
-  if (employer.enddate) {
-    formattedInput["enddate"] = formatDateForAWS(employer.enddate);
-  }
 
   return { ...formattedInput };
 };
@@ -36,18 +28,10 @@ const useEmployers = () => {
     });
 
     const employer = data ? data.getEmployer : data;
-    // Need to convert aws format 'yyyy-mm-dd' back to date object
-    // for react-datepicker
-    if (employer && employer.startdate) {
-      employer.startdate = formatDateFromAWS(employer.startdate);
-    }
-    if (employer && employer.enddate) {
-      employer.enddate = formatDateFromAWS(employer.enddate);
-    }
     return { employer: employer };
   };
 
-  const getEmployers = async (): Promise<{ employers: Employer[] }> => {
+  const getEmployers = async () => {
     const { data } = await client.graphql({
       query: query.listEmployers,
       variables: { limit: 500 },
@@ -58,11 +42,10 @@ const useEmployers = () => {
   };
 
   const addEmployer = ({ employer, onSuccess }) => {
-    const formattedEmployer = getFormattedInput(employer);
     client
       .graphql({
         query: mutations.createEmployer,
-        variables: { input: formattedEmployer },
+        variables: { input: employer },
         authMode: "userPool",
       })
       .then(({ data: { createEmployer } }) => onSuccess(createEmployer));
@@ -78,15 +61,26 @@ const useEmployers = () => {
       .then(() => onSuccess(employerId));
   };
 
-  const updateEmployer = ({ employer, onSuccess }) => {
-    const formattedEmployer: UpdateEmployerInput = getFormattedInput(employer);
+  const updateEmployer = ({
+    employer,
+    onSuccess,
+  }: {
+    employer: Employer;
+    onSuccess?: (
+      onSuccessData: Exclude<
+        WithListsFixed<UpdateEmployerMutation["updateEmployer"]>,
+        undefined | null
+      >,
+    ) => void;
+  }) => {
+    const formattedEmployer = getFormattedInput(employer);
     client
       .graphql({
         query: mutations.updateEmployer,
         variables: { input: formattedEmployer },
         authMode: "userPool",
       })
-      .then(({ data: { updateEmployer } }) => onSuccess(updateEmployer));
+      .then(({ data: { updateEmployer } }) => onSuccess?.(updateEmployer));
   };
 
   return {

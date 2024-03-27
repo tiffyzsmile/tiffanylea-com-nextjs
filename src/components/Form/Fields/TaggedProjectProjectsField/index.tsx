@@ -14,11 +14,9 @@ const TaggedProjectProjectsField = ({ tagId, selected = [] }: Props) => {
   const [taggedProjects, setTaggedProjects] = useState(selected);
 
   const { addTaggedProject, deleteTaggedProject } = useTaggedProjects();
-  console.log("selected", selected);
 
   const onSubmit = ({ projects }) => {
     const onSuccess = (newTaggedProject) => {
-      console.log("newTaggedProject", newTaggedProject);
       // add new projects to display
       setTaggedProjects((currentTaggedProjects) => {
         return [...currentTaggedProjects, newTaggedProject];
@@ -31,7 +29,6 @@ const TaggedProjectProjectsField = ({ tagId, selected = [] }: Props) => {
 
   const onDeleteTaggedProject = (taggedProjectId) => {
     const onSuccess = (deletedTaggedProject) => {
-      console.log("onDeleteTaggedProject onSuccess:", deletedTaggedProject);
       setTaggedProjects((currentTaggedProjects) => {
         const filteredTaggedProjects = currentTaggedProjects.filter(
           (taggedProject: TaggedProject) => {
@@ -71,12 +68,7 @@ const TaggedProjectProjectsField = ({ tagId, selected = [] }: Props) => {
           return (
             <form onSubmit={handleSubmit}>
               <div>
-                <ProjectField
-                  name="projects"
-                  label="Projects"
-                  category="all"
-                  multiple
-                />
+                <ProjectField name="projects" label="Projects" multiple />
               </div>
               <div className="buttons">
                 <Button

@@ -1,19 +1,7 @@
 import React from "react";
 import { Field } from "react-final-form";
 import Button from "@/components/Button";
-
-const styles = {
-  arrayFieldWrap: {
-    display: "flex",
-  },
-  arrayFieldInput: {
-    marginBottom: "5px",
-  },
-  arrayFieldRemoveButton: {
-    marginBottom: "5px",
-    cursor: "pointer",
-  },
-};
+import styles from "./FeaturesField.module.scss";
 
 type Props = {
   name: string;
@@ -22,9 +10,16 @@ type Props = {
 
 const FeatureHeading = ({ name, remove }: Props) => {
   return (
-    <div style={styles.arrayFieldWrap}>
-      <Field name={name} component="input" style={styles.arrayFieldInput} />
-      <Button style={styles.arrayFieldRemoveButton} onClick={() => remove()}>
+    <div className={styles.featureHeading}>
+      <Field
+        name={name}
+        component="input"
+        className={styles.featureHeadingInput}
+      />
+      <Button
+        className={styles.featureHeadingRemoveButton}
+        onClick={() => remove()}
+      >
         x
       </Button>
     </div>

@@ -27,8 +27,10 @@ type Props = {
   tagId: string;
 };
 
+type TagLocal = Omit<Tag, "__typename" | "createdAt" | "updatedAt">;
+
 const AdminTag = ({ tagId }: Props) => {
-  const [tag, setTag] = useState<Tag | {}>({ id: "", name: "", projects: [] });
+  const [tag, setTag] = useState<TagLocal>({ id: "", name: "" });
   const router = useRouter();
 
   const { getTag, addTag, updateTag, deleteTag } = useTags();
@@ -36,7 +38,9 @@ const AdminTag = ({ tagId }: Props) => {
   useEffect(() => {
     if (tagId !== "add") {
       getTag(tagId).then(({ tag }) => {
-        setTag(tag);
+        if (tag) {
+          setTag(tag as TagLocal);
+        }
       });
     }
   }, []);
@@ -113,7 +117,7 @@ const AdminTag = ({ tagId }: Props) => {
         <section>
           <TaggedProjectProjectsField
             tagId={tagId}
-            selected={tag.projects.items || []}
+            selected={tag.projects?.items || []}
           />
         </section>
       </div>

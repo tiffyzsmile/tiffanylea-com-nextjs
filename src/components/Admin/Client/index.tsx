@@ -1,53 +1,60 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Form, Field } from "react-final-form";
+import { Field, Form } from "react-final-form";
 import FormStyles from "@/components/Form/";
 import useClients from "@/hooks/useClients";
 import { useRouter } from "next/navigation";
 import {
+  BooleanField,
+  DebugField,
   DescriptionField,
   IdField,
-  NameField,
-  BooleanField,
   LogoField,
+  NameField,
   UrlField,
-  DebugField,
 } from "@/components/Form/Fields";
 import Button from "@/components/Button";
+import { Client } from "@/API";
 
 type Props = {
   clientId: string;
 };
+type ClientLocal = Omit<
+  Client,
+  "__typename" | "createdAt" | "updatedAt" | "projects"
+>;
 
 const AdminClient = ({ clientId }: Props) => {
   const router = useRouter();
-  const [client, setClient] = useState({ id: "", name: "" });
+  const [client, setClient] = useState<ClientLocal>({
+    id: "",
+    name: "",
+  });
 
   const { getClient, updateClient, addClient, deleteClient } = useClients();
 
   useEffect(() => {
     if (clientId !== "add") {
       getClient(clientId).then(({ client }) => {
-        setClient(client);
+        if (client) {
+          setClient(client as ClientLocal);
+        }
       });
-    } else {
-      setClient({ id: "", name: "" });
     }
   }, []);
 
-  const onSubmit = (formValues) => {
-    const onSuccess = (onCompleteData) => {
-      router.push(`/admin/clients/${onCompleteData.id}`);
-    };
-
+  const onSubmit = (formValues: Client) => {
     if (clientId !== "add") {
-      updateClient({ clientData: formValues, onSuccess });
+      updateClient({ clientData: formValues });
     } else {
+      const onSuccess = (onSuccessData: any) => {
+        router.push(`/admin/clients/${onSuccessData.id}`);
+      };
       addClient({ clientData: formValues, onSuccess });
     }
   };
 
-  const onDelete = (clientId) => {
+  const onDelete = (clientId: string) => {
     deleteClient({
       clientId: clientId,
       onSuccess: () => {
@@ -67,7 +74,7 @@ const AdminClient = ({ clientId }: Props) => {
       )}
       <h1>Client Detail</h1>
       <FormStyles>
-        <Form
+        <Form<Client>
           onSubmit={onSubmit}
           initialValues={client}
           render={({ handleSubmit, pristine, form, submitting, values }) => {
@@ -81,7 +88,7 @@ const AdminClient = ({ clientId }: Props) => {
                 <div>
                   <label htmlFor="feedback">
                     Client Feedback
-                    <Field
+                    <Field<string>
                       id="feedback"
                       name="feedback"
                       component="textarea"
@@ -91,12 +98,7 @@ const AdminClient = ({ clientId }: Props) => {
                 </div>
                 <LogoField folder="client-logos" />
                 <div className="buttons">
-                  <Button
-                    onClick={() => onSubmit(values)}
-                    disabled={submitting || pristine}
-                  >
-                    Submit
-                  </Button>
+                  <Button onClick={() => onSubmit(values)}>Submit</Button>
                 </div>
                 <DebugField values={values} />
               </form>

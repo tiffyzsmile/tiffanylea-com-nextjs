@@ -1,0 +1,30 @@
+.featureHeading {
+  display: flex;
+  .featureHeadingInput {
+    margin-bottom: 5px;
+  }
+
+  .featureHeadingRemoveButton {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+}
+
+.featureItem {
+  display: flex;
+  margin-left: 15px;
+
+  .input {
+    margin-bottom: 5px;
+  }
+  .removeButton {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+}
+
+.addButton {
+  margin-bottom: 25px;
+  cursor: pointer;
+  margin-left: 15px;
+}

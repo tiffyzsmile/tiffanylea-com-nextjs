@@ -12,7 +12,7 @@ import awsconfig from "@/aws-exports";
 import { generateClient } from "aws-amplify/api";
 import * as query from "@/graphql/queries";
 import * as mutations from "@/graphql/mutations";
-import { UpdateEmployerInput } from "@/API";
+import { ListTagsQuery, Tag, UpdateEmployerInput } from "@/API";
 
 const getFormattedInput = ({ id, name, category, logo, display }) => {
   return { id, name, category, logo, display };
@@ -39,9 +39,7 @@ const useTags = () => {
       authMode: "userPool",
     });
 
-    // TODO: in admin we want to subscribe to add and delete changes
-
-    const tags = data ? data.listTags.items : data;
+    const tags = data ? data.listTags.items : null;
     return { tags: tags };
   };
 
@@ -49,9 +47,10 @@ const useTags = () => {
     const { tags = [] } = await getTags();
     const groupedData = {};
     tags.map((tagObj) => {
-      const currentValues = groupedData[tagObj.category]
-        ? groupedData[tagObj.category]
-        : [];
+      const currentValues: Tag[] =
+        tagObj.category && groupedData[tagObj.category]
+          ? groupedData[tagObj.category]
+          : [];
       groupedData[tagObj.category] = [...currentValues, tagObj];
       return false;
     });

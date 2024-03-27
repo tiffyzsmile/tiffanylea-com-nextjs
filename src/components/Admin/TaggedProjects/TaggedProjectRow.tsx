@@ -24,10 +24,10 @@ const TaggedProjectRow = ({
     return (
       <tr key={taggedProject.id}>
         <td>
-          <ProjectField name="project.id" />
+          <ProjectField name="project.id" label="Project" />
         </td>
         <td>
-          <TagField name="tag.id" multiple={false} />
+          <TagField name="tag.id" />
         </td>
         <td className="center">
           <div className="buttons">
@@ -53,16 +53,14 @@ const TaggedProjectRow = ({
         <Button
           styleAs="link"
           onClick={() =>
-            deleteTaggedProject(
-              {
-                id: taggedProject.id,
-              },
-              (deletedTaggedProject) =>
+            deleteTaggedProject({
+              taggedProjectId: taggedProject.id,
+              onSuccess: (deletedTaggedProject) =>
                 console.log(
                   "DELETE ONCOMPLETE AdminTaggedProjects",
                   deletedTaggedProject,
                 ),
-            )
+            })
           }
         >
           Delete

@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import useTaggedProjects from "@/hooks/useTaggedProjects";
 import TaggedProjectRow from "@/components/Admin/TaggedProjects/TaggedProjectRow";
 import { Form } from "react-final-form";
+import { TaggedProject } from "@/API";
 
 type Props = {};
 
 const AdminTaggedProjects = ({}: Props) => {
-  const [taggedProjectValues, setTaggedProjectValues] = useState();
-  const [taggedProjects, setTaggedProjects] = useState([]);
+  const [taggedProjectValues, setTaggedProjectValues] =
+    useState<TaggedProject>();
+  const [taggedProjects, setTaggedProjects] = useState<TaggedProject[]>([]);
   const [nextToken, setNextToken] = useState(1);
   const [idToEdit, setIdToEdit] = useState(null);
   const { getTaggedProjects, deleteTaggedProject, updateTaggedProject } =
@@ -16,7 +18,7 @@ const AdminTaggedProjects = ({}: Props) => {
 
   useEffect(() => {
     getTaggedProjects({}).then(({ taggedProjects }) => {
-      setTaggedProjects(taggedProjects);
+      setTaggedProjects(taggedProjects as TaggedProject[]);
     });
   }, []);
   // useEffect(() => {
@@ -47,7 +49,10 @@ const AdminTaggedProjects = ({}: Props) => {
     } = taggedProjectValues;
     const onUpdateSuccess = (updatedTaggedProject) =>
       console.log("AdminTaggedProjects onUpdateSuccess", updatedTaggedProject);
-    updateTaggedProject({ id, tagId, projectId }, onUpdateSuccess);
+    updateTaggedProject({
+      taggedProject: { id, tagId, projectId },
+      onSuccess: onUpdateSuccess,
+    });
     setIdToEdit(null);
   };
 
@@ -68,7 +73,7 @@ const AdminTaggedProjects = ({}: Props) => {
             )[0]
           }
           render={({ handleSubmit, form, values }) => {
-            setTaggedProjectValues(values);
+            setTaggedProjectValues(values as TaggedProject);
 
             return (
               <form onSubmit={handleSubmit}>

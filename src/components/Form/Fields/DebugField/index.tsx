@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Button from "@/components/Button";
 
 type Props = {
-  values: {};
+  values: any;
 };
 
 const DebugField = ({ values }: Props) => {

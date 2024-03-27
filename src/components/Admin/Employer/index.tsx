@@ -12,6 +12,12 @@ import {
 } from "@/components/Form/Fields";
 import NameField from "../../Form/Fields/NameField";
 import { useRouter } from "next/navigation";
+import { Employer } from "@/API";
+
+type EmployerLocal = Omit<
+  Employer,
+  "__typename" | "createdAt" | "updatedAt" | "projects"
+>;
 
 type Props = {
   employerId: string;
@@ -19,21 +25,21 @@ type Props = {
 
 const AdminEmployer = ({ employerId }: Props) => {
   const router = useRouter();
-  const [employer, setEmployer] = useState({ id: "", name: "" });
+  const [employer, setEmployer] = useState<EmployerLocal>({ id: "", name: "" });
   const { getEmployer, updateEmployer, addEmployer, deleteEmployer } =
     useEmployers();
 
   useEffect(() => {
     if (employerId !== "add") {
       getEmployer(employerId).then(({ employer }) => {
-        setEmployer(employer);
+        if (employer) {
+          setEmployer(employer as EmployerLocal);
+        }
       });
-    } else {
-      setEmployer({ id: "", name: "" });
     }
   }, []);
 
-  const onSubmit = (formValues) => {
+  const onSubmit = (formValues: Employer) => {
     const onSuccess = (employer) => {
       router.push(`/admin/employers/${employer.id}`);
     };
@@ -74,10 +80,7 @@ const AdminEmployer = ({ employerId }: Props) => {
               <form onSubmit={handleSubmit}>
                 <IdField />
                 <NameField />
-                <LogoField
-                  label="Logo"
-                  folder={`employer-logos/${values.id}`}
-                />
+                <LogoField folder={`employer-logos/${values.id}`} />
                 <DateField name="startdate" label="Start Date: " />
                 <DateField name="enddate" label="End Date: " />
                 <div className="buttons">

@@ -1,34 +1,24 @@
-import { useMutation, useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
-import {
-  getTaggedProject as getTaggedProjectQuery,
-  listTaggedProjects,
-} from "@/graphql/queries";
-import {
-  createTaggedProject as createTaggedProjectMutation,
-  updateTaggedProject as updateTaggedProjectMutation,
-  deleteTaggedProject as deleteTaggedProjectMutation,
-} from "@/graphql/mutations";
-import getFilterOptions from "@/helpers/getFilterOptions";
+import * as query from "@/graphql/queries";
+import * as mutations from "@/graphql/mutations";
 import { Amplify } from "aws-amplify";
 import awsconfig from "@/aws-exports";
 import { generateClient } from "aws-amplify/api";
-import * as query from "@/graphql/queries";
-import * as mutations from "@/graphql/mutations";
+import { CreateTaggedProjectInput, UpdateTaggedProjectInput } from "@/API";
 
-const getFormattedInput = ({ id, projectId, tagId }) => {
-  const formattedInput: {
-    taggedProjectProjectId: string;
-    taggedProjectTagId: string;
-    id: string;
-  } = {};
+const getFormattedCreateInput = ({ projectId, tagId }) => {
+  const formattedInput: CreateTaggedProjectInput = {
+    taggedProjectProjectId: projectId,
+    taggedProjectTagId: tagId,
+  };
 
-  formattedInput.taggedProjectProjectId = projectId;
-  formattedInput.taggedProjectTagId = tagId;
-
-  if (id) {
-    formattedInput.id = id;
-  }
+  return formattedInput;
+};
+const getFormattedUpdateInput = ({ id, projectId, tagId }) => {
+  const formattedInput: UpdateTaggedProjectInput = {
+    taggedProjectProjectId: projectId,
+    taggedProjectTagId: tagId,
+    id,
+  };
 
   return formattedInput;
 };
@@ -59,7 +49,7 @@ const useTaggedProjects = () => {
   };
 
   const addTaggedProject = ({ taggedProject, onSuccess }) => {
-    const formattedTaggedProject = getFormattedInput(taggedProject);
+    const formattedTaggedProject = getFormattedCreateInput(taggedProject);
     client
       .graphql({
         query: mutations.createTaggedProject,
@@ -84,8 +74,8 @@ const useTaggedProjects = () => {
       });
   };
 
-  const updateTaggedProject = (taggedProject, onSuccess) => {
-    const formattedTaggedProject = getFormattedInput(taggedProject);
+  const updateTaggedProject = ({ taggedProject, onSuccess }) => {
+    const formattedTaggedProject = getFormattedUpdateInput(taggedProject);
     client
       .graphql({
         query: mutations.updateTaggedProject,

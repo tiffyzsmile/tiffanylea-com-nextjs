@@ -1,28 +1,21 @@
 import React from "react";
 import { Field } from "react-final-form";
+import Label from "@/components/Form/Label";
 
-type Props = {
-  label: string;
-  name: string;
-  placeholder: string;
-};
+type Props = {};
 
-const UrlField = ({
-  label = "Url:",
-  name = "url",
-  placeholder = "https://www.google.com",
-}: Props) => {
+const UrlField = ({}: Props) => {
+  const name = "url";
   return (
     <div>
-      <label htmlFor={name}>
-        {label}
-        <Field
+      <Label name={name} label="Url:">
+        <Field<string>
           id={name}
           name={name}
           component="input"
-          placeholder={placeholder}
+          placeholder="https://www.google.com"
         />
-      </label>
+      </Label>
     </div>
   );
 };
