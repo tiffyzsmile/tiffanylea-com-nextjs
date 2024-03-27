@@ -11,7 +11,7 @@ const Resume = () => {
         <a
           target="_blank"
           className={styles.adobe}
-          href="/pdfs/TiffanyLeaMay_resume_2023_04.pdf"
+          href="/pdfs/TiffanyLeaMay_resume_2024_04.pdf"
         >
           <Image
             src="/images/icons/adobe.png"
@@ -21,7 +21,7 @@ const Resume = () => {
           />{" "}
           Adobe PDF
         </a>
-        <H1>Tiffany Lea May</H1>
+        <H1>Tiffany May</H1>
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/tiffanymay">
@@ -47,18 +47,16 @@ const Resume = () => {
         <H2>Skills Profile</H2>
         <ul>
           <li>
-            Modular mindset and a passion for automation in streamlining
-            multi-platform applications across mobile devices and web
-            efficiently
+            Modular mindset and a passion for automation in streamlining code
+            reuse across applications efficiently
           </li>
           <li>
-            Extensive background in data structure architecture, user
-            experience, full project life cycle, responsive design,
-            accessibility, performance
+            Extensive background in frontend architecture, user experience,
+            SDLC, responsive design, accessibility, and component libraries
           </li>
           <li>
-            Ability to plan, design and build elegantly simple solutions
-            regardless of problem complexity, tech stack or industry
+            Ability to plan, design, and build elegantly simple solutions
+            regardless of problem complexity, tech stack, or industry
           </li>
         </ul>
       </section>
