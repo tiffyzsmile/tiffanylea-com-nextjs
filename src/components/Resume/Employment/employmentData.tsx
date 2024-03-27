@@ -115,7 +115,7 @@ const employmentData = [
     ],
     roles: [
       {
-        title: "Lead of Front End Engineering",
+        title: "Lead of Frontend Engineering",
         duration: "1 year",
         details: [
           "Directed the design team in adapting a more component-based process and mindset",
@@ -169,7 +169,7 @@ const employmentData = [
     ],
     roles: [
       {
-        title: "Manager of Front End Engineering",
+        title: "Manager of Frontend Engineering",
         duration: "1 year",
         details: [
           "5-6 Direct reports, reported directly to the VP of the Digital Department for all things frontend",
