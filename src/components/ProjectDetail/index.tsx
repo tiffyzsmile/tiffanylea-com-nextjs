@@ -49,7 +49,13 @@ const ProjectDetail = ({ project }: Props) => {
 
         <H2>While Working For</H2>
         <div className={styles.whileWorkingFor}>
-          <Image alt={project.employer.name} src={project.employer.logo} fill />
+          {project.employer.name && (
+            <Image
+              alt={project.employer.name}
+              src={project.employer.logo}
+              fill
+            />
+          )}
         </div>
         <TagsByCategory tagsByCategory={project.tagsByCategory} />
       </section>

@@ -54,7 +54,9 @@ const Portfolio = ({ selectedProjectId }: Props) => {
       <React.Fragment key={item.id}>
         <li className={isCurrent ? styles.current : ""} id={item.id}>
           <Link href={link + searchParams.toString()}>
-            <Image alt={item.name} src={item.logo} height="200" width="200" />
+            {item.logo && (
+              <Image alt={item.name} src={item.logo} height="200" width="200" />
+            )}
           </Link>
         </li>
         {projectDetail}
