@@ -37,11 +37,17 @@
         left: 50%;
         transform: translateX(-50%);
         display: inline-block;
+
+        @media screen and (min-width: 600px) {
+          // positions arrow
+          top: 15px;
+        }
       }
     }
     &.fullRow {
       grid-column: 1 / -1;
       max-width: 100%;
+      max-height: max-content;
     }
     & > a {
       width: 100%;
