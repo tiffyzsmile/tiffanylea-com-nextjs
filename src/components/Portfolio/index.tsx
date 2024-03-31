@@ -61,6 +61,7 @@ const Portfolio = ({ selectedProjectId }: Props) => {
                 height="200"
                 width="200"
                 loading={index < 5 ? "eager" : "lazy"}
+                priority={index < 5}
               />
             )}
           </Link>

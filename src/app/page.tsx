@@ -12,6 +12,7 @@ const HomePage = async () => {
         width={359}
         height={359}
         loading={"eager"}
+        priority
       />
       <p>
         I have a passion for what I do and am looking for a challenging
