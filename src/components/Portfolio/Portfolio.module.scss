@@ -1,9 +1,12 @@
 .portfolio > ul {
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(48%, auto));
   grid-gap: 15px;
   grid-auto-flow: dense;
+
+  @media screen and (min-width: 380px) {
+    grid-template-columns: repeat(auto-fit, minmax(45%, auto));
+  }
 
   @media screen and (min-width: 600px) {
     grid-template-columns: repeat(auto-fit, minmax(175px, auto));

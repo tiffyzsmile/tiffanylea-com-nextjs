@@ -25,14 +25,16 @@
       padding: 0;
       a {
         border-radius: 2px;
-        color: #aaaaaa;
+        color: #3a3a3a;
         padding: 5px;
         text-decoration: none;
-        font-size: 0.7em;
+        font-size: 1em;
+        display: block;
         &:hover,
         &.current {
           background-color: #dddddd;
-          color: #888888;
+          color: #333;
+          width: 80%;
         }
       }
     }
