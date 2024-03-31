@@ -35,7 +35,7 @@ const Portfolio = ({ selectedProjectId }: Props) => {
     return project.tags.includes(tag);
   });
 
-  const portfolioItems = visibleProjects.map((item) => {
+  const portfolioItems = visibleProjects.map((item, index) => {
     const projectDetail: React.ReactNode[] = [];
     let isCurrent = false;
     if (selectedProjectId === item.id) {
@@ -55,7 +55,13 @@ const Portfolio = ({ selectedProjectId }: Props) => {
         <li className={isCurrent ? styles.current : ""} id={item.id}>
           <Link href={link + searchParams.toString()}>
             {item.logo && (
-              <Image alt={item.name} src={item.logo} height="200" width="200" />
+              <Image
+                alt={item.name}
+                src={item.logo}
+                height="200"
+                width="200"
+                loading={index < 5 ? "eager" : "lazy"}
+              />
             )}
           </Link>
         </li>
