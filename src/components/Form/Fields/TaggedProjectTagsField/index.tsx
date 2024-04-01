@@ -3,12 +3,11 @@ import { Form } from "react-final-form";
 import useTaggedProjects from "@/hooks/useTaggedProjects";
 import Button from "@/components/Button";
 import { TagField } from "@/components/Form/Fields";
-import { TagType } from "@/data/projects";
 import { TaggedProject } from "@/API";
 
 type Props = {
   projectId: string;
-  selected: TaggedProject[] | [];
+  selected: TaggedProject[];
 };
 
 const TaggedProjectTagsField = ({ projectId, selected = [] }: Props) => {
@@ -37,21 +36,23 @@ const TaggedProjectTagsField = ({ projectId, selected = [] }: Props) => {
       return [...filteredTags];
     });
   };
-  const existingTags = projectTags.map((tag) => {
-    return (
-      <Button
-        key={tag.id}
-        onClick={() =>
-          deleteTaggedProject({
-            taggedProjectId: tag.id,
-            onSuccess: onDeleteTaggedProjectSuccess,
-          })
-        }
-      >
-        {tag.tag.name}&nbsp;&nbsp;&nbsp;X
-      </Button>
-    );
-  });
+  const existingTags = projectTags
+    .sort((tag1, tag2) => tag1.tag.name.localeCompare(tag2.tag.name))
+    .map((tag) => {
+      return (
+        <Button
+          key={tag.id}
+          onClick={() =>
+            deleteTaggedProject({
+              taggedProjectId: tag.id,
+              onSuccess: onDeleteTaggedProjectSuccess,
+            })
+          }
+        >
+          {tag.tag.name}&nbsp;&nbsp;&nbsp;X
+        </Button>
+      );
+    });
 
   return (
     <section>
@@ -59,7 +60,7 @@ const TaggedProjectTagsField = ({ projectId, selected = [] }: Props) => {
       <Form
         onSubmit={onSubmit}
         initialValues={{ projectId }}
-        render={({ handleSubmit, pristine, form, submitting, values }) => {
+        render={({ handleSubmit, pristine, submitting, values }) => {
           return (
             <form onSubmit={handleSubmit}>
               <div>

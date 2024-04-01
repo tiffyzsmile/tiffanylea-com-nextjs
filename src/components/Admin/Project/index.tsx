@@ -134,7 +134,7 @@ const AdminProject = ({ projectId }: Props) => {
             />
           </FormStyles>
         </section>
-        {projectId && (
+        {projectId && project?.tags?.items && (
           <section>
             <TaggedProjectTagsField
               projectId={projectId}
