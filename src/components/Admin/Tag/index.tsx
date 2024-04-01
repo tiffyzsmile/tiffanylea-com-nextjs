@@ -46,24 +46,23 @@ const AdminTag = ({ tagId }: Props) => {
   }, []);
 
   const onSubmit = (formValues) => {
-    if (tagId !== "add") {
-      updateTag({
-        tag: formValues,
-        onSuccess: (updatedTag) => console.log("updatedTag", updatedTag),
-      });
-    } else {
+    if (tagId === "add") {
       addTag({
         tag: formValues,
         onSuccess: (newTag) => {
           router.push(`/admin/tags/${newTag.id}`);
         },
       });
+    } else {
+      updateTag({
+        tag: formValues,
+        onSuccess: (updatedTag) => console.log("updatedTag", updatedTag),
+      });
     }
   };
 
   const onDelete = (tagId) => {
-    const onSuccess = (tagId) => {
-      console.log("Tag Deleted", tagId);
+    const onSuccess = () => {
       router.push(`/admin/tags`);
     };
     deleteTag({ tagId, onSuccess });
@@ -85,13 +84,7 @@ const AdminTag = ({ tagId }: Props) => {
             <Form
               onSubmit={onSubmit}
               initialValues={tag}
-              render={({
-                handleSubmit,
-                pristine,
-                form,
-                submitting,
-                values,
-              }) => {
+              render={({ handleSubmit, pristine, submitting, values }) => {
                 return (
                   <form onSubmit={handleSubmit}>
                     <IdField />

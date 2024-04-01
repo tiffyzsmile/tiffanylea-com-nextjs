@@ -3,14 +3,13 @@ import { DndContext } from "@dnd-kit/core";
 import { arrayMove, SortableContext } from "@dnd-kit/sortable";
 import SortableImage from "@/components/Form/Fields/S3FileUpload/SortableImage";
 import Image from "./Image";
-import { remove, uploadData, getProperties, getUrl } from "aws-amplify/storage";
+import { remove, uploadData, getUrl } from "aws-amplify/storage";
 
 import styles from "./S3FileUpload.module.scss";
 
 type ValueType = string | string[];
 
 type Props = {
-  fieldId?: string;
   filePath: string;
   contentType?: string;
   value: ValueType;
@@ -20,7 +19,6 @@ type Props = {
 };
 
 const S3FileUpload = ({
-  fieldId = "images",
   filePath = "",
   contentType = "image/*",
   value = [],
@@ -152,6 +150,7 @@ const S3FileUpload = ({
             <Image
               onDeleteItem={deleteItemHandler}
               imageSrc={value as string}
+              alt={alt}
             />
           )}
         </div>

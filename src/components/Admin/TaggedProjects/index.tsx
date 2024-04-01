@@ -11,35 +11,14 @@ const AdminTaggedProjects = ({}: Props) => {
   const [taggedProjectValues, setTaggedProjectValues] =
     useState<TaggedProject>();
   const [taggedProjects, setTaggedProjects] = useState<TaggedProject[]>([]);
-  const [nextToken, setNextToken] = useState(1);
   const [idToEdit, setIdToEdit] = useState(null);
-  const { getTaggedProjects, deleteTaggedProject, updateTaggedProject } =
-    useTaggedProjects();
+  const { getTaggedProjects, updateTaggedProject } = useTaggedProjects();
 
   useEffect(() => {
     getTaggedProjects({}).then(({ taggedProjects }) => {
       setTaggedProjects(taggedProjects as TaggedProject[]);
     });
   }, []);
-  // useEffect(() => {
-  //   if (nextToken) {
-  //     getTaggedProjects({ nextToken: nextToken === 1 ? null : nextToken }).then(
-  //       ({ taggedProjects, nextNextToken }) => {
-  //         if (nextToken === 1) {
-  //           setTaggedProjects(taggedProjects);
-  //         } else {
-  //           // don't want it to keep adding same ones if we already have
-  //           setTaggedProjects((currentTaggedProjects) => {
-  //             return [...currentTaggedProjects, ...taggedProjects];
-  //           });
-  //         }
-  //         if (nextNextToken) {
-  //           setNextToken(nextNextToken);
-  //         }
-  //       },
-  //     );
-  //   }
-  // }, [nextToken]);
 
   const onSubmit = () => {
     const {
@@ -72,7 +51,7 @@ const AdminTaggedProjects = ({}: Props) => {
               (taggedProject) => taggedProject.id === idToEdit,
             )[0]
           }
-          render={({ handleSubmit, form, values }) => {
+          render={({ handleSubmit, values }) => {
             setTaggedProjectValues(values as TaggedProject);
 
             return (

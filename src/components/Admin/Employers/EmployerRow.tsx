@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Employer } from "@/API";
+import styles from "./Employers.module.css";
+import Image from "next/image";
 
 type Props = { employer: Employer };
 
@@ -11,13 +13,11 @@ const EmployerRow = ({ employer }: Props) => {
         <Link href={`/admin/employers/${employer.id}`}>{employer.name}</Link>
       </td>
       <td>
-        {employer.logo && (
-          <img
-            style={{ maxWidth: "100px", maxHeight: "100px" }}
-            src={employer.logo}
-            alt={`Logo of ${employer.name}`}
-          />
-        )}
+        <div className={styles.logo}>
+          {employer.logo && (
+            <Image src={employer.logo} alt={`Logo of ${employer.name}`} fill />
+          )}
+        </div>
       </td>
       <td className="center">
         <Link href={`/admin/employers/${employer.id}`}>Edit</Link>

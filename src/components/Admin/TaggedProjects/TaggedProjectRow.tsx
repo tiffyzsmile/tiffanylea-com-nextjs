@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { TaggedProject } from "@/API";
 import Button from "@/components/Button";
 import useTaggedProjects from "@/hooks/useTaggedProjects";
@@ -18,9 +18,8 @@ const TaggedProjectRow = ({
   onEdit,
   isEdit,
 }: Props) => {
-  const { deleteTaggedProject, updateTaggedProject } = useTaggedProjects();
+  const { deleteTaggedProject } = useTaggedProjects();
   if (isEdit) {
-    console.log("taggedProject.project.id", taggedProject.project.id);
     return (
       <tr key={taggedProject.id}>
         <td>

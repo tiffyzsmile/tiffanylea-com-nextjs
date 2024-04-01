@@ -51,12 +51,14 @@ const AdminProject = ({ projectId }: Props) => {
   }, []);
 
   const onSubmit = (formValues) => {
-    if (projectId !== "add") {
-      updateProject(formValues);
-    } else {
+    if (projectId === "add") {
       addProject(formValues, (onCompleteData) => {
         router.push(`/admin/projects/${onCompleteData.id}`);
       });
+    } else {
+      updateProject(formValues).then((data) =>
+        console.log("Update Success", data),
+      );
     }
   };
 

@@ -1,9 +1,7 @@
 import React from "react";
-import Link from "next/link";
-import Button from "@/components/Button";
 import { CategoryFilter } from "@/components/Form/Filters";
-import categories from "@/data/categories";
 import { Tag } from "@/API";
+import TagRow from "@/components/Admin/Tags/TagRow";
 
 type Props = {
   tags: Tag[];
@@ -12,31 +10,6 @@ type Props = {
 };
 
 const TagsTable = ({ tags = [], onDelete, onCategoryChange }: Props) => {
-  const tagsContent = (tagsArray) =>
-    tagsArray.map((n) => {
-      return (
-        <tr key={n.id}>
-          <td>{n.name}</td>
-          <td>{categories[n.category]}</td>
-          <td>
-            {n.logo && (
-              <img
-                style={{ maxWidth: "25px", maxHeight: "25px" }}
-                src={n.logo}
-                alt={`Logo of ${n.name}`}
-              />
-            )}
-          </td>
-          <td className="center">
-            <Link href={`/admin/tags/${n.id}`}>Edit</Link>
-            <Button styleAs="link" onClick={() => onDelete(n.id)}>
-              Delete
-            </Button>
-          </td>
-        </tr>
-      );
-    });
-
   return (
     <table>
       <thead>
@@ -49,7 +22,11 @@ const TagsTable = ({ tags = [], onDelete, onCategoryChange }: Props) => {
           <th>Actions</th>
         </tr>
       </thead>
-      <tbody>{tagsContent(tags)}</tbody>
+      <tbody>
+        {tags.map((tag) => (
+          <TagRow key={tag.id} tag={tag} onDelete={onDelete} />
+        ))}
+      </tbody>
     </table>
   );
 };

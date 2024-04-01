@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import useClients from "@/hooks/useClients";
 import Link from "next/link";
 import { SearchFilter } from "@/components/Form/Filters";
-import { Client, Project } from "@/API";
-import ProjectRow from "@/components/Admin/Projects/ProjectRow";
+import { Client } from "@/API";
 import ClientRow from "@/components/Admin/Clients/ClientRow";
 
 type ClientLocal = Omit<

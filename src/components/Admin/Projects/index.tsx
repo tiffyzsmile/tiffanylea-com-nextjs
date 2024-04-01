@@ -25,12 +25,13 @@ const AdminProjects = ({}: Props) => {
   useEffect(() => {
     if (searchValue) {
       const newProjects = projects.filter((project) => {
-        return (
-          project.name.indexOf(searchValue) >= 0 ||
-          project.description?.indexOf(searchValue) >= 0 ||
-          project.id.indexOf(searchValue) >= 0 ||
-          JSON.stringify(project.features).indexOf(searchValue) >= 0
-        );
+        const searchString = [
+          project.name,
+          project.description,
+          project.id,
+          JSON.stringify(project.features),
+        ].join("");
+        return searchString.indexOf(searchValue) >= 0;
       });
       setFilteredProjects(newProjects);
     } else {

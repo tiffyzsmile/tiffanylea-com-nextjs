@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Client } from "@/API";
+import Image from "next/image";
+import styles from "./Clients.module.css";
 
 type Props = {
   client: Client;
@@ -12,13 +14,11 @@ const ClientRow = ({ client }: Props) => {
         <Link href={`/admin/clients/${client.id}`}>{client.name}</Link>
       </td>
       <td>
-        {client.logo && (
-          <img
-            style={{ maxWidth: "100px", maxHeight: "100px" }}
-            src={client.logo}
-            alt={`Logo of ${client.name}`}
-          />
-        )}
+        <div className={styles.logo}>
+          {client.logo && (
+            <Image src={client.logo} alt={`Logo of ${client.name}`} fill />
+          )}
+        </div>
       </td>
       <td className="center">
         <Link href={`/admin/clients/${client.id}`}>Edit</Link>

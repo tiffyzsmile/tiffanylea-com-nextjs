@@ -44,13 +44,13 @@ const AdminClient = ({ clientId }: Props) => {
   }, []);
 
   const onSubmit = (formValues: Client) => {
-    if (clientId !== "add") {
-      updateClient({ clientData: formValues });
-    } else {
+    if (clientId === "add") {
       const onSuccess = (onSuccessData: any) => {
         router.push(`/admin/clients/${onSuccessData.id}`);
       };
       addClient({ clientData: formValues, onSuccess });
+    } else {
+      updateClient({ clientData: formValues });
     }
   };
 
@@ -77,7 +77,7 @@ const AdminClient = ({ clientId }: Props) => {
         <Form<Client>
           onSubmit={onSubmit}
           initialValues={client}
-          render={({ handleSubmit, pristine, form, submitting, values }) => {
+          render={({ handleSubmit, values }) => {
             return (
               <form onSubmit={handleSubmit}>
                 <IdField />

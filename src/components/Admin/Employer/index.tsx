@@ -44,10 +44,10 @@ const AdminEmployer = ({ employerId }: Props) => {
       router.push(`/admin/employers/${employer.id}`);
     };
 
-    if (employerId !== "add") {
-      updateEmployer({ employer: formValues, onSuccess });
-    } else {
+    if (employerId === "add") {
       addEmployer({ employer: formValues, onSuccess });
+    } else {
+      updateEmployer({ employer: formValues, onSuccess });
     }
   };
 

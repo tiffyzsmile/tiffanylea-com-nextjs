@@ -28,12 +28,6 @@ const AdminEmployers = ({}: Props) => {
   useEffect(() => {
     if (searchValue) {
       const newEmployers = employers.filter((employer) => {
-        console.log(
-          "employer.name.indexOf(searchValue) > 0 ",
-          employer.name,
-          searchValue,
-          employer.name.indexOf(searchValue),
-        );
         return (
           employer.name.indexOf(searchValue) >= 0 ||
           employer.url?.indexOf(searchValue) >= 0 ||
@@ -44,7 +38,7 @@ const AdminEmployers = ({}: Props) => {
     } else {
       setFilteredEmployers(employers);
     }
-  }, [searchValue]);
+  }, [employers, searchValue]);
 
   return (
     <div>
