@@ -11,6 +11,7 @@ const nextConfig = {
         hostname:
           "tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com",
         port: "",
+        pathname: "/public/**",
       },
     ],
   },
