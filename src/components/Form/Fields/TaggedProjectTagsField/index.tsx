@@ -42,6 +42,7 @@ const TaggedProjectTagsField = ({ projectId, selected = [] }: Props) => {
       return (
         <Button
           key={tag.id}
+          id={tag.tag.id}
           onClick={() =>
             deleteTaggedProject({
               taggedProjectId: tag.id,
