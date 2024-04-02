@@ -1,18 +1,9 @@
-import { useMutation, useQuery } from "@apollo/react-hooks";
-import gql from "graphql-tag";
-import { getTag as getTagQuery, listTags } from "@/graphql/queries";
-import {
-  createTag as createTagMutation,
-  updateTag as updateTagMutation,
-  deleteTag as deleteTagMutation,
-} from "@/graphql/mutations";
-import getFilterOptions from "@/helpers/getFilterOptions";
+import * as query from "@/graphql/queries";
+import * as mutations from "@/graphql/mutations";
 import { Amplify } from "aws-amplify";
 import awsconfig from "@/aws-exports";
 import { generateClient } from "aws-amplify/api";
-import * as query from "@/graphql/queries";
-import * as mutations from "@/graphql/mutations";
-import { ListTagsQuery, Tag, UpdateEmployerInput } from "@/API";
+import { Tag } from "@/API";
 
 const getFormattedInput = ({ id, name, category, logo, display }) => {
   return { id, name, category, logo, display };

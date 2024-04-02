@@ -3,7 +3,7 @@ import { DndContext } from "@dnd-kit/core";
 import { arrayMove, SortableContext } from "@dnd-kit/sortable";
 import SortableImage from "@/components/Form/Fields/S3FileUpload/SortableImage";
 import Image from "./Image";
-import { remove, uploadData, getUrl } from "aws-amplify/storage";
+import { getUrl, remove, uploadData } from "aws-amplify/storage";
 
 import styles from "./S3FileUpload.module.scss";
 

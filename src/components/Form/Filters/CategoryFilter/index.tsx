@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Field, Form } from "react-final-form";
 import categories from "@/data/categories";
 
@@ -8,8 +8,6 @@ type Props = {
 };
 
 const CategoryFilter = ({ onCategoryChange }: Props) => {
-  const [currentCategory, setCurrentCategory] = useState(undefined);
-
   const options = Object.keys(categories).map((categoryKey) => {
     return (
       <option key={categoryKey} value={categoryKey}>

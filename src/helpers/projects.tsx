@@ -1,5 +1,5 @@
-import categories from "@/data/categories";
-import { formatJsonFromAws } from "@/helpers/forms";
+// import categories from "@/data/categories";
+// import { formatJsonFromAws } from "@/helpers/forms";
 
 // const formatProjectsJson = (projects = []) => {
 //   return projects.map((project) => {
