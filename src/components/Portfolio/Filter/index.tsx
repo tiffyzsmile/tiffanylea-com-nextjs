@@ -32,8 +32,8 @@ const Filter = ({ category, tag }: Props) => {
       )[category as keyof {}]?.tags.map((t) => {
         const isCurrent = t.id === tag;
         const tagLink = isCurrent
-          ? `?category=${category}` // if current tag make link unselect tag
-          : `?category=${category}&tag=${t.id}`; // else have link go to tag
+          ? `/portfolio/${category}` // if current tag make link unselect tag
+          : `/portfolio/${category}/${t.id}`; // else have link go to tag
         return {
           ...t,
           link: tagLink,
@@ -45,7 +45,7 @@ const Filter = ({ category, tag }: Props) => {
     Object.keys(tagsByCategory).forEach((key) => {
       visibleTags.push({
         id: key,
-        link: `?category=${key}`,
+        link: `/portfolio/${key}`,
         name: (
           tagsByCategory as unknown as {
             [key: string]: TagType;

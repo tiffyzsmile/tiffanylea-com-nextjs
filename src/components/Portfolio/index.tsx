@@ -1,8 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Filter from "./Filter";
-import { useSearchParams } from "next/navigation";
-import Link from "next/link";
 import { H1 } from "../Typography";
 import projects from "@/data/projects";
 import PortfolioItem from "./PortfolioItem";
@@ -10,29 +8,23 @@ import styles from "./Portfolio.module.scss";
 import Image from "next/image";
 
 type Props = {
-  selectedProjectId?: string;
+  catId?: string;
+  tagId?: string;
 };
 
-const Portfolio = ({ selectedProjectId }: Props) => {
-  const searchParams = useSearchParams();
-
-  const category = searchParams.get("category");
-  const tag = searchParams.get("tag");
-
-  useEffect(() => {
-    if (selectedProjectId && document.getElementById(selectedProjectId)!) {
-      document.getElementById(selectedProjectId)!.scrollIntoView();
-    }
-  }, [selectedProjectId]);
+const Portfolio = ({ catId, tagId }: Props) => {
+  const [selectedProjectId, setSelectedProjectId] = useState<string | null>(
+    null,
+  );
 
   const visibleProjects = projects.filter((project) => {
-    if (!category) {
+    if (!catId) {
       return project;
     }
-    if (!tag) {
-      return project.tagsByCategory[category];
+    if (!tagId) {
+      return project.tagsByCategory[catId];
     }
-    return project.tags.includes(tag);
+    return project.tags.includes(tagId);
   });
 
   const portfolioItems = visibleProjects.map((item, index) => {
@@ -42,18 +34,21 @@ const Portfolio = ({ selectedProjectId }: Props) => {
       isCurrent = true;
       projectDetail.push(
         <li key={`fullRow${item.id}`} className={styles.fullRow}>
-          <PortfolioItem
-            project={item as any}
-            closeLink={`/portfolio${searchParams.toString()}`}
-          />
+          <PortfolioItem project={item as any} />
         </li>,
       );
     }
-    const link = isCurrent ? "/portfolio" : `/portfolio/${item.id}`;
+
     return (
       <React.Fragment key={item.id}>
         <li className={isCurrent ? styles.current : ""} id={item.id}>
-          <Link href={link + searchParams.toString()}>
+          <a
+            onClick={() => {
+              setSelectedProjectId((curVal) =>
+                curVal === item.id ? null : item.id,
+              );
+            }}
+          >
             {item.logo && (
               <Image
                 alt={item.name}
@@ -64,7 +59,7 @@ const Portfolio = ({ selectedProjectId }: Props) => {
                 priority={index === 0}
               />
             )}
-          </Link>
+          </a>
         </li>
         {projectDetail}
       </React.Fragment>
@@ -73,7 +68,7 @@ const Portfolio = ({ selectedProjectId }: Props) => {
 
   return (
     <>
-      <Filter category={category} tag={tag} />
+      <Filter category={catId} tag={tagId} />
       <section className={styles.portfolio}>
         <H1>Portfolio ({visibleProjects.length})</H1>
         <ul id="portfolio-list">{portfolioItems}</ul>

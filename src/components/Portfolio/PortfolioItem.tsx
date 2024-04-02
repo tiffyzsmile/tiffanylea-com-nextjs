@@ -25,10 +25,9 @@ type ProjectType = {
 
 type Props = {
   project: ProjectType;
-  closeLink: string;
 };
 
-const PortfolioItem = ({ project, closeLink }: Props) => {
+const PortfolioItem = ({ project }: Props) => {
   const features = project.features
     ? project.features.map((feature) => {
         const details =
@@ -47,9 +46,6 @@ const PortfolioItem = ({ project, closeLink }: Props) => {
 
   return (
     <section className={styles.portfolioItem}>
-      <Link href={closeLink} className={styles.close}>
-        X
-      </Link>
       <section className={styles.portfolioImages}>
         <ImageGallery
           showFullscreenButton
