@@ -142,12 +142,8 @@ const tagsByCategory = {
   "project-type": {
     name: "Project Type",
     tags: [
+      { id: "type-b2b", name: "B2B", category: "project-type" },
       { id: "blog", name: "Blog", category: "project-type" },
-      {
-        id: "type-b2b",
-        name: "Business to Business (B2B)",
-        category: "project-type",
-      },
       { id: "design-system", name: "Design System", category: "project-type" },
       { id: "type-e-commerce", name: "E-Commerce", category: "project-type" },
       { id: "type-fundraising", name: "Fundraising", category: "project-type" },
@@ -218,7 +214,7 @@ const tagsByCategory = {
       },
       {
         id: "cross-browser-compatibility",
-        name: "Cross Browser Compatibility",
+        name: "Browser Compatibility",
         category: "user-experience-ux",
       },
       {
@@ -228,7 +224,7 @@ const tagsByCategory = {
       },
       {
         id: "ux-information-architecture",
-        name: "Information architecture",
+        name: "Information Architecture",
         category: "user-experience-ux",
       },
       { id: "ux-ux-audit", name: "UX Audit", category: "user-experience-ux" },

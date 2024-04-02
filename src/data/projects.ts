@@ -221,12 +221,12 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
           {
             id: "ux-information-architecture",
-            name: "Information architecture",
+            name: "Information Architecture",
             display: true,
           },
           { id: "ux-ux-audit", name: "UX Audit", display: true },
@@ -386,6 +386,14 @@ const projects: ProjectType[] = [
           { id: "2023", name: "2023", display: true },
         ],
       },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-b2b", name: "B2B", display: true },
+          { id: "type-startup", name: "Startup", display: true },
+        ],
+      },
       tooling: {
         id: "tooling",
         name: "Tooling",
@@ -395,14 +403,6 @@ const projects: ProjectType[] = [
           { id: "library-lodash", name: "Lo-Dash", display: true },
           { id: "tooling-prettier", name: "Prettier", display: true },
           { id: "tooling-webpack", name: "Webpack", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-b2b", name: "Business to Business (B2B)", display: true },
-          { id: "type-startup", name: "Startup", display: true },
         ],
       },
       language: {
@@ -1329,7 +1329,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "ux-information-architecture",
-            name: "Information architecture",
+            name: "Information Architecture",
             display: true,
           },
           { id: "ux-ux-audit", name: "UX Audit", display: true },
@@ -2698,20 +2698,20 @@ const projects: ProjectType[] = [
           { id: "2018", name: "2018", display: true },
         ],
       },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-b2b", name: "B2B", display: true },
+          { id: "type-e-commerce", name: "E-Commerce", display: true },
+          { id: "responsive", name: "Responsive", display: true },
+        ],
+      },
       framework: {
         id: "framework",
         name: "Framework",
         tags: [
           { id: "framework-backbone-js", name: "Backbone.js", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-b2b", name: "Business to Business (B2B)", display: true },
-          { id: "type-e-commerce", name: "E-Commerce", display: true },
-          { id: "responsive", name: "Responsive", display: true },
         ],
       },
       language: {
@@ -3319,7 +3319,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "ux-information-architecture",
-            name: "Information architecture",
+            name: "Information Architecture",
             display: true,
           },
           { id: "ux-usability", name: "Usability", display: true },
@@ -4064,7 +4064,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -4235,7 +4235,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -4708,7 +4708,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -4817,7 +4817,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
           { id: "ux-usability", name: "Usability", display: true },
@@ -4982,6 +4982,17 @@ const projects: ProjectType[] = [
         name: "Year",
         tags: [{ id: "2013", name: "2013", display: true }],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -5005,17 +5016,6 @@ const projects: ProjectType[] = [
         id: "cms",
         name: "CMS",
         tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
-        ],
       },
       analytics: {
         id: "analytics",
@@ -5133,6 +5133,17 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -5140,17 +5151,6 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       role: {
@@ -5354,7 +5354,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
           { id: "ux-usability", name: "Usability", display: true },
@@ -5555,6 +5555,17 @@ const projects: ProjectType[] = [
         name: "Year",
         tags: [{ id: "2013", name: "2013", display: true }],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -5562,17 +5573,6 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       role: {
@@ -5664,7 +5664,7 @@ const projects: ProjectType[] = [
         id: "project-type",
         name: "Project Type",
         tags: [
-          { id: "type-b2b", name: "Business to Business (B2B)", display: true },
+          { id: "type-b2b", name: "B2B", display: true },
           { id: "type-e-commerce", name: "E-Commerce", display: true },
           { id: "responsive", name: "Responsive", display: true },
         ],
@@ -5834,6 +5834,17 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -5849,17 +5860,6 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       "project-type": {
@@ -6086,7 +6086,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -6242,7 +6242,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -6399,7 +6399,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -6703,7 +6703,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
           { id: "ux-usability", name: "Usability", display: true },
@@ -6831,7 +6831,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -7070,6 +7070,17 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -7077,17 +7088,6 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       "project-type": {
@@ -7241,7 +7241,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -7399,7 +7399,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -7550,7 +7550,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -7757,7 +7757,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -7889,7 +7889,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -8031,6 +8031,17 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -8044,17 +8055,6 @@ const projects: ProjectType[] = [
         id: "cms",
         name: "CMS",
         tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
-        ],
       },
       "e-commerce": {
         id: "e-commerce",
@@ -8183,6 +8183,17 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -8206,17 +8217,6 @@ const projects: ProjectType[] = [
         id: "cms",
         name: "CMS",
         tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
-        ],
       },
       industry: {
         id: "industry",
@@ -8605,7 +8605,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -8818,7 +8818,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -9001,7 +9001,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -9150,7 +9150,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
           { id: "ux-usability", name: "Usability", display: true },
@@ -9671,7 +9671,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
           { id: "ux-usability", name: "Usability", display: true },
@@ -9870,12 +9870,12 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
           {
             id: "ux-information-architecture",
-            name: "Information architecture",
+            name: "Information Architecture",
             display: true,
           },
           { id: "ux-usability", name: "Usability", display: true },
@@ -10137,7 +10137,7 @@ const projects: ProjectType[] = [
           { id: "ux-accessibility", name: "Accessibility", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -10383,7 +10383,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
           { id: "ux-usability", name: "Usability", display: true },
@@ -10557,9 +10557,7 @@ const projects: ProjectType[] = [
       "project-type": {
         id: "project-type",
         name: "Project Type",
-        tags: [
-          { id: "type-b2b", name: "Business to Business (B2B)", display: true },
-        ],
+        tags: [{ id: "type-b2b", name: "B2B", display: true }],
       },
       role: {
         id: "role",
@@ -10703,6 +10701,17 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -10715,17 +10724,6 @@ const projects: ProjectType[] = [
         id: "cms",
         name: "CMS",
         tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
-        ],
       },
       analytics: {
         id: "analytics",
@@ -10856,7 +10854,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -10999,7 +10997,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -11140,7 +11138,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -11353,6 +11351,17 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -11365,17 +11374,6 @@ const projects: ProjectType[] = [
         id: "cms",
         name: "CMS",
         tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
-        ],
       },
       analytics: {
         id: "analytics",
@@ -11485,6 +11483,17 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -11500,17 +11509,6 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       industry: {
@@ -11636,6 +11634,17 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -11659,17 +11668,6 @@ const projects: ProjectType[] = [
         id: "cms",
         name: "CMS",
         tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
-        ],
       },
       analytics: {
         id: "analytics",
@@ -11828,7 +11826,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -11967,7 +11965,7 @@ const projects: ProjectType[] = [
           { id: "accessibility-508", name: "508 Compliant", display: true },
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -12102,7 +12100,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -12284,6 +12282,17 @@ const projects: ProjectType[] = [
         name: "Year",
         tags: [{ id: "2009", name: "2009", display: true }],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -12292,17 +12301,6 @@ const projects: ProjectType[] = [
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
           { id: "php", name: "PHP", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       "project-type": {
@@ -12458,7 +12456,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -12577,7 +12575,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -12680,6 +12678,17 @@ const projects: ProjectType[] = [
         name: "Year",
         tags: [{ id: "2009", name: "2009", display: true }],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -12688,17 +12697,6 @@ const projects: ProjectType[] = [
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
           { id: "php", name: "PHP", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       role: {
@@ -12813,7 +12811,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -12893,6 +12891,17 @@ const projects: ProjectType[] = [
         name: "Year",
         tags: [{ id: "2009", name: "2009", display: true }],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -12900,17 +12909,6 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
           { id: "php", name: "PHP", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       cms: {
@@ -13018,7 +13016,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -13141,6 +13139,17 @@ const projects: ProjectType[] = [
         name: "Year",
         tags: [{ id: "2009", name: "2009", display: true }],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -13149,17 +13158,6 @@ const projects: ProjectType[] = [
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
           { id: "php", name: "PHP", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       role: {
@@ -13260,6 +13258,17 @@ const projects: ProjectType[] = [
         name: "Year",
         tags: [{ id: "2009", name: "2009", display: true }],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -13268,17 +13277,6 @@ const projects: ProjectType[] = [
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
           { id: "php", name: "PHP", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
         ],
       },
       cms: {
@@ -13422,7 +13420,7 @@ const projects: ProjectType[] = [
         tags: [
           {
             id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
+            name: "Browser Compatibility",
             display: true,
           },
         ],
@@ -13546,6 +13544,22 @@ const projects: ProjectType[] = [
           { id: "2008", name: "2008", display: true },
         ],
       },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+          {
+            id: "ux-information-architecture",
+            name: "Information Architecture",
+            display: true,
+          },
+        ],
+      },
       language: {
         id: "language",
         name: "Language",
@@ -13553,22 +13567,6 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Cross Browser Compatibility",
-            display: true,
-          },
-          {
-            id: "ux-information-architecture",
-            name: "Information architecture",
-            display: true,
-          },
         ],
       },
       "project-type": {
