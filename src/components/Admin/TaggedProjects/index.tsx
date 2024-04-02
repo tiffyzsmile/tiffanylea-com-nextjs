@@ -11,7 +11,7 @@ const AdminTaggedProjects = ({}: Props) => {
   const [taggedProjectValues, setTaggedProjectValues] =
     useState<TaggedProject>();
   const [taggedProjects, setTaggedProjects] = useState<TaggedProject[]>([]);
-  const [nextToken, setNextToken] = useState(1);
+  const [nextToken, setNextToken] = useState<string | number>(1);
   const [idToEdit, setIdToEdit] = useState(null);
   const { getTaggedProjects, updateTaggedProject } = useTaggedProjects();
 
@@ -26,11 +26,14 @@ const AdminTaggedProjects = ({}: Props) => {
       getTaggedProjects({ nextToken: nextToken === 1 ? null : nextToken }).then(
         ({ taggedProjects, nextNextToken }) => {
           if (nextToken === 1) {
-            setTaggedProjects(taggedProjects);
+            setTaggedProjects(taggedProjects as TaggedProject[]);
           } else {
             // don't want it to keep adding same ones if we already have
             setTaggedProjects((currentTaggedProjects) => {
-              return [...currentTaggedProjects, ...taggedProjects];
+              return [
+                ...currentTaggedProjects,
+                ...taggedProjects,
+              ] as TaggedProject[];
             });
           }
           if (nextNextToken) {
