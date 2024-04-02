@@ -44,7 +44,6 @@ const tagsByCategory = {
       { id: "cascade-server", name: "Cascade Server", category: "cms" },
       { id: "cms-custom-in-house", name: "Custom in-house", category: "cms" },
       { id: "drupal", name: "Drupal", category: "cms" },
-      { id: "joomla", name: "Joomla!", category: "cms" },
       { id: "cms-wordpress", name: "Wordpress", category: "cms" },
     ],
   },
@@ -129,12 +128,10 @@ const tagsByCategory = {
       { id: "asp", name: "ASP", category: "language" },
       { id: "asp-net", name: "ASP.NET", category: "language" },
       { id: "actionscript", name: "ActionScript", category: "language" },
-      { id: "css", name: "CSS", category: "language" },
       { id: "coffeescript", name: "CoffeeScript", category: "language" },
       { id: "html", name: "HTML", category: "language" },
       { id: "json", name: "JSON", category: "language" },
       { id: "javascript", name: "JavaScript", category: "language" },
-      { id: "kml", name: "KML", category: "language" },
       { id: "php", name: "PHP", category: "language" },
       { id: "typescript", name: "TypeScript", category: "language" },
       { id: "velocity", name: "Velocity", category: "language" },
@@ -145,13 +142,7 @@ const tagsByCategory = {
   "project-type": {
     name: "Project Type",
     tags: [
-      {
-        id: "type-auto-auction",
-        name: "Auto Auction",
-        category: "project-type",
-      },
       { id: "blog", name: "Blog", category: "project-type" },
-      { id: "type-brand", name: "Brand", category: "project-type" },
       {
         id: "type-b2b",
         name: "Business to Business (B2B)",
