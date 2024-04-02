@@ -25,6 +25,7 @@ type Props = {
   disabled?: boolean;
   children: React.ReactNode;
   type?: "button" | "submit" | "reset";
+  id?: string;
 };
 
 const Button = ({
@@ -34,6 +35,7 @@ const Button = ({
   disabled = false,
   children,
   type = "button",
+  id,
 }: Props) => {
   return (
     <button
@@ -42,6 +44,7 @@ const Button = ({
       className={className}
       type={type}
       disabled={disabled}
+      id={id}
     >
       {children}
     </button>
