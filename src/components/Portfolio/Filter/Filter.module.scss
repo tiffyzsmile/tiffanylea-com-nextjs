@@ -26,10 +26,13 @@
       a {
         border-radius: 2px;
         color: #3a3a3a;
-        padding: 5px;
+        padding: 15px;
         text-decoration: none;
         font-size: 1em;
         display: block;
+        @media screen and (min-width: 460px) {
+          padding: 5px;
+        }
         &:hover,
         &.current {
           background-color: #dddddd;
