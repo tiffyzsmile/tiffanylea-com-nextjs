@@ -32,6 +32,9 @@ const RootLayout = ({
                 <Link href="/admin/taggedprojects">Tagged Projects</Link>
               </li>
               <li>
+                <Link href="/admin/export">Export Data</Link>
+              </li>
+              <li>
                 <button onClick={signOut}>Sign out</button>
               </li>
             </ul>
