@@ -1,18 +1,18 @@
 import React from "react";
 import ImageGallery from "@/components/ImageGallery";
 import { H1, H2 } from "@/components/Typography";
-import { ProjectType } from "@/data/projects";
+import { LocalProjectType } from "@/data/projects";
 import TagsByCategory from "./TagsByCategory";
 import styles from "./ProjectDetail.module.scss";
 import Image from "next/image";
 
 type Props = {
-  project: ProjectType;
+  project: LocalProjectType;
 };
 
 const ProjectDetail = ({ project }: Props) => {
-  const features = project.features
-    ? project.features.map((feature) => {
+  const features = project.formattedFeatures
+    ? project.formattedFeatures.map((feature) => {
         const details =
           feature.items &&
           feature.items.map((detail) => {
@@ -32,7 +32,7 @@ const ProjectDetail = ({ project }: Props) => {
       <section className={styles.projectImages}>
         <ImageGallery
           showFullscreenButton
-          images={project.images}
+          images={project.formattedImages}
           showThumbnails={false}
         />
       </section>
@@ -45,7 +45,7 @@ const ProjectDetail = ({ project }: Props) => {
           </div>
         )}
 
-        {project.features && features}
+        {project.formattedFeatures && features}
 
         <H2>While Working For</H2>
         <div className={styles.whileWorkingFor}>

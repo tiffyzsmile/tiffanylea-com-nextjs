@@ -46,6 +46,35 @@ export type ProjectType = {
   displayName: string;
 };
 
+export type LocalProjectType = {
+  id: string;
+  name: string;
+  date?: string | null;
+  description?: string | null;
+  url?: string | null;
+  display?: boolean | null;
+  logo?: string | null;
+  internal?: string | null;
+  createdAt: string;
+  updatedAt: string;
+  formattedFeatures?: FeatureType[];
+  formattedImages?: ImageType[];
+  displayName?: string;
+  tagsByCategory?: TagsByCategoryType;
+  tags: string[];
+  categories?: string[];
+  employer?: {
+    id?: string;
+    name?: string;
+    logo?: string;
+  };
+  client?: {
+    id?: string;
+    name?: string;
+    logo?: string | null;
+  };
+};
+
 const projects: ProjectType[] = [
   {
     id: "margarita",

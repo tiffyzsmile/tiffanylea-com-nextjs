@@ -16,17 +16,11 @@ const getProject = async (projectId) => {
   const { data } = await client.graphql({
     query: query.getProject,
     variables: { id: projectId },
-    authMode: "userPool",
+    authMode: "iam",
   });
 
   const project = data ? data.getProject : null;
 
-  // Need to parse awsjson
-  if (project && project.features) {
-    project.features = project.features.map((feature) => {
-      return formatJsonFromAws(feature);
-    });
-  }
   return { project: project };
 };
 
@@ -34,7 +28,7 @@ const getProjects = async () => {
   const { data } = await client.graphql({
     query: query.listProjects,
     variables: { limit: 500 },
-    authMode: "userPool",
+    authMode: "iam",
   });
 
   const projects = data ? data.listProjects.items : [];

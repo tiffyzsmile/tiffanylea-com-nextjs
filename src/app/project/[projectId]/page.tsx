@@ -1,17 +1,29 @@
 import React from "react";
-import projects from "@/data/projects";
 import ProjectDetail from "@/components/ProjectDetail";
+import { getProject, getProjects } from "@/utils/getProjects";
+import { formatProjectForLocal } from "@/utils/formatProjectForLocal";
+
+export async function generateStaticParams() {
+  const projects = await getProjects().then(({ projects }) =>
+    projects.filter((project) => project.display),
+  );
+
+  return projects.map((project) => ({
+    projectId: project.id,
+  }));
+}
 
 type Props = {
   params: { projectId: string };
 };
 
-const ProjectPage = ({ params }: Props) => {
-  const portfolioItem = projects.filter(
-    (project) => project.id === params.projectId,
-  )[0];
+const ProjectPage = async ({ params }: Props) => {
+  const project = await getProject(params.projectId).then(
+    ({ project }) => project,
+  );
+  const formattedProject = formatProjectForLocal(project);
 
-  return <ProjectDetail project={portfolioItem} />;
+  return <ProjectDetail project={formattedProject} />;
 };
 
 export default ProjectPage;
