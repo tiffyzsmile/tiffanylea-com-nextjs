@@ -56,8 +56,8 @@ const tagsByCategory = {
       { id: "data-mariadb", name: "MariaDB", category: "data" },
       { id: "data-mongodb", name: "MongoDB", category: "data" },
       { id: "data-mysql", name: "MySQL", category: "data" },
-      { id: "data-orient-db", name: "OrientDB", category: "data" },
       { id: "data-neo4j", name: "neo4j", category: "data" },
+      { id: "data-orient-db", name: "OrientDB", category: "data" },
     ],
   },
   "e-commerce": {
@@ -125,13 +125,13 @@ const tagsByCategory = {
   language: {
     name: "Language",
     tags: [
+      { id: "actionscript", name: "ActionScript", category: "language" },
       { id: "asp", name: "ASP", category: "language" },
       { id: "asp-net", name: "ASP.NET", category: "language" },
-      { id: "actionscript", name: "ActionScript", category: "language" },
       { id: "coffeescript", name: "CoffeeScript", category: "language" },
       { id: "html", name: "HTML", category: "language" },
-      { id: "json", name: "JSON", category: "language" },
       { id: "javascript", name: "JavaScript", category: "language" },
+      { id: "json", name: "JSON", category: "language" },
       { id: "php", name: "PHP", category: "language" },
       { id: "typescript", name: "TypeScript", category: "language" },
       { id: "velocity", name: "Velocity", category: "language" },
@@ -184,6 +184,7 @@ const tagsByCategory = {
     tags: [
       { id: "tooling-babel", name: "Babel", category: "tooling" },
       { id: "tooling-eslint", name: "ESLint", category: "tooling" },
+      { id: "library-jquery", name: "jQuery", category: "tooling" },
       { id: "library-lodash", name: "Lo-Dash", category: "tooling" },
       { id: "marionette-js", name: "Marionette.js", category: "tooling" },
       { id: "tooling-prettier", name: "Prettier", category: "tooling" },
@@ -196,7 +197,6 @@ const tagsByCategory = {
       },
       { id: "tooling-webpack", name: "Webpack", category: "tooling" },
       { id: "library-zepto-js", name: "Zepto.js", category: "tooling" },
-      { id: "library-jquery", name: "jQuery", category: "tooling" },
     ],
   },
   "user-experience-ux": {
@@ -227,7 +227,6 @@ const tagsByCategory = {
         name: "Information Architecture",
         category: "user-experience-ux",
       },
-      { id: "ux-ux-audit", name: "UX Audit", category: "user-experience-ux" },
       { id: "ux-usability", name: "Usability", category: "user-experience-ux" },
       {
         id: "ux-user-testing",
@@ -239,6 +238,7 @@ const tagsByCategory = {
         name: "UserTesting.com",
         category: "user-experience-ux",
       },
+      { id: "ux-ux-audit", name: "UX Audit", category: "user-experience-ux" },
     ],
   },
   year: {

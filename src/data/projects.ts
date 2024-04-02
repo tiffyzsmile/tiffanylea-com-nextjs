@@ -196,53 +196,19 @@ const projects: ProjectType[] = [
       "ux-ux-audit",
     ],
     categories: [
-      "user-experience-ux",
-      "year",
-      "role",
+      "framework",
       "language",
       "project-type",
-      "framework",
+      "role",
       "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [
-          { id: "2022", name: "2022", display: true },
-          { id: "2023", name: "2023", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          { id: "ux-accessibility", name: "Accessibility", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-          {
-            id: "ux-information-architecture",
-            name: "Information Architecture",
-            display: true,
-          },
-          { id: "ux-ux-audit", name: "UX Audit", display: true },
-          { id: "ux-usability", name: "Usability", display: true },
-        ],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [
-          { id: "tooling-babel", name: "Babel", display: true },
-          { id: "tooling-eslint", name: "ESLint", display: true },
-          { id: "library-lodash", name: "Lo-Dash", display: true },
-          { id: "tooling-prettier", name: "Prettier", display: true },
-          { id: "tooling-rollup", name: "Rollup", display: true },
-        ],
+      framework: {
+        id: "framework",
+        name: "Framework",
+        tags: [{ id: "framework-react", name: "React", display: true }],
       },
       language: {
         id: "language",
@@ -250,8 +216,8 @@ const projects: ProjectType[] = [
         tags: [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
-          { id: "json", name: "JSON", display: true },
           { id: "javascript", name: "JavaScript", display: true },
+          { id: "json", name: "JSON", display: true },
           { id: "typescript", name: "TypeScript", display: true },
         ],
       },
@@ -272,10 +238,44 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [{ id: "framework-react", name: "React", display: true }],
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [
+          { id: "tooling-babel", name: "Babel", display: true },
+          { id: "tooling-eslint", name: "ESLint", display: true },
+          { id: "library-lodash", name: "Lo-Dash", display: true },
+          { id: "tooling-prettier", name: "Prettier", display: true },
+          { id: "tooling-rollup", name: "Rollup", display: true },
+        ],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          { id: "ux-accessibility", name: "Accessibility", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+          {
+            id: "ux-information-architecture",
+            name: "Information Architecture",
+            display: true,
+          },
+          { id: "ux-usability", name: "Usability", display: true },
+          { id: "ux-ux-audit", name: "UX Audit", display: true },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2022", name: "2022", display: true },
+          { id: "2023", name: "2023", display: true },
+        ],
       },
     },
     displayName: "Margarita (2023)",
@@ -368,53 +368,19 @@ const projects: ProjectType[] = [
       "typescript",
     ],
     categories: [
-      "tooling",
-      "language",
-      "year",
-      "project-type",
-      "industry",
-      "role",
       "framework",
+      "industry",
+      "language",
+      "project-type",
+      "role",
+      "tooling",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [
-          { id: "2021", name: "2021", display: true },
-          { id: "2022", name: "2022", display: true },
-          { id: "2023", name: "2023", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-b2b", name: "B2B", display: true },
-          { id: "type-startup", name: "Startup", display: true },
-        ],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [
-          { id: "tooling-babel", name: "Babel", display: true },
-          { id: "tooling-eslint", name: "ESLint", display: true },
-          { id: "library-lodash", name: "Lo-Dash", display: true },
-          { id: "tooling-prettier", name: "Prettier", display: true },
-          { id: "tooling-webpack", name: "Webpack", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "json", name: "JSON", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "typescript", name: "TypeScript", display: true },
-        ],
+      framework: {
+        id: "framework",
+        name: "Framework",
+        tags: [{ id: "framework-react", name: "React", display: true }],
       },
       industry: {
         id: "industry",
@@ -427,15 +393,49 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "json", name: "JSON", display: true },
+          { id: "typescript", name: "TypeScript", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-b2b", name: "B2B", display: true },
+          { id: "type-startup", name: "Startup", display: true },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "front-end", name: "Front End", display: true }],
       },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [{ id: "framework-react", name: "React", display: true }],
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [
+          { id: "tooling-babel", name: "Babel", display: true },
+          { id: "tooling-eslint", name: "ESLint", display: true },
+          { id: "library-lodash", name: "Lo-Dash", display: true },
+          { id: "tooling-prettier", name: "Prettier", display: true },
+          { id: "tooling-webpack", name: "Webpack", display: true },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2021", name: "2021", display: true },
+          { id: "2022", name: "2022", display: true },
+          { id: "2023", name: "2023", display: true },
+        ],
       },
     },
     displayName: "Quantum Metric (2023)",
@@ -541,25 +541,22 @@ const projects: ProjectType[] = [
       "role-design",
     ],
     categories: [
-      "framework",
-      "year",
-      "sdlc",
-      "aws",
-      "role",
       "analytics",
-      "data",
+      "aws",
       "cms",
+      "data",
+      "framework",
+      "role",
+      "sdlc",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2020", name: "2020", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "agile", name: "Agile", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       aws: {
         id: "aws",
@@ -592,27 +589,30 @@ const projects: ProjectType[] = [
           { id: "cms-custom-in-house", name: "Custom in-house", display: true },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "role-design", name: "Design", display: true }],
-      },
       data: {
         id: "data",
         name: "Data",
         tags: [{ id: "data-dynamodb", name: "DynamoDB", display: true }],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
       framework: {
         id: "framework",
         name: "Framework",
         tags: [{ id: "framework-react", name: "React", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "role-design", name: "Design", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "agile", name: "Agile", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2020", name: "2020", display: true }],
       },
     },
     displayName: "Tiffany Lea (2020)",
@@ -713,18 +713,8 @@ const projects: ProjectType[] = [
       "data-dynamodb",
       "framework-react",
     ],
-    categories: ["cms", "sdlc", "aws", "framework", "data", "year"],
+    categories: ["aws", "cms", "data", "framework", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2020", name: "2020", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "agile", name: "Agile", display: true }],
-      },
       aws: {
         id: "aws",
         name: "AWS",
@@ -764,6 +754,16 @@ const projects: ProjectType[] = [
         id: "framework",
         name: "Framework",
         tags: [{ id: "framework-react", name: "React", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "agile", name: "Agile", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2020", name: "2020", display: true }],
       },
     },
     displayName: "Tiffany Lea - Admin (2020)",
@@ -845,21 +845,21 @@ const projects: ProjectType[] = [
       "ux-usertesting-com",
     ],
     categories: [
+      "analytics",
       "aws",
       "data",
-      "analytics",
       "framework",
-      "project-type",
       "language",
+      "project-type",
       "sdlc",
-      "year",
       "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2019", name: "2019", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [{ id: "segment-io", name: "Segment", display: true }],
       },
       aws: {
         id: "aws",
@@ -884,25 +884,20 @@ const projects: ProjectType[] = [
           { id: "framework-react-native", name: "React-Native", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [{ id: "segment-io", name: "Segment", display: true }],
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [{ id: "typescript", name: "TypeScript", display: true }],
       },
       "project-type": {
         id: "project-type",
         name: "Project Type",
         tags: [{ id: "type-startup", name: "Startup", display: true }],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [{ id: "typescript", name: "TypeScript", display: true }],
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -910,6 +905,11 @@ const projects: ProjectType[] = [
         tags: [
           { id: "ux-usertesting-com", name: "UserTesting.com", display: true },
         ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2019", name: "2019", display: true }],
       },
     },
     displayName: "Endpoint - Android (2018)",
@@ -992,24 +992,21 @@ const projects: ProjectType[] = [
       "ux-usertesting-com",
     ],
     categories: [
-      "project-type",
-      "sdlc",
+      "analytics",
       "aws",
       "data",
-      "year",
-      "language",
       "framework",
-      "analytics",
+      "language",
+      "project-type",
+      "sdlc",
       "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [
-          { id: "2018", name: "2018", display: true },
-          { id: "2019", name: "2019", display: true },
-        ],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [{ id: "segment-io", name: "Segment", display: true }],
       },
       aws: {
         id: "aws",
@@ -1034,31 +1031,34 @@ const projects: ProjectType[] = [
           { id: "framework-react-native", name: "React-Native", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [{ id: "segment-io", name: "Segment", display: true }],
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [{ id: "typescript", name: "TypeScript", display: true }],
       },
       "project-type": {
         id: "project-type",
         name: "Project Type",
         tags: [{ id: "type-startup", name: "Startup", display: true }],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [{ id: "typescript", name: "TypeScript", display: true }],
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
         tags: [
           { id: "ux-usertesting-com", name: "UserTesting.com", display: true },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2018", name: "2018", display: true },
+          { id: "2019", name: "2019", display: true },
         ],
       },
     },
@@ -1124,24 +1124,21 @@ const projects: ProjectType[] = [
       "ux-ux-audit",
     ],
     categories: [
-      "language",
+      "analytics",
+      "aws",
+      "data",
       "framework",
+      "language",
+      "project-type",
       "sdlc",
       "user-experience-ux",
       "year",
-      "project-type",
-      "aws",
-      "analytics",
-      "data",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [
-          { id: "2018", name: "2018", display: true },
-          { id: "2019", name: "2019", display: true },
-        ],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [{ id: "segment-io", name: "Segment", display: true }],
       },
       aws: {
         id: "aws",
@@ -1167,6 +1164,11 @@ const projects: ProjectType[] = [
           { id: "framework-react-native", name: "React-Native", display: true },
         ],
       },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [{ id: "typescript", name: "TypeScript", display: true }],
+      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
@@ -1180,22 +1182,20 @@ const projects: ProjectType[] = [
         name: "SDLC",
         tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [{ id: "segment-io", name: "Segment", display: true }],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [{ id: "typescript", name: "TypeScript", display: true }],
-      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
         tags: [
-          { id: "ux-ux-audit", name: "UX Audit", display: true },
           { id: "ux-usertesting-com", name: "UserTesting.com", display: true },
+          { id: "ux-ux-audit", name: "UX Audit", display: true },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2018", name: "2018", display: true },
+          { id: "2019", name: "2019", display: true },
         ],
       },
     },
@@ -1277,38 +1277,31 @@ const projects: ProjectType[] = [
       "ux-ux-audit",
     ],
     categories: [
-      "user-experience-ux",
-      "role",
       "cms",
-      "sdlc",
-      "e-commerce",
-      "project-type",
       "data",
-      "year",
+      "e-commerce",
       "industry",
+      "project-type",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2018", name: "2018", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "agile", name: "Agile", display: true }],
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "back-end", name: "Back End", display: true },
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "consultant", name: "Consultant", display: true },
-          { id: "role-design", name: "Design", display: true },
-          { id: "front-end", name: "Front End", display: true },
-          { id: "full-stack", name: "Full Stack", display: true },
-        ],
+      "e-commerce": {
+        id: "e-commerce",
+        name: "E-Commerce",
+        tags: [{ id: "ecom-other", name: "Other", display: true }],
       },
       industry: {
         id: "industry",
@@ -1323,6 +1316,23 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "back-end", name: "Back End", display: true },
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "consultant", name: "Consultant", display: true },
+          { id: "role-design", name: "Design", display: true },
+          { id: "front-end", name: "Front End", display: true },
+          { id: "full-stack", name: "Full Stack", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "agile", name: "Agile", display: true }],
+      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
@@ -1332,24 +1342,14 @@ const projects: ProjectType[] = [
             name: "Information Architecture",
             display: true,
           },
-          { id: "ux-ux-audit", name: "UX Audit", display: true },
           { id: "ux-usability", name: "Usability", display: true },
+          { id: "ux-ux-audit", name: "UX Audit", display: true },
         ],
       },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
-      "e-commerce": {
-        id: "e-commerce",
-        name: "E-Commerce",
-        tags: [{ id: "ecom-other", name: "Other", display: true }],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2018", name: "2018", display: true }],
       },
     },
     displayName: "Giggles N Hugs (2018)",
@@ -1475,34 +1475,29 @@ const projects: ProjectType[] = [
       "type-e-commerce",
     ],
     categories: [
-      "cms",
-      "role",
-      "language",
-      "framework",
       "analytics",
-      "year",
-      "tooling",
-      "data",
       "aws",
+      "cms",
+      "data",
       "e-commerce",
+      "framework",
+      "language",
       "project-type",
+      "role",
       "sdlc",
+      "tooling",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [
-          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+          {
+            id: "google-tag-manager",
+            name: "Google Tag Manager",
+            display: true,
+          },
         ],
       },
       aws: {
@@ -1510,27 +1505,19 @@ const projects: ProjectType[] = [
         name: "AWS",
         tags: [{ id: "aws-cloudfront", name: "CloudFront", display: true }],
       },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+        ],
+      },
       data: {
         id: "data",
         name: "Data",
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
         ],
       },
       "e-commerce": {
@@ -1544,6 +1531,21 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      framework: {
+        id: "framework",
+        name: "Framework",
+        tags: [
+          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+        ],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+        ],
+      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
@@ -1552,21 +1554,15 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          {
-            id: "google-tag-manager",
-            name: "Google Tag Manager",
-            display: true,
-          },
-        ],
-      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "manager", name: "Manager", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
       tooling: {
         id: "tooling",
@@ -1576,10 +1572,14 @@ const projects: ProjectType[] = [
           { id: "tooling-requirejs", name: "RequireJS", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers - English - Great Britain (2017)",
@@ -1704,34 +1704,29 @@ const projects: ProjectType[] = [
       "type-e-commerce",
     ],
     categories: [
-      "sdlc",
+      "analytics",
+      "aws",
+      "cms",
       "data",
+      "e-commerce",
       "framework",
       "language",
-      "role",
-      "e-commerce",
       "project-type",
-      "aws",
+      "role",
+      "sdlc",
       "tooling",
       "year",
-      "analytics",
-      "cms",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [
-          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+          {
+            id: "google-tag-manager",
+            name: "Google Tag Manager",
+            display: true,
+          },
         ],
       },
       aws: {
@@ -1739,20 +1734,19 @@ const projects: ProjectType[] = [
         name: "AWS",
         tags: [{ id: "aws-cloudfront", name: "CloudFront", display: true }],
       },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+        ],
+      },
       data: {
         id: "data",
         name: "Data",
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
         ],
       },
       "e-commerce": {
@@ -1766,11 +1760,19 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
+      framework: {
+        id: "framework",
+        name: "Framework",
         tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+        ],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
         ],
       },
       "project-type": {
@@ -1781,21 +1783,15 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          {
-            id: "google-tag-manager",
-            name: "Google Tag Manager",
-            display: true,
-          },
-        ],
-      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "manager", name: "Manager", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
       tooling: {
         id: "tooling",
@@ -1805,10 +1801,14 @@ const projects: ProjectType[] = [
           { id: "tooling-requirejs", name: "RequireJS", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers - Spanish - Spain (2017)",
@@ -1849,12 +1849,15 @@ const projects: ProjectType[] = [
       "scrum",
       "type-fundraising",
     ],
-    categories: ["role", "year", "project-type", "sdlc"],
+    categories: ["project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2017", name: "2017", display: true }],
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-fundraising", name: "Fundraising", display: true },
+          { id: "responsive", name: "Responsive", display: true },
+        ],
       },
       role: {
         id: "role",
@@ -1864,18 +1867,15 @@ const projects: ProjectType[] = [
           { id: "manager", name: "Manager", display: true },
         ],
       },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-fundraising", name: "Fundraising", display: true },
-          { id: "responsive", name: "Responsive", display: true },
-        ],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "scrum", name: "Scrum", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2017", name: "2017", display: true }],
       },
     },
     displayName: "Skechers Friendship Walk (2017)",
@@ -2000,34 +2000,29 @@ const projects: ProjectType[] = [
       "type-e-commerce",
     ],
     categories: [
-      "framework",
-      "data",
-      "sdlc",
-      "role",
-      "aws",
-      "language",
-      "year",
-      "project-type",
       "analytics",
-      "e-commerce",
+      "aws",
       "cms",
+      "data",
+      "e-commerce",
+      "framework",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
       "tooling",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [
-          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+          {
+            id: "google-tag-manager",
+            name: "Google Tag Manager",
+            display: true,
+          },
         ],
       },
       aws: {
@@ -2035,20 +2030,19 @@ const projects: ProjectType[] = [
         name: "AWS",
         tags: [{ id: "aws-cloudfront", name: "CloudFront", display: true }],
       },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+        ],
+      },
       data: {
         id: "data",
         name: "Data",
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
         ],
       },
       "e-commerce": {
@@ -2062,11 +2056,19 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
+      framework: {
+        id: "framework",
+        name: "Framework",
         tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+        ],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
         ],
       },
       "project-type": {
@@ -2077,21 +2079,15 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          {
-            id: "google-tag-manager",
-            name: "Google Tag Manager",
-            display: true,
-          },
-        ],
-      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "manager", name: "Manager", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
       tooling: {
         id: "tooling",
@@ -2101,10 +2097,14 @@ const projects: ProjectType[] = [
           { id: "tooling-requirejs", name: "RequireJS", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers - French - Canada (2017)",
@@ -2229,34 +2229,29 @@ const projects: ProjectType[] = [
       "type-e-commerce",
     ],
     categories: [
-      "tooling",
-      "project-type",
-      "year",
-      "role",
-      "sdlc",
-      "e-commerce",
+      "analytics",
       "aws",
       "cms",
-      "language",
-      "analytics",
       "data",
+      "e-commerce",
       "framework",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "tooling",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [
-          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+          {
+            id: "google-tag-manager",
+            name: "Google Tag Manager",
+            display: true,
+          },
         ],
       },
       aws: {
@@ -2264,20 +2259,19 @@ const projects: ProjectType[] = [
         name: "AWS",
         tags: [{ id: "aws-cloudfront", name: "CloudFront", display: true }],
       },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+        ],
+      },
       data: {
         id: "data",
         name: "Data",
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
         ],
       },
       "e-commerce": {
@@ -2291,11 +2285,19 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
+      framework: {
+        id: "framework",
+        name: "Framework",
         tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+        ],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
         ],
       },
       "project-type": {
@@ -2306,21 +2308,15 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          {
-            id: "google-tag-manager",
-            name: "Google Tag Manager",
-            display: true,
-          },
-        ],
-      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "manager", name: "Manager", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
       tooling: {
         id: "tooling",
@@ -2330,10 +2326,14 @@ const projects: ProjectType[] = [
           { id: "tooling-requirejs", name: "RequireJS", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers - English - Canada (2017)",
@@ -2458,34 +2458,29 @@ const projects: ProjectType[] = [
       "type-e-commerce",
     ],
     categories: [
-      "aws",
-      "data",
-      "language",
-      "framework",
-      "year",
-      "project-type",
-      "cms",
-      "role",
-      "tooling",
-      "e-commerce",
-      "sdlc",
       "analytics",
+      "aws",
+      "cms",
+      "data",
+      "e-commerce",
+      "framework",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "tooling",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [
-          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+          {
+            id: "google-tag-manager",
+            name: "Google Tag Manager",
+            display: true,
+          },
         ],
       },
       aws: {
@@ -2493,27 +2488,19 @@ const projects: ProjectType[] = [
         name: "AWS",
         tags: [{ id: "aws-cloudfront", name: "CloudFront", display: true }],
       },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+        ],
+      },
       data: {
         id: "data",
         name: "Data",
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
         ],
       },
       "e-commerce": {
@@ -2527,6 +2514,21 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      framework: {
+        id: "framework",
+        name: "Framework",
+        tags: [
+          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+        ],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+        ],
+      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
@@ -2535,21 +2537,15 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          {
-            id: "google-tag-manager",
-            name: "Google Tag Manager",
-            display: true,
-          },
-        ],
-      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "manager", name: "Manager", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
       tooling: {
         id: "tooling",
@@ -2559,10 +2555,14 @@ const projects: ProjectType[] = [
           { id: "tooling-requirejs", name: "RequireJS", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers - German - Germany (2016)",
@@ -2673,55 +2673,26 @@ const projects: ProjectType[] = [
       "type-e-commerce",
     ],
     categories: [
-      "language",
+      "analytics",
+      "aws",
       "cms",
+      "data",
+      "e-commerce",
+      "framework",
       "industry",
+      "language",
       "project-type",
       "role",
-      "data",
-      "year",
-      "aws",
-      "analytics",
-      "framework",
-      "tooling",
-      "e-commerce",
       "sdlc",
+      "tooling",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "2015", name: "2015", display: true },
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-b2b", name: "B2B", display: true },
-          { id: "type-e-commerce", name: "E-Commerce", display: true },
-          { id: "responsive", name: "Responsive", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [
-          { id: "framework-backbone-js", name: "Backbone.js", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
       },
       aws: {
@@ -2729,19 +2700,19 @@ const projects: ProjectType[] = [
         name: "AWS",
         tags: [{ id: "aws-cloudfront", name: "CloudFront", display: true }],
       },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+        ],
+      },
       data: {
         id: "data",
         name: "Data",
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
         ],
       },
       "e-commerce": {
@@ -2755,12 +2726,38 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      framework: {
+        id: "framework",
+        name: "Framework",
+        tags: [
+          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+        ],
+      },
       industry: {
         id: "industry",
         name: "Industry",
         tags: [
           { id: "e-commerce", name: "E-Commerce", display: true },
           { id: "global", name: "Global", display: true },
+        ],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-b2b", name: "B2B", display: true },
+          { id: "type-e-commerce", name: "E-Commerce", display: true },
+          { id: "responsive", name: "Responsive", display: true },
         ],
       },
       role: {
@@ -2772,12 +2769,10 @@ const projects: ProjectType[] = [
           { id: "manager", name: "Manager", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
       tooling: {
         id: "tooling",
@@ -2787,10 +2782,15 @@ const projects: ProjectType[] = [
           { id: "tooling-requirejs", name: "RequireJS", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2015", name: "2015", display: true },
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers Direct (2016)",
@@ -2843,41 +2843,23 @@ const projects: ProjectType[] = [
       "tooling-requirejs",
     ],
     categories: [
-      "data",
-      "language",
-      "sdlc",
-      "year",
       "cms",
-      "framework",
-      "tooling",
-      "role",
+      "data",
       "e-commerce",
+      "framework",
       "industry",
+      "language",
+      "role",
+      "sdlc",
+      "tooling",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      cms: {
+        id: "cms",
+        name: "CMS",
         tags: [
-          { id: "2015", name: "2015", display: true },
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [{ id: "framework-angularjs", name: "AngularJS", display: true }],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
         ],
       },
       data: {
@@ -2886,13 +2868,6 @@ const projects: ProjectType[] = [
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
         ],
       },
       "e-commerce": {
@@ -2906,10 +2881,25 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      framework: {
+        id: "framework",
+        name: "Framework",
+        tags: [{ id: "framework-angularjs", name: "AngularJS", display: true }],
+      },
       industry: {
         id: "industry",
         name: "Industry",
         tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+        ],
       },
       role: {
         id: "role",
@@ -2919,15 +2909,25 @@ const projects: ProjectType[] = [
           { id: "manager", name: "Manager", display: true },
         ],
       },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      },
       tooling: {
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "tooling-requirejs", name: "RequireJS", display: true }],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2015", name: "2015", display: true },
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers Direct - Admin (2016)",
@@ -2967,12 +2967,15 @@ const projects: ProjectType[] = [
       "scrum",
       "type-fundraising",
     ],
-    categories: ["sdlc", "project-type", "year", "role"],
+    categories: ["project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2016", name: "2016", display: true }],
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-fundraising", name: "Fundraising", display: true },
+          { id: "responsive", name: "Responsive", display: true },
+        ],
       },
       role: {
         id: "role",
@@ -2982,18 +2985,15 @@ const projects: ProjectType[] = [
           { id: "manager", name: "Manager", display: true },
         ],
       },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-fundraising", name: "Fundraising", display: true },
-          { id: "responsive", name: "Responsive", display: true },
-        ],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "scrum", name: "Scrum", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2016", name: "2016", display: true }],
       },
     },
     displayName: "Skechers Friendship Walk (2016)",
@@ -3054,22 +3054,12 @@ const projects: ProjectType[] = [
       "data-mysql",
       "responsive",
     ],
-    categories: ["data", "project-type", "year", "sdlc", "cms", "role"],
+    categories: ["cms", "data", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2016", name: "2016", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "agile", name: "Agile", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "consultant", name: "Consultant", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
       },
       data: {
         id: "data",
@@ -3081,10 +3071,20 @@ const projects: ProjectType[] = [
         name: "Project Type",
         tags: [{ id: "responsive", name: "Responsive", display: true }],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "consultant", name: "Consultant", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "agile", name: "Agile", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2016", name: "2016", display: true }],
       },
     },
     displayName: "Fresh N' Healthy (2016)",
@@ -3213,65 +3213,25 @@ const projects: ProjectType[] = [
       "ux-usability",
     ],
     categories: [
-      "role",
-      "data",
-      "tooling",
-      "project-type",
-      "framework",
-      "language",
-      "sdlc",
       "cms",
-      "year",
-      "industry",
+      "data",
       "e-commerce",
+      "framework",
+      "industry",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "tooling",
       "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      cms: {
+        id: "cms",
+        name: "CMS",
         tags: [
-          { id: "2014", name: "2014", display: true },
-          { id: "2015", name: "2015", display: true },
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [{ id: "framework-angularjs", name: "AngularJS", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [
-          { id: "tooling-babel", name: "Babel", display: true },
-          { id: "tooling-eslint", name: "ESLint", display: true },
-          { id: "library-underscore-js", name: "Underscore.js", display: true },
-          { id: "library-zepto-js", name: "Zepto.js", display: true },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-          { id: "lead", name: "Lead", display: true },
-          { id: "manager", name: "Manager", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "html", name: "HTML", display: true },
-          { id: "json", name: "JSON", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
         ],
       },
       data: {
@@ -3280,13 +3240,6 @@ const projects: ProjectType[] = [
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
         ],
       },
       "e-commerce": {
@@ -3300,6 +3253,27 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      framework: {
+        id: "framework",
+        name: "Framework",
+        tags: [{ id: "framework-angularjs", name: "AngularJS", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "json", name: "JSON", display: true },
+        ],
+      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
@@ -3308,10 +3282,30 @@ const projects: ProjectType[] = [
           { id: "type-intranet", name: "Intranet", display: true },
         ],
       },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+          { id: "lead", name: "Lead", display: true },
+          { id: "manager", name: "Manager", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [
+          { id: "tooling-babel", name: "Babel", display: true },
+          { id: "tooling-eslint", name: "ESLint", display: true },
+          { id: "library-underscore-js", name: "Underscore.js", display: true },
+          { id: "library-zepto-js", name: "Zepto.js", display: true },
+        ],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -3325,10 +3319,16 @@ const projects: ProjectType[] = [
           { id: "ux-usability", name: "Usability", display: true },
         ],
       },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "scrum", name: "Scrum", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2014", name: "2014", display: true },
+          { id: "2015", name: "2015", display: true },
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers - Admin (2015)",
@@ -3440,38 +3440,30 @@ const projects: ProjectType[] = [
       "ux-user-testing",
     ],
     categories: [
+      "analytics",
+      "aws",
+      "cms",
       "data",
-      "year",
       "e-commerce",
       "framework",
-      "sdlc",
       "language",
-      "cms",
       "project-type",
-      "aws",
-      "user-experience-ux",
-      "analytics",
-      "tooling",
       "role",
+      "sdlc",
+      "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "2014", name: "2014", display: true },
-          { id: "2015", name: "2015", display: true },
-          { id: "2016", name: "2016", display: true },
-          { id: "2017", name: "2017", display: true },
-          { id: "2018", name: "2018", display: true },
-        ],
-      },
-      framework: {
-        id: "framework",
-        name: "Framework",
-        tags: [
-          { id: "framework-backbone-js", name: "Backbone.js", display: true },
-          { id: "framework-react", name: "React", display: true },
+          {
+            id: "google-tag-manager",
+            name: "Google Tag Manager",
+            display: true,
+          },
         ],
       },
       aws: {
@@ -3479,20 +3471,19 @@ const projects: ProjectType[] = [
         name: "AWS",
         tags: [{ id: "aws-cloudfront", name: "CloudFront", display: true }],
       },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+        ],
+      },
       data: {
         id: "data",
         name: "Data",
         tags: [
           { id: "data-cloudant", name: "Cloudant", display: true },
           { id: "data-couch-db", name: "CouchDB", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "coffeescript", name: "CoffeeScript", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
         ],
       },
       "e-commerce": {
@@ -3506,11 +3497,20 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
+      framework: {
+        id: "framework",
+        name: "Framework",
         tags: [
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+          { id: "framework-backbone-js", name: "Backbone.js", display: true },
+          { id: "framework-react", name: "React", display: true },
+        ],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "coffeescript", name: "CoffeeScript", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
         ],
       },
       "project-type": {
@@ -3521,36 +3521,36 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          {
-            id: "google-tag-manager",
-            name: "Google Tag Manager",
-            display: true,
-          },
-        ],
-      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "manager", name: "Manager", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "tooling-requirejs", name: "RequireJS", display: true }],
       },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "scrum", name: "Scrum", display: true }],
       },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "tooling-requirejs", name: "RequireJS", display: true }],
+      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
         tags: [{ id: "ux-user-testing", name: "User Testing", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2014", name: "2014", display: true },
+          { id: "2015", name: "2015", display: true },
+          { id: "2016", name: "2016", display: true },
+          { id: "2017", name: "2017", display: true },
+          { id: "2018", name: "2018", display: true },
+        ],
       },
     },
     displayName: "Skechers - USA (2015)",
@@ -3591,17 +3591,14 @@ const projects: ProjectType[] = [
       "scrum",
       "type-fundraising",
     ],
-    categories: ["project-type", "role", "analytics", "sdlc", "year"],
+    categories: ["analytics", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2015", name: "2015", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "role-design", name: "Design", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       "project-type": {
         id: "project-type",
@@ -3611,17 +3608,20 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "role-design", name: "Design", display: true }],
       },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "scrum", name: "Scrum", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2015", name: "2015", display: true }],
       },
     },
     displayName: "Skechers Friendship Walk (2015)",
@@ -3683,17 +3683,14 @@ const projects: ProjectType[] = [
       "scrum",
       "type-fundraising",
     ],
-    categories: ["project-type", "year", "sdlc", "role", "analytics"],
+    categories: ["analytics", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2014", name: "2014", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "role-design", name: "Design", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       "project-type": {
         id: "project-type",
@@ -3703,17 +3700,20 @@ const projects: ProjectType[] = [
           { id: "responsive", name: "Responsive", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "role-design", name: "Design", display: true }],
       },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "scrum", name: "Scrum", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2014", name: "2014", display: true }],
       },
     },
     displayName: "Skechers Friendship Walk (2014)",
@@ -3747,13 +3747,8 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/skechers__logo.svg",
     },
     tags: ["2014", "front-end", "manager", "scrum"],
-    categories: ["role", "year", "sdlc"],
+    categories: ["role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2014", name: "2014", display: true }],
-      },
       role: {
         id: "role",
         name: "Role",
@@ -3766,6 +3761,11 @@ const projects: ProjectType[] = [
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "scrum", name: "Scrum", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2014", name: "2014", display: true }],
       },
     },
     displayName: "Skechers Corporate (2014)",
@@ -3901,18 +3901,20 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "role",
       "analytics",
       "project-type",
+      "role",
       "sdlc",
       "user-experience-ux",
       "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2014", name: "2014", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       "project-type": {
         id: "project-type",
@@ -3929,6 +3931,11 @@ const projects: ProjectType[] = [
           { id: "front-end", name: "Front End", display: true },
         ],
       },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
@@ -3936,17 +3943,10 @@ const projects: ProjectType[] = [
           { id: "ui-design-review", name: "Design Review", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2014", name: "2014", display: true }],
       },
     },
     displayName: "Greensboro Auto Auction (2014)",
@@ -4041,20 +4041,59 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "project-type",
-      "language",
+      "cms",
       "industry",
+      "language",
+      "project-type",
       "role",
+      "sdlc",
       "user-experience-ux",
       "year",
-      "cms",
-      "sdlc",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2014", name: "2014", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-informational", name: "Informational", display: true },
+          { id: "responsive", name: "Responsive", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+          { id: "full-stack", name: "Full Stack", display: true },
+          { id: "lead", name: "Lead", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -4069,49 +4108,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-          { id: "full-stack", name: "Full Stack", display: true },
-          { id: "lead", name: "Lead", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-informational", name: "Informational", display: true },
-          { id: "responsive", name: "Responsive", display: true },
-        ],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2014", name: "2014", display: true }],
       },
     },
     displayName: "University of the Virgin Islands - CELL (2014)",
@@ -4212,20 +4212,58 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "sdlc",
-      "language",
-      "industry",
-      "user-experience-ux",
-      "role",
       "cms",
+      "industry",
+      "language",
       "project-type",
+      "role",
+      "sdlc",
+      "user-experience-ux",
       "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2014", name: "2014", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-informational", name: "Informational", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+          { id: "full-stack", name: "Full Stack", display: true },
+          { id: "lead", name: "Lead", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -4240,48 +4278,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-          { id: "full-stack", name: "Full Stack", display: true },
-          { id: "lead", name: "Lead", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-informational", name: "Informational", display: true },
-        ],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2014", name: "2014", display: true }],
       },
     },
     displayName: "University of the Virgin Islands - SIP (2014)",
@@ -4337,12 +4337,15 @@ const projects: ProjectType[] = [
       "xml",
       "xslt",
     ],
-    categories: ["role", "language", "cms", "year", "project-type", "sdlc"],
+    categories: ["cms", "language", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2014", name: "2014", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [
+          { id: "cascade-server", name: "Cascade Server", display: true },
+          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
+        ],
       },
       language: {
         id: "language",
@@ -4356,6 +4359,11 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-intranet", name: "Intranet", display: true }],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -4366,23 +4374,15 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [
-          { id: "cascade-server", name: "Cascade Server", display: true },
-          { id: "cms-custom-in-house", name: "Custom in-house", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-intranet", name: "Intranet", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2014", name: "2014", display: true }],
       },
     },
     displayName: "Bassett Furniture - Bnet (2014)",
@@ -4448,30 +4448,33 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "role",
-      "year",
-      "tooling",
+      "analytics",
+      "cms",
+      "industry",
       "language",
       "project-type",
-      "analytics",
+      "role",
       "sdlc",
-      "industry",
-      "cms",
+      "tooling",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "consultant", name: "Consultant", display: true },
-          { id: "front-end", name: "Front End", display: true },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "utilities", name: "Utilities", display: true }],
       },
       language: {
         id: "language",
@@ -4484,27 +4487,19 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
         tags: [{ id: "responsive", name: "Responsive", display: true }],
       },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "utilities", name: "Utilities", display: true }],
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "consultant", name: "Consultant", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
       },
       sdlc: {
         id: "sdlc",
@@ -4515,6 +4510,11 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Holyoke Gas & Electric (2013)",
@@ -4687,42 +4687,14 @@ const projects: ProjectType[] = [
     ],
     categories: [
       "cms",
-      "year",
-      "user-experience-ux",
-      "role",
-      "project-type",
-      "sdlc",
       "industry",
+      "project-type",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          { id: "ux-accessibility", name: "Accessibility", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-          { id: "full-stack", name: "Full Stack", display: true },
-          { id: "lead", name: "Lead", display: true },
-        ],
-      },
       cms: {
         id: "cms",
         name: "CMS",
@@ -4738,10 +4710,38 @@ const projects: ProjectType[] = [
         name: "Project Type",
         tags: [{ id: "responsive", name: "Responsive", display: true }],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+          { id: "full-stack", name: "Full Stack", display: true },
+          { id: "lead", name: "Lead", display: true },
+        ],
+      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          { id: "ux-accessibility", name: "Accessibility", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "University of the Virgin Islands (2013)",
@@ -4793,22 +4793,68 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
-      "tooling",
-      "project-type",
+      "analytics",
       "cms",
       "industry",
-      "sdlc",
+      "language",
+      "project-type",
       "role",
+      "sdlc",
+      "tooling",
       "user-experience-ux",
-      "analytics",
       "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "responsive", name: "Responsive", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -4823,56 +4869,10 @@ const projects: ProjectType[] = [
           { id: "ux-usability", name: "Usability", display: true },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "responsive", name: "Responsive", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "University of Scranton (2013)",
@@ -4966,40 +4966,28 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "role",
-      "language",
-      "user-experience-ux",
-      "tooling",
-      "cms",
-      "sdlc",
       "analytics",
-      "year",
+      "cms",
+      "language",
       "project-type",
+      "role",
+      "sdlc",
+      "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       language: {
         id: "language",
@@ -5012,22 +5000,18 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
         tags: [{ id: "responsive", name: "Responsive", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
       },
       sdlc: {
         id: "sdlc",
@@ -5038,6 +5022,22 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Beacon Technologies (2013)",
@@ -5109,21 +5109,42 @@ const projects: ProjectType[] = [
     ],
     categories: [
       "analytics",
+      "cms",
+      "data",
+      "language",
+      "project-type",
+      "role",
       "sdlc",
       "tooling",
-      "data",
-      "project-type",
-      "language",
       "user-experience-ux",
-      "cms",
-      "role",
       "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
+      },
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+        ],
       },
       "project-type": {
         id: "project-type",
@@ -5132,6 +5153,24 @@ const projects: ProjectType[] = [
           { id: "blog", name: "Blog", display: true },
           { id: "responsive", name: "Responsive", display: true },
         ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "role-design", name: "Design", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -5144,49 +5183,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "role-design", name: "Design", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Beacon Technologies - Blog (2013)",
@@ -5331,21 +5331,60 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "role",
-      "user-experience-ux",
+      "cms",
+      "industry",
       "language",
       "project-type",
-      "cms",
-      "year",
-      "industry",
+      "role",
       "sdlc",
       "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "responsive", name: "Responsive", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -5360,49 +5399,10 @@ const projects: ProjectType[] = [
           { id: "ux-usability", name: "Usability", display: true },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "responsive", name: "Responsive", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Syracuse University, Whitman School of Management (2013)",
@@ -5470,15 +5470,15 @@ const projects: ProjectType[] = [
     tags: ["2013", "waterfall"],
     categories: ["sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Bassett Furniture (2013)",
@@ -5542,18 +5542,37 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "year",
       "language",
-      "role",
-      "user-experience-ux",
-      "sdlc",
       "project-type",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "responsive", name: "Responsive", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -5566,29 +5585,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "responsive", name: "Responsive", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "North Carolina Technology Association (2013)",
@@ -5642,31 +5642,48 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
+      "analytics",
+      "cms",
+      "e-commerce",
+      "industry",
       "language",
       "project-type",
-      "e-commerce",
-      "tooling",
       "role",
-      "industry",
       "sdlc",
-      "year",
-      "analytics",
+      "tooling",
       "user-experience-ux",
-      "cms",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "type-b2b", name: "B2B", display: true },
-          { id: "type-e-commerce", name: "E-Commerce", display: true },
-          { id: "responsive", name: "Responsive", display: true },
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      "e-commerce": {
+        id: "e-commerce",
+        name: "E-Commerce",
+        tags: [
+          {
+            id: "ecom-custom-in-house",
+            name: "Custom in-house",
+            display: true,
+          },
+        ],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [
+          { id: "e-commerce", name: "E-Commerce", display: true },
+          { id: "global", name: "Global", display: true },
         ],
       },
       language: {
@@ -5680,10 +5697,14 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-b2b", name: "B2B", display: true },
+          { id: "type-e-commerce", name: "E-Commerce", display: true },
+          { id: "responsive", name: "Responsive", display: true },
+        ],
       },
       role: {
         id: "role",
@@ -5691,39 +5712,6 @@ const projects: ProjectType[] = [
         tags: [
           { id: "consultant", name: "Consultant", display: true },
           { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      "e-commerce": {
-        id: "e-commerce",
-        name: "E-Commerce",
-        tags: [
-          {
-            id: "ecom-custom-in-house",
-            name: "Custom in-house",
-            display: true,
-          },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "ui-design-review", name: "Design Review", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [
-          { id: "e-commerce", name: "E-Commerce", display: true },
-          { id: "global", name: "Global", display: true },
-        ],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
       },
       sdlc: {
@@ -5735,6 +5723,18 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "ui-design-review", name: "Design Review", display: true },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Burton + Burton - RWD (2013)",
@@ -5807,21 +5807,23 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
+      "analytics",
       "e-commerce",
+      "industry",
       "language",
       "project-type",
       "role",
+      "sdlc",
       "user-experience-ux",
       "year",
-      "analytics",
-      "industry",
-      "sdlc",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       "e-commerce": {
         id: "e-commerce",
@@ -5834,24 +5836,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
       },
       language: {
         id: "language",
@@ -5867,22 +5855,34 @@ const projects: ProjectType[] = [
         name: "Project Type",
         tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
       },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
+      role: {
+        id: "role",
+        name: "Role",
         tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
         ],
       },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Artsy Abode (2013)",
@@ -5945,26 +5945,18 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "sdlc",
-      "industry",
-      "role",
       "e-commerce",
-      "year",
+      "industry",
       "project-type",
+      "role",
+      "sdlc",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
+      "e-commerce": {
+        id: "e-commerce",
+        name: "E-Commerce",
+        tags: [{ id: "ecomm-magento", name: "Magento", display: true }],
       },
       industry: {
         id: "industry",
@@ -5976,15 +5968,23 @@ const projects: ProjectType[] = [
         name: "Project Type",
         tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
       },
-      "e-commerce": {
-        id: "e-commerce",
-        name: "E-Commerce",
-        tags: [{ id: "ecomm-magento", name: "Magento", display: true }],
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
       },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Lucky Dog (2013)",
@@ -6062,22 +6062,68 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "role",
-      "user-experience-ux",
-      "language",
-      "industry",
-      "year",
-      "tooling",
-      "cms",
-      "project-type",
       "analytics",
+      "cms",
+      "industry",
+      "language",
+      "project-type",
+      "role",
       "sdlc",
+      "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "responsive", name: "Responsive", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -6091,56 +6137,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "responsive", name: "Responsive", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Cuyamaca College (2012)",
@@ -6218,22 +6218,68 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "sdlc",
-      "language",
       "analytics",
-      "tooling",
-      "project-type",
-      "year",
-      "user-experience-ux",
-      "role",
-      "industry",
       "cms",
+      "industry",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "responsive", name: "Responsive", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -6247,56 +6293,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "responsive", name: "Responsive", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Grossmont-Cuyamaca Community College District (2012)",
@@ -6375,22 +6375,71 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
+      "analytics",
       "cms",
       "industry",
+      "language",
       "project-type",
       "role",
       "sdlc",
-      "year",
-      "analytics",
-      "user-experience-ux",
       "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2013", name: "2013", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-mobile", name: "Mobile", display: true },
+          { id: "responsive", name: "Responsive", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -6404,59 +6453,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-mobile", name: "Mobile", display: true },
-          { id: "responsive", name: "Responsive", display: true },
-        ],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2013", name: "2013", display: true }],
       },
     },
     displayName: "Grossmont College (2012)",
@@ -6498,18 +6498,13 @@ const projects: ProjectType[] = [
     ],
     categories: [
       "e-commerce",
-      "year",
-      "project-type",
       "industry",
+      "project-type",
       "role",
       "sdlc",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
-      },
       "e-commerce": {
         id: "e-commerce",
         name: "E-Commerce",
@@ -6521,15 +6516,15 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
-      },
       industry: {
         id: "industry",
         name: "Industry",
         tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
       },
       role: {
         id: "role",
@@ -6540,6 +6535,11 @@ const projects: ProjectType[] = [
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "Furnitureland South (2012)",
@@ -6681,20 +6681,54 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
+      "cms",
+      "industry",
+      "language",
       "role",
+      "sdlc",
       "tooling",
       "user-experience-ux",
-      "language",
-      "industry",
-      "cms",
-      "sdlc",
       "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -6709,44 +6743,10 @@ const projects: ProjectType[] = [
           { id: "ux-usability", name: "Usability", display: true },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "Syracuse University, Whitman School of Management (2012)",
@@ -6808,20 +6808,53 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
+      "analytics",
+      "cms",
+      "industry",
+      "language",
       "role",
       "sdlc",
-      "industry",
-      "analytics",
       "user-experience-ux",
       "year",
-      "language",
-      "cms",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "consultant", name: "Consultant", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -6836,43 +6869,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "consultant", name: "Consultant", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "Southeastern Baptist Theological Seminary (2012)",
@@ -6928,12 +6928,12 @@ const projects: ProjectType[] = [
       "type-e-commerce",
       "waterfall",
     ],
-    categories: ["role", "year", "project-type", "industry", "sdlc"],
+    categories: ["industry", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
       },
       "project-type": {
         id: "project-type",
@@ -6951,15 +6951,15 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "Bassett Furniture - HGTV Home (2012)",
@@ -7048,17 +7048,24 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "language",
-      "e-commerce",
-      "tooling",
-      "project-type",
-      "sdlc",
-      "role",
-      "user-experience-ux",
       "analytics",
+      "e-commerce",
       "industry",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "tooling",
+      "user-experience-ux",
     ],
     tagsByCategory: {
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
       "e-commerce": {
         id: "e-commerce",
         name: "E-Commerce",
@@ -7070,16 +7077,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
       },
       language: {
         id: "language",
@@ -7095,22 +7096,10 @@ const projects: ProjectType[] = [
         name: "Project Type",
         tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
       },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
-      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
       },
       sdlc: {
         id: "sdlc",
@@ -7121,6 +7110,17 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
       },
     },
     displayName: "Tufenkian Outlet (2012)",
@@ -7219,32 +7219,24 @@ const projects: ProjectType[] = [
     ],
     categories: [
       "cms",
-      "language",
-      "year",
-      "role",
-      "user-experience-ux",
-      "tooling",
       "industry",
+      "language",
+      "role",
       "sdlc",
+      "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          { id: "ux-accessibility", name: "Accessibility", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "utilities", name: "Utilities", display: true }],
       },
       language: {
         id: "language",
@@ -7267,16 +7259,6 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "utilities", name: "Utilities", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
@@ -7286,6 +7268,24 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          { id: "ux-accessibility", name: "Accessibility", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "NJ Resources (2012)",
@@ -7376,33 +7376,25 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
-      "user-experience-ux",
-      "year",
       "cms",
+      "industry",
+      "language",
       "role",
       "sdlc",
-      "industry",
       "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          { id: "ux-accessibility", name: "Accessibility", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "utilities", name: "Utilities", display: true }],
       },
       language: {
         id: "language",
@@ -7425,16 +7417,6 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "utilities", name: "Utilities", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
@@ -7444,6 +7426,24 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          { id: "ux-accessibility", name: "Accessibility", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "NJR Home Services (2012)",
@@ -7527,33 +7527,25 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "role",
+      "cms",
+      "industry",
       "language",
+      "role",
+      "sdlc",
+      "tooling",
       "user-experience-ux",
       "year",
-      "industry",
-      "sdlc",
-      "cms",
-      "tooling",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          { id: "ux-accessibility", name: "Accessibility", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "utilities", name: "Utilities", display: true }],
       },
       language: {
         id: "language",
@@ -7576,16 +7568,6 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "utilities", name: "Utilities", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
@@ -7595,6 +7577,24 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          { id: "ux-accessibility", name: "Accessibility", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "NJR Energy Services (2012)",
@@ -7735,32 +7735,24 @@ const projects: ProjectType[] = [
     ],
     categories: [
       "cms",
-      "language",
-      "tooling",
       "industry",
+      "language",
       "role",
+      "sdlc",
+      "tooling",
       "user-experience-ux",
       "year",
-      "sdlc",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          { id: "ux-accessibility", name: "Accessibility", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "utilities", name: "Utilities", display: true }],
       },
       language: {
         id: "language",
@@ -7783,16 +7775,6 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "utilities", name: "Utilities", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
@@ -7802,6 +7784,24 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          { id: "ux-accessibility", name: "Accessibility", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "NJ Natural Gas (2012)",
@@ -7867,20 +7867,54 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "role",
+      "cms",
+      "industry",
       "language",
+      "role",
+      "sdlc",
       "tooling",
       "user-experience-ux",
-      "sdlc",
       "year",
-      "industry",
-      "cms",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -7894,44 +7928,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "Hartford University - New Homepage (2012)",
@@ -8002,53 +8002,23 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "role",
-      "sdlc",
+      "analytics",
+      "cms",
+      "e-commerce",
       "language",
       "project-type",
+      "role",
+      "sdlc",
       "tooling",
       "user-experience-ux",
-      "analytics",
       "year",
-      "e-commerce",
-      "cms",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
-      },
-      language: {
-        id: "language",
-        name: "Language",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "asp", name: "ASP", display: true },
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "consultant", name: "Consultant", display: true },
-          { id: "front-end", name: "Front End", display: true },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
       },
       cms: {
@@ -8067,6 +8037,18 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "asp", name: "ASP", display: true },
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
@@ -8075,11 +8057,13 @@ const projects: ProjectType[] = [
           { id: "type-mobile", name: "Mobile", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
+      role: {
+        id: "role",
+        name: "Role",
         tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "consultant", name: "Consultant", display: true },
+          { id: "front-end", name: "Front End", display: true },
         ],
       },
       sdlc: {
@@ -8091,6 +8075,22 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "Bassett Furniture Mobile Site (2012)",
@@ -8154,23 +8154,30 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "year",
-      "language",
-      "role",
       "analytics",
-      "industry",
       "cms",
-      "sdlc",
-      "project-type",
-      "user-experience-ux",
-      "tooling",
       "e-commerce",
+      "industry",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2012", name: "2012", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       "e-commerce": {
         id: "e-commerce",
@@ -8183,23 +8190,12 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
+      industry: {
+        id: "industry",
+        name: "Industry",
         tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
+          { id: "e-commerce", name: "E-Commerce", display: true },
+          { id: "medical", name: "Medical", display: true },
         ],
       },
       language: {
@@ -8213,19 +8209,6 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [
-          { id: "e-commerce", name: "E-Commerce", display: true },
-          { id: "medical", name: "Medical", display: true },
-        ],
-      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
@@ -8234,11 +8217,12 @@ const projects: ProjectType[] = [
           { id: "type-informational", name: "Informational", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
+      role: {
+        id: "role",
+        name: "Role",
         tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
         ],
       },
       sdlc: {
@@ -8250,6 +8234,22 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2012", name: "2012", display: true }],
       },
     },
     displayName: "Texwipe (2011)",
@@ -8299,12 +8299,22 @@ const projects: ProjectType[] = [
       "type-intranet",
       "waterfall",
     ],
-    categories: ["data", "role", "year", "project-type", "sdlc", "language"],
+    categories: ["data", "language", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [{ id: "php", name: "PHP", display: true }],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-intranet", name: "Intranet", display: true }],
       },
       role: {
         id: "role",
@@ -8316,25 +8326,15 @@ const projects: ProjectType[] = [
           { id: "full-stack", name: "Full Stack", display: true },
         ],
       },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-intranet", name: "Intranet", display: true }],
-      },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [{ id: "php", name: "PHP", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "TAMF iFound Forum (2011)",
@@ -8381,12 +8381,17 @@ const projects: ProjectType[] = [
       "type-intranet",
       "waterfall",
     ],
-    categories: ["project-type", "cms", "sdlc", "data", "year"],
+    categories: ["cms", "data", "project-type", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
+      },
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
       },
       "project-type": {
         id: "project-type",
@@ -8396,20 +8401,15 @@ const projects: ProjectType[] = [
           { id: "type-intranet", name: "Intranet", display: true },
         ],
       },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "TAMF iFound Blog (2011)",
@@ -8487,12 +8487,17 @@ const projects: ProjectType[] = [
       "type-intranet",
       "waterfall",
     ],
-    categories: ["year", "sdlc", "cms", "role", "project-type"],
+    categories: ["cms", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-intranet", name: "Intranet", display: true }],
       },
       role: {
         id: "role",
@@ -8505,20 +8510,15 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-intranet", name: "Intranet", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "TAMF iFound (2011)",
@@ -8592,12 +8592,22 @@ const projects: ProjectType[] = [
       "javascript",
       "waterfall",
     ],
-    categories: ["user-experience-ux", "language", "role", "sdlc", "year"],
+    categories: ["language", "role", "sdlc", "user-experience-ux", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [{ id: "javascript", name: "JavaScript", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -8610,20 +8620,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [{ id: "javascript", name: "JavaScript", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Los Alamos National Laboratory (2011)",
@@ -8669,20 +8669,17 @@ const projects: ProjectType[] = [
       "xml",
       "xslt",
     ],
-    categories: ["industry", "sdlc", "language", "role", "cms", "year"],
+    categories: ["cms", "industry", "language", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "utilities", name: "Utilities", display: true }],
       },
       language: {
         id: "language",
@@ -8695,20 +8692,23 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "utilities", name: "Utilities", display: true }],
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
       },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Basin Electric - Copy Site Script (2011)",
@@ -8796,32 +8796,24 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
-      "year",
-      "user-experience-ux",
-      "role",
-      "industry",
       "cms",
+      "industry",
+      "language",
+      "role",
       "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          { id: "ux-accessibility", name: "Accessibility", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
       },
       language: {
         id: "language",
@@ -8845,20 +8837,28 @@ const projects: ProjectType[] = [
           { id: "full-stack", name: "Full Stack", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          { id: "ux-accessibility", name: "Accessibility", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Hartford University - Calendar Updates (2011)",
@@ -8891,18 +8891,8 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/beacon-technologies__logo.svg",
     },
     tags: ["2011", "data-mysql", "drupal", "role-design", "waterfall"],
-    categories: ["sdlc", "role", "data", "year", "cms"],
+    categories: ["cms", "data", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "role-design", name: "Design", display: true }],
-      },
       cms: {
         id: "cms",
         name: "CMS",
@@ -8913,10 +8903,20 @@ const projects: ProjectType[] = [
         name: "Data",
         tags: [{ id: "data-mysql", name: "MySQL", display: true }],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "role-design", name: "Design", display: true }],
+      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Beacon Technologies - KB (2011)",
@@ -8981,17 +8981,44 @@ const projects: ProjectType[] = [
     categories: [
       "industry",
       "language",
-      "user-experience-ux",
-      "sdlc",
-      "role",
-      "year",
       "project-type",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "asp-net", name: "ASP.NET", display: true },
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-mobile", name: "Mobile", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "consultant", name: "Consultant", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -9006,37 +9033,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "asp-net", name: "ASP.NET", display: true },
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "consultant", name: "Consultant", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-mobile", name: "Mobile", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "University of Hartford - Mobile (2011)",
@@ -9128,20 +9128,57 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
-      "year",
-      "user-experience-ux",
-      "industry",
-      "role",
-      "cms",
-      "sdlc",
       "analytics",
+      "cms",
+      "industry",
+      "language",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "php", name: "PHP", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -9156,47 +9193,10 @@ const projects: ProjectType[] = [
           { id: "ux-usability", name: "Usability", display: true },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "php", name: "PHP", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "University of Houston - You are the pride (2011)",
@@ -9256,12 +9256,12 @@ const projects: ProjectType[] = [
       "type-informational",
       "waterfall",
     ],
-    categories: ["language", "role", "cms", "year", "project-type", "sdlc"],
+    categories: ["cms", "language", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       language: {
         id: "language",
@@ -9269,6 +9269,14 @@ const projects: ProjectType[] = [
         tags: [
           { id: "asp", name: "ASP", display: true },
           { id: "javascript", name: "JavaScript", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-brand", name: "Brand", display: false },
+          { id: "type-informational", name: "Informational", display: true },
         ],
       },
       role: {
@@ -9281,23 +9289,15 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-brand", name: "Brand", display: false },
-          { id: "type-informational", name: "Informational", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Bassett Furniture - Fabrics We Love (2011)",
@@ -9367,20 +9367,19 @@ const projects: ProjectType[] = [
       "xml",
       "xslt",
     ],
-    categories: ["role", "language", "analytics", "year", "sdlc", "cms"],
+    categories: ["analytics", "cms", "language", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       language: {
         id: "language",
@@ -9394,22 +9393,23 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
+      role: {
+        id: "role",
+        name: "Role",
         tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
         ],
       },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Basin Electric Power Cooperative (2011)",
@@ -9488,25 +9488,22 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "e-commerce",
-      "role",
-      "project-type",
       "analytics",
+      "e-commerce",
       "industry",
-      "sdlc",
       "language",
+      "project-type",
+      "role",
+      "sdlc",
       "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [{ id: "asp-net", name: "ASP.NET", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       "e-commerce": {
         id: "e-commerce",
@@ -9519,6 +9516,21 @@ const projects: ProjectType[] = [
           },
         ],
       },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [{ id: "asp-net", name: "ASP.NET", display: true }],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -9530,27 +9542,15 @@ const projects: ProjectType[] = [
           { id: "lead", name: "Lead", display: true },
         ],
       },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "BMI Surplus (2011)",
@@ -9647,21 +9647,65 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
-      "role",
-      "tooling",
-      "industry",
-      "project-type",
       "cms",
+      "industry",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "tooling",
       "user-experience-ux",
       "year",
-      "sdlc",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "asp-net", name: "ASP.NET", display: true },
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-mobile", name: "Mobile", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "back-end", name: "Back End", display: true },
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "consultant", name: "Consultant", display: true },
+          { id: "role-design", name: "Design", display: true },
+          { id: "front-end", name: "Front End", display: true },
+          { id: "full-stack", name: "Full Stack", display: true },
+          { id: "lead", name: "Lead", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -9678,54 +9722,10 @@ const projects: ProjectType[] = [
           { id: "ux-user-testing", name: "User Testing", display: true },
         ],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "asp-net", name: "ASP.NET", display: true },
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "back-end", name: "Back End", display: true },
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "consultant", name: "Consultant", display: true },
-          { id: "role-design", name: "Design", display: true },
-          { id: "front-end", name: "Front End", display: true },
-          { id: "full-stack", name: "Full Stack", display: true },
-          { id: "lead", name: "Lead", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-mobile", name: "Mobile", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Winston-Salem State University - Mobile (2010)",
@@ -9846,22 +9846,69 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
       "analytics",
-      "year",
-      "user-experience-ux",
       "cms",
       "industry",
-      "role",
+      "language",
       "project-type",
+      "role",
       "sdlc",
       "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "asp-net", name: "ASP.NET", display: true },
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-mobile", name: "Mobile", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      tooling: {
+        id: "tooling",
+        name: "Tooling",
+        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -9881,57 +9928,10 @@ const projects: ProjectType[] = [
           { id: "ux-usability", name: "Usability", display: true },
         ],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "asp-net", name: "ASP.NET", display: true },
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-mobile", name: "Mobile", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
-      },
-      tooling: {
-        id: "tooling",
-        name: "Tooling",
-        tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Winston-Salem State University (2010)",
@@ -9980,18 +9980,8 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/apex-analytix__logo.svg",
     },
     tags: ["2011", "front-end", "google-analytics", "waterfall"],
-    categories: ["role", "sdlc", "analytics", "year"],
+    categories: ["analytics", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
       analytics: {
         id: "analytics",
         name: "Analytics",
@@ -9999,10 +9989,20 @@ const projects: ProjectType[] = [
           { id: "google-analytics", name: "Google Analytics", display: true },
         ],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName: "Apex Analytix (2010)",
@@ -10113,34 +10113,26 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
+      "cms",
+      "industry",
       "language",
       "project-type",
-      "industry",
       "role",
+      "sdlc",
+      "tooling",
       "user-experience-ux",
       "year",
-      "cms",
-      "tooling",
-      "sdlc",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2011", name: "2011", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          { id: "ux-accessibility", name: "Accessibility", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
       },
       language: {
         id: "language",
@@ -10155,6 +10147,13 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-informational", name: "Informational", display: true },
+        ],
+      },
       role: {
         id: "role",
         name: "Role",
@@ -10163,23 +10162,6 @@ const projects: ProjectType[] = [
           { id: "cms-configuration", name: "CMS Configuration", display: true },
           { id: "front-end", name: "Front End", display: true },
           { id: "lead", name: "Lead", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-informational", name: "Informational", display: true },
         ],
       },
       sdlc: {
@@ -10191,6 +10173,24 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          { id: "ux-accessibility", name: "Accessibility", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2011", name: "2011", display: true }],
       },
     },
     displayName:
@@ -10291,17 +10291,17 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/furnitureland-south__logo.svg",
     },
     tags: ["2010", "waterfall"],
-    categories: ["year", "sdlc"],
+    categories: ["sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Furnitureland South (2010)",
@@ -10362,19 +10362,47 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "user-experience-ux",
-      "year",
+      "cms",
+      "industry",
       "language",
       "role",
-      "cms",
       "sdlc",
-      "industry",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -10389,38 +10417,10 @@ const projects: ProjectType[] = [
           { id: "ux-usability", name: "Usability", display: true },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "University of Houston - News Releases (2010)",
@@ -10526,45 +10526,22 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
+      "analytics",
+      "cms",
       "e-commerce",
       "industry",
-      "cms",
+      "language",
       "project-type",
-      "year",
-      "sdlc",
-      "analytics",
       "role",
+      "sdlc",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
-      },
-      language: {
-        id: "language",
-        name: "Language",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "asp", name: "ASP", display: true },
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "xml", name: "XML", display: true },
-          { id: "xslt", name: "XSLT", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-b2b", name: "B2B", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
       },
       cms: {
@@ -10591,17 +10568,40 @@ const projects: ProjectType[] = [
           { id: "global", name: "Global", display: true },
         ],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
+      language: {
+        id: "language",
+        name: "Language",
         tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
+          { id: "asp", name: "ASP", display: true },
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "xml", name: "XML", display: true },
+          { id: "xslt", name: "XSLT", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-b2b", name: "B2B", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
         ],
       },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Burton and Burton (2010)",
@@ -10673,21 +10673,33 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "industry",
-      "user-experience-ux",
-      "language",
       "analytics",
+      "cms",
+      "industry",
+      "language",
+      "project-type",
       "role",
       "sdlc",
-      "cms",
+      "user-experience-ux",
       "year",
-      "project-type",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "medical", name: "Medical", display: true }],
       },
       language: {
         id: "language",
@@ -10701,6 +10713,26 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-informational", name: "Informational", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
@@ -10712,42 +10744,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-informational", name: "Informational", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "medical", name: "Medical", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Greensboro Radiology (2010)",
@@ -10833,31 +10833,26 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
-      "user-experience-ux",
       "analytics",
-      "role",
       "cms",
-      "year",
+      "language",
+      "role",
       "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       language: {
         id: "language",
@@ -10879,22 +10874,27 @@ const projects: ProjectType[] = [
           { id: "front-end", name: "Front End", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Texas A&M Foundation (2010)",
@@ -10975,39 +10975,39 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "cms",
-      "language",
-      "year",
-      "sdlc",
-      "industry",
-      "user-experience-ux",
-      "role",
       "analytics",
+      "cms",
+      "industry",
+      "language",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
       },
       language: {
         id: "language",
         name: "Language",
         tags: [
-          { id: "asp", name: "ASP", display: true },
           { id: "actionscript", name: "ActionScript", display: true },
+          { id: "asp", name: "ASP", display: true },
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
@@ -11023,27 +11023,27 @@ const projects: ProjectType[] = [
           { id: "front-end", name: "Front End", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Framingham University (2010)",
@@ -11109,18 +11109,20 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "language",
       "analytics",
-      "sdlc",
-      "year",
-      "user-experience-ux",
+      "language",
       "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       language: {
         id: "language",
@@ -11131,6 +11133,16 @@ const projects: ProjectType[] = [
           { id: "html", name: "HTML", display: true },
           { id: "javascript", name: "JavaScript", display: true },
         ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -11143,22 +11155,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "United Anesthesia (2010)",
@@ -11213,17 +11213,24 @@ const projects: ProjectType[] = [
       "type-informational",
       "waterfall",
     ],
-    categories: ["year", "language", "cms", "sdlc", "project-type", "role"],
+    categories: ["cms", "language", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       language: {
         id: "language",
         name: "Language",
         tags: [{ id: "actionscript", name: "ActionScript", display: true }],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-informational", name: "Informational", display: true },
+        ],
       },
       role: {
         id: "role",
@@ -11233,22 +11240,15 @@ const projects: ProjectType[] = [
           { id: "front-end", name: "Front End", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-informational", name: "Informational", display: true },
-        ],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Cogent Research (2010)",
@@ -11325,19 +11325,26 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "language",
-      "role",
-      "year",
-      "user-experience-ux",
       "analytics",
       "cms",
+      "language",
+      "role",
       "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       language: {
         id: "language",
@@ -11351,6 +11358,19 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
@@ -11362,30 +11382,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Staub Leadership (2010)",
@@ -11455,22 +11455,24 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "user-experience-ux",
+      "analytics",
+      "e-commerce",
       "industry",
       "language",
       "project-type",
-      "tooling",
-      "e-commerce",
       "role",
       "sdlc",
+      "tooling",
+      "user-experience-ux",
       "year",
-      "analytics",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       "e-commerce": {
         id: "e-commerce",
@@ -11483,24 +11485,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
       },
       language: {
         id: "language",
@@ -11511,21 +11499,17 @@ const projects: ProjectType[] = [
           { id: "javascript", name: "JavaScript", display: true },
         ],
       },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
-      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
         tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
+      role: {
+        id: "role",
+        name: "Role",
         tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
         ],
       },
       sdlc: {
@@ -11537,6 +11521,22 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Firefly Store Solutions (2010)",
@@ -11607,21 +11607,28 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "sdlc",
-      "year",
-      "role",
-      "language",
-      "project-type",
-      "industry",
-      "user-experience-ux",
       "analytics",
       "cms",
+      "industry",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       industry: {
         id: "industry",
@@ -11632,25 +11639,6 @@ const projects: ProjectType[] = [
             name: "Attorneys/Law Firms",
             display: true,
           },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
         ],
       },
       language: {
@@ -11664,18 +11652,6 @@ const projects: ProjectType[] = [
           { id: "xslt", name: "XSLT", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
       "project-type": {
         id: "project-type",
         name: "Project Type",
@@ -11683,10 +11659,34 @@ const projects: ProjectType[] = [
           { id: "type-informational", name: "Informational", display: true },
         ],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Montgomery Family Law (2010)",
@@ -11803,33 +11803,33 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "user-experience-ux",
-      "language",
       "analytics",
-      "industry",
       "cms",
-      "sdlc",
+      "industry",
+      "language",
       "role",
-      "year",
+      "sdlc",
       "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
       },
       language: {
         id: "language",
@@ -11851,23 +11851,6 @@ const projects: ProjectType[] = [
           { id: "front-end", name: "Front End", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "higher-ed", name: "Higher Ed", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
@@ -11877,6 +11860,23 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "University of Hartford (2010)",
@@ -11941,34 +11941,19 @@ const projects: ProjectType[] = [
       "xslt",
     ],
     categories: [
-      "user-experience-ux",
-      "tooling",
-      "sdlc",
-      "language",
-      "year",
-      "role",
       "cms",
+      "language",
+      "role",
+      "sdlc",
+      "tooling",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [
-          { id: "2010", name: "2010", display: true },
-          { id: "2011", name: "2011", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          { id: "accessibility-508", name: "508 Compliant", display: true },
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-        ],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
       },
       language: {
         id: "language",
@@ -11990,11 +11975,6 @@ const projects: ProjectType[] = [
           { id: "front-end", name: "Front End", display: true },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cascade-server", name: "Cascade Server", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
@@ -12004,6 +11984,26 @@ const projects: ProjectType[] = [
         id: "tooling",
         name: "Tooling",
         tags: [{ id: "library-jquery", name: "jQuery", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          { id: "accessibility-508", name: "508 Compliant", display: true },
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2010", name: "2010", display: true },
+          { id: "2011", name: "2011", display: true },
+        ],
       },
     },
     displayName: "Rollins University Magazine (2010)",
@@ -12078,13 +12078,8 @@ const projects: ProjectType[] = [
       "html",
       "waterfall",
     ],
-    categories: ["role", "sdlc", "language", "user-experience-ux", "year"],
+    categories: ["language", "role", "sdlc", "user-experience-ux", "year"],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2010", name: "2010", display: true }],
-      },
       language: {
         id: "language",
         name: "Language",
@@ -12093,6 +12088,16 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
         ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -12105,15 +12110,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2010", name: "2010", display: true }],
       },
     },
     displayName: "Volvo Bus SCR (2010)",
@@ -12157,33 +12157,19 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "year",
-      "sdlc",
+      "cms",
       "data",
       "language",
-      "role",
-      "cms",
       "project-type",
+      "role",
+      "sdlc",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "back-end", name: "Back End", display: true },
-          { id: "cms-configuration", name: "CMS Configuration", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "blog", name: "Blog", display: true }],
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
       },
       data: {
         id: "data",
@@ -12195,15 +12181,29 @@ const projects: ProjectType[] = [
         name: "Language",
         tags: [{ id: "php", name: "PHP", display: true }],
       },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "blog", name: "Blog", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "back-end", name: "Back End", display: true },
+          { id: "cms-configuration", name: "CMS Configuration", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "cms-wordpress", name: "Wordpress", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "Furnitureland South Blog (2009)",
@@ -12265,33 +12265,39 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "user-experience-ux",
-      "project-type",
-      "year",
-      "language",
       "analytics",
       "data",
       "e-commerce",
-      "sdlc",
-      "role",
       "industry",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
+      },
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
+      },
+      "e-commerce": {
+        id: "e-commerce",
+        name: "E-Commerce",
+        tags: [{ id: "ecomm-magento", name: "Magento", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
       },
       language: {
         id: "language",
@@ -12308,37 +12314,31 @@ const projects: ProjectType[] = [
         name: "Project Type",
         tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
       },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
-      },
       role: {
         id: "role",
         name: "Role",
         tags: [{ id: "front-end", name: "Front End", display: true }],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      "e-commerce": {
-        id: "e-commerce",
-        name: "E-Commerce",
-        tags: [{ id: "ecomm-magento", name: "Magento", display: true }],
-      },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "Carolina Girl Furniture (2009)",
@@ -12423,22 +12423,39 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "sdlc",
-      "cms",
-      "user-experience-ux",
-      "language",
-      "e-commerce",
-      "role",
-      "year",
-      "project-type",
       "analytics",
+      "cms",
       "data",
+      "e-commerce",
+      "language",
+      "project-type",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "drupal", name: "Drupal", display: true }],
+      },
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
+      },
+      "e-commerce": {
+        id: "e-commerce",
+        name: "E-Commerce",
+        tags: [{ id: "ecom-other", name: "Other", display: true }],
       },
       language: {
         id: "language",
@@ -12449,6 +12466,21 @@ const projects: ProjectType[] = [
           { id: "html", name: "HTML", display: true },
           { id: "php", name: "PHP", display: true },
         ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -12461,42 +12493,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "drupal", name: "Drupal", display: true }],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [{ id: "type-e-commerce", name: "E-Commerce", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
-      "e-commerce": {
-        id: "e-commerce",
-        name: "E-Commerce",
-        tags: [{ id: "ecom-other", name: "Other", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "Envision (2009)",
@@ -12543,20 +12543,32 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "year",
-      "language",
       "analytics",
-      "user-experience-ux",
-      "data",
-      "sdlc",
-      "role",
       "cms",
+      "data",
+      "language",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "drupal", name: "Drupal", display: true }],
+      },
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
       },
       language: {
         id: "language",
@@ -12569,6 +12581,16 @@ const projects: ProjectType[] = [
           { id: "php", name: "PHP", display: true },
         ],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
@@ -12580,32 +12602,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "drupal", name: "Drupal", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "GCUMC (2009)",
@@ -12665,28 +12665,19 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "role",
+      "analytics",
       "language",
-      "year",
+      "role",
       "sdlc",
       "user-experience-ux",
-      "analytics",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
       },
       language: {
@@ -12704,17 +12695,26 @@ const projects: ProjectType[] = [
         name: "Role",
         tags: [{ id: "front-end", name: "Front End", display: true }],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "NorthStar Management (2009)",
@@ -12781,18 +12781,20 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "language",
-      "user-experience-ux",
-      "sdlc",
-      "year",
-      "role",
       "analytics",
+      "language",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       language: {
         id: "language",
@@ -12805,6 +12807,16 @@ const projects: ProjectType[] = [
           { id: "php", name: "PHP", display: true },
         ],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
@@ -12816,22 +12828,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "Matlab (2009)",
@@ -12876,20 +12876,51 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "role",
-      "user-experience-ux",
-      "cms",
-      "language",
       "analytics",
-      "sdlc",
+      "cms",
       "data",
+      "language",
+      "role",
+      "sdlc",
+      "user-experience-ux",
       "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "drupal", name: "Drupal", display: true }],
+      },
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "php", name: "PHP", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -12902,41 +12933,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "php", name: "PHP", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "drupal", name: "Drupal", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "Herron House (2009)",
@@ -12984,20 +12984,32 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "language",
-      "data",
-      "sdlc",
       "analytics",
-      "year",
-      "user-experience-ux",
-      "role",
       "cms",
+      "data",
+      "language",
+      "role",
+      "sdlc",
+      "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "drupal", name: "Drupal", display: true }],
+      },
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
       },
       language: {
         id: "language",
@@ -13010,6 +13022,16 @@ const projects: ProjectType[] = [
           { id: "php", name: "PHP", display: true },
         ],
       },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
       "user-experience-ux": {
         id: "user-experience-ux",
         name: "User Experience",
@@ -13021,32 +13043,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "drupal", name: "Drupal", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "Machines and Wheels (2009)",
@@ -13126,28 +13126,19 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "language",
-      "sdlc",
-      "role",
       "analytics",
-      "year",
+      "language",
+      "role",
+      "sdlc",
       "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
         tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
+          { id: "google-analytics", name: "Google Analytics", display: true },
         ],
       },
       language: {
@@ -13165,17 +13156,26 @@ const projects: ProjectType[] = [
         name: "Role",
         tags: [{ id: "front-end", name: "Front End", display: true }],
       },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "Mod-U-Kraf (2009)",
@@ -13241,22 +13241,66 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
+      "analytics",
+      "cms",
+      "data",
+      "industry",
+      "language",
+      "project-type",
+      "role",
       "sdlc",
       "user-experience-ux",
       "year",
-      "role",
-      "language",
-      "cms",
-      "project-type",
-      "analytics",
-      "industry",
-      "data",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2009", name: "2009", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
+      },
+      cms: {
+        id: "cms",
+        name: "CMS",
+        tags: [{ id: "drupal", name: "Drupal", display: true }],
+      },
+      data: {
+        id: "data",
+        name: "Data",
+        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
+      },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "non-profit", name: "Non-Profit", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+          { id: "php", name: "PHP", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-informational", name: "Informational", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -13269,54 +13313,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-          { id: "php", name: "PHP", display: true },
-        ],
-      },
-      cms: {
-        id: "cms",
-        name: "CMS",
-        tags: [{ id: "drupal", name: "Drupal", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-informational", name: "Informational", display: true },
-        ],
-      },
-      data: {
-        id: "data",
-        name: "Data",
-        tags: [{ id: "data-mysql", name: "MySQL", display: true }],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "non-profit", name: "Non-Profit", display: true }],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2009", name: "2009", display: true }],
       },
     },
     displayName: "Family Abuse Services (2008)",
@@ -13391,19 +13391,21 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "user-experience-ux",
       "analytics",
       "language",
+      "project-type",
       "role",
       "sdlc",
+      "user-experience-ux",
       "year",
-      "project-type",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [{ id: "2008", name: "2008", display: true }],
+      analytics: {
+        id: "analytics",
+        name: "Analytics",
+        tags: [
+          { id: "google-analytics", name: "Google Analytics", display: true },
+        ],
       },
       language: {
         id: "language",
@@ -13413,6 +13415,26 @@ const projects: ProjectType[] = [
           { id: "css", name: "CSS", display: false },
           { id: "html", name: "HTML", display: true },
         ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-informational", name: "Informational", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [
+          { id: "role-design", name: "Design", display: true },
+          { id: "front-end", name: "Front End", display: true },
+        ],
+      },
+      sdlc: {
+        id: "sdlc",
+        name: "SDLC",
+        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
       },
       "user-experience-ux": {
         id: "user-experience-ux",
@@ -13425,32 +13447,10 @@ const projects: ProjectType[] = [
           },
         ],
       },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [
-          { id: "role-design", name: "Design", display: true },
-          { id: "front-end", name: "Front End", display: true },
-        ],
-      },
-      analytics: {
-        id: "analytics",
-        name: "Analytics",
-        tags: [
-          { id: "google-analytics", name: "Google Analytics", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-informational", name: "Informational", display: true },
-        ],
-      },
-      sdlc: {
-        id: "sdlc",
-        name: "SDLC",
-        tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [{ id: "2008", name: "2008", display: true }],
       },
     },
     displayName: "A Cleaner World (2007)",
@@ -13523,70 +13523,19 @@ const projects: ProjectType[] = [
       "waterfall",
     ],
     categories: [
-      "e-commerce",
-      "sdlc",
-      "language",
-      "year",
+      "analytics",
+      "cms",
       "data",
+      "e-commerce",
+      "industry",
+      "language",
       "project-type",
       "role",
-      "cms",
-      "analytics",
-      "industry",
+      "sdlc",
       "user-experience-ux",
+      "year",
     ],
     tagsByCategory: {
-      year: {
-        id: "year",
-        name: "Year",
-        tags: [
-          { id: "2007", name: "2007", display: true },
-          { id: "2008", name: "2008", display: true },
-        ],
-      },
-      "user-experience-ux": {
-        id: "user-experience-ux",
-        name: "User Experience",
-        tags: [
-          {
-            id: "cross-browser-compatibility",
-            name: "Browser Compatibility",
-            display: true,
-          },
-          {
-            id: "ux-information-architecture",
-            name: "Information Architecture",
-            display: true,
-          },
-        ],
-      },
-      language: {
-        id: "language",
-        name: "Language",
-        tags: [
-          { id: "css", name: "CSS", display: false },
-          { id: "html", name: "HTML", display: true },
-          { id: "javascript", name: "JavaScript", display: true },
-        ],
-      },
-      "project-type": {
-        id: "project-type",
-        name: "Project Type",
-        tags: [
-          { id: "type-e-commerce", name: "E-Commerce", display: true },
-          { id: "type-informational", name: "Informational", display: true },
-        ],
-      },
-      industry: {
-        id: "industry",
-        name: "Industry",
-        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
-      },
-      role: {
-        id: "role",
-        name: "Role",
-        tags: [{ id: "front-end", name: "Front End", display: true }],
-      },
       analytics: {
         id: "analytics",
         name: "Analytics",
@@ -13609,10 +13558,61 @@ const projects: ProjectType[] = [
         name: "E-Commerce",
         tags: [{ id: "ecom-other", name: "Other", display: true }],
       },
+      industry: {
+        id: "industry",
+        name: "Industry",
+        tags: [{ id: "e-commerce", name: "E-Commerce", display: true }],
+      },
+      language: {
+        id: "language",
+        name: "Language",
+        tags: [
+          { id: "css", name: "CSS", display: false },
+          { id: "html", name: "HTML", display: true },
+          { id: "javascript", name: "JavaScript", display: true },
+        ],
+      },
+      "project-type": {
+        id: "project-type",
+        name: "Project Type",
+        tags: [
+          { id: "type-e-commerce", name: "E-Commerce", display: true },
+          { id: "type-informational", name: "Informational", display: true },
+        ],
+      },
+      role: {
+        id: "role",
+        name: "Role",
+        tags: [{ id: "front-end", name: "Front End", display: true }],
+      },
       sdlc: {
         id: "sdlc",
         name: "SDLC",
         tags: [{ id: "waterfall", name: "Waterfall", display: true }],
+      },
+      "user-experience-ux": {
+        id: "user-experience-ux",
+        name: "User Experience",
+        tags: [
+          {
+            id: "cross-browser-compatibility",
+            name: "Browser Compatibility",
+            display: true,
+          },
+          {
+            id: "ux-information-architecture",
+            name: "Information Architecture",
+            display: true,
+          },
+        ],
+      },
+      year: {
+        id: "year",
+        name: "Year",
+        tags: [
+          { id: "2007", name: "2007", display: true },
+          { id: "2008", name: "2008", display: true },
+        ],
       },
     },
     displayName: "Inter-Tech Communications (2007)",

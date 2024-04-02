@@ -7,8 +7,8 @@ const getTagsByCategory = (tags: TaggedProject[]) => {
   const tagsArray = tags.map((tag) => tag.tag);
   const tagsByCategory = {};
   // Sort list alphabetically by name
-  const sortedTags = tagsArray.sort((a, b) =>
-    a.name < b.name ? -1 : Number(a.name > b.name),
+  const sortedTags = tagsArray.sort((tag1, tag2) =>
+    tag1.name.localeCompare(tag2.name),
   );
   uniq(sortedTags, "name").forEach((tag) => {
     const tagOutput = {
@@ -27,8 +27,17 @@ const getTagsByCategory = (tags: TaggedProject[]) => {
     }
   });
 
-  return tagsByCategory;
+  // this may seem extreme, but we need to control the property key order
+  // of the output so comparing json changes is easier, its not public facing
+  // so performance doesn't matter as much as time to manually compare diffs
+  const sortedCategoryNames = [...Object.keys(tagsByCategory)].sort();
+  const sortedObjectKeys = {};
+  sortedCategoryNames.forEach((category) => {
+    sortedObjectKeys[category] = tagsByCategory[category];
+  });
+  return sortedObjectKeys;
 };
+
 type EmployerType = {
   id?: string;
   name?: string;
@@ -100,10 +109,13 @@ const getProjectsJsonOutput = (projects) => {
     delete project.__typename; // eslint-disable-line
 
     const sortedTags = tags.sort((tag1, tag2) => tag1.localeCompare(tag2));
+    const sortedProjectCategories = projectCategories.sort((cat1, cat2) =>
+      cat1.localeCompare(cat2),
+    );
     return {
       ...project,
       tags: sortedTags,
-      categories: projectCategories,
+      categories: sortedProjectCategories,
       tagsByCategory: getTagsByCategory(project.tags.items),
       images,
       employer,
@@ -124,7 +136,7 @@ const getTagsJsonOutput = (tags) => {
         return tag.category === key;
       })
       // Sort list alphabetically by name
-      .sort((a, b) => (a.name < b.name ? -1 : Number(a.name > b.name)))
+      .sort((tag1, tag2) => tag1.name.localeCompare(tag2.name))
       .map((tag) => {
         return {
           id: tag.id,
