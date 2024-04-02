@@ -43,6 +43,7 @@ const Portfolio = ({ catId, tagId }: Props) => {
       <React.Fragment key={item.id}>
         <li className={isCurrent ? styles.current : ""} id={item.id}>
           <a
+            rel="nofollow"
             onClick={() => {
               setSelectedProjectId((curVal) =>
                 curVal === item.id ? null : item.id,
