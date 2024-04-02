@@ -55,14 +55,7 @@ const Portfolio = ({ selectedProjectId }: Props) => {
         <li className={isCurrent ? styles.current : ""} id={item.id}>
           <Link href={link + searchParams.toString()}>
             {item.logo && (
-              <Image
-                alt={item.name}
-                src={item.logo}
-                height="200"
-                width="200"
-                loading={index < 5 ? "eager" : "lazy"}
-                priority={index < 5}
-              />
+              <Image alt={item.name} src={item.logo} height="200" width="200" />
             )}
           </Link>
         </li>
