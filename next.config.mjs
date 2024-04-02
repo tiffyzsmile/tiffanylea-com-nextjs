@@ -5,6 +5,7 @@ const nextConfig = {
     prependData: `@import "./src/scss/mixins.scss";`,
   },
   images: {
+    minimumCacheTTL: 600,
     remotePatterns: [
       {
         protocol: "https",
