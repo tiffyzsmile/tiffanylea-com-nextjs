@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { DndContext } from "@dnd-kit/core";
 import { arrayMove, SortableContext } from "@dnd-kit/sortable";
 import SortableImage from "@/components/Form/Fields/S3FileUpload/SortableImage";
@@ -26,17 +26,15 @@ const S3FileUpload = ({
   alt = "",
   multiple = false,
 }: Props) => {
-  const [images, setImages] = useState<string[]>([]);
-  const [image, setImage] = useState<string | null>(null);
   const deleteItemHandler = (imageUrl) => {
     const imageKey = imageUrl.split("public/")[1];
 
     remove({ key: imageKey })
       .then(() => {
         if (multiple) {
-          const filteredValues = images.filter((imageSrc) => {
-            return imageSrc !== imageUrl;
-          });
+          const filteredValues = value.filter(
+            (imageSrc) => imageSrc !== imageUrl,
+          );
           onChange([...filteredValues]);
         } else {
           onChange(null);
@@ -46,24 +44,6 @@ const S3FileUpload = ({
         console.log("Error ", error);
       });
   };
-
-  useEffect(() => {
-    if (multiple) {
-      setImages([...value] || []);
-    } else {
-      setImage(value as string);
-    }
-  }, []);
-
-  useEffect(() => {
-    // anytime images changes we need to call on change handler to update form values
-    if (multiple) {
-      onChange(images);
-    } else {
-      // we only have 1 image
-      onChange(image);
-    }
-  }, [images, image]);
 
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const filesArray = Array.from(e.target.files);
@@ -82,43 +62,22 @@ const S3FileUpload = ({
       });
 
       const justUrl = fileProperties.url.href.split("?")[0];
+
       if (multiple) {
-        setImages((images) => {
-          return [...images, justUrl];
-        });
-        // onChange(images);
+        onChange([...value, justUrl]);
       } else {
-        // we only have 1 image
-
-        setImage(justUrl);
+        onChange(justUrl);
       }
-
-      // Storage.get(itemKey)
-      //   .then((itemUrl) => {
-      //     const justUrl = itemUrl.split("?")[0];
-      //     if (multiple) {
-      //       values.push(justUrl);
-      //       // If we have all the uploaded images
-      //       if (filesArray.length === values.length) {
-      //         onChange([...value, ...values]);
-      //       }
-      //     } else {
-      //       // we only have 1 image
-      //       onChange(justUrl);
-      //     }
-      //   })
-      // .catch((err) => console.error("put image error", err));
     });
   };
 
   const handleDragEnd = (event) => {
     const { active, over } = event;
     if (active.id !== over.id) {
-      setImages((images) => {
-        const oldIndex = images.indexOf(active.id);
-        const newIndex = images.indexOf(over.id);
-        return arrayMove(images, oldIndex, newIndex);
-      });
+      const oldIndex = value.indexOf(active.id);
+      const newIndex = value.indexOf(over.id);
+      const newValue = arrayMove(value, oldIndex, newIndex);
+      onChange(newValue);
     }
   };
 
@@ -134,8 +93,8 @@ const S3FileUpload = ({
         <div className={styles.images}>
           {multiple ? (
             <DndContext onDragEnd={handleDragEnd}>
-              <SortableContext items={images}>
-                {images.map((imageSrc) => {
+              <SortableContext items={value}>
+                {value.map((imageSrc) => {
                   return (
                     <SortableImage
                       key={imageSrc}
