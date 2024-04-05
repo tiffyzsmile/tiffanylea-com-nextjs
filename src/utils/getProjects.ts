@@ -1,5 +1,4 @@
 import * as query from "@/graphql/queries";
-import { formatJsonFromAws } from "@/helpers/forms";
 import { generateClient } from "aws-amplify/api";
 import * as mutations from "@/graphql/mutations";
 
@@ -7,6 +6,7 @@ import { Amplify } from "aws-amplify";
 import awsconfig from "@/aws-exports";
 import { UpdateProjectInput } from "@/API";
 import { GraphQLAuthMode } from "@aws-amplify/core/internals/utils";
+import { formatJsonFromAws } from "@/utils/aws";
 
 // when we do serverside rendering for public website
 // Amplify.configure(awsconfig, { ssr: true }); // also set     authMode: "iam",
@@ -61,11 +61,13 @@ const deleteProject = (project) => {
     if (hasTags) {
       reject("Before deleting remove all tags");
     } else {
-      return client.graphql({
-        query: mutations.deleteProject,
-        variables: { input: { id: project.id } },
-        authMode: "userPool",
-      });
+      client
+        .graphql({
+          query: mutations.deleteProject,
+          variables: { input: { id: project.id } },
+          authMode: "userPool",
+        })
+        .then((deleteProject) => resolve(deleteProject));
     }
   });
 };

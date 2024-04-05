@@ -1,5 +1,5 @@
-import { formatJsonFromAws } from "@/helpers/forms";
-import { GetProjectQuery, Project } from "@/API";
+import { formatJsonFromAws } from "@/utils/aws";
+import { GetProjectQuery } from "@/API";
 import { LocalProjectType } from "@/data/projects";
 import categories from "@/data/categories";
 
