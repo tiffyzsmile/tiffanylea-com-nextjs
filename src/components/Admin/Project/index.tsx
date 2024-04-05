@@ -91,7 +91,6 @@ const AdminProject = ({ projectId }: Props) => {
                 ...arrayMutators,
               }}
               render={({ handleSubmit, values }) => {
-                console.log("values", values);
                 return (
                   <form onSubmit={handleSubmit}>
                     <IdField />
