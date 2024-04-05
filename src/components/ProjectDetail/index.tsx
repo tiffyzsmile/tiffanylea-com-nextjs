@@ -1,7 +1,7 @@
 import React from "react";
 import ImageGallery from "@/components/ImageGallery";
 import { H1, H2 } from "@/components/Typography";
-import { LocalProjectType } from "@/data/projects";
+import { LocalProjectType } from "@/types/project";
 import TagsByCategory from "./TagsByCategory";
 import styles from "./ProjectDetail.module.scss";
 import Image from "next/image";

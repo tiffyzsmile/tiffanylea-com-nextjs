@@ -1,7 +1,7 @@
 import React from "react";
 import { H2, Strong } from "@/components/Typography";
 import Link from "next/link";
-import { TagsByCategoryType } from "@/data/projects";
+import { TagsByCategoryType } from "@/types/project";
 import styles from "./ProjectDetail.module.scss";
 
 type Props = {

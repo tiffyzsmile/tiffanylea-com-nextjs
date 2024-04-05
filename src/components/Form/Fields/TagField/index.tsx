@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Field } from "react-final-form";
 import useTags from "@/hooks/useTags";
-import { TagType } from "@/data/projects";
+import { TagType } from "@/types/project";
 
 type Props = {
   name: string;

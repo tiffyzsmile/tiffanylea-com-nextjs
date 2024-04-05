@@ -1,6 +1,6 @@
 import { formatJsonFromAws } from "@/utils/aws";
 import { GetProjectQuery } from "@/API";
-import { LocalProjectType } from "@/data/projects";
+import { LocalProjectType } from "@/types/project";
 import categories from "@/data/categories";
 
 // This updates link to use cloudfront distribution url
