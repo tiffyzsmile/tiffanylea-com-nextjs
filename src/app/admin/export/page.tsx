@@ -14,7 +14,7 @@ const Export = () => {
   const [tags, setTags] = useState<Tag[]>([]);
 
   useEffect(() => {
-    getProjects().then(({ projects }) => {
+    getProjects({}).then((projects) => {
       if (projects) {
         const filteredProjects = projects.filter((project) => project.display);
         setProjects(filteredProjects);

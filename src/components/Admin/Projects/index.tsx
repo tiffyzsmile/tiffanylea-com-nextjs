@@ -14,7 +14,7 @@ const AdminProjects = ({}: Props) => {
   const [searchValue, setSearchValue] = useState<string | null>(null);
 
   useEffect(() => {
-    getProjects().then(({ projects }) => {
+    getProjects({ authMode: "userPool" }).then((projects) => {
       if (projects) {
         setProjects(projects);
         setFilteredProjects(projects);

@@ -13,25 +13,18 @@ const ProjectField = ({ name, label = "Projects", multiple }: Props) => {
   const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
-    getProjects().then(({ projects }) => {
+    getProjects({ authMode: "userPool" }).then((projects) => {
       setProjects(projects);
     });
   }, []);
 
-  // may want to remove this completely and make it an autocomplete field
-  const projectsOptionList = (projects || [])
-    .sort((a, b) => {
-      const dateA = a.date ? parseInt(a.date.replace(/-/g, ""), 10) : 0;
-      const dateB = b.date ? parseInt(b.date.replace(/-/g, ""), 10) : 0;
-      return dateB - dateA;
-    })
-    .map((project) => {
-      return (
-        <option key={project.id} value={project.id}>
-          {project.name}
-        </option>
-      );
-    });
+  const projectsOptionList = (projects || []).map((project) => {
+    return (
+      <option key={project.id} value={project.id}>
+        {project.name}
+      </option>
+    );
+  });
 
   return (
     <label htmlFor={name}>

@@ -6,98 +6,107 @@ import * as mutations from "@/graphql/mutations";
 import { Amplify } from "aws-amplify";
 import awsconfig from "@/aws-exports";
 import { UpdateProjectInput } from "@/API";
+import { GraphQLAuthMode } from "@aws-amplify/core/internals/utils";
 
 // when we do serverside rendering for public website
 // Amplify.configure(awsconfig, { ssr: true }); // also set     authMode: "iam",
 Amplify.configure(awsconfig);
 const client = generateClient();
 
-const getProject = async (projectId) => {
-  const { data } = await client.graphql({
-    query: query.getProject,
-    variables: { id: projectId },
-    authMode: "iam",
-  });
-
-  const project = data ? data.getProject : null;
-
-  return { project: project };
+const getProject = ({
+  projectId,
+  authMode = "iam",
+}: {
+  projectId: string;
+  authMode?: GraphQLAuthMode;
+}) => {
+  return client
+    .graphql({
+      query: query.getProject,
+      variables: { id: projectId },
+      authMode,
+    })
+    .then(
+      ({ data: { getProject } }) => formatProjectFromAws(getProject) || null,
+    );
 };
 
-const getProjects = async () => {
-  const { data } = await client.graphql({
-    query: query.listProjects,
-    variables: { limit: 500 },
-    authMode: "iam",
-  });
-
-  const projects = data ? data.listProjects.items : [];
-
-  if (projects) {
-    // Sort projects by date
-    projects.sort((a, b) => {
-      const dateA = a.date ? parseInt(a.date.replace(/-/g, ""), 10) : 0;
-      const dateB = b.date ? parseInt(b.date.replace(/-/g, ""), 10) : 0;
-      return dateB - dateA;
-    });
-  }
-
-  return { projects: formatProjectsJson(projects) };
+const getProjects = ({ authMode = "iam" }: { authMode?: GraphQLAuthMode }) => {
+  return client
+    .graphql({
+      query: query.listProjects,
+      variables: { limit: 500 },
+      authMode,
+    })
+    .then(
+      ({ data: { listProjects } }) =>
+        formatProjectsFromAws(listProjects.items) || [],
+    );
 };
 
-const addProject = (project, onComplete) => {
-  const formattedProject = formatProjectInput(project);
-  client
+const addProject = (project) => {
+  const formattedProject = formatProjectToAws(project);
+  return client
     .graphql({
       query: mutations.createProject,
       variables: { input: formattedProject },
       authMode: "userPool",
     })
-    .then(({ data: { createProject } }) => onComplete(createProject));
+    .then(({ data: { createProject } }) => createProject);
 };
 
-const deleteProject = (projectId, onComplete) => {
-  client
+const deleteProject = (project) => {
+  const hasTags = project?.tags?.items.length > 0;
+  return new Promise((resolve, reject) => {
+    if (hasTags) {
+      reject("Before deleting remove all tags");
+    } else {
+      return client.graphql({
+        query: mutations.deleteProject,
+        variables: { input: { id: project.id } },
+        authMode: "userPool",
+      });
+    }
+  });
+};
+
+const updateProject = (project) => {
+  const formattedProject: UpdateProjectInput = formatProjectToAws(project);
+  return client
     .graphql({
-      query: mutations.deleteProject,
-      variables: { input: { id: projectId } },
+      query: mutations.updateProject,
+      variables: { input: formattedProject },
       authMode: "userPool",
     })
-    .then(() => {
-      onComplete();
-    });
+    .then(({ data: { updateProject } }) => updateProject);
 };
 
-const updateProject = async (project) => {
-  const formattedProject: UpdateProjectInput = formatProjectInput(project);
-  const { data } = await client.graphql({
-    query: mutations.updateProject,
-    variables: { input: formattedProject },
-    authMode: "userPool",
-  });
+const formatProjectFromAws = (project) => {
+  // Need to parse awsjson for project features
+  const features = project.features
+    ? project.features.map((featureSet) => {
+        return formatJsonFromAws(featureSet);
+      })
+    : [];
 
-  return { project: data ? data.updateProject : data };
+  return {
+    ...project,
+    features,
+  };
 };
 
-const formatProjectsJson = (projects = []) => {
-  return projects.map((project) => {
-    // Need to parse awsjson for each project
-    const features = project.features
-      ? project.features.map((featureSet) => {
-          return formatJsonFromAws(featureSet);
-        })
-      : [];
-
-    return {
-      ...project,
-      features,
-    };
-  });
+const formatProjectsFromAws = (projects = []) => {
+  return projects
+    .sort((a, b) => {
+      const dateA = a.date ? parseInt(a.date.replace(/-/g, ""), 10) : 0;
+      const dateB = b.date ? parseInt(b.date.replace(/-/g, ""), 10) : 0;
+      return dateB - dateA;
+    })
+    .map((project) => formatProjectFromAws(project));
 };
 
-const formatProjectInput = (args) => {
+const formatProjectToAws = (project) => {
   const {
-    id,
     description,
     internal,
     features,
@@ -109,9 +118,8 @@ const formatProjectInput = (args) => {
     updatedAt,
     __typename,
     ...approvedInputArgs
-  } = args;
+  } = project;
   const formattedInput: {
-    id?: string;
     projectEmployerId?: string;
     projectClientId?: string;
     description?: string;
@@ -119,22 +127,11 @@ const formatProjectInput = (args) => {
     features?: [];
   } = {};
 
-  formattedInput.id = !id ? null : id;
-
-  // not sure how to clear the values out
-  if (employer && employer.id) {
-    formattedInput.projectEmployerId = employer.id;
-  }
-
-  if (client && client.id) {
-    formattedInput.projectClientId = client.id;
-  }
-
-  // if no description passed null to clear description else pass description
-  formattedInput.description = !description ? null : description;
-
-  // if no internal passed null to clear internal else pass internal
-  formattedInput.internal = !internal ? null : internal;
+  formattedInput.projectEmployerId = employer?.id || null;
+  formattedInput.projectClientId = client?.id || null;
+  // if no value... pass null to clear field
+  formattedInput.description = description || null;
+  formattedInput.internal = internal || null;
 
   if (features) {
     formattedInput.features = features.map((feature) =>

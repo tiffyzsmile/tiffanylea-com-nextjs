@@ -28,13 +28,7 @@ import {
   updateProject,
 } from "@/utils/getProjects";
 import { Project } from "@/API";
-
-const styles = {
-  gridWrapper: {
-    display: "grid",
-    gridTemplateColumns: "60% 40%",
-  },
-};
+import styles from "./Project.module.css";
 
 type Props = {
   projectId: string;
@@ -45,16 +39,16 @@ const AdminProject = ({ projectId }: Props) => {
   const [project, setProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    getProject(projectId).then(({ project }) => {
+    getProject({ projectId, authMode: "userPool" }).then((project) => {
       setProject(project as Project);
     });
   }, []);
 
   const onSubmit = (formValues) => {
     if (projectId === "add") {
-      addProject(formValues, (onCompleteData) => {
-        router.push(`/admin/projects/${onCompleteData.id}`);
-      });
+      addProject(formValues).then((data) =>
+        router.push(`/admin/projects/${data.id}`),
+      );
     } else {
       updateProject(formValues).then((data) =>
         console.log("Update Success", data),
@@ -62,24 +56,32 @@ const AdminProject = ({ projectId }: Props) => {
     }
   };
 
-  const onDeleteSuccess = () => {
-    router.push(`/admin/projects`);
+  const hasTags = project?.tags?.items.length > 0;
+  const onDeleteProject = (project) => {
+    if (!hasTags) {
+      deleteProject(project)
+        .then(() => router.push(`/admin/projects`))
+        .catch((error) => {
+          console.log("ERROR", error);
+        });
+    }
   };
 
   return (
     <div>
       {projectId && (
         <div style={{ float: "right" }}>
-          <Button
-            styleAs="link"
-            onClick={() => deleteProject(projectId, onDeleteSuccess)}
-          >
-            Delete Project
-          </Button>
+          {hasTags ? (
+            <p className={styles.deleteText}>to delete, remove tags</p>
+          ) : (
+            <Button styleAs="link" onClick={() => onDeleteProject(project)}>
+              Delete Project
+            </Button>
+          )}
         </div>
       )}
       <h1>Project Details</h1>
-      <div style={styles.gridWrapper}>
+      <div className={styles.gridWrapper}>
         <section>
           <FormStyles>
             <Form
@@ -89,6 +91,7 @@ const AdminProject = ({ projectId }: Props) => {
                 ...arrayMutators,
               }}
               render={({ handleSubmit, values }) => {
+                console.log("values", values);
                 return (
                   <form onSubmit={handleSubmit}>
                     <IdField />
