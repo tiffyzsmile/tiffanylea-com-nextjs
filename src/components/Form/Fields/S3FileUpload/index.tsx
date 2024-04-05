@@ -32,7 +32,7 @@ const S3FileUpload = ({
     remove({ key: imageKey })
       .then(() => {
         if (multiple) {
-          const filteredValues = value.filter(
+          const filteredValues = (value as []).filter(
             (imageSrc) => imageSrc !== imageUrl,
           );
           onChange([...filteredValues]);
@@ -76,7 +76,7 @@ const S3FileUpload = ({
     if (active.id !== over.id) {
       const oldIndex = value.indexOf(active.id);
       const newIndex = value.indexOf(over.id);
-      const newValue = arrayMove(value, oldIndex, newIndex);
+      const newValue = arrayMove(value as [], oldIndex, newIndex);
       onChange(newValue);
     }
   };
@@ -93,8 +93,8 @@ const S3FileUpload = ({
         <div className={styles.images}>
           {multiple ? (
             <DndContext onDragEnd={handleDragEnd}>
-              <SortableContext items={value}>
-                {value.map((imageSrc) => {
+              <SortableContext items={value as []}>
+                {(value as []).map((imageSrc) => {
                   return (
                     <SortableImage
                       key={imageSrc}
