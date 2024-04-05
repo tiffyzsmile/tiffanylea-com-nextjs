@@ -2,10 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { getProjects } from "@/utils/getProjects";
 import useTags from "@/hooks/useTags";
-import {
-  getProjectsJsonOutput,
-  getTagsJsonOutput,
-} from "../../../helpers/exportJson";
+import { getProjectsJsonOutput, getTagsJsonOutput } from "@/utils/exportJson";
 import { Project, Tag } from "@/API";
 
 const Export = () => {

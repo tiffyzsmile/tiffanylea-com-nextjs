@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import useTags from "@/hooks/useTags";
 import Link from "next/link";
 import TagsTable from "./TagsTable";
-import { filterTagsByCategory } from "@/helpers/tags";
+import { filterTagsByCategory } from "@/utils/tags";
 import { Tag } from "@/API";
 
 const AdminTags = () => {
