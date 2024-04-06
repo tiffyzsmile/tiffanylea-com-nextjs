@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { Field, Form } from "react-final-form";
 import FormStyles from "@/components/Form/";
-import useClients from "@/hooks/useClients";
 import { useRouter } from "next/navigation";
 import {
   BooleanField,
@@ -15,6 +14,12 @@ import {
 } from "@/components/Form/Fields";
 import Button from "@/components/Button";
 import { Client } from "@/API";
+import {
+  addClient,
+  deleteClient,
+  getClient,
+  updateClient,
+} from "@/data/getClients";
 
 type Props = {
   clientId: string;
@@ -30,8 +35,6 @@ const AdminClient = ({ clientId }: Props) => {
     id: "",
     name: "",
   });
-
-  const { getClient, updateClient, addClient, deleteClient } = useClients();
 
   useEffect(() => {
     if (clientId !== "add") {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Field } from "react-final-form";
-import useClients from "@/hooks/useClients";
 import { Client } from "@/API";
+import { getClients } from "@/data/getClients";
 
 type ClientLocal = Omit<
   Client,
@@ -10,7 +10,6 @@ type ClientLocal = Omit<
 
 const ClientField = () => {
   const [clients, setClients] = useState<ClientLocal[]>([]);
-  const { getClients } = useClients();
 
   useEffect(() => {
     getClients().then(({ clients }) => {

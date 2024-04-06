@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import useClients from "@/hooks/useClients";
 import Link from "next/link";
 import { SearchFilter } from "@/components/Form/Filters";
 import { Client } from "@/API";
 import ClientRow from "@/components/Admin/Clients/ClientRow";
+import { getClients } from "@/data/getClients";
 
 type ClientLocal = Omit<
   Client,
@@ -16,8 +16,6 @@ const AdminClients = () => {
   const [filteredClients, setFilteredClients] =
     useState<ClientLocal[]>(clients);
   const [searchValue, setSearchValue] = useState<string | null>(null);
-
-  const { getClients } = useClients();
 
   useEffect(() => {
     getClients().then(({ clients }) => {
