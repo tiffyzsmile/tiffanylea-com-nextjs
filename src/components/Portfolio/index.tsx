@@ -11,17 +11,14 @@ import { getProjects } from "@/data/getProjects";
 type Props = {
   catId?: string;
   tagId?: string;
+  pageProjects?: LocalProjectType[];
 };
 
-const Portfolio = ({ catId, tagId }: Props) => {
+const Portfolio = ({ catId, tagId, pageProjects = [] }: Props) => {
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(
     null,
   );
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    getProjects({}).then((projects) => setProjects(projects));
-  }, []);
+  const [projects, setProjects] = useState(pageProjects);
 
   const visibleProjects = projects.filter((project) => {
     if (!catId) {
