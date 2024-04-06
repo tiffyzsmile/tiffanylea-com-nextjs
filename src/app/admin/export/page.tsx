@@ -1,12 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { getProjects } from "@/data/getProjects";
-import useTags from "@/hooks/useTags";
 import { getProjectsJsonOutput, getTagsJsonOutput } from "@/utils/exportJson";
 import { Project, Tag } from "@/API";
+import { getTags } from "@/data/getTags";
 
 const Export = () => {
-  const { getTags } = useTags();
   const [projects, setProjects] = useState<Project[]>([]);
   const [tags, setTags] = useState<Tag[]>([]);
 

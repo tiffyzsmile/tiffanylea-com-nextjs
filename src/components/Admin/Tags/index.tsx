@@ -1,16 +1,15 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import useTags from "@/hooks/useTags";
 import Link from "next/link";
 import TagsTable from "./TagsTable";
 import { filterTagsByCategory } from "@/utils/tags";
 import { Tag } from "@/API";
+import { deleteTag, getTags } from "@/data/getTags";
 
 const AdminTags = () => {
   const [tags, setTags] = useState<Tag[]>([]);
   const [filteredTags, setFilteredTags] = useState<Tag[]>([]);
   const [currentCategory, setCurrentCategory] = useState<string>(null);
-  const { getTags, deleteTag } = useTags();
 
   useEffect(() => {
     getTags().then(({ tags }) => {

@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { Form } from "react-final-form";
 import FormStyles from "@/components/Form/";
-import useTags from "@/hooks/useTags";
 import Button from "@/components/Button";
 import {
   BooleanField,
@@ -15,6 +14,7 @@ import {
 } from "@/components/Form/Fields";
 import { useRouter } from "next/navigation";
 import { Tag } from "@/API";
+import { addTag, deleteTag, getTag, updateTag } from "@/data/getTags";
 
 const styles = {
   gridWrapper: {
@@ -32,8 +32,6 @@ type TagLocal = Omit<Tag, "__typename" | "createdAt" | "updatedAt">;
 const AdminTag = ({ tagId }: Props) => {
   const [tag, setTag] = useState<TagLocal>({ id: "", name: "" });
   const router = useRouter();
-
-  const { getTag, addTag, updateTag, deleteTag } = useTags();
 
   useEffect(() => {
     if (tagId !== "add") {

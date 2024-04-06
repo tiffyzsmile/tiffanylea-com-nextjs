@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Field } from "react-final-form";
-import useTags from "@/hooks/useTags";
 import { TagType } from "@/types/project";
+import { getGroupedTags } from "@/data/getTags";
 
 type Props = {
   name: string;
@@ -17,8 +17,6 @@ const TagField = ({
   multiple = false,
 }: Props) => {
   const [groupedTags, setGroupedTags] = useState({});
-
-  const { getGroupedTags } = useTags();
 
   useEffect(() => {
     getGroupedTags().then(({ groupedTags }) => {
