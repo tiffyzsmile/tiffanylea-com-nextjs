@@ -5,6 +5,7 @@ import { LocalProjectType } from "@/types/project";
 import TagsByCategory from "./TagsByCategory";
 import styles from "./ProjectDetail.module.scss";
 import Image from "next/image";
+import { getCdnImage } from "@/utils/aws";
 
 type Props = {
   project: LocalProjectType;
@@ -52,7 +53,7 @@ const ProjectDetail = ({ project }: Props) => {
           {project.employer.name && (
             <Image
               alt={project.employer.name}
-              src={project.employer.logo}
+              src={getCdnImage(project.employer.logo)}
               fill
             />
           )}
