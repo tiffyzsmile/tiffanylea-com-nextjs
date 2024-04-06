@@ -2,8 +2,8 @@
 import React from "react";
 import { TaggedProject } from "@/API";
 import Button from "@/components/Button";
-import useTaggedProjects from "@/hooks/useTaggedProjects";
 import { ProjectField, TagField } from "@/components/Form/Fields";
+import { deleteTaggedProject } from "@/data/getTaggedProjects";
 
 type Props = {
   taggedProject: TaggedProject;
@@ -18,7 +18,6 @@ const TaggedProjectRow = ({
   onEdit,
   isEdit,
 }: Props) => {
-  const { deleteTaggedProject } = useTaggedProjects();
   if (isEdit) {
     return (
       <tr key={taggedProject.id}>

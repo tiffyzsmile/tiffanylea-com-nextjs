@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Form } from "react-final-form";
-import useTaggedProjects from "@/hooks/useTaggedProjects";
 import Button from "@/components/Button";
 import { ProjectField } from "@/components/Form/Fields";
 import { TaggedProject } from "@/API";
+import {
+  addTaggedProject,
+  deleteTaggedProject,
+} from "@/data/getTaggedProjects";
 
 type Props = {
   tagId: string;
@@ -12,8 +15,6 @@ type Props = {
 
 const TaggedProjectProjectsField = ({ tagId, selected = [] }: Props) => {
   const [taggedProjects, setTaggedProjects] = useState(selected);
-
-  const { addTaggedProject, deleteTaggedProject } = useTaggedProjects();
 
   const onSubmit = ({ projects }) => {
     const onSuccess = (newTaggedProject) => {

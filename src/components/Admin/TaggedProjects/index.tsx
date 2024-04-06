@@ -1,9 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import useTaggedProjects from "@/hooks/useTaggedProjects";
 import TaggedProjectRow from "@/components/Admin/TaggedProjects/TaggedProjectRow";
 import { Form } from "react-final-form";
 import { TaggedProject } from "@/API";
+import {
+  getTaggedProjects,
+  updateTaggedProject,
+} from "@/data/getTaggedProjects";
 
 type Props = {};
 
@@ -13,7 +16,6 @@ const AdminTaggedProjects = ({}: Props) => {
   const [taggedProjects, setTaggedProjects] = useState<TaggedProject[]>([]);
   const [nextToken, setNextToken] = useState<string | number>(1);
   const [idToEdit, setIdToEdit] = useState(null);
-  const { getTaggedProjects, updateTaggedProject } = useTaggedProjects();
 
   useEffect(() => {
     getTaggedProjects({}).then(({ taggedProjects }) => {
