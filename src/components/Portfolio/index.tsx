@@ -1,22 +1,27 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Filter from "./Filter";
 import { H1 } from "../Typography";
 import PortfolioItem from "./PortfolioItem";
 import styles from "./Portfolio.module.scss";
 import Image from "next/image";
 import { LocalProjectType } from "@/types/project";
+import { getProjects } from "@/data/getProjects";
 
 type Props = {
   catId?: string;
   tagId?: string;
-  projects: LocalProjectType[];
 };
 
-const Portfolio = ({ catId, tagId, projects }: Props) => {
+const Portfolio = ({ catId, tagId }: Props) => {
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(
     null,
   );
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    getProjects({}).then((projects) => setProjects(projects));
+  }, []);
 
   const visibleProjects = projects.filter((project) => {
     if (!catId) {

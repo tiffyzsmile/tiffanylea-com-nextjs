@@ -1,11 +1,8 @@
 import React from "react";
 import Portfolio from "@/components/Portfolio";
-import { getProjects } from "@/data/getProjects";
 
 const PortfolioPage = async () => {
-  const projects = await getProjects({}).then((projects) => projects);
-
-  return <Portfolio projects={projects} />;
+  return <Portfolio />;
 };
 
 export default PortfolioPage;
