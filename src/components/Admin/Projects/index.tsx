@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { SearchFilter } from "@/components/Form/Filters";
 import ProjectRow from "@/components/Admin/Projects/ProjectRow";
-import { getProjects } from "@/utils/getProjects";
+import { getProjects } from "@/data/getProjects";
 import { Project } from "@/API";
 
 type Props = {};

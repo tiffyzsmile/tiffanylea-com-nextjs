@@ -1,6 +1,6 @@
 import React from "react";
 import Portfolio from "@/components/Portfolio";
-import { getProjects } from "@/utils/getProjects";
+import { getProjects } from "@/data/getProjects";
 
 type Props = {
   params: { catId: string };

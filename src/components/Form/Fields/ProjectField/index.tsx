@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Field } from "react-final-form";
-import { getProjects } from "@/utils/getProjects";
+import { getProjects } from "@/data/getProjects";
 import { Project } from "@/API";
 
 type Props = {

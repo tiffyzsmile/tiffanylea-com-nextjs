@@ -26,7 +26,7 @@ import {
   deleteProject,
   getProject,
   updateProject,
-} from "@/utils/getProjects";
+} from "@/data/getProjects";
 import { Project } from "@/API";
 import styles from "./Project.module.css";
 

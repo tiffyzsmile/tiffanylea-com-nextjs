@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetail from "@/components/ProjectDetail";
-import { getProject, getProjects } from "@/utils/getProjects";
+import { getProject, getProjects } from "@/data/getProjects";
 
 export async function generateStaticParams() {
   const projects = await getProjects({}).then((projects) =>
