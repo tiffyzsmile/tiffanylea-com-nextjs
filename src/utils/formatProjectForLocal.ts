@@ -1,19 +1,7 @@
-import { formatJsonFromAws } from "@/utils/aws";
+import { formatJsonFromAws, getCdnImage } from "@/utils/aws";
 import { GetProjectQuery } from "@/API";
 import { LocalProjectType } from "@/types/project";
 import categories from "@/data/categories";
-
-// This updates link to use cloudfront distribution url
-// See: https://github.com/aws-amplify/amplify-console/issues/330
-const getCdnImage = (url) => {
-  if (url) {
-    return url.replace(
-      "tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com", // eslint-disable-line
-      "d3oyz6uk1t3qpy.cloudfront.net",
-    );
-  }
-  return url;
-};
 
 const getTagsByCategory = (tags) => {
   const tagsArray = tags.map((tag) => tag.tag);
