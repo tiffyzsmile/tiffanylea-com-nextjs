@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import useEmployers from "@/hooks/useEmployers";
 import { Employer } from "@/API";
 import { SearchFilter } from "@/components/Form/Filters";
 import EmployerRow from "@/components/Admin/Employers/EmployerRow";
+import { getEmployers } from "@/data/getEmployers";
 
 type Props = {};
 
@@ -13,8 +13,6 @@ const AdminEmployers = ({}: Props) => {
   const [filteredEmployers, setFilteredEmployers] =
     useState<Employer[]>(employers);
   const [searchValue, setSearchValue] = useState<string | null>(null);
-
-  const { getEmployers } = useEmployers();
 
   useEffect(() => {
     getEmployers().then(({ employers }: { employers: Employer[] }) => {

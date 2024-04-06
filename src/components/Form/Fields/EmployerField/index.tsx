@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Field } from "react-final-form";
-import useEmployers from "@/hooks/useEmployers";
 import { Employer } from "@/API";
+import { getEmployers } from "@/data/getEmployers";
 
 type Props = {};
 
@@ -13,7 +13,6 @@ type EmployerLocal = Omit<
 
 const EmployerField = ({}: Props) => {
   const [employers, setEmployers] = useState<EmployerLocal[]>([]);
-  const { getEmployers } = useEmployers();
 
   useEffect(() => {
     getEmployers().then(({ employers }) => {

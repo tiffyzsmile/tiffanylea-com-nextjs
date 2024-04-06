@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { Form } from "react-final-form";
 import FormStyles from "@/components/Form/";
-import useEmployers from "@/hooks/useEmployers";
 import Button from "@/components/Button";
 import {
   DateField,
@@ -13,6 +12,12 @@ import {
 import NameField from "../../Form/Fields/NameField";
 import { useRouter } from "next/navigation";
 import { Employer } from "@/API";
+import {
+  addEmployer,
+  deleteEmployer,
+  getEmployer,
+  updateEmployer,
+} from "@/data/getEmployers";
 
 type EmployerLocal = Omit<
   Employer,
@@ -26,8 +31,6 @@ type Props = {
 const AdminEmployer = ({ employerId }: Props) => {
   const router = useRouter();
   const [employer, setEmployer] = useState<EmployerLocal>({ id: "", name: "" });
-  const { getEmployer, updateEmployer, addEmployer, deleteEmployer } =
-    useEmployers();
 
   useEffect(() => {
     if (employerId !== "add") {
