@@ -1,4 +1,5 @@
 import { Tag } from "@/API";
+import categories from "@/data/categories";
 
 const filterTagsByCategory = ({
   tags = [],
@@ -25,4 +26,30 @@ const filterTagsByCategory = ({
   return filteredTags;
 };
 
-export { filterTagsByCategory };
+const getTagsByCategory = (tags) => {
+  const tagsArray = tags.map((tag) => tag.tag);
+  const tagsByCategory = {};
+  // Sort list alphabetically by name
+  const sortedTags = tagsArray.sort((tag1, tag2) =>
+    tag1.name.localeCompare(tag2.name),
+  );
+  sortedTags.forEach((tag) => {
+    const tagOutput = {
+      id: tag.id,
+      name: tag.name,
+      display: tag.display,
+    };
+    if (tagsByCategory[tag.category]) {
+      tagsByCategory[tag.category].tags.push(tagOutput);
+    } else {
+      tagsByCategory[tag.category] = {
+        id: tag.category,
+        name: categories[tag.category],
+        tags: [tagOutput],
+      };
+    }
+  });
+
+  return tagsByCategory;
+};
+export { filterTagsByCategory, getTagsByCategory };

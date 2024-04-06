@@ -2,26 +2,31 @@
 import React from "react";
 import ReactImageGallery from "react-image-gallery";
 import "./ImageGallery.scss";
-
-type Image = {
-  thumbnail: string;
-  original: string;
-};
+import { getCdnImage } from "@/utils/aws";
 
 type Props = {
-  images: Image[];
+  images: Array<string | null> | null;
   showFullscreenButton: boolean;
   showThumbnails: boolean;
+  alt: string;
 };
 
 const ImageGallery = ({
   images,
   showFullscreenButton = false,
   showThumbnails = true,
+  alt,
 }: Props) => {
+  const imageObjects = images.map((image) => {
+    return {
+      original: getCdnImage(image),
+      originalAlt: alt,
+      thumbnail: getCdnImage(image),
+    };
+  });
   return (
     <ReactImageGallery
-      items={images}
+      items={imageObjects}
       thumbnailPosition="top"
       showPlayButton={false}
       showThumbnails={showThumbnails}

@@ -2,17 +2,18 @@
 import React, { useState } from "react";
 import Filter from "./Filter";
 import { H1 } from "../Typography";
-import projects from "@/data/projects";
 import PortfolioItem from "./PortfolioItem";
 import styles from "./Portfolio.module.scss";
 import Image from "next/image";
+import { LocalProjectType } from "@/types/project";
 
 type Props = {
   catId?: string;
   tagId?: string;
+  projects: LocalProjectType[];
 };
 
-const Portfolio = ({ catId, tagId }: Props) => {
+const Portfolio = ({ catId, tagId, projects }: Props) => {
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(
     null,
   );

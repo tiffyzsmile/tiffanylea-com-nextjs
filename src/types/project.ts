@@ -55,8 +55,8 @@ export type LocalProjectType = {
   internal?: string | null;
   createdAt: string;
   updatedAt: string;
-  formattedFeatures?: FeatureType[];
-  formattedImages?: ImageType[];
+  features?: FeatureType[];
+  images?: Array<string | null> | null;
   displayName?: string;
   tagsByCategory?: TagsByCategoryType;
   tags: string[];

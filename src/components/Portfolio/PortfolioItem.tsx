@@ -9,15 +9,9 @@ type FeatureType = {
   items: string[];
 };
 
-type ImageType = {
-  original: string;
-  originalAlt: string;
-  thumbnail: string;
-};
-
 type ProjectType = {
   features: FeatureType[];
-  images: ImageType[];
+  images: Array<string | null> | null;
   displayName: string;
   description: string;
   id: string;
@@ -51,6 +45,7 @@ const PortfolioItem = ({ project }: Props) => {
           showFullscreenButton
           images={project.images}
           showThumbnails={false}
+          alt={`${project.displayName} Screenshot`}
         />
       </section>
       <section className={styles.portfolioDetails}>

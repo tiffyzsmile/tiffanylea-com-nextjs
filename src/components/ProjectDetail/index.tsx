@@ -12,8 +12,8 @@ type Props = {
 };
 
 const ProjectDetail = ({ project }: Props) => {
-  const features = project.formattedFeatures
-    ? project.formattedFeatures.map((feature) => {
+  const features = project.features
+    ? project.features.map((feature) => {
         const details =
           feature.items &&
           feature.items.map((detail) => {
@@ -33,8 +33,9 @@ const ProjectDetail = ({ project }: Props) => {
       <section className={styles.projectImages}>
         <ImageGallery
           showFullscreenButton
-          images={project.formattedImages}
+          images={project.images}
           showThumbnails={false}
+          alt={`${project.displayName} Screenshot`}
         />
       </section>
       <section className={styles.projectDetails}>
@@ -46,7 +47,7 @@ const ProjectDetail = ({ project }: Props) => {
           </div>
         )}
 
-        {project.formattedFeatures && features}
+        {project.features && features}
 
         <H2>While Working For</H2>
         <div className={styles.whileWorkingFor}>
