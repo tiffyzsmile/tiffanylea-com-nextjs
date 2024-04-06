@@ -12,7 +12,7 @@ const AdminTags = () => {
   const [currentCategory, setCurrentCategory] = useState<string>(null);
 
   useEffect(() => {
-    getTags().then(({ tags }) => {
+    getTags({}).then((tags) => {
       setTags(tags as Tag[]);
     });
   }, []);

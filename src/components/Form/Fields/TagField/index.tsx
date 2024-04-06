@@ -19,7 +19,7 @@ const TagField = ({
   const [groupedTags, setGroupedTags] = useState({});
 
   useEffect(() => {
-    getGroupedTags().then(({ groupedTags }) => {
+    getGroupedTags().then((groupedTags) => {
       setGroupedTags(groupedTags);
     });
   }, []);

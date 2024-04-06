@@ -4,6 +4,7 @@ import { Amplify } from "aws-amplify";
 import awsconfig from "@/aws-exports";
 import { generateClient } from "aws-amplify/api";
 import { Tag } from "@/API";
+import { GraphQLAuthMode } from "@aws-amplify/core/internals/utils";
 
 const getFormattedInput = ({ id, name, category, logo, display }) => {
   return { id, name, category, logo, display };
@@ -22,30 +23,29 @@ const getTag = async (tagId) => {
   return { tag: tag };
 };
 
-const getTags = async () => {
-  const { data } = await client.graphql({
-    query: query.listTags,
-    variables: { limit: 500 },
-    authMode: "userPool",
-  });
-
-  const tags = data ? data.listTags.items : null;
-  return { tags: tags };
+const getTags = ({ authMode = "iam" }: { authMode?: GraphQLAuthMode }) => {
+  return client
+    .graphql({
+      query: query.listTags,
+      variables: { limit: 500 },
+      authMode,
+    })
+    .then(({ data: { listTags } }) => listTags.items || []);
 };
 
 const getGroupedTags = async () => {
-  const { tags = [] } = await getTags();
-  const groupedData = {};
+  const tags = await getTags({});
+  const groupedTags = {};
   tags.map((tagObj) => {
     const currentValues: Tag[] =
-      tagObj.category && groupedData[tagObj.category]
-        ? groupedData[tagObj.category]
+      tagObj.category && groupedTags[tagObj.category]
+        ? groupedTags[tagObj.category]
         : [];
-    groupedData[tagObj.category] = [...currentValues, tagObj];
+    groupedTags[tagObj.category] = [...currentValues, tagObj];
     return false;
   });
 
-  return { groupedTags: groupedData };
+  return groupedTags;
   // return { data: {} };
 };
 

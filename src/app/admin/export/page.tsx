@@ -19,7 +19,7 @@ const Export = () => {
   }, []);
 
   useEffect(() => {
-    getTags().then(({ tags }) => {
+    getTags({}).then((tags) => {
       const filteredTags = tags.filter((tag) => tag.display);
       setTags(filteredTags as Tag[]);
     });
