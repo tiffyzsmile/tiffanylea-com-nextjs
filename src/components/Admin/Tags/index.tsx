@@ -4,7 +4,7 @@ import Link from "next/link";
 import TagsTable from "./TagsTable";
 import { filterTagsByCategory } from "@/utils/tags";
 import { Tag } from "@/API";
-import { deleteTag, getTags } from "@/data/getTags";
+import { getTags } from "@/data/getTags";
 
 const AdminTags = () => {
   const [tags, setTags] = useState<Tag[]>([]);
@@ -25,18 +25,6 @@ const AdminTags = () => {
     setFilteredTags(newTags);
   }, [currentCategory, tags]);
 
-  const onDelete = (tagId) => {
-    const onSuccess = (tagId) => {
-      setTags((currentTags) => {
-        return currentTags.filter((tag) => tag.id !== tagId);
-      });
-    };
-    deleteTag({
-      tagId,
-      onSuccess,
-    });
-  };
-
   const onCategoryChange = (newCategory) => {
     setCurrentCategory(newCategory);
   };
@@ -47,11 +35,7 @@ const AdminTags = () => {
       <div style={{ float: "right" }}>
         <Link href={`/admin/tags/add`}>Add Tag</Link>
       </div>
-      <TagsTable
-        tags={filteredTags}
-        onDelete={onDelete}
-        onCategoryChange={onCategoryChange}
-      />
+      <TagsTable tags={filteredTags} onCategoryChange={onCategoryChange} />
     </div>
   );
 };

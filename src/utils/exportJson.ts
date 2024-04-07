@@ -63,53 +63,71 @@ const getProjectsJsonOutput = (projects) => {
     return url;
   };
 
-  const projectsWithTags = projects.map((project: LocalProjectType) => {
-    console.log("project", project);
-    const projectCategories = [];
+  const projectsWithTags = projects.map(
+    (project: Project & LocalProjectType) => {
+      const projectCategories = [];
+      const tags = [];
+      const employer: EmployerType = {};
+      const client: ClientType = {};
 
-    const employer: EmployerType = {};
-    const client: ClientType = {};
+      console.log("project", project);
+      if (project.tags.items.length) {
+        project.tags.items.forEach((projectTag) => {
+          tags.push(projectTag.tag.id);
+          if (!projectCategories.includes(projectTag.tag.category)) {
+            projectCategories.push(projectTag.tag.category);
+          }
+        });
+      }
+      if (project.employer) {
+        employer.id = project.employer.id;
+        employer.name = project.employer.name;
+        employer.logo = getCdnImage(project.employer.logo);
+      }
 
-    if (project.employer) {
-      employer.id = project.employer.id;
-      employer.name = project.employer.name;
-      employer.logo = getCdnImage(project.employer.logo);
-    }
+      if (project.client) {
+        client.id = project.client.id;
+        client.name = project.client.name;
+        client.logo = getCdnImage(project.client.logo);
+      }
 
-    if (project.client) {
-      client.id = project.client.id;
-      client.name = project.client.name;
-      client.logo = getCdnImage(project.client.logo);
-    }
+      // format project name to include date
+      const displayName = `${project.name} (${new Date(
+        project.date,
+      ).getFullYear()})`;
 
-    // format project name to include date
-    const displayName = `${project.name} (${new Date(
-      project.date,
-    ).getFullYear()})`;
+      // Remove other unneeded properties
+      delete project.internal; // eslint-disable-line
+      delete project.updatedAt; // eslint-disable-line
+      delete project.createdAt; // eslint-disable-line
+      delete project.display; // eslint-disable-line
+      delete project.__typename; // eslint-disable-line
 
-    // Remove other unneeded properties
-    delete project.internal; // eslint-disable-line
-    delete project.display; // eslint-disable-line
+      // this may seem extreme, but we need to control the property key order
+      // of the output so comparing json changes is easier, its not public facing
+      // so performance doesn't matter as much as time to manually compare diffs
+      const sortedCategoryNames = [
+        ...Object.keys(project.tagsByCategory),
+      ].sort();
+      const sortedObjectKeys = {};
+      sortedCategoryNames.forEach((category) => {
+        sortedObjectKeys[category] = project.tagsByCategory[category];
+      });
 
-    // this may seem extreme, but we need to control the property key order
-    // of the output so comparing json changes is easier, its not public facing
-    // so performance doesn't matter as much as time to manually compare diffs
-    const sortedCategoryNames = [...Object.keys(project.tagsByCategory)].sort();
-    const sortedObjectKeys = {};
-    sortedCategoryNames.forEach((category) => {
-      sortedObjectKeys[category] = project.tagsByCategory[category];
-    });
+      const sortedTags = tags.sort((tag1, tag2) => tag1.localeCompare(tag2));
 
-    return {
-      ...project,
-      tagsByCategory: sortedObjectKeys,
-      tags: project.tags.sort((tag1, tag2) => tag1.localeCompare(tag2)),
-      employer,
-      client,
-      logo: getCdnImage(project.logo),
-      displayName,
-    };
-  });
+      return {
+        ...project,
+        tags: sortedTags,
+        tagsByCategory: sortedObjectKeys,
+        // tags: project.tags.sort((tag1, tag2) => tag1.localeCompare(tag2)),
+        employer,
+        client,
+        logo: getCdnImage(project.logo),
+        displayName,
+      };
+    },
+  );
   return projectsWithTags;
 };
 

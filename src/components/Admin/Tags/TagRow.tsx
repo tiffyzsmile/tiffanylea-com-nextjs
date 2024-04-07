@@ -8,13 +8,14 @@ import styles from "./Tags.module.css";
 
 type Props = {
   tag: Tag;
-  onDelete: (tagId: string) => void;
 };
 
-const TagRow = ({ tag, onDelete }: Props) => {
+const TagRow = ({ tag }: Props) => {
   return (
     <tr key={tag.id}>
-      <td>{tag.name}</td>
+      <td>
+        <Link href={`/admin/tags/${tag.id}`}>{tag.name}</Link>
+      </td>
       <td>{categories[tag.category]}</td>
       <td>
         <div className={styles.logo}>
@@ -25,9 +26,6 @@ const TagRow = ({ tag, onDelete }: Props) => {
       </td>
       <td className="center">
         <Link href={`/admin/tags/${tag.id}`}>Edit</Link>
-        <Button styleAs="link" onClick={() => onDelete(tag.id)}>
-          Delete
-        </Button>
       </td>
     </tr>
   );

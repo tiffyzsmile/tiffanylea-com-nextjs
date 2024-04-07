@@ -5,11 +5,10 @@ import TagRow from "@/components/Admin/Tags/TagRow";
 
 type Props = {
   tags: Tag[];
-  onDelete: (tagId: string) => void;
   onCategoryChange: (newCategory: string | null) => void;
 };
 
-const TagsTable = ({ tags = [], onDelete, onCategoryChange }: Props) => {
+const TagsTable = ({ tags = [], onCategoryChange }: Props) => {
   return (
     <table>
       <thead>
@@ -24,7 +23,7 @@ const TagsTable = ({ tags = [], onDelete, onCategoryChange }: Props) => {
       </thead>
       <tbody>
         {tags.map((tag) => (
-          <TagRow key={tag.id} tag={tag} onDelete={onDelete} />
+          <TagRow key={tag.id} tag={tag} />
         ))}
       </tbody>
     </table>

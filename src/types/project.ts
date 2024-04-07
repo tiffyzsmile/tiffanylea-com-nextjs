@@ -45,6 +45,7 @@ export type ProjectType = {
 };
 
 export type LocalProjectType = {
+  __typename?: string;
   id: string;
   name: string;
   date?: string | null;

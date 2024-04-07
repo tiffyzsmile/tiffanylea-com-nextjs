@@ -1,0 +1,11 @@
+.gridWrapper {
+  clear: both;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.delete {
+  width: 250px;
+  float: right;
+  text-align: right;
+}

@@ -33,8 +33,12 @@ const getTags = ({ authMode = "iam" }: { authMode?: GraphQLAuthMode }) => {
     .then(({ data: { listTags } }) => listTags.items || []);
 };
 
-const getGroupedTags = async () => {
-  const tags = await getTags({});
+const getGroupedTags = async ({
+  authMode = "iam",
+}: {
+  authMode?: GraphQLAuthMode;
+}) => {
+  const tags = await getTags({ authMode });
   const groupedTags = {};
   tags.map((tagObj) => {
     const currentValues: Tag[] =
@@ -46,7 +50,6 @@ const getGroupedTags = async () => {
   });
 
   return groupedTags;
-  // return { data: {} };
 };
 
 const addTag = ({ tag, onSuccess }) => {
@@ -60,14 +63,22 @@ const addTag = ({ tag, onSuccess }) => {
     .then(({ data: { createTag } }) => onSuccess(createTag));
 };
 
-const deleteTag = ({ tagId, onSuccess }) => {
-  client
-    .graphql({
-      query: mutations.deleteTag,
-      variables: { input: { id: tagId } },
-      authMode: "userPool",
-    })
-    .then(() => onSuccess(tagId));
+const deleteTag = (tag) => {
+  const hasProjects = tag?.projects?.items.length > 0;
+  return new Promise((resolve, reject) => {
+    if (hasProjects) {
+      reject("Before deleting remove all tags");
+    } else {
+      console.log("NOT RUNNING CODE");
+      // client
+      //   .graphql({
+      //     query: mutations.deleteTag,
+      //     variables: { input: { id: tag.id } },
+      //     authMode: "userPool",
+      //   })
+      //   .then(() => tagId);
+    }
+  });
 };
 
 const updateTag = ({ tag, onSuccess }) => {

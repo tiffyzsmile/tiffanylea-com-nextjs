@@ -53,11 +53,7 @@ const tagsByCategory = {
       { id: "data-cloudant", name: "Cloudant", category: "data" },
       { id: "data-couch-db", name: "CouchDB", category: "data" },
       { id: "data-dynamodb", name: "DynamoDB", category: "data" },
-      { id: "data-mariadb", name: "MariaDB", category: "data" },
-      { id: "data-mongodb", name: "MongoDB", category: "data" },
       { id: "data-mysql", name: "MySQL", category: "data" },
-      { id: "data-neo4j", name: "neo4j", category: "data" },
-      { id: "data-orient-db", name: "OrientDB", category: "data" },
     ],
   },
   "e-commerce": {

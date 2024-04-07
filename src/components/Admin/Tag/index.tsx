@@ -15,13 +15,7 @@ import {
 import { useRouter } from "next/navigation";
 import { Tag } from "@/API";
 import { addTag, deleteTag, getTag, updateTag } from "@/data/getTags";
-
-const styles = {
-  gridWrapper: {
-    display: "grid",
-    gridTemplateColumns: "60% 40%",
-  },
-};
+import styles from "./Tag.module.css";
 
 type Props = {
   tagId: string;
@@ -59,24 +53,30 @@ const AdminTag = ({ tagId }: Props) => {
     }
   };
 
-  const onDelete = (tagId) => {
-    const onSuccess = () => {
-      router.push(`/admin/tags`);
-    };
-    deleteTag({ tagId, onSuccess });
+  const hasProjects = tag?.projects?.items.length > 0;
+  const onDelete = (tag) => {
+    if (!hasProjects) {
+      deleteTag(tag).then(() => {
+        router.push(`/admin/tags`);
+      });
+    }
   };
 
   return (
     <div>
       {tagId && (
-        <div style={{ float: "right" }}>
-          <Button styleAs="link" onClick={() => onDelete(tagId)}>
-            Delete Tag
-          </Button>
+        <div className={styles.delete}>
+          {hasProjects ? (
+            <p>To delete tag, remove all projects</p>
+          ) : (
+            <Button styleAs="link" onClick={() => onDelete(tag)}>
+              Delete Tag
+            </Button>
+          )}
         </div>
       )}
       <h1>Tag Details</h1>
-      <div style={styles.gridWrapper}>
+      <div className={styles.gridWrapper}>
         <section>
           <FormStyles>
             <Form
