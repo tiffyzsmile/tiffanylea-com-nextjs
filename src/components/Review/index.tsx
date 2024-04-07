@@ -15,7 +15,12 @@ const Review = ({ imageSrc, name, title, link, children }: Props) => {
   return (
     <article className={styles.review}>
       <div className={styles.imageContainer}>
-        <Image alt={name} src={imageSrc} fill />
+        <Image
+          alt={name}
+          src={imageSrc}
+          fill
+          sizes="(min-width:630px) 188px, 93px"
+        />
       </div>
       <header>
         <H2>{title}</H2>
