@@ -5,7 +5,9 @@ import { getProjects } from "@/data/getProjects";
 export const dynamic = "force-static";
 
 const PortfolioPage = async () => {
-  const projects = await getProjects({});
+  const projects = await getProjects({}).then((projects) =>
+    projects.filter((project) => project.display),
+  );
 
   return <Portfolio projects={projects} />;
 };
