@@ -16,7 +16,7 @@ const HomePage = async () => {
       />
       <p>
         I have a passion for what I do and am looking for a challenging
-        environment to continue learning and growing from.&nbsp;
+        environment to continue learning and growing.&nbsp;
       </p>
       <p>
         My dream environment would include some of the following
