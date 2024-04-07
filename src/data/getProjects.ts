@@ -93,16 +93,11 @@ const formatProjectFromAws = (project) => {
     : [];
 
   const tagsByCategory = getTagsByCategory(project.tags.items);
-  const tags = project.tags.items.map((tag) => tag.tag.id);
-  // TODO: move this to component level
-  const displayName = `${project.name} (${new Date(project.date).getFullYear()})`;
 
   return {
     ...project,
     features,
     tagsByCategory,
-    tags,
-    displayName,
   };
 };
 
