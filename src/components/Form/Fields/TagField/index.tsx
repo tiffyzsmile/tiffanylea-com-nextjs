@@ -19,7 +19,7 @@ const TagField = ({
   const [groupedTags, setGroupedTags] = useState({});
 
   useEffect(() => {
-    getGroupedTags().then((groupedTags) => {
+    getGroupedTags({ authMode: "userPool" }).then((groupedTags) => {
       setGroupedTags(groupedTags);
     });
   }, []);

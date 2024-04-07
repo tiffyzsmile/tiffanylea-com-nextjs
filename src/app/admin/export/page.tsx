@@ -20,7 +20,7 @@ const Export = () => {
   }, []);
 
   useEffect(() => {
-    getTags({}).then((tags) => {
+    getTags({ authMode: "userPool" }).then((tags) => {
       const filteredTags = tags.filter((tag) => tag.display);
       setTags(filteredTags as Tag[]);
     });
