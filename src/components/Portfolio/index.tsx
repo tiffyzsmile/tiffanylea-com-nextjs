@@ -2,23 +2,32 @@
 import React, { useState } from "react";
 import Filter from "./Filter";
 import { H1 } from "../Typography";
+import projects from "@/data/old/projects";
 import PortfolioItem from "./PortfolioItem";
 import styles from "./Portfolio.module.scss";
 import Image from "next/image";
-import { LocalProjectType } from "@/types/project";
 
 type Props = {
   catId?: string;
   tagId?: string;
-  projects?: LocalProjectType[];
 };
 
-const Portfolio = ({ catId, tagId, projects = [] }: Props) => {
+const Portfolio = ({ catId, tagId }: Props) => {
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(
     null,
   );
 
-  const portfolioItems = projects.map((item, index) => {
+  const visibleProjects = projects.filter((project) => {
+    if (!catId) {
+      return project;
+    }
+    if (!tagId) {
+      return project.tagsByCategory[catId];
+    }
+    return project.tags.includes(tagId);
+  });
+
+  const portfolioItems = visibleProjects.map((item, index) => {
     const projectDetail: React.ReactNode[] = [];
     let isCurrent = false;
     if (selectedProjectId === item.id) {
@@ -62,7 +71,7 @@ const Portfolio = ({ catId, tagId, projects = [] }: Props) => {
     <>
       <Filter category={catId} tag={tagId} />
       <section className={styles.portfolio}>
-        <H1>Portfolio ({projects.length})</H1>
+        <H1>Portfolio ({visibleProjects.length})</H1>
         <ul id="portfolio-list">{portfolioItems}</ul>
       </section>
     </>

@@ -1,8 +1,8 @@
 /* eslint-disable */
 
-import { ProjectType } from "@/types/project";
+import { LocalProjectType } from "@/types/project";
 
-const projects: ProjectType[] = [
+const projects: LocalProjectType[] = [
   {
     id: "margarita",
     name: "Margarita",
@@ -22,97 +22,19 @@ const projects: ProjectType[] = [
     ],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-2023-03-04-12_44_39.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-2023-03-04-12_44_39.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-about-team-2023-03-04-12_45_10.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-about-team-2023-03-04-12_45_10.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-principles-2023-03-04-12_45_20.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-principles-2023-03-04-12_45_20.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-checkbox-2023-03-04-12_46_30.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-checkbox-2023-03-04-12_46_30.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-foundations-typography-2023-03-04-12_47_29.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-foundations-typography-2023-03-04-12_47_29.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-foundations-color-2023-03-04-12_45_30.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-foundations-color-2023-03-04-12_45_30.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-toggle-2023-03-04-12_47_03.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-toggle-2023-03-04-12_47_03.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-button-2023-03-04-12_46_04.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-button-2023-03-04-12_46_04.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-components-button-2023-03-04-12_45_40.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-components-button-2023-03-04-12_45_40.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-foundations-color-2023-03-04-12_45_53.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-foundations-color-2023-03-04-12_45_53.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-foundations-typography-2023-03-04-12_47_15.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-foundations-typography-2023-03-04-12_47_15.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-checkbox-group-2023-03-04-12_46_40.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-checkbox-group-2023-03-04-12_46_40.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-radio-2023-03-04-12_46_49.png",
-        originalAlt: "Margarita",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-radio-2023-03-04-12_46_49.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-2023-03-04-12_44_39.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-about-team-2023-03-04-12_45_10.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-principles-2023-03-04-12_45_20.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-checkbox-2023-03-04-12_46_30.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-foundations-typography-2023-03-04-12_47_29.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-foundations-color-2023-03-04-12_45_30.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-toggle-2023-03-04-12_47_03.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-button-2023-03-04-12_46_04.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-design-components-button-2023-03-04-12_45_40.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-foundations-color-2023-03-04-12_45_53.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-foundations-typography-2023-03-04-12_47_15.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-checkbox-group-2023-03-04-12_46_40.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/margarita/screencapture-margarita-docs-qm-thejsgal-develop-components-radio-2023-03-04-12_46_49.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/margarita/quantum-metric_margarita_logo.svg",
     employer: {
@@ -150,15 +72,6 @@ const projects: ProjectType[] = [
       "ux-information-architecture",
       "ux-usability",
       "ux-ux-audit",
-    ],
-    categories: [
-      "framework",
-      "language",
-      "project-type",
-      "role",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       framework: {
@@ -256,41 +169,11 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.quantummetric.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/session-replay_x3.png",
-        originalAlt: "Quantum Metric",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/session-replay_x3.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/sandbox_x3.png",
-        originalAlt: "Quantum Metric",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/sandbox_x3.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/sandbox-funnels_x3.png",
-        originalAlt: "Quantum Metric",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/sandbox-funnels_x3.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/dashboard_x3.png",
-        originalAlt: "Quantum Metric",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/dashboard_x3.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/live-replay_x3.png",
-        originalAlt: "Quantum Metric",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/live-replay_x3.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/quantum-app/session-replay_x3.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/quantum-app/sandbox_x3.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/quantum-app/sandbox-funnels_x3.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/quantum-app/dashboard_x3.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/quantum-app/live-replay_x3.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/quantum-app/QM%20Horizontal%20Lockup%20Pink.svg",
     employer: {
@@ -322,15 +205,6 @@ const projects: ProjectType[] = [
       "type-b2b",
       "type-startup",
       "typescript",
-    ],
-    categories: [
-      "framework",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       framework: {
@@ -405,62 +279,14 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.tiffanylea.com/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-home.png",
-        originalAlt: "Tiffany Lea",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-about.png",
-        originalAlt: "Tiffany Lea",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-about.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-resume.png",
-        originalAlt: "Tiffany Lea",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-resume.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-portfolio.png",
-        originalAlt: "Tiffany Lea",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-portfolio.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-portfolio-item.png",
-        originalAlt: "Tiffany Lea",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-portfolio-item.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-portfolio-filters.png",
-        originalAlt: "Tiffany Lea",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-portfolio-filters.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-reviews.png",
-        originalAlt: "Tiffany Lea",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-reviews.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-contact.png",
-        originalAlt: "Tiffany Lea",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea-contact.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web/tiffany-lea-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web/tiffany-lea-about.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web/tiffany-lea-resume.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web/tiffany-lea-portfolio.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web/tiffany-lea-portfolio-item.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web/tiffany-lea-portfolio-filters.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web/tiffany-lea-reviews.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web/tiffany-lea-contact.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web/tiffany-lea__logo.svg",
     employer: {
@@ -495,16 +321,6 @@ const projects: ProjectType[] = [
       "framework-react",
       "google-analytics",
       "role-design",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "cms",
-      "data",
-      "framework",
-      "role",
-      "sdlc",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -581,62 +397,14 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.tiffanylea.com/admin/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-projects.png",
-        originalAlt: "Tiffany Lea - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-projects.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-project-detail.png",
-        originalAlt: "Tiffany Lea - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-project-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-employers.png",
-        originalAlt: "Tiffany Lea - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-employers.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-employer-detail.png",
-        originalAlt: "Tiffany Lea - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-employer-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-clients.png",
-        originalAlt: "Tiffany Lea - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-clients.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-client-detail.png",
-        originalAlt: "Tiffany Lea - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-client-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-tags.png",
-        originalAlt: "Tiffany Lea - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-tags.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-tag-detail.png",
-        originalAlt: "Tiffany Lea - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin-tag-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web-admin/tiffany-lea-admin-projects.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web-admin/tiffany-lea-admin-project-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web-admin/tiffany-lea-admin-employers.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web-admin/tiffany-lea-admin-employer-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web-admin/tiffany-lea-admin-clients.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web-admin/tiffany-lea-admin-client-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web-admin/tiffany-lea-admin-tags.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tiffanylea-web-admin/tiffany-lea-admin-tag-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tiffanylea-web-admin/tiffany-lea-admin__logo.svg",
     employer: {
@@ -669,7 +437,6 @@ const projects: ProjectType[] = [
       "data-dynamodb",
       "framework-react",
     ],
-    categories: ["aws", "cms", "data", "framework", "sdlc", "year"],
     tagsByCategory: {
       aws: {
         id: "aws",
@@ -745,34 +512,10 @@ const projects: ProjectType[] = [
     ],
     url: "https://play.google.com/store/apps/details?id=com.endpointapp&hl=en_US",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android-1.png",
-        originalAlt: "Endpoint - Android",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android-1.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android-2.png",
-        originalAlt: "Endpoint - Android",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android-3.png",
-        originalAlt: "Endpoint - Android",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android-3.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android-4.png",
-        originalAlt: "Endpoint - Android",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android-4.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-android/endpoint-android-1.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-android/endpoint-android-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-android/endpoint-android-3.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-android/endpoint-android-4.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-android/endpoint-android__logo.svg",
     employer: {
@@ -799,17 +542,6 @@ const projects: ProjectType[] = [
       "type-startup",
       "typescript",
       "ux-usertesting-com",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "data",
-      "framework",
-      "language",
-      "project-type",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -891,34 +623,10 @@ const projects: ProjectType[] = [
     ],
     url: "https://apps.apple.com/us/app/endpoint/id1388458874",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios-1.png",
-        originalAlt: "Endpoint - iOS",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios-1.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios-2.png",
-        originalAlt: "Endpoint - iOS",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios-3.png",
-        originalAlt: "Endpoint - iOS",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios-3.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios-4.png",
-        originalAlt: "Endpoint - iOS",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios-4.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-ios/endpoint-ios-1.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-ios/endpoint-ios-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-ios/endpoint-ios-3.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-ios/endpoint-ios-4.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-ios/endpoint-ios__logo.svg",
     employer: {
@@ -946,17 +654,6 @@ const projects: ProjectType[] = [
       "type-startup",
       "typescript",
       "ux-usertesting-com",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "data",
-      "framework",
-      "language",
-      "project-type",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -1041,13 +738,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://endpointclosing.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-web/endpoint-web%400.25x.jpg",
-        originalAlt: "Endpoint - Web",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-web/endpoint-web%400.25x.jpg",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/endpoint-web/endpoint-web%400.25x.jpg",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/endpoint-web/endpoint-web__logo.svg",
     employer: {
@@ -1078,17 +769,6 @@ const projects: ProjectType[] = [
       "typescript",
       "ux-usertesting-com",
       "ux-ux-audit",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "data",
-      "framework",
-      "language",
-      "project-type",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -1166,41 +846,11 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.gigglesnhugs.com/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-home.png",
-        originalAlt: "Giggles N Hugs",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-about.png",
-        originalAlt: "Giggles N Hugs",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-about.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-parties.png",
-        originalAlt: "Giggles N Hugs",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-parties.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-press.png",
-        originalAlt: "Giggles N Hugs",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-press.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-navigation.png",
-        originalAlt: "Giggles N Hugs",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs-navigation.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/giggles-n-hugs/giggles-n-hugs-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/giggles-n-hugs/giggles-n-hugs-about.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/giggles-n-hugs/giggles-n-hugs-parties.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/giggles-n-hugs/giggles-n-hugs-press.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/giggles-n-hugs/giggles-n-hugs-navigation.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/giggles-n-hugs/giggles-n-hugs__logo.svg",
     employer: {
@@ -1231,17 +881,6 @@ const projects: ProjectType[] = [
       "ux-information-architecture",
       "ux-usability",
       "ux-ux-audit",
-    ],
-    categories: [
-      "cms",
-      "data",
-      "e-commerce",
-      "industry",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -1335,69 +974,15 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.skechers.com/en-gb/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-home.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-navigation-tier-2.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-navigation-tier-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-listing.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-listing-filters.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-listing-filters.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-detail.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-add-to-cart.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-add-to-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-cart.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-checkout.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-checkout.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-search.png",
-        originalAlt: "Skechers - English - Great Britain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb-search.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-navigation-tier-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-listing-filters.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-add-to-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-checkout.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-gb/skechers-en-gb-search.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-gb/skechers-en-gb__logo.svg",
     employer: {
@@ -1429,20 +1014,6 @@ const projects: ProjectType[] = [
       "scrum",
       "tooling-requirejs",
       "type-e-commerce",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -1564,69 +1135,15 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.skechers.com/es-es/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-home.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-navigation-tier-2.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-navigation-tier-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-listing.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-listing-filters.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-listing-filters.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-detail.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-add-to-cart.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-add-to-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-cart.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-checkout.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-checkout.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-search.png",
-        originalAlt: "Skechers - Spanish - Spain",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es-search.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-navigation-tier-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-listing-filters.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-add-to-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-checkout.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-es-es/skechers-es-es-search.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-es-es/skechers-es-es__logo.svg",
     employer: {
@@ -1658,20 +1175,6 @@ const projects: ProjectType[] = [
       "scrum",
       "tooling-requirejs",
       "type-e-commerce",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -1778,13 +1281,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.skechersfriendshipwalk.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2017/skechers-friendship-walk-2017-home.png",
-        originalAlt: "Skechers Friendship Walk",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2017/skechers-friendship-walk-2017-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-friendship-walk-2017/skechers-friendship-walk-2017-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2017/skechers-friendship-walk-2017__logo.svg",
     employer: {
@@ -1805,7 +1302,6 @@ const projects: ProjectType[] = [
       "scrum",
       "type-fundraising",
     ],
-    categories: ["project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       "project-type": {
         id: "project-type",
@@ -1860,69 +1356,15 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.skechers.com/fr-ca/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-home.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-navigation-tier-2.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-navigation-tier-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-listing.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-listing-filters.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-listing-filters.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-detail.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-add-to-cart.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-add-to-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-cart.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-checkout.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-checkout.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-search.png",
-        originalAlt: "Skechers - French - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca-search.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-navigation-tier-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-listing-filters.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-add-to-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-checkout.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-fr-ca/skechers-fr-ca-search.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-fr-ca/skechers-fr-ca__logo.svg",
     employer: {
@@ -1954,20 +1396,6 @@ const projects: ProjectType[] = [
       "scrum",
       "tooling-requirejs",
       "type-e-commerce",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -2089,69 +1517,15 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.skechers.com/en-ca/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-home.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-navigation-tier-2.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-navigation-tier-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-listing.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-listing-filters.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-listing-filters.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-detail.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-add-to-cart.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-add-to-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-cart.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-checkout.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-checkout.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-search.png",
-        originalAlt: "Skechers - English - Canada",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca-search.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-navigation-tier-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-listing-filters.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-add-to-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-checkout.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-ca/skechers-en-ca-search.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-ca/skechers-en-ca__logo.svg",
     employer: {
@@ -2183,20 +1557,6 @@ const projects: ProjectType[] = [
       "scrum",
       "tooling-requirejs",
       "type-e-commerce",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -2318,69 +1678,15 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.skechers.com/de-de/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-home.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-navigation-tier-2.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-navigation-tier-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-listing.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-listing-filters.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-listing-filters.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-detail.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-add-to-cart.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-add-to-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-cart.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-checkout.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-checkout.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-search.png",
-        originalAlt: "Skechers - German - Germany",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de-search.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-navigation-tier-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-listing-filters.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-add-to-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-checkout.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-de-de/skechers-de-de-search.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-de-de/skechers-de-de__logo.svg",
     employer: {
@@ -2412,20 +1718,6 @@ const projects: ProjectType[] = [
       "scrum",
       "tooling-requirejs",
       "type-e-commerce",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -2532,62 +1824,14 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.skechers.com/direct/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-home.png",
-        originalAlt: "Skechers Direct",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-logos.png",
-        originalAlt: "Skechers Direct",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-logos.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-starbucks.png",
-        originalAlt: "Skechers Direct",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-starbucks.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-mcdonalds.png",
-        originalAlt: "Skechers Direct",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-mcdonalds.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-ups.png",
-        originalAlt: "Skechers Direct",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-ups.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-taco-bell.png",
-        originalAlt: "Skechers Direct",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-taco-bell.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-amazon.png",
-        originalAlt: "Skechers Direct",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-amazon.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-detail.png",
-        originalAlt: "Skechers Direct",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct/skechers-direct-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct/skechers-direct-logos.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct/skechers-direct-starbucks.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct/skechers-direct-mcdonalds.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct/skechers-direct-ups.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct/skechers-direct-taco-bell.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct/skechers-direct-amazon.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct/skechers-direct-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct/skechers-direct__logo.svg",
     employer: {
@@ -2627,21 +1871,6 @@ const projects: ProjectType[] = [
       "tooling-requirejs",
       "type-b2b",
       "type-e-commerce",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -2759,13 +1988,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.skechers.com/direct/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct-admin/image-coming-soon.png",
-        originalAlt: "Skechers Direct - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct-admin/image-coming-soon.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-direct-admin/image-coming-soon.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-direct-admin/skechers-direct-admin__logo.svg",
     employer: {
@@ -2797,18 +2020,6 @@ const projects: ProjectType[] = [
       "manager",
       "scrum",
       "tooling-requirejs",
-    ],
-    categories: [
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -2896,13 +2107,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.skechersfriendshipwalk.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2016/skechers-friendship-walk-2016-home.png",
-        originalAlt: "Skechers Friendship Walk",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2016/skechers-friendship-walk-2016-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-friendship-walk-2016/skechers-friendship-walk-2016-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2016/skechers-friendship-walk-2016__logo.svg",
     employer: {
@@ -2923,7 +2128,6 @@ const projects: ProjectType[] = [
       "scrum",
       "type-fundraising",
     ],
-    categories: ["project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       "project-type": {
         id: "project-type",
@@ -2962,34 +2166,10 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.freshnhealthycatering.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy-home.png",
-        originalAlt: "Fresh N' Healthy",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy-menu.png",
-        originalAlt: "Fresh N' Healthy",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy-menu.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy-request-qoute.png",
-        originalAlt: "Fresh N' Healthy",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy-request-qoute.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy-contact-us.png",
-        originalAlt: "Fresh N' Healthy",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy-contact-us.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/fresh-n-healthy/fresh-n-healthy-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/fresh-n-healthy/fresh-n-healthy-menu.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/fresh-n-healthy/fresh-n-healthy-request-qoute.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/fresh-n-healthy/fresh-n-healthy-contact-us.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/fresh-n-healthy/fresh-n-healthy__logo.svg",
     employer: {
@@ -3010,7 +2190,6 @@ const projects: ProjectType[] = [
       "data-mysql",
       "responsive",
     ],
-    categories: ["cms", "data", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       cms: {
         id: "cms",
@@ -3069,62 +2248,14 @@ const projects: ProjectType[] = [
     ],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-content-page-builder.png",
-        originalAlt: "Skechers - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-content-page-builder.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-content-saved-widgets.png",
-        originalAlt: "Skechers - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-content-saved-widgets.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-catalog-product-detail.png",
-        originalAlt: "Skechers - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-catalog-product-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-customers.png",
-        originalAlt: "Skechers - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-customers.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-catalog-category-detail.png",
-        originalAlt: "Skechers - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-catalog-category-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-emails.png",
-        originalAlt: "Skechers - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-emails.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-catalog-product-listing.png",
-        originalAlt: "Skechers - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-catalog-product-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-catalog-category-listing.png",
-        originalAlt: "Skechers - Admin",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/skechers-admin-catalog-category-listing.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-admin/skechers-admin-content-page-builder.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-admin/skechers-admin-content-saved-widgets.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-admin/skechers-admin-catalog-product-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-admin/skechers-admin-customers.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-admin/skechers-admin-catalog-category-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-admin/skechers-admin-emails.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-admin/skechers-admin-catalog-product-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-admin/skechers-admin-catalog-category-listing.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-admin/Admin%20Copy__logo.svg",
     employer: {
@@ -3167,20 +2298,6 @@ const projects: ProjectType[] = [
       "type-intranet",
       "ux-information-architecture",
       "ux-usability",
-    ],
-    categories: [
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -3297,69 +2414,15 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.skechers.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-home.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-navigation-tier-2.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-navigation-tier-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-listing.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-listing-filters.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-listing-filters.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-detail.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-add-to-cart.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-add-to-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-cart.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-checkout.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-checkout.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-search.png",
-        originalAlt: "Skechers - USA",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us-search.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-navigation-tier-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-listing-filters.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-add-to-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-checkout.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-en-us/skechers-en-us-search.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-en-us/skechers-en-us__logo.svg",
     employer: {
@@ -3394,21 +2457,6 @@ const projects: ProjectType[] = [
       "tooling-requirejs",
       "type-e-commerce",
       "ux-user-testing",
-    ],
-    categories: [
-      "analytics",
-      "aws",
-      "cms",
-      "data",
-      "e-commerce",
-      "framework",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -3520,13 +2568,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.skechersfriendshipwalk.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2015/skechers-friendship-walk-2015-home.png",
-        originalAlt: "Skechers Friendship Walk",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2015/skechers-friendship-walk-2015-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-friendship-walk-2015/skechers-friendship-walk-2015-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2015/skechers-friendship-walk-2015__logo.svg",
     employer: {
@@ -3547,7 +2589,6 @@ const projects: ProjectType[] = [
       "scrum",
       "type-fundraising",
     ],
-    categories: ["analytics", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       analytics: {
         id: "analytics",
@@ -3591,34 +2632,10 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.skechersfriendshipwalk.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-home.png",
-        originalAlt: "Skechers Friendship Walk",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-meet-our-kids.png",
-        originalAlt: "Skechers Friendship Walk",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-meet-our-kids.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-donate.png",
-        originalAlt: "Skechers Friendship Walk",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-donate.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-about.png",
-        originalAlt: "Skechers Friendship Walk",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-about.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-meet-our-kids.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-donate.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014-about.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-friendship-walk-2014/skechers-friendship-walk-2014__logo.svg",
     employer: {
@@ -3639,7 +2656,6 @@ const projects: ProjectType[] = [
       "scrum",
       "type-fundraising",
     ],
-    categories: ["analytics", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       analytics: {
         id: "analytics",
@@ -3683,13 +2699,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.skx.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-corporate/skechers-corporate.png",
-        originalAlt: "Skechers Corporate",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-corporate/skechers-corporate.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/skechers-corporate/skechers-corporate.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/skechers-corporate/skechers__logo.svg",
     employer: {
@@ -3703,7 +2713,6 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/skechers__logo.svg",
     },
     tags: ["2014", "front-end", "manager", "scrum"],
-    categories: ["role", "sdlc", "year"],
     tagsByCategory: {
       role: {
         id: "role",
@@ -3748,34 +2757,10 @@ const projects: ProjectType[] = [
     ],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-home.png",
-        originalAlt: "University of the Virgin Islands - CGTC",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-standard-page.png",
-        originalAlt: "University of the Virgin Islands - CGTC",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-standard-page.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-news-listng.png",
-        originalAlt: "University of the Virgin Islands - CGTC",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-news-listng.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-news-detail.png",
-        originalAlt: "University of the Virgin Islands - CGTC",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-news-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-standard-page.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-news-listng.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cgtc/university-of-the-virgin-islands-cgtc-news-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cgtc/CGTC__logo.svg",
     employer: {
@@ -3789,7 +2774,6 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/university-of-the-virgin-islands__logo.svg",
     },
     tags: ["waterfall"],
-    categories: ["sdlc"],
     tagsByCategory: {
       sdlc: {
         id: "sdlc",
@@ -3807,34 +2791,10 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.greensboroaa.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction-home.png",
-        originalAlt: "Greensboro Auto Auction",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction-search-inventory.png",
-        originalAlt: "Greensboro Auto Auction",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction-search-inventory.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction-my-vehicle-list.png",
-        originalAlt: "Greensboro Auto Auction",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction-my-vehicle-list.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction-vehicle-details.png",
-        originalAlt: "Greensboro Auto Auction",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction-vehicle-details.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/greensboro-auto-auction/greensboro-auto-auction-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/greensboro-auto-auction/greensboro-auto-auction-search-inventory.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/greensboro-auto-auction/greensboro-auto-auction-my-vehicle-list.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/greensboro-auto-auction/greensboro-auto-auction-vehicle-details.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-auto-auction/greensboro-auto-auction__logo.svg",
     employer: {
@@ -3855,14 +2815,6 @@ const projects: ProjectType[] = [
       "type-auto-auction",
       "ui-design-review",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -3929,41 +2881,11 @@ const projects: ProjectType[] = [
     ],
     url: "https://cell.uvi.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-home.png",
-        originalAlt: "University of the Virgin Islands - CELL",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-news-listing.png",
-        originalAlt: "University of the Virgin Islands - CELL",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-news-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-news-detail.png",
-        originalAlt: "University of the Virgin Islands - CELL",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-news-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-course-listing.png",
-        originalAlt: "University of the Virgin Islands - CELL",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-course-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-course-detail.png",
-        originalAlt: "University of the Virgin Islands - CELL",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-course-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-news-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-news-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-course-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell-course-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-cell/university-of-the-virgin-islands-cell__logo.svg",
     employer: {
@@ -3995,16 +2917,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -4094,48 +3006,12 @@ const projects: ProjectType[] = [
     ],
     url: "https://safety.uvi.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-home.png",
-        originalAlt: "University of the Virgin Islands - SIP",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-news-listing.png",
-        originalAlt: "University of the Virgin Islands - SIP",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-news-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-news-detail.png",
-        originalAlt: "University of the Virgin Islands - SIP",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-news-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-standard-page.png",
-        originalAlt: "University of the Virgin Islands - SIP",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-standard-page.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-faqs.png",
-        originalAlt: "University of the Virgin Islands - SIP",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-faqs.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-consultation-form.png",
-        originalAlt: "University of the Virgin Islands - SIP",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-consultation-form.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-news-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-news-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-standard-page.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-faqs.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip-consultation-form.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands-sip/university-of-the-virgin-islands-sip__logo.svg",
     employer: {
@@ -4166,16 +3042,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -4250,20 +3116,8 @@ const projects: ProjectType[] = [
     features: [],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-bnet/bassett-furniture-bnet-2013-home.png",
-        originalAlt: "Bassett Furniture - Bnet",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-bnet/bassett-furniture-bnet-2013-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-bnet/bassett-furniture-bnet-2013-interior.png",
-        originalAlt: "Bassett Furniture - Bnet",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-bnet/bassett-furniture-bnet-2013-interior.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-bnet/bassett-furniture-bnet-2013-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-bnet/bassett-furniture-bnet-2013-interior.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-bnet/bassett-furniture-bnet__logo.svg",
     employer: {
@@ -4293,7 +3147,6 @@ const projects: ProjectType[] = [
       "xml",
       "xslt",
     ],
-    categories: ["cms", "language", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       cms: {
         id: "cms",
@@ -4367,13 +3220,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.hged.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/holyoke-gas-and-electric/holyoke-gas-and-electric%400.25x.jpg",
-        originalAlt: "Holyoke Gas & Electric",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/holyoke-gas-and-electric/holyoke-gas-and-electric%400.25x.jpg",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/holyoke-gas-and-electric/holyoke-gas-and-electric%400.25x.jpg",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/holyoke-gas-and-electric/holyoke-gas-and-electric__logo.svg",
     employer: {
@@ -4402,17 +3249,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -4510,111 +3346,21 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.uvi.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-home.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-navigation.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-navigation.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-current-students.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-current-students.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-calendar.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-calendar.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-detail.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-submit-an-event.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-submit-an-event.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-news-listing.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-news-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-news-detail.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-news-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-academics.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-academics.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-college-landing.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-college-landing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-academic-department.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-academic-department.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-media-gateway.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-media-gateway.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-standard-page.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-standard-page.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-a-z-index.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-a-z-index.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-directory.png",
-        originalAlt: "University of the Virgin Islands",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-directory.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-navigation.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-current-students.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-calendar.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-event-submit-an-event.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-news-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-news-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-academics.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-college-landing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-academic-department.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-media-gateway.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-standard-page.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-a-z-index.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands-directory.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-the-virgin-islands/university-of-the-virgin-islands__logo.svg",
     employer: {
@@ -4640,15 +3386,6 @@ const projects: ProjectType[] = [
       "responsive",
       "ux-accessibility",
       "waterfall",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -4710,13 +3447,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.scranton.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-scranton/scranton-1.png",
-        originalAlt: "University of Scranton",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-scranton/scranton-1.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-of-scranton/scranton-1.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-of-scranton/university-of-scranton__logo.svg",
     employer: {
@@ -4747,18 +3478,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -4858,41 +3577,11 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.beacontechnologies.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-home.png",
-        originalAlt: "Beacon Technologies",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-marketing.png",
-        originalAlt: "Beacon Technologies",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-marketing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-projects.png",
-        originalAlt: "Beacon Technologies",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-projects.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-development.png",
-        originalAlt: "Beacon Technologies",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-development.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-hosting.png",
-        originalAlt: "Beacon Technologies",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-hosting.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-2013/beacon-technologies-2013-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-marketing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-2013/beacon-technologies-2013-projects.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-development.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-2013/beacon-technologies-2013-web-hosting.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-2013/beacon-technologies__logo.svg",
     employer: {
@@ -4920,17 +3609,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -5014,27 +3692,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://blog.beacontechnologies.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-home.png",
-        originalAlt: "Beacon Technologies - Blog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-detail.png",
-        originalAlt: "Beacon Technologies - Blog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-listing.png",
-        originalAlt: "Beacon Technologies - Blog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-listing.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-blog/beacon-technologies-blog-2013-listing.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-blog/beacon-technologies-blog__logo.svg",
     employer: {
@@ -5062,18 +3722,6 @@ const projects: ProjectType[] = [
       "responsive",
       "role-design",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "data",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -5165,97 +3813,19 @@ const projects: ProjectType[] = [
     ],
     url: "https://whitman.syr.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-home.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-navigation.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-navigation.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-directory.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-directory.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-bio.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-bio.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-testimonial-listing.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-testimonial-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-testimonial-detail.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-testimonial-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-newsroom.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-newsroom.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-news-detail.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-news-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-research.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-research.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-prospective-students.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-prospective-students.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-storytelling.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-storytelling.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-contact-us.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-contact-us.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faq.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faq.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-navigation.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-directory.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-bio.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-testimonial-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-testimonial-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-newsroom.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-news-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faculty-research.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-prospective-students.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-storytelling.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-contact-us.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management-responsive/whitman-2013-rwd-faq.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management-responsive/whitman-school-of-management__logo.svg",
     employer: {
@@ -5285,17 +3855,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -5390,27 +3949,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.bassettfurniture.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture/bassett-furniture-2013-home.png",
-        originalAlt: "Bassett Furniture",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture/bassett-furniture-2013-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture/bassett-furniture-2013-listing.png",
-        originalAlt: "Bassett Furniture",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture/bassett-furniture-2013-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture/bassett-furniture-2013-detail.png",
-        originalAlt: "Bassett Furniture",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture/bassett-furniture-2013-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture/bassett-furniture-2013-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture/bassett-furniture-2013-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture/bassett-furniture-2013-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture/bassett-furniture__logo.svg",
     employer: {
@@ -5424,7 +3965,6 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/bassett__logo.svg",
     },
     tags: ["2013", "waterfall"],
-    categories: ["sdlc", "year"],
     tagsByCategory: {
       sdlc: {
         id: "sdlc",
@@ -5468,13 +4008,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.nctech.org",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/north-carolina-technology-association/ncta-1.png",
-        originalAlt: "North Carolina Technology Association",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/north-carolina-technology-association/ncta-1.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/north-carolina-technology-association/ncta-1.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/north-carolina-technology-association/north-carolina-technology-association__logo.svg",
     employer: {
@@ -5496,14 +4030,6 @@ const projects: ProjectType[] = [
       "javascript",
       "responsive",
       "waterfall",
-    ],
-    categories: [
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       language: {
@@ -5557,13 +4083,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://burtonandburton.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2013/burton-and-burton-1.png",
-        originalAlt: "Burton + Burton - RWD",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2013/burton-and-burton-1.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/burton-and-burton-2013/burton-and-burton-1.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2013/burton-and-burton__logo.svg",
     employer: {
@@ -5596,19 +4116,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -5729,13 +4236,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://artsyabode.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/artsy-abode/asrtsy-abode-home.png",
-        originalAlt: "Artsy Abode",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/artsy-abode/asrtsy-abode-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/artsy-abode/asrtsy-abode-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/artsy-abode/artsy-abode__logo.svg",
     employer: {
@@ -5761,17 +4262,6 @@ const projects: ProjectType[] = [
       "javascript",
       "type-e-commerce",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -5851,34 +4341,10 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.luckydogvolleyball.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog-home.png",
-        originalAlt: "Lucky Dog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog-navigation.png",
-        originalAlt: "Lucky Dog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog-navigation.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog-listing.png",
-        originalAlt: "Lucky Dog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog-detail.png",
-        originalAlt: "Lucky Dog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/lucky-dog/lucky-dog-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/lucky-dog/lucky-dog-navigation.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/lucky-dog/lucky-dog-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/lucky-dog/lucky-dog-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/lucky-dog/lucky-dog__logo.svg",
     employer: {
@@ -5899,14 +4365,6 @@ const projects: ProjectType[] = [
       "front-end",
       "type-e-commerce",
       "waterfall",
-    ],
-    categories: [
-      "e-commerce",
-      "industry",
-      "project-type",
-      "role",
-      "sdlc",
-      "year",
     ],
     tagsByCategory: {
       "e-commerce": {
@@ -5980,13 +4438,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.cuyamaca.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cuyamaca-college/cuyamaca-college-responsive.jpg",
-        originalAlt: "Cuyamaca College",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cuyamaca-college/cuyamaca-college-responsive.jpg",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/cuyamaca-college/cuyamaca-college-responsive.jpg",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cuyamaca-college/cuyamaca-college__logo.svg",
     employer: {
@@ -6016,18 +4468,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -6136,13 +4576,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.gcccd.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/grossmont-cuyamaca-community-college-district/gcccd-1.png",
-        originalAlt: "Grossmont-Cuyamaca Community College District",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/grossmont-cuyamaca-community-college-district/gcccd-1.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/grossmont-cuyamaca-community-college-district/gcccd-1.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/grossmont-cuyamaca-community-college-district/grossmont-cuyamaca-community-college-district__logo.svg",
     employer: {
@@ -6172,18 +4606,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -6292,13 +4714,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.grossmont.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/grossmont-college/grossmont-college-responsive.jpg",
-        originalAlt: "Grossmont College",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/grossmont-college/grossmont-college-responsive.jpg",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/grossmont-college/grossmont-college-responsive.jpg",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/grossmont-college/grossmont-college__logo.svg",
     employer: {
@@ -6329,18 +4745,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -6425,13 +4829,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.furniturelandsouth.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2012/image-coming-soon.png",
-        originalAlt: "Furnitureland South",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2012/image-coming-soon.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/furnitureland-south-2012/image-coming-soon.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2012/furnitureland-south__logo.svg",
     employer: {
@@ -6451,14 +4849,6 @@ const projects: ProjectType[] = [
       "lead",
       "type-e-commerce",
       "waterfall",
-    ],
-    categories: [
-      "e-commerce",
-      "industry",
-      "project-type",
-      "role",
-      "sdlc",
-      "year",
     ],
     tagsByCategory: {
       "e-commerce": {
@@ -6516,97 +4906,19 @@ const projects: ProjectType[] = [
     ],
     url: "https://whitman.syr.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-home.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-navigation.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-navigation.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-storytelling.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-storytelling.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-faculty-directory.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-faculty-directory.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-faculty-bio.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-faculty-bio.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-testimonial-listing.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-testimonial-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-testimonial-detail.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-testimonial-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-newsroom.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-newsroom.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-news-detail.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-news-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-prospective-students.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-prospective-students.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-faqs.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-faqs.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-faculty-research.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-faculty-research.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-contact-us.png",
-        originalAlt: "Syracuse University, Whitman School of Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-2012-contact-us.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-navigation.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-storytelling.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-faculty-directory.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-faculty-bio.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-testimonial-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-testimonial-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-newsroom.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-news-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-prospective-students.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-faqs.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-faculty-research.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/whitman-school-of-management/whitman-2012-contact-us.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/whitman-school-of-management/whitman-school-of-management__logo.svg",
     employer: {
@@ -6635,16 +4947,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -6728,13 +5030,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.sebts.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/southeastern-baptist-theological-seminary/sebts-home.png",
-        originalAlt: "Southeastern Baptist Theological Seminary",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/southeastern-baptist-theological-seminary/sebts-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/southeastern-baptist-theological-seminary/sebts-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/southeastern-baptist-theological-seminary/southeastern-baptist-theological-seminary__logo.svg",
     employer: {
@@ -6762,16 +5058,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -6842,27 +5128,9 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.hgtvhomefurniture.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-hgtv-home/hgtv-home.png",
-        originalAlt: "Bassett Furniture - HGTV Home",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-hgtv-home/hgtv-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-hgtv-home/hgtv-collection-listing.png",
-        originalAlt: "Bassett Furniture - HGTV Home",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-hgtv-home/hgtv-collection-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-hgtv-home/hgtv-collection-detail.png",
-        originalAlt: "Bassett Furniture - HGTV Home",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-hgtv-home/hgtv-collection-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-hgtv-home/hgtv-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-hgtv-home/hgtv-collection-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-hgtv-home/hgtv-collection-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-hgtv-home/bassett-furniture-hgtv-home__logo.svg",
     employer: {
@@ -6884,7 +5152,6 @@ const projects: ProjectType[] = [
       "type-e-commerce",
       "waterfall",
     ],
-    categories: ["industry", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       industry: {
         id: "industry",
@@ -6936,48 +5203,12 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.tufenkianoutlet.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-home.png",
-        originalAlt: "Tufenkian Outlet",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-listing.png",
-        originalAlt: "Tufenkian Outlet",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-detail.png",
-        originalAlt: "Tufenkian Outlet",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-mini-cart.png",
-        originalAlt: "Tufenkian Outlet",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-mini-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-cart.png",
-        originalAlt: "Tufenkian Outlet",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-care.png",
-        originalAlt: "Tufenkian Outlet",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian-outlet-care.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tufenkian-outlet/tufenkian-outlet-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tufenkian-outlet/tufenkian-outlet-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tufenkian-outlet/tufenkian-outlet-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tufenkian-outlet/tufenkian-outlet-mini-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tufenkian-outlet/tufenkian-outlet-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tufenkian-outlet/tufenkian-outlet-care.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tufenkian-outlet/tufenkian__logo.svg",
     employer: {
@@ -7002,17 +5233,6 @@ const projects: ProjectType[] = [
       "library-jquery",
       "type-e-commerce",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
     ],
     tagsByCategory: {
       analytics: {
@@ -7100,48 +5320,12 @@ const projects: ProjectType[] = [
     ],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-home.png",
-        originalAlt: "NJ Resources",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-interior.png",
-        originalAlt: "NJ Resources",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-news-listing.png",
-        originalAlt: "NJ Resources",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-news-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-news-detail.png",
-        originalAlt: "NJ Resources",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-news-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-search.png",
-        originalAlt: "NJ Resources",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-search.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-sitemap.png",
-        originalAlt: "NJ Resources",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/njr-nj-resources-sitemap.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-resources/njr-nj-resources-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-resources/njr-nj-resources-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-resources/njr-nj-resources-news-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-resources/njr-nj-resources-news-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-resources/njr-nj-resources-search.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-resources/njr-nj-resources-sitemap.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-resources/new-jersey-resources__logo.svg",
     employer: {
@@ -7172,16 +5356,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -7265,41 +5439,11 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.njrhomeservices.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-home.png",
-        originalAlt: "NJR Home Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-interior.png",
-        originalAlt: "NJR Home Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-reviews.png",
-        originalAlt: "NJR Home Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-reviews.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-search.png",
-        originalAlt: "NJR Home Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-search.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-sitemap.png",
-        originalAlt: "NJR Home Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/njr-njr-home-services-sitemap.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-home-services/njr-njr-home-services-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-home-services/njr-njr-home-services-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-home-services/njr-njr-home-services-reviews.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-home-services/njr-njr-home-services-search.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-home-services/njr-njr-home-services-sitemap.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-home-services/new-jersey-home-services__logo.svg",
     employer: {
@@ -7330,16 +5474,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -7423,34 +5557,10 @@ const projects: ProjectType[] = [
     ],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/njr-njr-energy-services-home.png",
-        originalAlt: "NJR Energy Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/njr-njr-energy-services-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/njr-njr-energy-services-interior.png",
-        originalAlt: "NJR Energy Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/njr-njr-energy-services-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/njr-njr-energy-services-search.png",
-        originalAlt: "NJR Energy Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/njr-njr-energy-services-search.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/njr-njr-energy-services-sitemap.png",
-        originalAlt: "NJR Energy Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/njr-njr-energy-services-sitemap.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-energy-services/njr-njr-energy-services-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-energy-services/njr-njr-energy-services-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-energy-services/njr-njr-energy-services-search.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/njr-energy-services/njr-njr-energy-services-sitemap.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/njr-energy-services/new-jersey-energy-services__logo.svg",
     employer: {
@@ -7481,16 +5591,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -7574,90 +5674,18 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.njng.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-home.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-interior.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-login.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-login.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-account-summary.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-account-summary.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-registration.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-registration.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-ways-to-pay.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-ways-to-pay.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-billpay.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-billpay.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-paperless.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-paperless.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-autopay.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-autopay.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-faqs.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-faqs.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-search.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-search.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-sitemap.png",
-        originalAlt: "NJ Natural Gas",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/njr-nj-natural-gas-sitemap.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-login.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-account-summary.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-registration.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-ways-to-pay.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-billpay.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-paperless.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-autopay.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-faqs.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-search.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/nj-natural-gas/njr-nj-natural-gas-sitemap.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/nj-natural-gas/new-jersey-natural-gas__logo.svg",
     employer: {
@@ -7688,16 +5716,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -7787,13 +5805,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.hartford.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-2012/university-of-hartford-2012-home.png",
-        originalAlt: "Hartford University - New Homepage",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-2012/university-of-hartford-2012-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/hartford-university-2012/university-of-hartford-2012-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-2012/Homepage__logo.svg",
     employer: {
@@ -7821,16 +5833,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -7911,20 +5913,8 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.bassettfurniture.com/mobile/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-mobile/bassett-mobile-combo-1.png",
-        originalAlt: "Bassett Furniture Mobile Site",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-mobile/bassett-mobile-combo-1.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-mobile/bassett-mobile-combo-2.png",
-        originalAlt: "Bassett Furniture Mobile Site",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-mobile/bassett-mobile-combo-2.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-mobile/bassett-mobile-combo-1.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-mobile/bassett-mobile-combo-2.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-mobile/bassett-furniture-mobile__logo.svg",
     employer: {
@@ -7956,18 +5946,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "e-commerce",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -8070,13 +6048,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.texwipe.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texwipe/texwipe-1.png",
-        originalAlt: "Texwipe",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texwipe/texwipe-1.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/texwipe/texwipe-1.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texwipe/texwipe__logo.svg",
     employer: {
@@ -8108,19 +6080,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -8218,20 +6177,8 @@ const projects: ProjectType[] = [
     features: [],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-forum/texas-a-and-m-foundation-intranet-forum-list.png",
-        originalAlt: "TAMF iFound Forum",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-forum/texas-a-and-m-foundation-intranet-forum-list.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-forum/texas-a-and-m-foundation-intranet-forum-detail.png",
-        originalAlt: "TAMF iFound Forum",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-forum/texas-a-and-m-foundation-intranet-forum-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound-forum/texas-a-and-m-foundation-intranet-forum-list.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound-forum/texas-a-and-m-foundation-intranet-forum-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-forum/texas-a-and-m-foundation-ifound-forum__logo.svg",
     employer: {
@@ -8255,7 +6202,6 @@ const projects: ProjectType[] = [
       "type-intranet",
       "waterfall",
     ],
-    categories: ["data", "language", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       data: {
         id: "data",
@@ -8303,20 +6249,8 @@ const projects: ProjectType[] = [
     features: [],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-blog/texas-a-and-m-foundation-intranet-blog-home.png",
-        originalAlt: "TAMF iFound Blog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-blog/texas-a-and-m-foundation-intranet-blog-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-blog/texas-a-and-m-foundation-intranet-blog-detail.png",
-        originalAlt: "TAMF iFound Blog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-blog/texas-a-and-m-foundation-intranet-blog-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound-blog/texas-a-and-m-foundation-intranet-blog-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound-blog/texas-a-and-m-foundation-intranet-blog-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound-blog/texas-a-and-m-foundation-ifound-blog__logo.svg",
     employer: {
@@ -8337,7 +6271,6 @@ const projects: ProjectType[] = [
       "type-intranet",
       "waterfall",
     ],
-    categories: ["cms", "data", "project-type", "sdlc", "year"],
     tagsByCategory: {
       cms: {
         id: "cms",
@@ -8378,48 +6311,12 @@ const projects: ProjectType[] = [
     features: [],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-home.png",
-        originalAlt: "TAMF iFound",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-home%20copy.png",
-        originalAlt: "TAMF iFound",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-home%20copy.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-profile.png",
-        originalAlt: "TAMF iFound",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-profile.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-month.png",
-        originalAlt: "TAMF iFound",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-month.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-week.png",
-        originalAlt: "TAMF iFound",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-week.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-day.png",
-        originalAlt: "TAMF iFound",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-day.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-home%20copy.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-profile.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-month.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-week.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/tamf-ifound/texas-a-and-m-foundation-intranet-calendar-day.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/tamf-ifound/texas-a-and-m-foundation-ifound__logo.svg",
     employer: {
@@ -8443,7 +6340,6 @@ const projects: ProjectType[] = [
       "type-intranet",
       "waterfall",
     ],
-    categories: ["cms", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       cms: {
         id: "cms",
@@ -8487,48 +6383,12 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.lanl.gov",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-home.png",
-        originalAlt: "Los Alamos National Laboratory",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-listing.png",
-        originalAlt: "Los Alamos National Laboratory",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-landing.png",
-        originalAlt: "Los Alamos National Laboratory",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-landing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-news-and-media.png",
-        originalAlt: "Los Alamos National Laboratory",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-news-and-media.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-interior.png",
-        originalAlt: "Los Alamos National Laboratory",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-dev-notes.png",
-        originalAlt: "Los Alamos National Laboratory",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/lanl-dev-notes.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/los-alamos-national-laboratory/lanl-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/los-alamos-national-laboratory/lanl-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/los-alamos-national-laboratory/lanl-landing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/los-alamos-national-laboratory/lanl-news-and-media.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/los-alamos-national-laboratory/lanl-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/los-alamos-national-laboratory/lanl-dev-notes.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/los-alamos-national-laboratory/los-alamos-national-laboratory__logo.svg",
     employer: {
@@ -8548,7 +6408,6 @@ const projects: ProjectType[] = [
       "javascript",
       "waterfall",
     ],
-    categories: ["language", "role", "sdlc", "user-experience-ux", "year"],
     tagsByCategory: {
       language: {
         id: "language",
@@ -8593,13 +6452,7 @@ const projects: ProjectType[] = [
     features: [],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-copy-site/basin-eletric-copt-site-script.png",
-        originalAlt: "Basin Electric - Copy Site Script",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-copy-site/basin-eletric-copt-site-script.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/basin-electric-copy-site/basin-eletric-copt-site-script.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-copy-site/basin-electric-power-cooperative__logo.svg",
     employer: {
@@ -8625,7 +6478,6 @@ const projects: ProjectType[] = [
       "xml",
       "xslt",
     ],
-    categories: ["cms", "industry", "language", "role", "sdlc", "year"],
     tagsByCategory: {
       cms: {
         id: "cms",
@@ -8678,48 +6530,12 @@ const projects: ProjectType[] = [
     features: [],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-month.png",
-        originalAlt: "Hartford University - Calendar Updates",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-month.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-day.png",
-        originalAlt: "Hartford University - Calendar Updates",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-day.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-next-7.png",
-        originalAlt: "Hartford University - Calendar Updates",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-next-7.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-category.png",
-        originalAlt: "Hartford University - Calendar Updates",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-category.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-event-detail.png",
-        originalAlt: "Hartford University - Calendar Updates",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-event-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-any-page.png",
-        originalAlt: "Hartford University - Calendar Updates",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/university-of-hartford-calendar-any-page.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/hartford-university-calendar/university-of-hartford-calendar-month.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/hartford-university-calendar/university-of-hartford-calendar-day.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/hartford-university-calendar/university-of-hartford-calendar-next-7.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/hartford-university-calendar/university-of-hartford-calendar-category.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/hartford-university-calendar/university-of-hartford-calendar-event-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/hartford-university-calendar/university-of-hartford-calendar-any-page.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/hartford-university-calendar/Calendar__logo.svg",
     employer: {
@@ -8750,15 +6566,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -8827,13 +6634,7 @@ const projects: ProjectType[] = [
     features: [],
     url: null,
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-kb/image-coming-soon.png",
-        originalAlt: "Beacon Technologies - KB",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-kb/image-coming-soon.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/beacon-technologies-kb/image-coming-soon.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/beacon-technologies-kb/beacon-technologies__logo.svg",
     employer: {
@@ -8847,7 +6648,6 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/beacon-technologies__logo.svg",
     },
     tags: ["2011", "data-mysql", "drupal", "role-design", "waterfall"],
-    categories: ["cms", "data", "role", "sdlc", "year"],
     tagsByCategory: {
       cms: {
         id: "cms",
@@ -8885,27 +6685,9 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.hartford.edu/default-m.aspx",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-1.png",
-        originalAlt: "University of Hartford - Mobile",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-1.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-3.png",
-        originalAlt: "University of Hartford - Mobile",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-3.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-2.png",
-        originalAlt: "University of Hartford - Mobile",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-2.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-1.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-3.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-mobile/university-of-hartford-mobile-combo-2.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-mobile/Mobile__logo.svg",
     employer: {
@@ -8933,15 +6715,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       industry: {
@@ -9018,41 +6791,11 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.uh.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-home.png",
-        originalAlt: "University of Houston - You are the pride",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-photos.png",
-        originalAlt: "University of Houston - You are the pride",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-photos.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-videos.png",
-        originalAlt: "University of Houston - You are the pride",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-videos.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-top-stories.png",
-        originalAlt: "University of Houston - You are the pride",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-top-stories.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-directory.png",
-        originalAlt: "University of Houston - You are the pride",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/university-of-houston-yatp-directory.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-houston-2011/university-of-houston-yatp-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-houston-2011/university-of-houston-yatp-photos.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-houston-2011/university-of-houston-yatp-videos.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-houston-2011/university-of-houston-yatp-top-stories.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-houston-2011/university-of-houston-yatp-directory.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2011/YATP__logo.svg",
     employer: {
@@ -9082,16 +6825,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -9166,27 +6899,9 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.bassettfurniture.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-1.png",
-        originalAlt: "Bassett Furniture - Fabrics We Love",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-1.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-2.png",
-        originalAlt: "Bassett Furniture - Fabrics We Love",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-2.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-3.png",
-        originalAlt: "Bassett Furniture - Fabrics We Love",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-3.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-1.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-2.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love-3.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bassett-furniture-fabrics-we-love/bassett-furniture-fabrics-we-love__logo.svg",
     employer: {
@@ -9212,7 +6927,6 @@ const projects: ProjectType[] = [
       "type-informational",
       "waterfall",
     ],
-    categories: ["cms", "language", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       cms: {
         id: "cms",
@@ -9276,27 +6990,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.basinelectric.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-power-cooperative/basin-eletric-home.png",
-        originalAlt: "Basin Electric Power Cooperative",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-power-cooperative/basin-eletric-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-power-cooperative/basin-eletric-calendar.png",
-        originalAlt: "Basin Electric Power Cooperative",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-power-cooperative/basin-eletric-calendar.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-power-cooperative/basin-eletric-right-sidebar.png",
-        originalAlt: "Basin Electric Power Cooperative",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-power-cooperative/basin-eletric-right-sidebar.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/basin-electric-power-cooperative/basin-eletric-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/basin-electric-power-cooperative/basin-eletric-calendar.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/basin-electric-power-cooperative/basin-eletric-right-sidebar.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/basin-electric-power-cooperative/basin-electric-power-cooperative__logo.svg",
     employer: {
@@ -9323,7 +7019,6 @@ const projects: ProjectType[] = [
       "xml",
       "xslt",
     ],
-    categories: ["analytics", "cms", "language", "role", "sdlc", "year"],
     tagsByCategory: {
       analytics: {
         id: "analytics",
@@ -9396,27 +7091,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.bmius.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bmi-surplus/bmi-surplus-home.png",
-        originalAlt: "BMI Surplus",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bmi-surplus/bmi-surplus-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bmi-surplus/bmi-surplus-listing.png",
-        originalAlt: "BMI Surplus",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bmi-surplus/bmi-surplus-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bmi-surplus/bmi-surplus-detail.png",
-        originalAlt: "BMI Surplus",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bmi-surplus/bmi-surplus-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bmi-surplus/bmi-surplus-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bmi-surplus/bmi-surplus-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/bmi-surplus/bmi-surplus-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/bmi-surplus/bmi-surplus__logo.svg",
     employer: {
@@ -9442,16 +7119,6 @@ const projects: ProjectType[] = [
       "lead",
       "type-e-commerce",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -9537,34 +7204,10 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.wssu.edu/default-m.aspx",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-home-audience.png",
-        originalAlt: "Winston-Salem State University - Mobile",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-home-audience.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-news.png",
-        originalAlt: "Winston-Salem State University - Mobile",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-news.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-events.png",
-        originalAlt: "Winston-Salem State University - Mobile",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-events.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-interior-map.png",
-        originalAlt: "Winston-Salem State University - Mobile",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-interior-map.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-home-audience.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-news.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-events.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-mobile/wssu-mobile-combo-interior-map.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-mobile/Mobile__logo.svg",
     employer: {
@@ -9601,17 +7244,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -9719,55 +7351,13 @@ const projects: ProjectType[] = [
     ],
     url: "https://wssu.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-home.png",
-        originalAlt: "Winston-Salem State University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-audience.png",
-        originalAlt: "Winston-Salem State University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-audience.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-landing.png",
-        originalAlt: "Winston-Salem State University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-landing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-interior.png",
-        originalAlt: "Winston-Salem State University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-events.png",
-        originalAlt: "Winston-Salem State University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-events.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-a-z-index.png",
-        originalAlt: "Winston-Salem State University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-a-z-index.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-navigation.png",
-        originalAlt: "Winston-Salem State University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/wssu-desktop-navigation.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university/wssu-desktop-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university/wssu-desktop-audience.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university/wssu-desktop-landing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university/wssu-desktop-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university/wssu-desktop-events.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university/wssu-desktop-a-z-index.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university/wssu-desktop-navigation.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university/winston-salem-state-university__logo.svg",
     employer: {
@@ -9800,18 +7390,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -9909,20 +7487,8 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.apexanalytix.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/apex-analytix/apex-analytix-home.png",
-        originalAlt: "Apex Analytix",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/apex-analytix/apex-analytix-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/apex-analytix/apex-analytix-interior.png",
-        originalAlt: "Apex Analytix",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/apex-analytix/apex-analytix-interior.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/apex-analytix/apex-analytix-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/apex-analytix/apex-analytix-interior.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/apex-analytix/apex-analytix__logo.svg",
     employer: {
@@ -9936,7 +7502,6 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/apex-analytix__logo.svg",
     },
     tags: ["2011", "front-end", "google-analytics", "waterfall"],
-    categories: ["analytics", "role", "sdlc", "year"],
     tagsByCategory: {
       analytics: {
         id: "analytics",
@@ -9992,48 +7557,12 @@ const projects: ProjectType[] = [
     ],
     url: "https://wssu.edu/campus-map/default.aspx",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-3d-meters-and-ram.png",
-        originalAlt: "Winston-Salem State University - Interactive Campus Maps",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-3d-meters-and-ram.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-3d-all.png",
-        originalAlt: "Winston-Salem State University - Interactive Campus Maps",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-3d-all.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-parking-transit-shuttle.png",
-        originalAlt: "Winston-Salem State University - Interactive Campus Maps",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-parking-transit-shuttle.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-buildings.png",
-        originalAlt: "Winston-Salem State University - Interactive Campus Maps",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-buildings.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-buildings-infoboxes.png",
-        originalAlt: "Winston-Salem State University - Interactive Campus Maps",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-buildings-infoboxes.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-parking-transit-all.png",
-        originalAlt: "Winston-Salem State University - Interactive Campus Maps",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-parking-transit-all.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-3d-meters-and-ram.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-3d-all.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-parking-transit-shuttle.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-buildings.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-buildings-infoboxes.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/winston-salem-state-university-campus-maps/wssu-campus-map-only-2d-parking-transit-all.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/winston-salem-state-university-campus-maps/Campus%20Map__logo.svg",
     employer: {
@@ -10067,17 +7596,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -10165,27 +7683,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.servigistics.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/servigistics/servigistics-home.png",
-        originalAlt: "Servigistics",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/servigistics/servigistics-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/servigistics/servigistics-interior.png",
-        originalAlt: "Servigistics",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/servigistics/servigistics-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/servigistics/servigistics-portal.png",
-        originalAlt: "Servigistics",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/servigistics/servigistics-portal.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/servigistics/servigistics-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/servigistics/servigistics-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/servigistics/servigistics-portal.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/servigistics/servigistics__logo.svg",
     employer: {
@@ -10195,7 +7695,6 @@ const projects: ProjectType[] = [
     },
     client: { id: "servigistics", name: "Servigistics", logo: null },
     tags: ["waterfall"],
-    categories: ["sdlc"],
     tagsByCategory: {
       sdlc: {
         id: "sdlc",
@@ -10213,27 +7712,9 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.furniturelandsouth.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2010/furnitureland-south-home.png",
-        originalAlt: "Furnitureland South",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2010/furnitureland-south-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2010/furnitureland-south-listing.png",
-        originalAlt: "Furnitureland South",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2010/furnitureland-south-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2010/furnitureland-south-detail.png",
-        originalAlt: "Furnitureland South",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2010/furnitureland-south-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/furnitureland-south-2010/furnitureland-south-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/furnitureland-south-2010/furnitureland-south-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/furnitureland-south-2010/furnitureland-south-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-2010/furnitureland-south__logo.svg",
     employer: {
@@ -10247,7 +7728,6 @@ const projects: ProjectType[] = [
       logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/client-logos/furnitureland-south__logo.svg",
     },
     tags: ["2010", "waterfall"],
-    categories: ["sdlc", "year"],
     tagsByCategory: {
       sdlc: {
         id: "sdlc",
@@ -10283,13 +7763,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.uh.edu/news-events",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2010/university-of-houston-news-releases.png",
-        originalAlt: "University of Houston - News Releases",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2010/university-of-houston-news-releases.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-houston-2010/university-of-houston-news-releases.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-houston-2010/university-of-houston__logo.svg",
     employer: {
@@ -10316,15 +7790,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -10402,55 +7867,13 @@ const projects: ProjectType[] = [
     ],
     url: "https://burtonandburton.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-home.png",
-        originalAlt: "Burton and Burton",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-listing.png",
-        originalAlt: "Burton and Burton",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-product-detail.png",
-        originalAlt: "Burton and Burton",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-product-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-collection-listing.png",
-        originalAlt: "Burton and Burton",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-collection-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-collection.png",
-        originalAlt: "Burton and Burton",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-collection.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-cart.png",
-        originalAlt: "Burton and Burton",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-cart.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-about-us.png",
-        originalAlt: "Burton and Burton",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton-2010-about-us.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/burton-and-burton-2010/burton-and-burton-2010-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/burton-and-burton-2010/burton-and-burton-2010-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/burton-and-burton-2010/burton-and-burton-2010-product-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/burton-and-burton-2010/burton-and-burton-2010-collection-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/burton-and-burton-2010/burton-and-burton-2010-collection.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/burton-and-burton-2010/burton-and-burton-2010-cart.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/burton-and-burton-2010/burton-and-burton-2010-about-us.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/burton-and-burton-2010/burton-and-burton__logo.svg",
     employer: {
@@ -10480,17 +7903,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -10578,27 +7990,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://greensbororadiology.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-radiology/greensboro-radiology-home.png",
-        originalAlt: "Greensboro Radiology",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-radiology/greensboro-radiology-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-radiology/greensboro-radiology-about.png",
-        originalAlt: "Greensboro Radiology",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-radiology/greensboro-radiology-about.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-radiology/greensboro-radiology-physicians.png",
-        originalAlt: "Greensboro Radiology",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-radiology/greensboro-radiology-physicians.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/greensboro-radiology/greensboro-radiology-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/greensboro-radiology/greensboro-radiology-about.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/greensboro-radiology/greensboro-radiology-physicians.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/greensboro-radiology/greensboro-radiology__logo.svg",
     employer: {
@@ -10627,17 +8021,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -10725,41 +8108,11 @@ const projects: ProjectType[] = [
     ],
     url: "https://giving.tamu.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-home.png",
-        originalAlt: "Texas A&M Foundation",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-publications.png",
-        originalAlt: "Texas A&M Foundation",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-publications.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-press-release-listing.png",
-        originalAlt: "Texas A&M Foundation",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-press-release-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-press-release-detail.png",
-        originalAlt: "Texas A&M Foundation",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-press-release-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-about-us.png",
-        originalAlt: "Texas A&M Foundation",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-about-us.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-publications.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-press-release-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-press-release-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/texas-am-foundation/texas-a-and-m-foundation-main-about-us.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/texas-am-foundation/texas-a-and-m-foundation__logo.svg",
     employer: {
@@ -10787,15 +8140,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -10872,34 +8216,10 @@ const projects: ProjectType[] = [
     ],
     url: "https://framingham.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-home.png",
-        originalAlt: "Framingham University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-home-flash.png",
-        originalAlt: "Framingham University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-home-flash.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-landing.png",
-        originalAlt: "Framingham University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-landing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-interior.png",
-        originalAlt: "Framingham University",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-interior.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/framingham-university/framingham-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/framingham-university/framingham-home-flash.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/framingham-university/framingham-landing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/framingham-university/framingham-interior.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/framingham-university/framingham-state-university__logo.svg",
     employer: {
@@ -10929,16 +8249,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -11020,27 +8330,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.unitedanesthesia.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/united-anesthesia/united-anesthsesia-home.png",
-        originalAlt: "United Anesthesia",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/united-anesthesia/united-anesthsesia-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/united-anesthesia/united-anesthsesia-about.png",
-        originalAlt: "United Anesthesia",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/united-anesthesia/united-anesthsesia-about.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/united-anesthesia/united-anesthsesia-contact.png",
-        originalAlt: "United Anesthesia",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/united-anesthesia/united-anesthsesia-contact.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/united-anesthesia/united-anesthsesia-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/united-anesthesia/united-anesthsesia-about.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/united-anesthesia/united-anesthsesia-contact.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/united-anesthesia/united-anesthesia__logo.svg",
     employer: {
@@ -11063,14 +8355,6 @@ const projects: ProjectType[] = [
       "html",
       "javascript",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -11127,27 +8411,9 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.cogentresearch.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cogent-research/cogent-home.png",
-        originalAlt: "Cogent Research",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cogent-research/cogent-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cogent-research/cogent-interior.png",
-        originalAlt: "Cogent Research",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cogent-research/cogent-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cogent-research/cogent-news.png",
-        originalAlt: "Cogent Research",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cogent-research/cogent-news.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/cogent-research/cogent-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/cogent-research/cogent-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/cogent-research/cogent-news.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/cogent-research/cogent-research__logo.svg",
     employer: {
@@ -11169,7 +8435,6 @@ const projects: ProjectType[] = [
       "type-informational",
       "waterfall",
     ],
-    categories: ["cms", "language", "project-type", "role", "sdlc", "year"],
     tagsByCategory: {
       cms: {
         id: "cms",
@@ -11225,34 +8490,10 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.staubleadership.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/eqiq-staub-home.png",
-        originalAlt: "Staub Leadership",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/eqiq-staub-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/eqiq-staub-about.png",
-        originalAlt: "Staub Leadership",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/eqiq-staub-about.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/eqiq-staub-articles.png",
-        originalAlt: "Staub Leadership",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/eqiq-staub-articles.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/eqiq-staub-videos.png",
-        originalAlt: "Staub Leadership",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/eqiq-staub-videos.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/staub-leadership/eqiq-staub-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/staub-leadership/eqiq-staub-about.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/staub-leadership/eqiq-staub-articles.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/staub-leadership/eqiq-staub-videos.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/staub-leadership/staub-leadership-international__logo.svg",
     employer: {
@@ -11279,15 +8520,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -11362,27 +8594,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.fireflystoresolutions.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/firefly-store-solutions/robert-ham-home.png",
-        originalAlt: "Firefly Store Solutions",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/firefly-store-solutions/robert-ham-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/firefly-store-solutions/robert-ham-listing.png",
-        originalAlt: "Firefly Store Solutions",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/firefly-store-solutions/robert-ham-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/firefly-store-solutions/robert-ham-detail.png",
-        originalAlt: "Firefly Store Solutions",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/firefly-store-solutions/robert-ham-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/firefly-store-solutions/robert-ham-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/firefly-store-solutions/robert-ham-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/firefly-store-solutions/robert-ham-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/firefly-store-solutions/robert-h-ham__logo.svg",
     employer: {
@@ -11409,18 +8623,6 @@ const projects: ProjectType[] = [
       "library-jquery",
       "type-e-commerce",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -11513,27 +8715,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.montylaw.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/montgomery-family-law/montgomery-family-law-home.png",
-        originalAlt: "Montgomery Family Law",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/montgomery-family-law/montgomery-family-law-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/montgomery-family-law/montgomery-family-law-interior.png",
-        originalAlt: "Montgomery Family Law",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/montgomery-family-law/montgomery-family-law-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/montgomery-family-law/montgomery-family-law-news.png",
-        originalAlt: "Montgomery Family Law",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/montgomery-family-law/montgomery-family-law-news.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/montgomery-family-law/montgomery-family-law-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/montgomery-family-law/montgomery-family-law-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/montgomery-family-law/montgomery-family-law-news.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/montgomery-family-law/montgomery-family-law__logo.svg",
     employer: {
@@ -11561,17 +8745,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -11679,55 +8852,13 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.hartford.edu",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-home.png",
-        originalAlt: "University of Hartford",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-newsroom.png",
-        originalAlt: "University of Hartford",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-newsroom.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-press-release-listing.png",
-        originalAlt: "University of Hartford",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-press-release-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-press-release-detail.png",
-        originalAlt: "University of Hartford",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-press-release-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-interior.png",
-        originalAlt: "University of Hartford",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-my-story-listing.png",
-        originalAlt: "University of Hartford",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-my-story-listing.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-my-story-detail.png",
-        originalAlt: "University of Hartford",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/university-of-hartford-2010-my-story-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-2010/university-of-hartford-2010-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-2010/university-of-hartford-2010-newsroom.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-2010/university-of-hartford-2010-press-release-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-2010/university-of-hartford-2010-press-release-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-2010/university-of-hartford-2010-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-2010/university-of-hartford-2010-my-story-listing.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/university-hartford-2010/university-of-hartford-2010-my-story-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/university-hartford-2010/2020__logo.svg",
     employer: {
@@ -11757,17 +8888,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "industry",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -11853,20 +8973,8 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.rollins.edu/magazine/",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/rollins-university-magazine/rollins-magazine-home.png",
-        originalAlt: "Rollins University Magazine",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/rollins-university-magazine/rollins-magazine-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/rollins-university-magazine/rollins-magazine-current-issue.png",
-        originalAlt: "Rollins University Magazine",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/rollins-university-magazine/rollins-magazine-current-issue.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/rollins-university-magazine/rollins-magazine-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/rollins-university-magazine/rollins-magazine-current-issue.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/rollins-university-magazine/rollins-university__logo.svg",
     employer: {
@@ -11895,15 +9003,6 @@ const projects: ProjectType[] = [
       "waterfall",
       "xml",
       "xslt",
-    ],
-    categories: [
-      "cms",
-      "language",
-      "role",
-      "sdlc",
-      "tooling",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -11978,41 +9077,11 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.volvobusscr.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-home.png",
-        originalAlt: "Volvo Bus SCR",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-home-french.png",
-        originalAlt: "Volvo Bus SCR",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-home-french.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-about.png",
-        originalAlt: "Volvo Bus SCR",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-about.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-faqs.png",
-        originalAlt: "Volvo Bus SCR",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-faqs.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-availability.png",
-        originalAlt: "Volvo Bus SCR",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo-availability.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/volvo-bus-scr/volvo-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/volvo-bus-scr/volvo-home-french.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/volvo-bus-scr/volvo-about.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/volvo-bus-scr/volvo-faqs.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/volvo-bus-scr/volvo-availability.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/volvo-bus-scr/volvo__logo.svg",
     employer: {
@@ -12034,7 +9103,6 @@ const projects: ProjectType[] = [
       "html",
       "waterfall",
     ],
-    categories: ["language", "role", "sdlc", "user-experience-ux", "year"],
     tagsByCategory: {
       language: {
         id: "language",
@@ -12082,13 +9150,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://blog.furniturelandsouth.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-blog/furnitureland-south-blog.png",
-        originalAlt: "Furnitureland South Blog",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-blog/furnitureland-south-blog.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/furnitureland-south-blog/furnitureland-south-blog.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/furnitureland-south-blog/furnitureland-south__logo.svg",
     employer: {
@@ -12111,15 +9173,6 @@ const projects: ProjectType[] = [
       "front-end",
       "php",
       "waterfall",
-    ],
-    categories: [
-      "cms",
-      "data",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "year",
     ],
     tagsByCategory: {
       cms: {
@@ -12172,27 +9225,9 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.carolinagirlfurniture.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/carolina-girl-furniture/carolina-girl-furniture-interior.png",
-        originalAlt: "Carolina Girl Furniture",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/carolina-girl-furniture/carolina-girl-furniture-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/carolina-girl-furniture/carolina-girl-furniture-home.png",
-        originalAlt: "Carolina Girl Furniture",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/carolina-girl-furniture/carolina-girl-furniture-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/carolina-girl-furniture/carolina-girl-furniture-detail.png",
-        originalAlt: "Carolina Girl Furniture",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/carolina-girl-furniture/carolina-girl-furniture-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/carolina-girl-furniture/carolina-girl-furniture-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/carolina-girl-furniture/carolina-girl-furniture-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/carolina-girl-furniture/carolina-girl-furniture-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/carolina-girl-furniture/carolina-girl-furniture__logo.svg",
     employer: {
@@ -12219,18 +9254,6 @@ const projects: ProjectType[] = [
       "php",
       "type-e-commerce",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "data",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -12316,41 +9339,11 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.envisionfurniture.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-home.png",
-        originalAlt: "Envision",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-collection-list.png",
-        originalAlt: "Envision",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-collection-list.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-collection-detail.png",
-        originalAlt: "Envision",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-collection-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-detail.png",
-        originalAlt: "Envision",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-detail.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-landing.png",
-        originalAlt: "Envision",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision-landing.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/envision/envision-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/envision/envision-collection-list.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/envision/envision-collection-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/envision/envision-detail.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/envision/envision-landing.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/envision/envision__logo.svg",
     employer: {
@@ -12377,18 +9370,6 @@ const projects: ProjectType[] = [
       "php",
       "type-e-commerce",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "data",
-      "e-commerce",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -12465,13 +9446,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.guilfordcollegeumc.org",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/guilford-college-united-methodist-church/gcumc-home.png",
-        originalAlt: "GCUMC",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/guilford-college-united-methodist-church/gcumc-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/guilford-college-united-methodist-church/gcumc-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/guilford-college-united-methodist-church/guilford-college-united-methodist-church__logo.svg",
     employer: {
@@ -12497,16 +9472,6 @@ const projects: ProjectType[] = [
       "javascript",
       "php",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "data",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -12576,27 +9541,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://northstarone.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/northstar-management/northstar-home.png",
-        originalAlt: "NorthStar Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/northstar-management/northstar-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/northstar-management/northstar-about.png",
-        originalAlt: "NorthStar Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/northstar-management/northstar-about.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/northstar-management/northstar-interior.png",
-        originalAlt: "NorthStar Management",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/northstar-management/northstar-interior.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/northstar-management/northstar-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/northstar-management/northstar-about.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/northstar-management/northstar-interior.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/northstar-management/northstar-management__logo.svg",
     employer: {
@@ -12619,14 +9566,6 @@ const projects: ProjectType[] = [
       "javascript",
       "php",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -12691,27 +9630,9 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.matlabinc.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/matlab/matlab-home.png",
-        originalAlt: "Matlab",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/matlab/matlab-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/matlab/matlab-interior.png",
-        originalAlt: "Matlab",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/matlab/matlab-interior.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/matlab/matlab-sitemap.png",
-        originalAlt: "Matlab",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/matlab/matlab-sitemap.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/matlab/matlab-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/matlab/matlab-interior.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/matlab/matlab-sitemap.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/matlab/matlab__logo.svg",
     employer: {
@@ -12735,14 +9656,6 @@ const projects: ProjectType[] = [
       "javascript",
       "php",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -12800,13 +9713,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.herronhouse.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/herron-house/heron-house-home.png",
-        originalAlt: "Herron House",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/herron-house/heron-house-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/herron-house/heron-house-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/herron-house/herron-house-flowers__logo.svg",
     employer: {
@@ -12830,16 +9737,6 @@ const projects: ProjectType[] = [
       "html",
       "php",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "data",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -12906,13 +9803,7 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.machinesandwheels.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/machines-and-wheels/machines-and-wheels-home.png",
-        originalAlt: "Machines and Wheels",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/machines-and-wheels/machines-and-wheels-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/machines-and-wheels/machines-and-wheels-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/machines-and-wheels/machines-and-wheels-inc__logo.svg",
     employer: {
@@ -12938,16 +9829,6 @@ const projects: ProjectType[] = [
       "javascript",
       "php",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "data",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -13016,48 +9897,12 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.modukraf.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-home.png",
-        originalAlt: "Mod-U-Kraf",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-company-profile.png",
-        originalAlt: "Mod-U-Kraf",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-company-profile.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-build-dream-home.png",
-        originalAlt: "Mod-U-Kraf",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-build-dream-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-side-by-side.png",
-        originalAlt: "Mod-U-Kraf",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-side-by-side.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-collection-list.png",
-        originalAlt: "Mod-U-Kraf",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-collection-list.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-collection-detail.png",
-        originalAlt: "Mod-U-Kraf",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf-collection-detail.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/mod-u-kraf/mod-u-kraf-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/mod-u-kraf/mod-u-kraf-company-profile.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/mod-u-kraf/mod-u-kraf-build-dream-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/mod-u-kraf/mod-u-kraf-side-by-side.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/mod-u-kraf/mod-u-kraf-collection-list.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/mod-u-kraf/mod-u-kraf-collection-detail.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/mod-u-kraf/mod-u-kraf__logo.svg",
     employer: {
@@ -13080,14 +9925,6 @@ const projects: ProjectType[] = [
       "javascript",
       "php",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "language",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -13162,13 +9999,7 @@ const projects: ProjectType[] = [
     ],
     url: "https://familyabuseservices.org",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/family-abuse-services/family-abuse-services-home.png",
-        originalAlt: "Family Abuse Services",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/family-abuse-services/family-abuse-services-home.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/family-abuse-services/family-abuse-services-home.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/family-abuse-services/family-abuse-services__logo.svg",
     employer: {
@@ -13195,18 +10026,6 @@ const projects: ProjectType[] = [
       "php",
       "type-informational",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "data",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -13294,34 +10113,10 @@ const projects: ProjectType[] = [
     ],
     url: "https://www.acleanerworld.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world-home.png",
-        originalAlt: "A Cleaner World",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world-faqs.png",
-        originalAlt: "A Cleaner World",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world-faqs.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world-locations.png",
-        originalAlt: "A Cleaner World",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world-locations.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world-contact-us.png",
-        originalAlt: "A Cleaner World",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world-contact-us.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/a-cleaner-world/a-cleaner-world-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/a-cleaner-world/a-cleaner-world-faqs.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/a-cleaner-world/a-cleaner-world-locations.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/a-cleaner-world/a-cleaner-world-contact-us.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/a-cleaner-world/a-cleaner-world__logo.svg",
     employer: {
@@ -13345,15 +10140,6 @@ const projects: ProjectType[] = [
       "role-design",
       "type-informational",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {
@@ -13420,34 +10206,10 @@ const projects: ProjectType[] = [
     features: [],
     url: "https://www.itc123.com",
     images: [
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications-home.png",
-        originalAlt: "Inter-Tech Communications",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications-home.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications-about-us.png",
-        originalAlt: "Inter-Tech Communications",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications-about-us.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications-seo.png",
-        originalAlt: "Inter-Tech Communications",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications-seo.png",
-      },
-      {
-        original:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications-blackberry-server.png",
-        originalAlt: "Inter-Tech Communications",
-        thumbnail:
-          "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications-blackberry-server.png",
-      },
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/inter-tech-communications/inter-tech-communications-home.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/inter-tech-communications/inter-tech-communications-about-us.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/inter-tech-communications/inter-tech-communications-seo.png",
+      "https://tiffanylea-com-content20191210135709-master.s3.us-west-2.amazonaws.com/public/projects/inter-tech-communications/inter-tech-communications-blackberry-server.png",
     ],
     logo: "https://d3oyz6uk1t3qpy.cloudfront.net/public/projects/inter-tech-communications/inter-tech-communications__logo.svg",
     employer: {
@@ -13477,19 +10239,6 @@ const projects: ProjectType[] = [
       "type-informational",
       "ux-information-architecture",
       "waterfall",
-    ],
-    categories: [
-      "analytics",
-      "cms",
-      "data",
-      "e-commerce",
-      "industry",
-      "language",
-      "project-type",
-      "role",
-      "sdlc",
-      "user-experience-ux",
-      "year",
     ],
     tagsByCategory: {
       analytics: {

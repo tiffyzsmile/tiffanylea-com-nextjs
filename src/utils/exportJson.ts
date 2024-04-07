@@ -1,5 +1,6 @@
 import categories from "@/data/categories";
 import { Project, TaggedProject } from "@/API";
+import { LocalProjectType } from "@/types/project";
 
 const uniq = require("lodash/uniq");
 
@@ -62,27 +63,12 @@ const getProjectsJsonOutput = (projects) => {
     return url;
   };
 
-  const projectsWithTags = [...projects].map((project: Project) => {
+  const projectsWithTags = projects.map((project: LocalProjectType) => {
+    console.log("project", project);
     const projectCategories = [];
-    const tags = [];
+
     const employer: EmployerType = {};
     const client: ClientType = {};
-    if (project.tags.items.length) {
-      project.tags.items.forEach((projectTag) => {
-        tags.push(projectTag.tag.id);
-        if (!projectCategories.includes(projectTag.tag.category)) {
-          projectCategories.push(projectTag.tag.category);
-        }
-      });
-    }
-
-    const images = project.images.map((image) => {
-      return {
-        original: getCdnImage(image),
-        originalAlt: project.name,
-        thumbnail: getCdnImage(image),
-      };
-    });
 
     if (project.employer) {
       employer.id = project.employer.id;
@@ -103,21 +89,21 @@ const getProjectsJsonOutput = (projects) => {
 
     // Remove other unneeded properties
     delete project.internal; // eslint-disable-line
-    delete project.updatedAt; // eslint-disable-line
-    delete project.createdAt; // eslint-disable-line
     delete project.display; // eslint-disable-line
-    delete project.__typename; // eslint-disable-line
 
-    const sortedTags = tags.sort((tag1, tag2) => tag1.localeCompare(tag2));
-    const sortedProjectCategories = projectCategories.sort((cat1, cat2) =>
-      cat1.localeCompare(cat2),
-    );
+    // this may seem extreme, but we need to control the property key order
+    // of the output so comparing json changes is easier, its not public facing
+    // so performance doesn't matter as much as time to manually compare diffs
+    const sortedCategoryNames = [...Object.keys(project.tagsByCategory)].sort();
+    const sortedObjectKeys = {};
+    sortedCategoryNames.forEach((category) => {
+      sortedObjectKeys[category] = project.tagsByCategory[category];
+    });
+
     return {
       ...project,
-      tags: sortedTags,
-      categories: sortedProjectCategories,
-      tagsByCategory: getTagsByCategory(project.tags.items),
-      images,
+      tagsByCategory: sortedObjectKeys,
+      tags: project.tags.sort((tag1, tag2) => tag1.localeCompare(tag2)),
       employer,
       client,
       logo: getCdnImage(project.logo),

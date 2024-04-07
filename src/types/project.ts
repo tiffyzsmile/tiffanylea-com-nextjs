@@ -53,8 +53,8 @@ export type LocalProjectType = {
   display?: boolean | null;
   logo?: string | null;
   internal?: string | null;
-  createdAt: string;
-  updatedAt: string;
+  createdAt?: string;
+  updatedAt?: string;
   features?: FeatureType[];
   images?: Array<string | null> | null;
   displayName?: string;

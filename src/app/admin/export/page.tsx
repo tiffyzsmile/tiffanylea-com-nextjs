@@ -4,13 +4,14 @@ import { getProjects } from "@/data/getProjects";
 import { getProjectsJsonOutput, getTagsJsonOutput } from "@/utils/exportJson";
 import { Project, Tag } from "@/API";
 import { getTags } from "@/data/getTags";
+import { LocalProjectType } from "@/types/project";
 
 const Export = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [projects, setProjects] = useState<LocalProjectType[]>([]);
   const [tags, setTags] = useState<Tag[]>([]);
 
   useEffect(() => {
-    getProjects({}).then((projects) => {
+    getProjects({ authMode: "userPool" }).then((projects) => {
       if (projects) {
         const filteredProjects = projects.filter((project) => project.display);
         setProjects(filteredProjects);
