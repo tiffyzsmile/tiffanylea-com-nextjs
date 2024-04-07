@@ -12,6 +12,8 @@ type Props = {
 };
 
 const ProjectDetail = ({ project }: Props) => {
+  const displayName = `${project.name} (${new Date(project.date).getFullYear()})`;
+
   const features = project.features
     ? project.features.map((feature) => {
         const details =
@@ -39,7 +41,7 @@ const ProjectDetail = ({ project }: Props) => {
         />
       </section>
       <section className={styles.projectDetails}>
-        <H1>{project.displayName}</H1>
+        <H1>{displayName}</H1>
         {project.description && (
           <div>
             <H2>Description</H2>
