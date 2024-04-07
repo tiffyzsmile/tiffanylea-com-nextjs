@@ -4,16 +4,18 @@ import styles from "./Filter.module.scss";
 
 type Props = {
   link: string;
+  id: string;
   name: string | undefined;
   isCurrent: boolean;
+  onClick: () => void;
 };
 
-const FilterItem = ({ link, name, isCurrent }: Props) => {
+const FilterItem = ({ id, name, isCurrent, onClick }: Props) => {
   return (
     <li>
-      <Link href={link} className={isCurrent ? styles.current : ""}>
+      <button onClick={onClick} className={isCurrent ? styles.current : ""}>
         {name}
-      </Link>
+      </button>
     </li>
   );
 };

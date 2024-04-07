@@ -8,35 +8,37 @@ type TagType = {
   link: string;
   name: string | undefined;
   isCurrent: boolean;
+  onClick: () => void;
 };
 
 type Props = {
-  category: string | null;
-  tag: string | null;
+  catId: string | null;
+  tagId: string | null;
+  setCatId: (catId: string) => void;
+  setTagId: (tagId: string) => void;
 };
 
-const Filter = ({ category, tag }: Props) => {
+const Filter = ({ catId, tagId, setCatId, setTagId }: Props) => {
   const visibleTags: TagType[] = [];
-  if (category) {
+  if (catId) {
     visibleTags.push(
       {
         id: "go-back",
         link: "/portfolio",
         name: `<--- Go Back`,
+        onClick: () => setCatId(null),
         isCurrent: false,
       },
       ...(
         tagsByCategory as unknown as {
           [key: string]: { tags: TagType[] };
         }
-      )[category as keyof {}]?.tags.map((t) => {
-        const isCurrent = t.id === tag;
-        const tagLink = isCurrent
-          ? `/portfolio/${category}` // if current tag make link unselect tag
-          : `/portfolio/${category}/${t.id}`; // else have link go to tag
+      )[catId as keyof {}]?.tags.map((tag) => {
+        const isCurrent = tag.id === tagId;
         return {
-          ...t,
-          link: tagLink,
+          ...tag,
+          link: "tagLink",
+          onClick: () => setTagId(tag.id),
           isCurrent,
         };
       }),
@@ -51,6 +53,7 @@ const Filter = ({ category, tag }: Props) => {
             [key: string]: TagType;
           }
         )[key as keyof {}]?.name,
+        onClick: () => setCatId(key),
         isCurrent: false, // current category isn't currently displayed
       });
     });
@@ -60,9 +63,11 @@ const Filter = ({ category, tag }: Props) => {
     return (
       <FilterItem
         key={t.id}
+        id={t.id}
         link={t.link}
         name={t.name}
         isCurrent={t.isCurrent}
+        onClick={t.onClick}
       />
     );
   });

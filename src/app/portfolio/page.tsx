@@ -5,7 +5,7 @@ import { getProjects } from "@/data/getProjects";
 const PortfolioPage = async () => {
   const projects = await getProjects({});
 
-  return <Portfolio pageProjects={projects} />;
+  return <Portfolio projects={projects} />;
 };
 
 export default PortfolioPage;

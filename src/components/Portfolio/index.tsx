@@ -1,26 +1,28 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Filter from "./Filter";
 import { H1 } from "../Typography";
 import PortfolioItem from "./PortfolioItem";
 import styles from "./Portfolio.module.scss";
 import Image from "next/image";
 import { LocalProjectType } from "@/types/project";
-import { getProjects } from "@/data/getProjects";
 
 type Props = {
-  catId?: string;
-  tagId?: string;
-  pageProjects?: LocalProjectType[];
+  projects?: LocalProjectType[];
 };
 
-const Portfolio = ({ catId, tagId, pageProjects = [] }: Props) => {
+const Portfolio = ({ projects = [] }: Props) => {
   const [selectedProjectId, setSelectedProjectId] = useState<string | null>(
     null,
   );
-  const [projects, setProjects] = useState(pageProjects);
+
+  const [catId, setCatId] = useState(null);
+  const [tagId, setTagId] = useState(null);
 
   const visibleProjects = projects.filter((project) => {
+    if (!project.display) {
+      return false;
+    }
     if (!catId) {
       return project;
     }
@@ -70,9 +72,27 @@ const Portfolio = ({ catId, tagId, pageProjects = [] }: Props) => {
     );
   });
 
+  const onSetCatId = (newCatId) => {
+    setTagId(null);
+    setCatId((curValue) => {
+      return curValue === newCatId ? null : newCatId;
+    });
+  };
+
+  const onSetTagId = (newTagId) => {
+    setTagId((curValue) => {
+      return curValue === newTagId ? null : newTagId;
+    });
+  };
+
   return (
     <>
-      <Filter category={catId} tag={tagId} />
+      <Filter
+        catId={catId}
+        tagId={tagId}
+        setCatId={onSetCatId}
+        setTagId={onSetTagId}
+      />
       <section className={styles.portfolio}>
         <H1>Portfolio ({visibleProjects.length})</H1>
         <ul id="portfolio-list">{portfolioItems}</ul>
