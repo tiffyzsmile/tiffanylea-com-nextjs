@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Filter from "./Filter";
 import { H1 } from "../Typography";
-import projects from "@/data/old/projects";
+import projects from "@/data/projects";
 import PortfolioItem from "./PortfolioItem";
 import styles from "./Portfolio.module.scss";
 import Image from "next/image";
