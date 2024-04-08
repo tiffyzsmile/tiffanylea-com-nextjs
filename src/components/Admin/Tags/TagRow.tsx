@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Button from "@/components/Button";
 import categories from "@/data/categories";
 import { Tag } from "@/API";
 import Image from "next/image";

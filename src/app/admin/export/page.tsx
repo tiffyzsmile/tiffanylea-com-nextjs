@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { getProjects } from "@/data/getProjects";
 import { getProjectsJsonOutput, getTagsJsonOutput } from "@/utils/exportJson";
-import { Project, Tag } from "@/API";
+import { Tag } from "@/API";
 import { getTags } from "@/data/getTags";
 import { LocalProjectType } from "@/types/project";
 
