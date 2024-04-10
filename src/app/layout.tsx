@@ -28,7 +28,7 @@ const RootLayout = ({
         </div>
       </body>
 
-      <GoogleAnalytics gaId="G-P27RHSR421" />
+      <GoogleAnalytics gaId="G-5Q5RPNW881" />
     </html>
   );
 };
