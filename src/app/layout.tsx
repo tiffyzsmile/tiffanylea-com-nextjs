@@ -7,9 +7,13 @@ import Footer from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "Tiffany Lea May",
+  title: "Home - Tiffany Lea May",
   description:
-    "Website of Tiffany Lea May a Software Engineer focused on frontend development for 15+ years.",
+    "Tiffany Lea May is a Software Engineer focused on frontend development for 15+ years.",
+  openGraph: {
+    siteName: "Tiffany Lea May",
+    images: "/tiffany-lea-may.png",
+  },
 };
 
 const RootLayout = ({

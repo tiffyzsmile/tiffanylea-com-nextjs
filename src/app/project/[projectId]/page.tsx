@@ -1,12 +1,20 @@
 import React from "react";
 import ProjectDetail from "@/components/ProjectDetail";
-import { getProject, getProjects } from "@/data/getProjects";
+import projects from "@/data/projects";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }): Promise<Metadata> {
+  const project = projects.find((project) => project.id === params.projectId);
+
+  return {
+    title: `${project.name} - Tiffany Lea May`,
+    openGraph: {
+      images: project.images,
+    },
+  };
+}
 
 export async function generateStaticParams() {
-  const projects = await getProjects({}).then((projects) =>
-    projects.filter((project) => project.display),
-  );
-
   return projects.map((project) => ({
     projectId: project.id,
   }));
@@ -17,9 +25,7 @@ type Props = {
 };
 
 const ProjectPage = async ({ params }: Props) => {
-  const project = await getProject({ projectId: params.projectId }).then(
-    (project) => project,
-  );
+  const project = projects.find((project) => project.id === params.projectId);
 
   return <ProjectDetail project={project} />;
 };
