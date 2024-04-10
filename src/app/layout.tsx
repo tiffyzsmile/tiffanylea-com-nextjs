@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import styles from "./layout.module.scss";
 import "./globals.scss";
 import Footer from "@/components/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Tiffany Lea May",
@@ -26,6 +27,8 @@ const RootLayout = ({
           <Footer />
         </div>
       </body>
+
+      <GoogleAnalytics gaId="G-P27RHSR421" />
     </html>
   );
 };
