@@ -1,6 +1,7 @@
 .review {
   clear: both;
   padding-bottom: 50px;
+  min-height: 250px;
   .imageContainer {
     @include gradient-bg;
     position: relative;
